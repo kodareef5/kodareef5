@@ -2,9 +2,7 @@
 
 # Koda Reef
 
-**Security research. Custom tooling, machine scale, hand validation.**
-
-Ten found a shipped fix that missed the class. Five I patched myself.
+**Systematic vulnerability research. Custom tooling, manually verified findings.**
 
 ![advisories](https://img.shields.io/badge/advisories-50-8b0000?style=flat-square)
 ![organizations](https://img.shields.io/badge/organizations-39-8b0000?style=flat-square)
