@@ -4,10 +4,7 @@
 
 **Security research. Custom tooling, machine scale, hand validation.**
 
-Ten found a shipped fix that missed the class.
-Patches merged upstream at [Apache httpd](https://github.com/apache/httpd/commit/d11e440),
-[c-ares](https://github.com/c-ares/c-ares/pull/1094) and
-[protoc-gen-validate](https://github.com/bufbuild/protoc-gen-validate/pull/1379).
+Ten found a shipped fix that missed the class. Five I patched myself.
 
 ![advisories](https://img.shields.io/badge/advisories-50-8b0000?style=flat-square)
 ![organizations](https://img.shields.io/badge/organizations-39-8b0000?style=flat-square)
@@ -59,16 +56,47 @@ linked individually in the table below.
 Every badge links to a published advisory. Twenty-two of thirty-nine
 organizations. The [full list](#advisories) is below.
 
-**Credited upstream, outside the advisory system:**
-[nginx](https://nginx.org/en/CHANGES) 1.31.2 ·
-[Node.js](https://github.com/nodejs/node/blob/main/deps/cares/RELEASE-NOTES.md) (vendored c-ares) ·
-[vim](https://github.com/vim/vim) v9.2.0271/v9.2.0272 ·
-[libevent](https://github.com/libevent/libevent/blob/master/ChangeLog) ·
-[libzip](https://github.com/nih-at/libzip/blob/main/THANKS) ·
-[simple-git](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md) ·
-[authentik](https://docs.goauthentik.io/security/cves/CVE-2026-40165) ·
-[CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg/pull/10515) ·
-[Red Hat](https://access.redhat.com/security/cve/CVE-2026-40938) (five errata)
+### Upstream, outside the advisory system
+
+Work that produced a fix or an acknowledgement but no advisory. Verified
+2026-07-26; every row links to the primary source.
+
+**Patches I wrote that were merged**
+
+| Project | What | Credit |
+|---|---|---|
+| [Apache HTTP Server](https://github.com/apache/httpd/commit/d11e440) | Integer overflow guards in four core escaping functions | *"Submitted by: Koda Reef"* |
+| [c-ares](https://github.com/c-ares/c-ares/pull/1094) | Overflow checks in `ares_buf_ensure_space()` | Merged, [downstream in Node.js](https://github.com/nodejs/node/blob/main/deps/cares/RELEASE-NOTES.md) |
+| [protoc-gen-validate](https://github.com/bufbuild/protoc-gen-validate/pull/1379) | Malformed UTF-8 undercounted, bypassing length constraints | Merged |
+| [DOMPurify](https://github.com/cure53/DOMPurify/pull/1230) | The fix for my own [CVE-2026-41240](https://github.com/advisories/GHSA-h7mw-gpvr-xq4m) | Merged |
+| [File Browser](https://github.com/filebrowser/filebrowser/pulls?q=is%3Apr+author%3Akodareef5) | The fixes for all four of my own File Browser advisories | 4 merged |
+
+**Credited in someone else's fix**
+
+| Project | What | Credit |
+|---|---|---|
+| [jsrsasign](https://github.com/kjur/jsrsasign/releases) 11.1.2 | **HIGH**, DSA universal signature forgery, FIPS 186-4 §4.7 boundary check | *reported by Koda Reef, Nicholas Carlini and @Kr0emer* |
+| [jsrsasign](https://github.com/kjur/jsrsasign/releases) 11.1.2 | **HIGH**, ASN.1 parser infinite loop in `getChildIdx` | *reported by Koda Reef*, sole |
+| [nginx](https://nginx.org/en/CHANGES) 1.31.2 | Constant time `secure_link` hash comparison | *"Thanks to kodareef5"* |
+| [GNOME GLib](https://github.com/GNOME/glib/commit/578a488) | D-Bus message length integer arithmetic | *"Based on a report by Koda Reef"* |
+| [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47) | Escaping in PostgreSQL config values | *"Reported-by: Koda Reef"* |
+| [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077) | Tightened recovery target validation | *"Suggested-by: Koda Reef"* |
+| [lighttpd](https://github.com/lighttpd/lighttpd1.4/commit/904a267) | `mod_maxminddb` snprintf return bound | *"(thx kodareef5)"* |
+| [Headlamp](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0) v0.42.0 | Host header validation | *"thanks to Koda Reef for reporting"* |
+| [NATS Server](https://github.com/nats-io/nats-server/releases) 2.14.3 | Non-CVE fixes in the same release | Named in contributors |
+| [vim](https://github.com/vim/vim/commit/3c0f800) | Buffer underflow in `vim_fgets()` | v9.2.0271 and v9.2.0272 |
+| [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877) | Signed overflow in JNI array size across six paths | Fixed |
+| [libevent](https://github.com/libevent/libevent/blob/master/ChangeLog) | HTTP header parsing restricted against request smuggling | Release notes |
+| [libzip](https://github.com/nih-at/libzip/blob/main/THANKS) | | THANKS |
+| [simple-git](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md) | `GIT_CONFIG_COUNT` injection | Changelog |
+| [authentik](https://docs.goauthentik.io/security/cves/CVE-2026-40165) | SAML NameID truncation | Vendor CVE page |
+| [Red Hat](https://access.redhat.com/security/cve/CVE-2026-40938) | Five errata across OpenShift product lines | Downstream |
+
+One advisory credits me in prose but not in metadata:
+[go-git `GHSA-crhj-59gh-8x96`](https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96)
+reads *"Thanks to @kodareef5, @AyushParkara and @N0zoM1z0 for reporting this to
+the go-git project in three separate reports."* The structured credits list
+the other two. It is not counted in the 50.
 
 ### Selected findings
 

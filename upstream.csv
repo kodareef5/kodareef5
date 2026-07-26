@@ -1,0 +1,25 @@
+project,org,kind,credit_text,what,url,verified
+Apache HTTP Server,apache,authored_merged,Submitted by: Koda Reef,Integer overflow guards in four core escaping functions,https://github.com/apache/httpd/commit/d11e440,2026-07-26
+c-ares,c-ares,authored_merged,PR merged,Overflow checks in ares_buf_ensure_space(),https://github.com/c-ares/c-ares/pull/1094,2026-07-26
+protoc-gen-validate,bufbuild,authored_merged,PR merged,Malformed UTF-8 length validation bypass,https://github.com/bufbuild/protoc-gen-validate/pull/1379,2026-07-26
+DOMPurify,cure53,authored_merged_own_advisory,PR merged,Wrote the fix for his own CVE-2026-41240,https://github.com/cure53/DOMPurify/pull/1230,2026-07-26
+File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-v9w4-gm2x-6rvf,https://github.com/filebrowser/filebrowser/pull/5888,2026-07-26
+File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-5q48-q4fm-g3m6,https://github.com/filebrowser/filebrowser/pull/5889,2026-07-26
+File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-7526-j432-6ppp,https://github.com/filebrowser/filebrowser/pull/5890,2026-07-26
+File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-67cg-cpj7-qgc9,https://github.com/filebrowser/filebrowser/pull/5891,2026-07-26
+jsrsasign,kjur,release_note,reported by Koda Reef,HIGH: ASN.1 parser infinite loop in getChildIdx (sole),https://github.com/kjur/jsrsasign/releases,2026-07-26
+jsrsasign,kjur,release_note,"reported by Koda Reef, Nicholas Carlini and @Kr0emer",HIGH: DSA universal signature forgery, FIPS 186-4 4.7 boundary check,https://github.com/kjur/jsrsasign/releases,2026-07-26
+GNOME GLib,GNOME,commit_credit,Based on a report by Koda Reef,D-Bus message length integer arithmetic,https://github.com/GNOME/glib/commit/578a488,2026-07-26
+CloudNativePG,cloudnative-pg,commit_credit,Reported-by: Koda Reef,Escape backslashes and control chars in PostgreSQL config values,https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47,2026-07-26
+CloudNativePG,cloudnative-pg,commit_credit,Suggested-by: Koda Reef,Tighten recovery target validation,https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077,2026-07-26
+lighttpd,lighttpd,commit_credit,(thx kodareef5),mod_maxminddb snprintf return value bound,https://github.com/lighttpd/lighttpd1.4/commit/904a267,2026-07-26
+nginx,nginx,changelog,Thanks to kodareef5,Constant time secure_link hash comparison in 1.31.2,https://nginx.org/en/CHANGES,2026-07-26
+NATS Server,nats-io,release_note,Koda Reef in contributors,Non-CVE fixes in 2.14.3,https://github.com/nats-io/nats-server/releases,2026-07-26
+Headlamp,kubernetes-sigs,release_note,thanks to Koda Reef for reporting the issue,Host header validation for desktop and headless users in v0.42.0,https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0,2026-07-26
+go-git,go-git,advisory_text,Thanks to @kodareef5 ... in three separate reports,Named in the advisory body but absent from structured credits,https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96,2026-07-26
+vim,vim,release,fix shipped,Buffer underflow in vim_fgets(), v9.2.0271 and v9.2.0272,https://github.com/vim/vim/commit/3c0f800,2026-07-26
+libevent,libevent,release_note,named in release notes,HTTP header parsing restricted to prevent request smuggling,https://github.com/libevent/libevent/blob/master/ChangeLog,2026-07-26
+libzip,nih-at,thanks_file,kodareef5,Listed in THANKS,https://github.com/nih-at/libzip/blob/main/THANKS,2026-07-26
+libjpeg-turbo,libjpeg-turbo,issue_fixed,issue closed fixed,Signed overflow in JNI arraySize bounds check across six paths,https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877,2026-07-26
+authentik,goauthentik,vendor_doc,named on the CVE page,SAML NameID truncation CVE-2026-40165,https://docs.goauthentik.io/security/cves/CVE-2026-40165,2026-07-26
+Red Hat,redhat,errata,five errata shipped,Downstream propagation of CVE-2026-40938,https://access.redhat.com/security/cve/CVE-2026-40938,2026-07-26
