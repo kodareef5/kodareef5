@@ -4,7 +4,7 @@
 
 **Security research. Custom tooling, machine scale, hand validation.**
 
-Ten of the fifty are fixes that shipped and did not hold.
+Ten prove an earlier CVE's fix was inadequate.
 
 ![advisories](https://img.shields.io/badge/advisories-50-8b0000?style=flat-square)
 ![organizations](https://img.shields.io/badge/organizations-39-8b0000?style=flat-square)
