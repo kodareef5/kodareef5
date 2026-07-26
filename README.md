@@ -4,7 +4,10 @@
 
 **Security research. Custom tooling, machine scale, hand validation.**
 
-Ten prove an earlier CVE's fix was inadequate.
+Ten found a shipped fix that missed the class.
+Patches merged upstream at [Apache httpd](https://github.com/apache/httpd/commit/d11e440),
+[c-ares](https://github.com/c-ares/c-ares/pull/1094) and
+[protoc-gen-validate](https://github.com/bufbuild/protoc-gen-validate/pull/1379).
 
 ![advisories](https://img.shields.io/badge/advisories-50-8b0000?style=flat-square)
 ![organizations](https://img.shields.io/badge/organizations-39-8b0000?style=flat-square)
