@@ -249,23 +249,29 @@ maintainers' own words, not mine.
 |---|---|
 | **Cryptography** | [Ed25519 signature malleability](https://github.com/advisories/GHSA-x3ff-w252-2g7j) · [variable-time HMAC](https://github.com/advisories/GHSA-r854-jrxh-36qx) · [`secure_link` timing](https://nginx.org/en/CHANGES) · identity-point proof acceptance in zero-knowledge verifiers · PRF state leak reversing proactive key refresh · cross-language proof-verification divergence · missing curve validation in MPC blob deserializers |
 | **Identity and trust** | [OIDC client binding](https://github.com/advisories/GHSA-xqxv-4jc2-x56x) · [attestation verification](https://github.com/advisories/GHSA-w6c6-c85g-mmv6) · [`FORBID_TAGS` bypass](https://github.com/advisories/GHSA-h7mw-gpvr-xq4m) · [SAML NameID truncation](https://docs.goauthentik.io/security/cves/CVE-2026-40165) · [delegation matching](https://github.com/advisories/GHSA-qp9x-wp8f-qgjj) · [email domain bypass](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) · [password reset token theft](https://github.com/advisories/GHSA-x3f4-v83f-7wp2) |
-| **Platform and isolation** | [Helm impersonation bypass](https://github.com/advisories/GHSA-765j-qfrp-hm3j) · [symlink policy subversion](https://github.com/advisories/GHSA-q49m-57vm-c8cc) · [WireGuard key exposure](https://github.com/advisories/GHSA-gj49-89wh-h4gj) · [Lua injection](https://github.com/advisories/GHSA-x4mj-7f9g-29h4) · [DNS secret exfiltration](https://github.com/advisories/GHSA-r2pg-r6h7-crf3) · virtio-net TOCTOU ([Firecracker](https://github.com/firecracker-microvm/firecracker)) · Zuul canonicalization and hop-by-hop headers ([Netflix](https://github.com/Netflix/zuul)) |
+| **Platform and isolation** | [Helm impersonation bypass](https://github.com/advisories/GHSA-765j-qfrp-hm3j) · [symlink policy subversion](https://github.com/advisories/GHSA-q49m-57vm-c8cc) · [WireGuard key exposure](https://github.com/advisories/GHSA-gj49-89wh-h4gj) · [Lua injection](https://github.com/advisories/GHSA-x4mj-7f9g-29h4) · [DNS secret exfiltration](https://github.com/advisories/GHSA-r2pg-r6h7-crf3) · virtio-net TOCTOU ([Firecracker](https://github.com/firecracker-microvm/firecracker)) · reverse-proxy path canonicalization and hop-by-hop header forwarding |
 | **AI and ML** | [command injection](https://github.com/advisories/GHSA-fgv4-6jr3-jgfw) · [template injection](https://github.com/advisories/GHSA-frv4-x25r-588m) · pickle deserialization and sandbox escape across ONNX, MLflow, PyTorch Lightning, Keras, Triton · [PoCs](https://huggingface.co/kodareef5) |
 | **Supply chain** | [Perforce command injection](https://github.com/advisories/GHSA-gqw4-4w2p-838q) · [submodule validation](https://github.com/advisories/GHSA-p3hw-mv63-rf9w) · [tar path traversal](https://github.com/advisories/GHSA-73h3-mf4w-8647) · [`GIT_CONFIG_COUNT` injection](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md) |
-| **Edge and proxy** | [BasicAuth timing oracle](https://github.com/advisories/GHSA-6x2q-h3cr-8j2h) · [email domain bypass](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) · [collector auth bypass](https://github.com/advisories/GHSA-w5cv-pw74-4rxc) · Zuul canonicalization and hop-by-hop headers (Netflix) |
+| **Edge and proxy** | [BasicAuth timing oracle](https://github.com/advisories/GHSA-6x2q-h3cr-8j2h) · [email domain bypass](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) · [collector auth bypass](https://github.com/advisories/GHSA-w5cv-pw74-4rxc) · reverse-proxy path canonicalization and hop-by-hop header forwarding |
 
-### Feedback during coordinated disclosure
+### Confirmations during coordinated disclosure
+
+Named engineers at the affected organizations, by direct email. Technical
+confirmations of a finding, not endorsements and not customer references.
 
 | | |
 |---|---|
-| *"We validated that the TOCTOU condition you described exists in Firecracker's codebase"* | **AWS** |
-| *"exceptional additional detail on the exploitation path and demonstrates the full impact through comprehensive test cases"* | **Coinbase** |
-| *"Your research clearly shows the severity of this vulnerability class."* | **Coinbase** |
-| *"comprehensive analysis with 27 test cases documenting multiple bypass vectors"* | **Netflix** |
-| *"Your testing methodology and proof of concept demonstrate excellent security research skills."* | **Netflix** |
-| *"excellent technical depth and comprehensive test cases"* | **Netflix** |
-| *"We've confirmed the vulnerability — the analysis is accurate"* | **Red Hat** |
-| *"I have reproduced the issue and can confirm"* | **Contour** |
+| *"We validated that the TOCTOU condition you described exists in Firecracker's codebase"* | **AWS Security** |
+| *"We've confirmed the vulnerability, the analysis is accurate"* | **Red Hat**, Tekton maintainer |
+| *"I have reproduced the issue and can confirm the Lua injection vulnerability"* | **Contour** maintainer |
+| *"I can confirm this is a real vulnerability"* | **oauth2-proxy** maintainer |
+| *"I can confirm reception and have created an advisory"* | **Composer**, Jordi Boggiano |
+| *"On the parser-level finding: your observation is correct"* | **CloudNativePG**, EnterpriseDB |
+| *"We will credit you in the advisory and inform when it's public"* | **SUSE** Rancher security |
+
+Press: [GBHackers](https://gbhackers.com/critical-dgraph-database-flaw/) ·
+[Cybersecurity News](https://cybersecuritynews.com/dgraph-database-vulnerability/)
+on the Dgraph 10.0.
 
 ### Advisories
 
