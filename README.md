@@ -23,7 +23,7 @@ published to that database, so the search does not reach them. Each is
 linked individually in the table below.
 
 **Positive Technologies** indexes the record independently and ranks it
-[**#1,066 of 54,969** researchers](https://dbugs.ptsecurity.com/researchers/Kodareef5),
+[**#1,067 of 54,969** researchers](https://dbugs.ptsecurity.com/researchers/Kodareef5),
 202.2 total CVSS.
 
 ### Credited in
