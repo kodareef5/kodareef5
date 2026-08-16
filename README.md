@@ -4,36 +4,32 @@
 
 **Systematic vulnerability research. Custom tooling, manually verified findings.**
 
-![advisories](https://img.shields.io/badge/advisories-61-8b0000?style=flat-square)
-![organizations](https://img.shields.io/badge/organizations-46-8b0000?style=flat-square)
-![CVEs](https://img.shields.io/badge/CVEs-43-8b0000?style=flat-square)
-![sole reporter](https://img.shields.io/badge/sole_reporter-47-8b0000?style=flat-square)
-![high or critical](https://img.shields.io/badge/high_or_critical-38-8b0000?style=flat-square)
+![advisories](https://img.shields.io/badge/advisories-65-8b0000?style=flat-square)
+![organizations](https://img.shields.io/badge/organizations-48-8b0000?style=flat-square)
+![CVEs](https://img.shields.io/badge/CVEs-45-8b0000?style=flat-square)
+![sole reporter](https://img.shields.io/badge/sole_reporter-51-8b0000?style=flat-square)
+![high or critical](https://img.shields.io/badge/high_or_critical-40-8b0000?style=flat-square)
 
 </div>
 
 Published record, March 2026 to present.
 
-**45** are searchable in GitHub's global advisory database:
+**46** are searchable in GitHub's global advisory database:
 [all](https://github.com/advisories?query=credit%3Akodareef5) ·
 [critical](https://github.com/advisories?query=credit%3Akodareef5+severity%3Acritical) ·
 [high](https://github.com/advisories?query=credit%3Akodareef5+severity%3Ahigh).
-**16** more are repository advisories that were never
+**19** more are repository advisories that were never
 published to that database, so the search does not reach them. Each is
 linked individually in the table below.
-
-**Positive Technologies** indexes the record and ranked it
-[**#1,071 of 55,057** researchers](https://dbugs.ptsecurity.com/researchers/Kodareef5),
-202.2 total CVSS across 27 indexed CVEs, checked 2026-07-30.
 
 ### Credited in
 
 | | |
 |---|---|
-| **Cloud native and orchestration** | [![Rancher](https://img.shields.io/badge/Rancher-0075A8?style=for-the-badge&logo=rancher&logoColor=white)](https://github.com/advisories/GHSA-765j-qfrp-hm3j) [![Kata Containers](https://img.shields.io/badge/Kata_Containers-1E2761?style=for-the-badge)](https://github.com/advisories/GHSA-q49m-57vm-c8cc) [![Contour](https://img.shields.io/badge/Contour-483D8B?style=for-the-badge)](https://github.com/advisories/GHSA-x4mj-7f9g-29h4) [![Cilium](https://img.shields.io/badge/Cilium-F8C517?style=for-the-badge&logo=cilium&logoColor=black)](https://github.com/advisories/GHSA-gj49-89wh-h4gj) [![Tekton](https://img.shields.io/badge/Tekton-42A5F5?style=for-the-badge&logo=tekton&logoColor=white)](https://github.com/advisories/GHSA-wjxp-xrpv-xpff) [![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=for-the-badge&logo=opentelemetry&logoColor=white)](https://github.com/advisories/GHSA-hfvc-g4fc-pqhx) [![External Secrets](https://img.shields.io/badge/External_Secrets-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://github.com/advisories/GHSA-r2pg-r6h7-crf3) |
+| **Cloud native and infrastructure** | [![Rancher](https://img.shields.io/badge/Rancher-0075A8?style=for-the-badge&logo=rancher&logoColor=white)](https://github.com/advisories/GHSA-765j-qfrp-hm3j) [![Kata Containers](https://img.shields.io/badge/Kata_Containers-1E2761?style=for-the-badge)](https://github.com/advisories/GHSA-q49m-57vm-c8cc) [![Contour](https://img.shields.io/badge/Contour-483D8B?style=for-the-badge)](https://github.com/advisories/GHSA-x4mj-7f9g-29h4) [![Cilium](https://img.shields.io/badge/Cilium-F8C517?style=for-the-badge&logo=cilium&logoColor=black)](https://github.com/advisories/GHSA-gj49-89wh-h4gj) [![Tekton](https://img.shields.io/badge/Tekton-42A5F5?style=for-the-badge&logo=tekton&logoColor=white)](https://github.com/advisories/GHSA-wjxp-xrpv-xpff) [![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=for-the-badge&logo=opentelemetry&logoColor=white)](https://github.com/advisories/GHSA-hfvc-g4fc-pqhx) [![External Secrets](https://img.shields.io/badge/External_Secrets-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://github.com/advisories/GHSA-r2pg-r6h7-crf3) [![systemd](https://img.shields.io/badge/systemd-30D475?style=for-the-badge)](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7) [![KubePi](https://img.shields.io/badge/KubePi-0854C1?style=for-the-badge&logo=1panel&logoColor=white)](https://github.com/1Panel-dev/KubePi/security/advisories/GHSA-wjrh-4j52-c664) |
 | **Supply chain and packaging** | [![in-toto](https://img.shields.io/badge/in--toto-6E4C9E?style=for-the-badge)](https://github.com/in-toto/witness/security/advisories/GHSA-ggg4-v8vp-jxqh) [![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)](https://github.com/advisories/GHSA-gqw4-4w2p-838q) [![gitoxide](https://img.shields.io/badge/gitoxide-CE422B?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/advisories/GHSA-x494-mj8g-cj27) [![go-git](https://img.shields.io/badge/go--git-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://github.com/go-git/go-git/security/advisories/GHSA-hc8v-wwc9-vgxm) [![Sigstore](https://img.shields.io/badge/Sigstore-003366?style=for-the-badge)](https://github.com/advisories/GHSA-w6c6-c85g-mmv6) [![python-tuf](https://img.shields.io/badge/python--tuf-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/advisories/GHSA-qp9x-wp8f-qgjj) [![Poetry](https://img.shields.io/badge/Poetry-60A5FA?style=for-the-badge&logo=poetry&logoColor=white)](https://github.com/advisories/GHSA-73h3-mf4w-8647) |
-| **Identity and access** | [![Authorizer](https://img.shields.io/badge/Authorizer-3B82F6?style=for-the-badge)](https://github.com/advisories/GHSA-x3f4-v83f-7wp2) [![Pocket ID](https://img.shields.io/badge/Pocket_ID-0F172A?style=for-the-badge)](https://github.com/advisories/GHSA-w6p7-2fxx-4f44) [![ZITADEL](https://img.shields.io/badge/ZITADEL-3AB8BF?style=for-the-badge)](https://github.com/advisories/GHSA-xqxv-4jc2-x56x) [![authentik](https://img.shields.io/badge/authentik-FD4B2D?style=for-the-badge&logo=authentik&logoColor=white)](https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2) [![oauth2-proxy](https://img.shields.io/badge/oauth2--proxy-4B32C3?style=for-the-badge)](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) |
-| **Data, AI and parsers** | [![Dgraph](https://img.shields.io/badge/Dgraph-E50695?style=for-the-badge)](https://github.com/advisories/GHSA-p5rh-vmhp-gvcw) [![RustFS](https://img.shields.io/badge/RustFS-CE422B?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/advisories/GHSA-pfcq-4gjr-6gjm) [![NASA](https://img.shields.io/badge/NASA-0B3D91?style=for-the-badge&logo=nasa&logoColor=white)](https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8) [![File Browser](https://img.shields.io/badge/File_Browser-455A64?style=for-the-badge)](https://github.com/advisories/GHSA-v9w4-gm2x-6rvf) [![BentoML](https://img.shields.io/badge/BentoML-000000?style=for-the-badge)](https://github.com/advisories/GHSA-fgv4-6jr3-jgfw) [![Giskard](https://img.shields.io/badge/Giskard-6D28D9?style=for-the-badge)](https://github.com/advisories/GHSA-frv4-x25r-588m) [![libheif](https://img.shields.io/badge/libheif-5C6BC0?style=for-the-badge)](https://github.com/strukturag/libheif/security/advisories/GHSA-9h96-c44j-jpq9) [![pypdf](https://img.shields.io/badge/pypdf-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/advisories/GHSA-3crg-w4f6-42mx) |
+| **Identity and access** | [![Authorizer](https://img.shields.io/badge/Authorizer-3B82F6?style=for-the-badge)](https://github.com/advisories/GHSA-29rf-f4vv-pvq6) [![Pocket ID](https://img.shields.io/badge/Pocket_ID-0F172A?style=for-the-badge)](https://github.com/advisories/GHSA-w6p7-2fxx-4f44) [![ZITADEL](https://img.shields.io/badge/ZITADEL-3AB8BF?style=for-the-badge)](https://github.com/advisories/GHSA-xqxv-4jc2-x56x) [![authentik](https://img.shields.io/badge/authentik-FD4B2D?style=for-the-badge&logo=authentik&logoColor=white)](https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2) [![oauth2-proxy](https://img.shields.io/badge/oauth2--proxy-4B32C3?style=for-the-badge)](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) |
+| **Data, AI and parsers** | [![Dgraph](https://img.shields.io/badge/Dgraph-E50695?style=for-the-badge)](https://github.com/advisories/GHSA-p5rh-vmhp-gvcw) [![NASA](https://img.shields.io/badge/NASA-0B3D91?style=for-the-badge&logo=nasa&logoColor=white)](https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c) [![RustFS](https://img.shields.io/badge/RustFS-CE422B?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/advisories/GHSA-pfcq-4gjr-6gjm) [![File Browser](https://img.shields.io/badge/File_Browser-455A64?style=for-the-badge)](https://github.com/advisories/GHSA-v9w4-gm2x-6rvf) [![BentoML](https://img.shields.io/badge/BentoML-000000?style=for-the-badge)](https://github.com/advisories/GHSA-fgv4-6jr3-jgfw) [![Giskard](https://img.shields.io/badge/Giskard-6D28D9?style=for-the-badge)](https://github.com/advisories/GHSA-frv4-x25r-588m) [![libheif](https://img.shields.io/badge/libheif-5C6BC0?style=for-the-badge)](https://github.com/strukturag/libheif/security/advisories/GHSA-9h96-c44j-jpq9) [![pypdf](https://img.shields.io/badge/pypdf-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/advisories/GHSA-3crg-w4f6-42mx) |
 | **Web, proxy and applications** | [![pyLoad](https://img.shields.io/badge/pyLoad-4A90D9?style=for-the-badge)](https://github.com/advisories/GHSA-7gvf-3w72-p2pg) [![OneUptime](https://img.shields.io/badge/OneUptime-000000?style=for-the-badge)](https://github.com/OneUptime/oneuptime/security/advisories/GHSA-6wc5-rhvj-cx7f) [![Coolify](https://img.shields.io/badge/Coolify-8B5CF6?style=for-the-badge)](https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77) [![Gotenberg](https://img.shields.io/badge/Gotenberg-546E7A?style=for-the-badge)](https://github.com/advisories/GHSA-qmwh-9m9c-h36m) [![Activepieces](https://img.shields.io/badge/Activepieces-6E41E2?style=for-the-badge)](https://github.com/activepieces/activepieces/security/advisories/GHSA-3pfv-m69p-5fv5) [![SiYuan](https://img.shields.io/badge/SiYuan-D23F31?style=for-the-badge)](https://github.com/advisories/GHSA-w95v-4h65-j455) [![NATS](https://img.shields.io/badge/NATS-27AAE1?style=for-the-badge&logo=natsdotio&logoColor=white)](https://github.com/nats-io/nats-server/security/advisories/GHSA-3g5q-cfh2-cq67) [![Statamic](https://img.shields.io/badge/Statamic-FF269E?style=for-the-badge&logo=statamic&logoColor=white)](https://github.com/advisories/GHSA-4jjr-vmv7-wh4w) [![FreeScout](https://img.shields.io/badge/FreeScout-00A8E8?style=for-the-badge)](https://github.com/freescout-help-desk/freescout/security/advisories/GHSA-c9v3-4c59-x5q2) [![Novu](https://img.shields.io/badge/Novu-FF4757?style=for-the-badge)](https://github.com/advisories/GHSA-4x48-cgf9-q33f) [![Wekan](https://img.shields.io/badge/Wekan-1565C0?style=for-the-badge)](https://github.com/wekan/wekan/security/advisories/GHSA-7w2h-g83c-jqrp) [![Soft Serve](https://img.shields.io/badge/Soft_Serve-FF5FD1?style=for-the-badge)](https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f) [![DOMPurify](https://img.shields.io/badge/DOMPurify-CC0000?style=for-the-badge)](https://github.com/advisories/GHSA-h7mw-gpvr-xq4m) [![AVideo](https://img.shields.io/badge/AVideo-E53935?style=for-the-badge)](https://github.com/advisories/GHSA-f359-r3pv-2phf) [![StableLib](https://img.shields.io/badge/StableLib-1B5E20?style=for-the-badge)](https://github.com/advisories/GHSA-x3ff-w252-2g7j) [![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=white)](https://github.com/advisories/GHSA-6x2q-h3cr-8j2h) [![phpseclib](https://img.shields.io/badge/phpseclib-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://github.com/advisories/GHSA-r854-jrxh-36qx) [![Beszel](https://img.shields.io/badge/Beszel-0EA5E9?style=for-the-badge)](https://github.com/advisories/GHSA-5f5r-95pg-xrpm) [![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](https://github.com/advisories/GHSA-88gm-j2wx-58h6) |
 
 ### Upstream, outside the advisory system
@@ -48,6 +44,7 @@ linked individually in the table below.
 | [File Browser #5889](https://github.com/filebrowser/filebrowser/pull/5889) | Directory boundary enforced in rule path matching | Merged |
 | [File Browser #5890](https://github.com/filebrowser/filebrowser/pull/5890) | Default permissions restricted for proxy-auth auto-provisioned users | Merged |
 | [File Browser #5891](https://github.com/filebrowser/filebrowser/pull/5891) | Download permission checked in the resource handler | Merged |
+| [bitbang-cli #10](https://github.com/richlegrand/bitbang-cli/pull/10) | `GO-2026-5942` reachable from the mDNS resolver, not just present in the module graph — a malformed `.local` responder panics the CLI | Merged |
 
 **Credited in someone else's fix**
 
@@ -79,7 +76,7 @@ One advisory carries the credit in prose but not in metadata:
 (CVE-2026-45571)
 reads *"Thanks to @kodareef5, @AyushParkara and @N0zoM1z0 for reporting this to
 the go-git project in three separate reports."* The structured credits list
-the other two. It is not counted in the 61.
+the other two. It is not counted in the 65.
 
 ### Selected findings
 
@@ -175,13 +172,15 @@ cluster-wide read on **every Secret**, so a tenant able to submit
 </td>
 <td width="50%">
 
-**NASA** · [GHSA-r5f5-cv78-6qv8](https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8)
-`HIGH 8.2`
+**NASA** · [GHSA-fvwj-92vj-fg8c](https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c)
+`CRITICAL 9.0`
 
-The C API trampoline in `host.rs` returns `Continue(Some(out_result))` no
-matter what return signature was registered, so a void host call still pushes
-a value onto the operand stack. In a flight-compliant WebAssembly interpreter
-the stack silently desynchronises from what the validator proved.
+A result-typed `if` with no `else` is accepted whenever the then-arm ends
+`unreachable`, so the validator counts a result the interpreter never pushes.
+Repeat it and the operand stack walks off the runtime stack pointer by an
+attacker-chosen offset — host pointers disclosed, writes landing in another
+module's private linear memory. Second stack-desync class in the same
+interpreter, after [GHSA-r5f5-cv78-6qv8](https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8).
 
 </td>
 </tr>
@@ -260,6 +259,32 @@ each survived one. Sole reporter on all three.
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+**Authorizer** · [CVE-2026-35511](https://github.com/advisories/GHSA-29rf-f4vv-pvq6)
+`ZERO-CLICK ATO`
+
+OAuth identities link to an existing account by email without checking that
+the owner ever verified it, and the pre-existing password is never
+invalidated. Register the victim's address, never confirm it, and their
+ordinary Google login hands you persistent password access — no unusual
+action by the victim, no notification that a provider was linked.
+
+</td>
+<td width="50%">
+
+**systemd** · [GHSA-m8q3-73v4-wvg7](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7)
+`LOCAL ROOT` `INCOMPLETE FIX`
+
+The earlier fix validated `ID_SCSI_SERIAL` for control characters and stopped
+there. `ID_WWN` and its two siblings come from the same untrusted VPD page 83
+copy, so a newline still injects a line into `scsi_id --export`, udev imports
+it as a device property, and `SYSTEMD_WANTS=` starts a root unit. Patched
+across four stable series.
+
+</td>
+</tr>
 </table>
 
 ### The data
@@ -268,15 +293,15 @@ each survived one. Sole reporter on all three.
 
 | Critical | High | Medium | Low |
 |:--:|:--:|:--:|:--:|
-| 5 | 33 | 18 | 5 |
-| `█████` | `█████████████████████████████████` | `██████████████████` | `█████` |
+| 6 | 34 | 20 | 5 |
+| `██████` | `██████████████████████████████████` | `████████████████████` | `█████` |
 
 **Ecosystem**
 
-| Go | JavaScript | Python | Rust | PHP | C++ |
-|:--:|:--:|:--:|:--:|:--:|:--:|
-| 32 | 9 | 8 | 6 | 5 | 1 |
-| `████████████████████████████████` | `█████████` | `████████` | `██████` | `█████` | `█` |
+| Go | JavaScript | Python | Rust | PHP | C | C++ |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 34 | 9 | 8 | 7 | 5 | 1 | 1 |
+| `██████████████████████████████████` | `█████████` | `████████` | `███████` | `█████` | `█` | `█` |
 
 **Weaknesses**, as classified by the maintainers in each advisory
 
@@ -286,15 +311,15 @@ each survived one. Sole reporter on all three.
 | [CWE-918](https://cwe.mitre.org/data/definitions/918.html) | Server-side request forgery | [pyLoad](https://github.com/advisories/GHSA-7gvf-3w72-p2pg) · [Novu](https://github.com/advisories/GHSA-4x48-cgf9-q33f) · [SiYuan](https://github.com/advisories/GHSA-w95v-4h65-j455) · [FreeScout](https://github.com/freescout-help-desk/freescout/security/advisories/GHSA-c9v3-4c59-x5q2) · [Soft Serve](https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f) · [AVideo](https://github.com/advisories/GHSA-f359-r3pv-2phf) · [Astro](https://github.com/advisories/GHSA-88gm-j2wx-58h6) |
 | [CWE-862](https://cwe.mitre.org/data/definitions/862.html) | Authorization check missing entirely | [Dgraph](https://github.com/advisories/GHSA-p5rh-vmhp-gvcw) · [OneUptime](https://github.com/OneUptime/oneuptime/security/advisories/GHSA-6wc5-rhvj-cx7f) · [Wekan](https://github.com/wekan/wekan/security/advisories/GHSA-7w2h-g83c-jqrp) · [RustFS](https://github.com/advisories/GHSA-pfcq-4gjr-6gjm) · [File Browser](https://github.com/advisories/GHSA-67cg-cpj7-qgc9) |
 | [CWE-22](https://cwe.mitre.org/data/definitions/22.html) | Path traversal | [gitoxide](https://github.com/advisories/GHSA-p3hw-mv63-rf9w) · [Tekton](https://github.com/advisories/GHSA-rx35-6rhx-7858) · [File Browser](https://github.com/advisories/GHSA-5q48-q4fm-g3m6) · [Poetry](https://github.com/advisories/GHSA-73h3-mf4w-8647) |
+| [CWE-287](https://cwe.mitre.org/data/definitions/287.html) | Authentication can be bypassed | [Authorizer](https://github.com/advisories/GHSA-29rf-f4vv-pvq6) · [ZITADEL](https://github.com/advisories/GHSA-xqxv-4jc2-x56x) · [Pocket ID](https://github.com/advisories/GHSA-hp74-gm6m-2qm5) |
+| [CWE-20](https://cwe.mitre.org/data/definitions/20.html) | Input not validated | [NASA](https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c) · [Composer](https://github.com/advisories/GHSA-gqw4-4w2p-838q) · [oauth2-proxy](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) |
 | [CWE-78](https://cwe.mitre.org/data/definitions/78.html) | OS command injection | [Coolify](https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77) · [Composer](https://github.com/advisories/GHSA-gqw4-4w2p-838q) · [BentoML](https://github.com/advisories/GHSA-fgv4-6jr3-jgfw) |
 | [CWE-200](https://cwe.mitre.org/data/definitions/200.html) | Sensitive information exposed | [gitoxide](https://github.com/advisories/GHSA-p3hw-mv63-rf9w) · [Cilium](https://github.com/advisories/GHSA-gj49-89wh-h4gj) · [External Secrets](https://github.com/advisories/GHSA-r2pg-r6h7-crf3) |
-| [CWE-287](https://cwe.mitre.org/data/definitions/287.html) | Authentication can be bypassed | [ZITADEL](https://github.com/advisories/GHSA-xqxv-4jc2-x56x) · [Pocket ID](https://github.com/advisories/GHSA-hp74-gm6m-2qm5) |
 | [CWE-296](https://cwe.mitre.org/data/definitions/296.html) | Certificate chain not properly followed | [in-toto](https://github.com/in-toto/witness/security/advisories/GHSA-88v8-jcjq-95w5) |
 | [CWE-178](https://cwe.mitre.org/data/definitions/178.html) | Case sensitivity mishandled | [Gotenberg](https://github.com/advisories/GHSA-qmwh-9m9c-h36m) · [python-tuf](https://github.com/advisories/GHSA-qp9x-wp8f-qgjj) |
 | [CWE-208](https://cwe.mitre.org/data/definitions/208.html) | Timing side channel | [Traefik](https://github.com/advisories/GHSA-6x2q-h3cr-8j2h) · [phpseclib](https://github.com/advisories/GHSA-r854-jrxh-36qx) |
-| [CWE-20](https://cwe.mitre.org/data/definitions/20.html) | Input not validated | [Composer](https://github.com/advisories/GHSA-gqw4-4w2p-838q) · [oauth2-proxy](https://github.com/advisories/GHSA-c5c4-8r6x-56w3) |
 
-The 11 classes above account for 40 of 69 classifications; a further 29 classes appear once each, across 40 distinct weaknesses in total.
+The 11 classes above account for 42 of 73 classifications; a further 31 classes appear once each, across 42 distinct weaknesses in total.
 
 ### Incomplete fixes
 
@@ -310,6 +335,7 @@ described as an incomplete fix by the maintainers themselves.
 | [pyLoad](https://github.com/advisories/GHSA-4744-96p5-mp2j) | *"Unprotected `storage_folder` enables arbitrary file write to Flask session store and code execution (Incomplete fix for CVE-2026-33509)"* |
 | [Gotenberg](https://github.com/advisories/GHSA-qmwh-9m9c-h36m) | *"Gotenberg has incomplete fix for ExifTool arbitrary file write: case-insensitive bypass and missing HardLink/SymLink tags"* |
 | [File Browser](https://github.com/advisories/GHSA-7526-j432-6ppp) | Proxy-auth auto-provisioned users inherit Execute permission — the advisory describes it as an incomplete fix for the earlier signup restriction |
+| [systemd](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7) | *"The fix for GHSA-vpfq-8p5f-jcqx added newline/control-character validation before printing `ID_SCSI_SERIAL`, but equivalent validation was not added for `ID_WWN`"* — same VPD page 83 source, same export interface |
 
 One of these — the NATS leafnode crash — survived **two** prior CVE fixes.
 
@@ -335,10 +361,14 @@ unsanitized `commit_sha`, across four injection points. Reported and
 CVE-assigned through
 [huntr](https://huntr.com/bounties/e2e88a0f-a8f6-49c9-94c5-e98dc385f07a);
 [fixed upstream](https://github.com/PrefectHQ/prefect/commit/6a9d9918716ce4ee0297b69f3046f7067ef1faae).
-Not among the 61 below, which are advisory credits only.
+Not among the 65 below, which are advisory credits only.
 
 | Severity | Finding | Detail |
 |:--:|---|---|
+| ![High 8.7](https://img.shields.io/badge/High-8.7-e63946?style=flat-square&labelColor=e63946) | **authorizerdev/authorizer**<br>Trust boundary violation<br><sub>2026-08-14</sub> | `oauth_callback.go` matches an incoming OAuth identity to an existing account by email and links it without ever checking that the original owner verified that address, then marks the email verified and leaves the pre-existing password untouched. An attacker who registers `victim@company.com` and never confirms it keeps password access the moment the real owner signs in through Google — no victim action beyond a normal login, and no notification that a provider was linked.<br><sub>[GHSA-29rf-f4vv-pvq6](https://github.com/advisories/GHSA-29rf-f4vv-pvq6) · [CVE-2026-35511](https://www.cve.org/CVERecord?id=CVE-2026-35511)</sub> |
+| ![Medium 6.4](https://img.shields.io/badge/Medium-6.4-f4d35e?style=flat-square&labelColor=f4d35e) | **systemd/systemd**<br>Property injection<br><sub>2026-08-10</sub> | The fix for GHSA-vpfq-8p5f-jcqx added `utf8_is_valid()` and `string_has_cc()` checks before printing `ID_SCSI_SERIAL`, but `ID_WWN`, `ID_WWN_VENDOR_EXTENSION` and `ID_WWN_WITH_EXTENSION` are copied raw from the same untrusted VPD page 83 data and printed unchecked. A newline in those fields adds a line to `scsi_id --export`, which udev imports as a device property, so a malicious iSCSI or USB target sets `SYSTEMD_WANTS=` and systemd starts a root unit of the attacker's choosing.<br><sub>[GHSA-m8q3-73v4-wvg7](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7)</sub> |
+| ![Critical 9.0](https://img.shields.io/badge/Critical-9.0-7f0000?style=flat-square&labelColor=7f0000) | **nasa/spacewasm**<br>Validation bypass<br><sub>2026-08-05</sub> | `pop_control` in `text.rs` waives the else-arm requirement for a result-typed `if` whenever the then-arm ends `unreachable`, so the false path produces no result while the validator still accounts for one. Repeating the construct walks the operand stack off the runtime stack pointer by an attacker-chosen offset, disclosing live host stack and heap pointers and writing into another module's private linear memory.<br><sub>[GHSA-fvwj-92vj-fg8c](https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c)</sub> |
+| ![Medium](https://img.shields.io/badge/Medium-f4d35e?style=flat-square&labelColor=f4d35e) | **1Panel-dev/KubePi**<br>Missing authentication<br><sub>2026-08-04</sub> | SSO configuration read, write and connectivity-test routes shared the public routing boundary with the login and callback endpoints that must stay unauthenticated, so any caller could inspect or rewrite the global OIDC/SAML configuration. Repointing authentication yields administrator takeover of a console that manages connected Kubernetes clusters, and the connectivity test doubles as a server-side request primitive.<br><sub>[GHSA-wjrh-4j52-c664](https://github.com/1Panel-dev/KubePi/security/advisories/GHSA-wjrh-4j52-c664) · [CVE-2026-65956](https://www.cve.org/CVERecord?id=CVE-2026-65956)</sub> |
 | ![High 7.1](https://img.shields.io/badge/High-7.1-e63946?style=flat-square&labelColor=e63946) | **go-git/go-git**<br>Symlink following<br><sub>2026-07-30</sub> | The `worktreeFilesystem` wrapper rejected dangerous path strings but never resolved existing symlinks, so writing to `s/config` where `s` links to `.git` modifies Git metadata. An attacker who can plant a symlink and trigger a write escapes the worktree.<br><sub>[GHSA-hc8v-wwc9-vgxm](https://github.com/go-git/go-git/security/advisories/GHSA-hc8v-wwc9-vgxm)</sub> |
 | ![Medium 6.4](https://img.shields.io/badge/Medium-6.4-f4d35e?style=flat-square&labelColor=f4d35e) | **charmbracelet/soft-serve**<br>SSRF<br><sub>2026-07-30</sub> | `validateImportRemote` in `pkg/backend/repo.go` only checked for a non-empty host, never calling the existing `ssrf.ValidateURL`, and `pkg/jobs/mirror.go` re-fetched the stored URL unvalidated. Any user with a registered SSH key reaches loopback, RFC1918 and cloud metadata, re-triggered every sync.<br><sub>[GHSA-vpj5-m56f-8h3f](https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f)</sub> |
 | ![High 8.5](https://img.shields.io/badge/High-8.5-e63946?style=flat-square&labelColor=e63946) | **pocket-id/pocket-id**<br>Authorization bypass<br><sub>2026-07-28</sub> | `createTokenFromRefreshToken` verifies the refresh token's signature but never rechecks `user.Disabled`, the authorization record, or group restrictions. Anyone holding a pre-existing refresh token and client credentials keeps issuing tokens indefinitely, so disabling a terminated account no longer revokes downstream OIDC access.<br><sub>[GHSA-w6p7-2fxx-4f44](https://github.com/advisories/GHSA-w6p7-2fxx-4f44) · [CVE-2026-43983](https://nvd.nist.gov/vuln/detail/CVE-2026-43983)</sub> |
@@ -405,7 +435,7 @@ Machine-readable: [advisories.csv](https://github.com/kodareef5/kodareef5/blob/m
 
 <div align="center">
 
-**61 advisories · 46 organizations · 43 CVEs · 47 as sole reporter · 38 high or critical**
+**65 advisories · 48 organizations · 45 CVEs · 51 as sole reporter · 40 high or critical**
 
 [kodareef5@gmail.com](mailto:kodareef5@gmail.com) · [@kodareef5](https://github.com/kodareef5)
 

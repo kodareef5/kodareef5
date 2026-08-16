@@ -7,8 +7,9 @@ File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix fo
 File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-5q48-q4fm-g3m6,https://github.com/filebrowser/filebrowser/pull/5889,2026-07-26
 File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-7526-j432-6ppp,https://github.com/filebrowser/filebrowser/pull/5890,2026-07-26
 File Browser,filebrowser,authored_merged_own_advisory,PR merged,Wrote the fix for his own GHSA-67cg-cpj7-qgc9,https://github.com/filebrowser/filebrowser/pull/5891,2026-07-26
+bitbang-cli,richlegrand,authored_merged,PR merged,"Reachable dnsmessage panic (GO-2026-5942) in mDNS response parsing, golang.org/x/net bumped to v0.57.0",https://github.com/richlegrand/bitbang-cli/pull/10,2026-08-16
 jsrsasign,kjur,release_note,reported by Koda Reef,HIGH: ASN.1 parser infinite loop in getChildIdx (sole),https://github.com/kjur/jsrsasign/releases,2026-07-26
-jsrsasign,kjur,release_note,"reported by Koda Reef, Nicholas Carlini and @Kr0emer",HIGH: DSA universal signature forgery, FIPS 186-4 4.7 boundary check,https://github.com/kjur/jsrsasign/releases,2026-07-26
+jsrsasign,kjur,release_note,"reported by Koda Reef, Nicholas Carlini and @Kr0emer","HIGH: DSA universal signature forgery, FIPS 186-4 4.7 boundary check",https://github.com/kjur/jsrsasign/releases,2026-07-26
 GNOME GLib,GNOME,commit_credit,Based on a report by Koda Reef,D-Bus message length integer arithmetic,https://github.com/GNOME/glib/commit/578a488,2026-07-26
 CloudNativePG,cloudnative-pg,commit_credit,Reported-by: Koda Reef,Escape backslashes and control chars in PostgreSQL config values,https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47,2026-07-26
 CloudNativePG,cloudnative-pg,commit_credit,Suggested-by: Koda Reef,Tighten recovery target validation,https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077,2026-07-26
@@ -17,7 +18,7 @@ nginx,nginx,changelog,Thanks to kodareef5,Constant time secure_link hash compari
 NATS Server,nats-io,release_note,Koda Reef in contributors,Non-CVE fixes in 2.14.3,https://github.com/nats-io/nats-server/releases,2026-07-26
 Headlamp,kubernetes-sigs,release_note,thanks to Koda Reef for reporting the issue,Host header validation for desktop and headless users in v0.42.0,https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0,2026-07-26
 go-git,go-git,advisory_text,Thanks to @kodareef5 ... in three separate reports,Named in the advisory body but absent from structured credits,https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96,2026-07-26
-vim,vim,release,fix shipped,Buffer underflow in vim_fgets(), v9.2.0271 and v9.2.0272,https://github.com/vim/vim/commit/3c0f800,2026-07-26
+vim,vim,release,fix shipped,"Buffer underflow in vim_fgets(), v9.2.0271 and v9.2.0272",https://github.com/vim/vim/commit/3c0f800,2026-07-26
 libevent,libevent,release_note,named in release notes,HTTP header parsing restricted to prevent request smuggling,https://github.com/libevent/libevent/blob/master/ChangeLog,2026-07-26
 libzip,nih-at,thanks_file,kodareef5,Listed in THANKS,https://github.com/nih-at/libzip/blob/main/THANKS,2026-07-26
 libjpeg-turbo,libjpeg-turbo,issue_fixed,issue closed fixed,Signed overflow in JNI arraySize bounds check across six paths,https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877,2026-07-26

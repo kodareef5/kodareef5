@@ -13,9 +13,9 @@ rather than quietly omitting it.
 """
 
 DOMAINS = [
-    ("Cloud native and orchestration",
+    ("Cloud native and infrastructure",
      ["rancher", "cilium", "kata-containers", "tektoncd", "projectcontour",
-      "external-secrets", "open-telemetry"]),
+      "external-secrets", "open-telemetry", "systemd", "1Panel-dev"]),
     ("Supply chain and packaging",
      ["in-toto", "composer", "sigstore", "theupdateframework", "go-git",
       "GitoxideLabs", "python-poetry"]),
@@ -39,6 +39,10 @@ META = {
     "projectcontour":     ("Contour",          "483D8B", None,            "white"),
     "external-secrets":   ("External_Secrets", "326CE5", "kubernetes",    "white"),
     "open-telemetry":     ("OpenTelemetry",    "425CC7", "opentelemetry", "white"),
+    # no simple-icons slug for systemd — checked against slugs.md 2026-08-16.
+    # Asking for one yields a silently logo-less badge, so don't.
+    "systemd":            ("systemd",          "30D475", None,            "white"),
+    "1Panel-dev":         ("KubePi",           "0854C1", "1panel",        "white"),
 
     "in-toto":            ("in--toto",         "6E4C9E", None,            "white"),
     "composer":           ("Composer",         "885630", "composer",      "white"),
@@ -112,6 +116,7 @@ CWE_PLAIN = {
     "CWE-59":  "Symlink followed before file access",
     "CWE-285": "Improper authorization",
     "CWE-613": "Session or token outlives its validity",
+    "CWE-74":  "Untrusted input injected into downstream output",
     "CWE-94":  "Code injection",
     "CWE-77":  "Command injection",
     "CWE-352": "Cross-site request forgery",

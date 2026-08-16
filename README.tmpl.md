@@ -18,10 +18,6 @@ Published record, March 2026 to present.
 published to that database, so the search does not reach them. Each is
 linked individually in the table below.
 
-**Positive Technologies** indexes the record and ranked it
-[**#1,071 of 55,057** researchers](https://dbugs.ptsecurity.com/researchers/Kodareef5),
-202.2 total CVSS across 27 indexed CVEs, checked 2026-07-30.
-
 ### Credited in
 
 {{ORG_BADGES}}
@@ -38,6 +34,7 @@ linked individually in the table below.
 | [File Browser #5889](https://github.com/filebrowser/filebrowser/pull/5889) | Directory boundary enforced in rule path matching | Merged |
 | [File Browser #5890](https://github.com/filebrowser/filebrowser/pull/5890) | Default permissions restricted for proxy-auth auto-provisioned users | Merged |
 | [File Browser #5891](https://github.com/filebrowser/filebrowser/pull/5891) | Download permission checked in the resource handler | Merged |
+| [bitbang-cli #10](https://github.com/richlegrand/bitbang-cli/pull/10) | `GO-2026-5942` reachable from the mDNS resolver, not just present in the module graph — a malformed `.local` responder panics the CLI | Merged |
 
 **Credited in someone else's fix**
 
@@ -165,13 +162,15 @@ cluster-wide read on **every Secret**, so a tenant able to submit
 </td>
 <td width="50%">
 
-**NASA** · [GHSA-r5f5-cv78-6qv8](https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8)
-`HIGH 8.2`
+**NASA** · [GHSA-fvwj-92vj-fg8c](https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c)
+`CRITICAL 9.0`
 
-The C API trampoline in `host.rs` returns `Continue(Some(out_result))` no
-matter what return signature was registered, so a void host call still pushes
-a value onto the operand stack. In a flight-compliant WebAssembly interpreter
-the stack silently desynchronises from what the validator proved.
+A result-typed `if` with no `else` is accepted whenever the then-arm ends
+`unreachable`, so the validator counts a result the interpreter never pushes.
+Repeat it and the operand stack walks off the runtime stack pointer by an
+attacker-chosen offset — host pointers disclosed, writes landing in another
+module's private linear memory. Second stack-desync class in the same
+interpreter, after [GHSA-r5f5-cv78-6qv8](https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8).
 
 </td>
 </tr>
@@ -250,6 +249,32 @@ each survived one. Sole reporter on all three.
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+**Authorizer** · [CVE-2026-35511](https://github.com/advisories/GHSA-29rf-f4vv-pvq6)
+`ZERO-CLICK ATO`
+
+OAuth identities link to an existing account by email without checking that
+the owner ever verified it, and the pre-existing password is never
+invalidated. Register the victim's address, never confirm it, and their
+ordinary Google login hands you persistent password access — no unusual
+action by the victim, no notification that a provider was linked.
+
+</td>
+<td width="50%">
+
+**systemd** · [GHSA-m8q3-73v4-wvg7](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7)
+`LOCAL ROOT` `INCOMPLETE FIX`
+
+The earlier fix validated `ID_SCSI_SERIAL` for control characters and stopped
+there. `ID_WWN` and its two siblings come from the same untrusted VPD page 83
+copy, so a newline still injects a line into `scsi_id --export`, udev imports
+it as a device property, and `SYSTEMD_WANTS=` starts a root unit. Patched
+across four stable series.
+
+</td>
+</tr>
 </table>
 
 ### The data
@@ -280,6 +305,7 @@ described as an incomplete fix by the maintainers themselves.
 | [pyLoad](https://github.com/advisories/GHSA-4744-96p5-mp2j) | *"Unprotected `storage_folder` enables arbitrary file write to Flask session store and code execution (Incomplete fix for CVE-2026-33509)"* |
 | [Gotenberg](https://github.com/advisories/GHSA-qmwh-9m9c-h36m) | *"Gotenberg has incomplete fix for ExifTool arbitrary file write: case-insensitive bypass and missing HardLink/SymLink tags"* |
 | [File Browser](https://github.com/advisories/GHSA-7526-j432-6ppp) | Proxy-auth auto-provisioned users inherit Execute permission — the advisory describes it as an incomplete fix for the earlier signup restriction |
+| [systemd](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7) | *"The fix for GHSA-vpfq-8p5f-jcqx added newline/control-character validation before printing `ID_SCSI_SERIAL`, but equivalent validation was not added for `ID_WWN`"* — same VPD page 83 source, same export interface |
 
 One of these — the NATS leafnode crash — survived **two** prior CVE fixes.
 
