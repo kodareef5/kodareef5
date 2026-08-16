@@ -62,7 +62,7 @@ linked individually in the table below.
 | [vim](https://github.com/vim/vim/commit/3c0f800) | Buffer underflow in `vim_fgets()` | *"Solution: Ensure size is always greater than 1 (Koda Reef)"*, v9.2.0271 |
 | [libevent](https://github.com/libevent/libevent/blob/master/ChangeLog) | HTTP header parsing restricted against request smuggling | Release notes |
 | [libzip](https://github.com/nih-at/libzip/blob/main/THANKS) | | THANKS |
-| [simple-git](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md) | `GIT_CONFIG_COUNT` injection | Changelog |
+| [simple-git](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md) 3.36.0 | `GIT_CONFIG_COUNT` env vars and `--template` / `merge` config keys added to the exploitable-key list | *"Thanks to @kodareef5 for identifying the need to block `GIT_CONFIG_COUNT`"* |
 | [authentik](https://docs.goauthentik.io/security/cves/CVE-2026-40165) | SAML NameID truncation | Vendor CVE page |
 | [Red Hat](https://access.redhat.com/security/cve/CVE-2026-40938) | Five errata across OpenShift product lines | Downstream |
 

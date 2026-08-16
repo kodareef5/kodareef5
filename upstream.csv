@@ -14,6 +14,7 @@ GNOME GLib,GNOME,commit_credit,Based on a report by Koda Reef,D-Bus message leng
 CloudNativePG,cloudnative-pg,commit_credit,Reported-by: Koda Reef,Escape backslashes and control chars in PostgreSQL config values,https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47,2026-07-26
 CloudNativePG,cloudnative-pg,commit_credit,Suggested-by: Koda Reef,Tighten recovery target validation,https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077,2026-07-26
 lighttpd,lighttpd,commit_credit,(thx kodareef5),mod_maxminddb snprintf return value bound,https://github.com/lighttpd/lighttpd1.4/commit/904a267,2026-07-26
+simple-git,steveukx,changelog,Thanks to @kodareef5 for identifying the need to block GIT_CONFIG_COUNT environment variables and --template / merge related config,"Blocked GIT_CONFIG_COUNT env vars and --template / merge config keys as exploitable, in 3.36.0",https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md,2026-08-16
 nginx,nginx,changelog,Thanks to kodareef5,Constant time secure_link hash comparison in 1.31.2,https://nginx.org/en/CHANGES,2026-07-26
 NATS Server,nats-io,release_note,Koda Reef in contributors,Non-CVE fixes in 2.14.3,https://github.com/nats-io/nats-server/releases,2026-07-26
 Headlamp,kubernetes-sigs,release_note,thanks to Koda Reef for reporting the issue,Host header validation for desktop and headless users in v0.42.0,https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0,2026-07-26
