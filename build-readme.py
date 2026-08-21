@@ -39,6 +39,7 @@ import json
 import pathlib
 import re
 import sys
+from urllib.parse import quote
 
 from orgs import CWE_PLAIN, DOMAINS, META
 
@@ -347,16 +348,28 @@ def render_featured(config, by_ghsa):
     return "\n".join(lines)
 
 
-def render_count_table(counter, labels=None):
+def shield_slug(value):
+    value = str(value).replace("-", "--").replace(" ", "_")
+    return quote(value, safe="_-")
+
+
+def render_mix_badges(counter, labels=None, colours=None):
     labels = labels or {}
-    if labels:
-        keys = [key for key in SEV_ORDER if key in counter]
-    else:
-        keys = [key for key, _ in counter.most_common()]
-    lines = ["| Category | Findings |", "|---|---:|"]
+    colours = colours or {}
+    keys = (
+        [key for key in SEV_ORDER if key in counter]
+        if labels
+        else [key for key, _ in counter.most_common()]
+    )
+    badges = []
     for key in keys:
-        lines.append(f"| {md_cell(labels.get(key, key))} | {counter[key]} |")
-    return "\n".join(lines)
+        label = labels.get(key, key)
+        colour = colours.get(key, "6c757d")
+        badges.append(
+            f"![{label} {counter[key]}](https://img.shields.io/badge/"
+            f"{shield_slug(label)}-{counter[key]}-{colour}?style=flat-square)"
+        )
+    return " ".join(badges)
 
 
 def render_cwe_table(rows):
@@ -523,36 +536,33 @@ def render_standalone(config):
     return "\n".join(lines)
 
 
-def render_advisory_table(rows):
-    lines = ["| Severity | Finding | Detail |", "|:--:|---|---|"]
-    for row in rows:
-        severity = SEV_LABEL[row["severity"]]
-        colour = SEV_BADGE[row["severity"]]
-        score = str(row.get("cvss") or "").strip()
-        if score:
-            path = f"{severity}-{score}-{colour}"
-            alt = f"{severity} {score}"
-        else:
-            path = f"{severity}-{colour}"
-            alt = severity
-        badge = (
-            f"![{alt}](https://img.shields.io/badge/{path}"
-            f"?style=flat-square&labelColor={colour})"
+def render_advisory_ledger(rows):
+    lines = []
+    for severity in SEV_ORDER:
+        section = sorted(
+            (row for row in rows if row["severity"] == severity),
+            key=lambda row: row["published"],
+            reverse=True,
         )
-        identifiers = identifier_links(row)
-        if row.get("fix_pr"):
-            repository, number = row["fix_pr"].rsplit("#", 1)
-            identifiers += (
-                f" · fix [#{number}](https://github.com/{repository}/pull/{number})"
+        lines.append(f"### {SEV_LABEL[severity]} ({len(section)})")
+        lines.append("")
+        for row in section:
+            score = str(row.get("cvss") or "").strip()
+            score_text = f" · CVSS {score}" if score else ""
+            identifiers = identifier_links(row)
+            if row.get("fix_pr"):
+                repository, number = row["fix_pr"].rsplit("#", 1)
+                identifiers += (
+                    f" · fix [#{number}](https://github.com/{repository}/pull/{number})"
+                )
+            detail = md_cell(row.get("tldr") or row["summary"].strip().rstrip("."))
+            lines.append(
+                f"- **{md_cell(row['repo'])}** · {md_cell(row['class'])}"
+                f"{score_text} · `{md_cell(row['published'])}`"
+                f"<br>{detail}"
+                f"<br><sub>{identifiers}</sub>"
             )
-        detail = md_cell(row.get("tldr") or row["summary"].strip().rstrip("."))
-        finding = (
-            f"**{md_cell(row['repo'])}**<br>{md_cell(row['class'])}"
-            f"<br><sub>{md_cell(row['published'])}</sub>"
-        )
-        lines.append(
-            f"| {badge} | {finding} | {detail}<br><sub>{identifiers}</sub> |"
-        )
+            lines.append("")
     return "\n".join(lines)
 
 
@@ -566,15 +576,15 @@ def render(rows, upstream, config, template):
         "STAT_BADGES": render_stat_badges(f),
         "SEARCH_SCOPE": render_search_scope(f),
         "ORG_BADGES": render_org_badges(rows),
-        "SEVERITY_TABLE": render_count_table(f["sev"], SEV_LABEL),
-        "ECOSYSTEM_TABLE": render_count_table(f["eco"]),
+        "SEVERITY_MIX": render_mix_badges(f["sev"], SEV_LABEL, SEV_BADGE),
+        "ECOSYSTEM_MIX": render_mix_badges(f["eco"]),
         "CWE_TABLE": render_cwe_table(rows),
         "INCOMPLETE_FIXES": render_incomplete_fixes(config, by_ghsa),
         "MERGED_PATCHES": patches,
         "UPSTREAM_RECORDS": upstream_records,
         "COVERAGE": render_coverage(config, by_ghsa),
         "STANDALONE_FINDINGS": render_standalone(config),
-        "ADVISORY_TABLE": render_advisory_table(rows),
+        "ADVISORY_LEDGER": render_advisory_ledger(rows),
     }
 
     found = re.findall(r"\{\{([A-Z_]+)\}\}", template)

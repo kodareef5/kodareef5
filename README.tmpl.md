@@ -2,10 +2,6 @@
 
 Published security research in open-source software.
 
-## Selected research
-
-{{FEATURED_FINDINGS}}
-
 ## Published record
 
 <div align="center">
@@ -20,17 +16,21 @@ Published security research in open-source software.
 
 {{ORG_BADGES}}
 
-### Distribution
+## Selected research
+
+{{FEATURED_FINDINGS}}
+
+## Research mix
 
 **Severity**
 
-{{SEVERITY_TABLE}}
+{{SEVERITY_MIX}}
 
-**Ecosystem**
+**Ecosystems**
 
-{{ECOSYSTEM_TABLE}}
+{{ECOSYSTEM_MIX}}
 
-**Recurring weaknesses**
+### Recurring weaknesses
 
 {{CWE_TABLE}}
 
@@ -66,7 +66,9 @@ Not included in the advisory totals.
 
 ### GitHub advisories
 
-{{ADVISORY_TABLE}}
+Grouped by published severity; newest first within each group.
+
+{{ADVISORY_LEDGER}}
 
 ## Data
 
