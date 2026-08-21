@@ -59,13 +59,43 @@ SEV_LABEL = {
     "low": "Low",
 }
 SEV_ORDER = ["critical", "high", "medium", "low"]
-BADGE_COLOR = "8b0000"
 SEV_BADGE = {
-    "critical": "7f0000",
-    "high": "e63946",
-    "medium": "f4d35e",
-    "low": "adb5bd",
+    "critical": "b91c1c",
+    "high": "ea580c",
+    "medium": "ca8a04",
+    "low": "64748b",
 }
+SEV_LABEL_BADGE = {
+    "critical": "7f1d1d",
+    "high": "9a3412",
+    "medium": "854d0e",
+    "low": "334155",
+}
+ECO_BADGE = {
+    "Go": "00add8",
+    "JavaScript": "b7791f",
+    "Python": "3776ab",
+    "Rust": "b7410e",
+    "PHP": "777bb4",
+    "C": "00599c",
+    "C++": "659ad2",
+}
+ECO_LOGO = {
+    "Go": ("go", "white"),
+    "JavaScript": ("javascript", "white"),
+    "Python": ("python", "white"),
+    "Rust": ("rust", "white"),
+    "PHP": ("php", "white"),
+    "C": ("c", "white"),
+    "C++": ("cplusplus", "white"),
+}
+STAT_BADGES = [
+    ("ADVISORIES", "total", "e63946", "#github-advisories"),
+    ("ORGANIZATIONS", "orgs", "00a6a6", "#projects"),
+    ("CVEs", "cves", "3a86ff", "#github-advisories"),
+    ("SOLE REPORTER", "sole", "8338ec", "#github-advisories"),
+    ("HIGH + CRITICAL", "hicrit", "ff6b35", "#github-advisories"),
+]
 
 PATCH_KINDS = {"authored_merged", "authored_merged_own_advisory"}
 RECORD_KINDS = {
@@ -297,42 +327,136 @@ def md_link(label, url):
     return f"[{md_label(label)}]({url})"
 
 
-def identifier_links(row):
+def shield_slug(value):
+    value = str(value).replace("-", "--").replace(" ", "_")
+    return quote(value, safe="_-")
+
+
+def badge(
+    label,
+    message,
+    colour,
+    target=None,
+    *,
+    style="flat-square",
+    label_colour="24292f",
+    logo=None,
+    logo_colour="white",
+):
+    alt = f"{label} {message}".strip()
+    params = [f"style={style}"]
+    if label_colour:
+        params.append(f"labelColor={label_colour}")
+    if logo:
+        params.extend([f"logo={quote(logo)}", f"logoColor={quote(logo_colour)}"])
+    image = (
+        f"![{md_label(alt)}](https://img.shields.io/badge/"
+        f"{shield_slug(label)}-{shield_slug(message)}-{colour}?{'&'.join(params)})"
+    )
+    return f"[{image}]({target})" if target else image
+
+
+def solid_badge(
+    text,
+    colour,
+    target=None,
+    *,
+    style="flat-square",
+    logo=None,
+    logo_colour="white",
+):
+    params = [f"style={style}"]
+    if logo:
+        params.extend([f"logo={quote(logo)}", f"logoColor={quote(logo_colour)}"])
+    image = (
+        f"![{md_label(text)}](https://img.shields.io/badge/"
+        f"{shield_slug(text)}-{colour}?{'&'.join(params)})"
+    )
+    return f"[{image}]({target})" if target else image
+
+
+def record_badge(identifier, url):
+    if identifier.startswith("CVE-"):
+        return badge(
+            "CVE",
+            identifier.removeprefix("CVE-"),
+            "e63946",
+            url,
+            label_colour="9b1c31",
+        )
+    if identifier.startswith("GHSA-"):
+        return badge(
+            "GHSA",
+            identifier.removeprefix("GHSA-"),
+            "8b5cf6",
+            url,
+            label_colour="5b21b6",
+        )
+    if identifier.lower().startswith("commit "):
+        return badge(
+            "COMMIT",
+            identifier.split(" ", 1)[1],
+            "2da44e",
+            url,
+            label_colour="166534",
+        )
+    return solid_badge(identifier, "0969da", url)
+
+
+def identifier_badges(row):
     links = []
     if row["cve"]:
-        links.append(md_link(row["cve"], row["cve_url"]))
-    links.append(md_link(row["ghsa"], row["advisory_url"]))
-    return " · ".join(links)
+        links.append(record_badge(row["cve"], row["cve_url"]))
+    links.append(record_badge(row["ghsa"], row["advisory_url"]))
+    return " ".join(links)
 
 
-def severity_text(row):
-    result = SEV_LABEL[row["severity"]]
+def severity_badge(row):
     score = str(row.get("cvss") or "").strip()
-    return f"{result} {score}" if score else result
+    if not score:
+        return solid_badge(SEV_LABEL[row["severity"]], SEV_BADGE[row["severity"]])
+    return badge(
+        SEV_LABEL[row["severity"]],
+        score,
+        SEV_BADGE[row["severity"]],
+        label_colour=SEV_LABEL_BADGE[row["severity"]],
+    )
 
 
 def render_stat_badges(f):
     return "\n".join(
-        f"![{label}](https://img.shields.io/badge/{slug}-{f[key]}-{BADGE_COLOR}?style=flat-square)"
-        for label, slug, key in [
-            ("advisories", "advisories", "total"),
-            ("organizations", "organizations", "orgs"),
-            ("CVEs", "CVEs", "cves"),
-            ("sole reporter", "sole_reporter", "sole"),
-            ("high or critical", "high_or_critical", "hicrit"),
-        ]
+        badge(label, f[key], colour, target, style="for-the-badge")
+        for label, key, colour, target in STAT_BADGES
     )
 
 
 def render_search_scope(f):
-    return (
+    scope = (
         f"Published {f['start']}–present. "
         f"**{f['global_n']}** advisories are indexed in GitHub's global database "
-        "([all](https://github.com/advisories?query=credit%3Akodareef5) · "
-        "[critical](https://github.com/advisories?query=credit%3Akodareef5+severity%3Acritical) · "
-        "[high](https://github.com/advisories?query=credit%3Akodareef5+severity%3Ahigh)); "
-        f"**{f['repo_n']}** are repository-scoped and linked directly below."
+        f"and **{f['repo_n']}** are repository-scoped and linked directly below."
     )
+    searches = " ".join(
+        [
+            solid_badge(
+                "global index",
+                "0969da",
+                "https://github.com/advisories?query=credit%3Akodareef5",
+                logo="github",
+            ),
+            solid_badge(
+                "critical",
+                SEV_BADGE["critical"],
+                "https://github.com/advisories?query=credit%3Akodareef5+severity%3Acritical",
+            ),
+            solid_badge(
+                "high",
+                SEV_BADGE["high"],
+                "https://github.com/advisories?query=credit%3Akodareef5+severity%3Ahigh",
+            ),
+        ]
+    )
+    return f"{scope}\n\n{searches}"
 
 
 def render_featured(config, by_ghsa):
@@ -340,22 +464,20 @@ def render_featured(config, by_ghsa):
     for ghsa in config["featured"]:
         row = by_ghsa[ghsa]
         finding = (
-            f"**{md_cell(row['repo'])}**<br>{identifier_links(row)}<br>"
-            f"{severity_text(row)} · {md_cell(row['class'])}"
+            f"**{md_link(row['repo'], row['advisory_url'])}**<br>"
+            f"{severity_badge(row)} "
+            f"{solid_badge(row['class'], '0f766e')}<br>"
+            f"{identifier_badges(row)}"
         )
         detail = md_cell(row.get("tldr") or row["summary"])
         lines.append(f"| {finding} | {detail} |")
     return "\n".join(lines)
 
 
-def shield_slug(value):
-    value = str(value).replace("-", "--").replace(" ", "_")
-    return quote(value, safe="_-")
-
-
-def render_mix_badges(counter, labels=None, colours=None):
+def render_mix_badges(counter, labels=None, colours=None, logos=None):
     labels = labels or {}
     colours = colours or {}
+    logos = logos or {}
     keys = (
         [key for key in SEV_ORDER if key in counter]
         if labels
@@ -365,9 +487,15 @@ def render_mix_badges(counter, labels=None, colours=None):
     for key in keys:
         label = labels.get(key, key)
         colour = colours.get(key, "6c757d")
+        logo, logo_colour = logos.get(key, (None, "white"))
         badges.append(
-            f"![{label} {counter[key]}](https://img.shields.io/badge/"
-            f"{shield_slug(label)}-{counter[key]}-{colour}?style=flat-square)"
+            badge(
+                label,
+                counter[key],
+                colour,
+                logo=logo,
+                logo_colour=logo_colour,
+            )
         )
     return " ".join(badges)
 
@@ -382,7 +510,7 @@ def render_cwe_table(rows):
                 counts[cwe] += 1
                 cwe_rows[cwe].append(row)
 
-    lines = ["| Weakness | Description | Found in |", "|---|---|---|"]
+    lines = ["| Pattern | Seen in |", "|---|---|"]
     shown = 0
     repeated = 0
     for cwe, count in counts.most_common():
@@ -398,13 +526,25 @@ def render_cwe_table(rows):
             if row["org"] in seen:
                 continue
             seen.add(row["org"])
-            label = META.get(row["org"], (row["org"],))[0]
+            label, colour, logo, logo_colour = META.get(
+                row["org"], (row["org"], "6c757d", None, "white")
+            )
             label = label.replace("_", " ").replace("--", "-")
-            projects.append(md_link(label, row["advisory_url"]))
-        lines.append(
-            f"| [{cwe}](https://cwe.mitre.org/data/definitions/{number}.html) | "
-            f"{md_cell(description)} | {' · '.join(projects)} |"
+            projects.append(
+                solid_badge(
+                    label,
+                    colour,
+                    row["advisory_url"],
+                    logo=logo,
+                    logo_colour=logo_colour,
+                )
+            )
+        cwe_url = f"https://cwe.mitre.org/data/definitions/{number}.html"
+        weakness = (
+            f"{badge('CWE', number, 'd97706', cwe_url, label_colour='92400e')}"
+            f"<br>{md_cell(description)}"
         )
+        lines.append(f"| {weakness} | {' '.join(projects)} |")
         shown += 1
         repeated += count
 
@@ -472,9 +612,12 @@ def render_incomplete_fixes(config, by_ghsa):
     lines = ["| Finding | Earlier issue | What remained |", "|---|---|---|"]
     for entry in config["incomplete_fixes"]:
         row = by_ghsa[entry["advisory"]]
-        finding = f"**{md_cell(row['repo'])}**<br>{identifier_links(row)}"
-        predecessors = " · ".join(
-            md_link(item["id"], item["url"]) for item in entry["predecessors"]
+        finding = (
+            f"**{md_link(row['repo'], row['advisory_url'])}**<br>"
+            f"{identifier_badges(row)}"
+        )
+        predecessors = " ".join(
+            record_badge(item["id"], item["url"]) for item in entry["predecessors"]
         )
         lines.append(
             f"| {finding} | {predecessors} | {md_cell(entry['relationship'])} |"
@@ -482,14 +625,16 @@ def render_incomplete_fixes(config, by_ghsa):
     return "\n".join(lines)
 
 
-def render_upstream_table(rows):
+def render_upstream_table(rows, colour):
     lines = ["| Project | Change | Record |", "|---|---|---|"]
     for row in rows:
         change = md_cell(row["what"])
         if row.get("reference_url"):
-            change += f"<br><sub>{md_link(row['reference_label'], row['reference_url'])}</sub>"
+            change += (
+                f"<br>{solid_badge(row['reference_label'], '64748b', row['reference_url'])}"
+            )
         lines.append(
-            f"| {md_link(row['project'], row['url'])} | {change} | "
+            f"| {solid_badge(row['project'], colour, row['url'])} | {change} | "
             f"{md_cell(row['credit_text'])} |"
         )
     return "\n".join(lines)
@@ -500,16 +645,23 @@ def render_upstream(upstream):
     records = [row for row in upstream if row["kind"] in RECORD_KINDS]
     if len(patches) + len(records) != len(upstream):
         raise ValueError("not every upstream.csv row was assigned to a table")
-    return render_upstream_table(patches), render_upstream_table(records)
+    return (
+        render_upstream_table(patches, "2da44e"),
+        render_upstream_table(records, "0969da"),
+    )
 
 
 def render_coverage(config, by_ghsa):
     lines = ["| Finding | Sources |", "|---|---|"]
     for entry in config["coverage"]:
         row = by_ghsa[entry["advisory"]]
-        finding = f"**{md_cell(row['repo'])}**<br>{identifier_links(row)}"
-        sources = " · ".join(
-            md_link(source["label"], source["url"]) for source in entry["sources"]
+        finding = (
+            f"**{md_link(row['repo'], row['advisory_url'])}**<br>"
+            f"{identifier_badges(row)}"
+        )
+        sources = " ".join(
+            solid_badge(source["label"], "0969da", source["url"])
+            for source in entry["sources"]
         )
         lines.append(f"| {finding} | {sources} |")
     return "\n".join(lines)
@@ -520,18 +672,19 @@ def render_standalone(config):
     for entry in config["standalone_findings"]:
         finding = (
             f"**{md_cell(entry['project'])}**<br>"
-            f"{md_link(entry['identifier'], entry['record_url'])}<br>"
-            f"{SEV_LABEL[entry['severity']]} · {md_cell(entry['class'])}"
+            f"{record_badge(entry['identifier'], entry['record_url'])}<br>"
+            f"{solid_badge(SEV_LABEL[entry['severity']], SEV_BADGE[entry['severity']])} "
+            f"{solid_badge(entry['class'], '0f766e')}"
         )
-        sources = " · ".join(
+        sources = " ".join(
             [
-                md_link(entry["report"]["label"], entry["report"]["url"]),
-                md_link(entry["fix"]["label"], entry["fix"]["url"]),
+                solid_badge(entry["report"]["label"], "0969da", entry["report"]["url"]),
+                solid_badge(entry["fix"]["label"], "2da44e", entry["fix"]["url"]),
             ]
         )
         lines.append(
             f"| {finding} | {md_cell(entry['summary'])}<br>"
-            f"{md_cell(entry['credit'])}<br><sub>{sources}</sub> |"
+            f"{md_cell(entry['credit'])}<br>{sources} |"
         )
     return "\n".join(lines)
 
@@ -544,23 +697,40 @@ def render_advisory_ledger(rows):
             key=lambda row: row["published"],
             reverse=True,
         )
-        lines.append(f"### {SEV_LABEL[severity]} ({len(section)})")
+        lines.append(f"### {SEV_LABEL[severity]} · {len(section)} findings")
         lines.append("")
         for row in section:
             score = str(row.get("cvss") or "").strip()
-            score_text = f" · CVSS {score}" if score else ""
-            identifiers = identifier_links(row)
+            score_badge = (
+                badge(
+                    "CVSS",
+                    score,
+                    SEV_BADGE[severity],
+                    label_colour=SEV_LABEL_BADGE[severity],
+                )
+                if score
+                else ""
+            )
+            identifiers = identifier_badges(row)
             if row.get("fix_pr"):
                 repository, number = row["fix_pr"].rsplit("#", 1)
                 identifiers += (
-                    f" · fix [#{number}](https://github.com/{repository}/pull/{number})"
+                    " "
+                    + badge(
+                        "PR",
+                        f"#{number}",
+                        "2da44e",
+                        f"https://github.com/{repository}/pull/{number}",
+                        label_colour="166534",
+                    )
                 )
             detail = md_cell(row.get("tldr") or row["summary"].strip().rstrip("."))
+            record_line = " ".join(part for part in (score_badge, identifiers) if part)
             lines.append(
-                f"- **{md_cell(row['repo'])}** · {md_cell(row['class'])}"
-                f"{score_text} · `{md_cell(row['published'])}`"
+                f"- **{md_link(row['repo'], row['advisory_url'])}** "
+                f"· **{md_cell(row['class'])}** · `{md_cell(row['published'])}`"
                 f"<br>{detail}"
-                f"<br><sub>{identifiers}</sub>"
+                f"<br>{record_line}"
             )
             lines.append("")
     return "\n".join(lines)
@@ -577,7 +747,7 @@ def render(rows, upstream, config, template):
         "SEARCH_SCOPE": render_search_scope(f),
         "ORG_BADGES": render_org_badges(rows),
         "SEVERITY_MIX": render_mix_badges(f["sev"], SEV_LABEL, SEV_BADGE),
-        "ECOSYSTEM_MIX": render_mix_badges(f["eco"]),
+        "ECOSYSTEM_MIX": render_mix_badges(f["eco"], colours=ECO_BADGE, logos=ECO_LOGO),
         "CWE_TABLE": render_cwe_table(rows),
         "INCOMPLETE_FIXES": render_incomplete_fixes(config, by_ghsa),
         "MERGED_PATCHES": patches,

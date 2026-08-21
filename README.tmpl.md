@@ -1,6 +1,6 @@
-# Koda Reef
-
-Published security research in open-source software.
+<p align="center">
+  <img src="./assets/reef-header.svg" width="100%" alt="Koda Reef — published security research in open-source software">
+</p>
 
 ## Published record
 
@@ -20,17 +20,13 @@ Published security research in open-source software.
 
 {{FEATURED_FINDINGS}}
 
-## Research mix
+## Research map
 
-**Severity**
+| Severity | Ecosystems |
+|---|---|
+| {{SEVERITY_MIX}} | {{ECOSYSTEM_MIX}} |
 
-{{SEVERITY_MIX}}
-
-**Ecosystems**
-
-{{ECOSYSTEM_MIX}}
-
-### Recurring weaknesses
+## Recurring weaknesses
 
 {{CWE_TABLE}}
 
@@ -70,8 +66,10 @@ Grouped by published severity; newest first within each group.
 
 {{ADVISORY_LEDGER}}
 
-## Data
+## Data and contact
 
-Machine-readable: [advisories.csv](https://github.com/kodareef5/kodareef5/blob/main/advisories.csv) · [upstream.csv](https://github.com/kodareef5/kodareef5/blob/main/upstream.csv) · [readme-data.json](https://github.com/kodareef5/kodareef5/blob/main/readme-data.json)
-
-Contact: [kodareef5@gmail.com](mailto:kodareef5@gmail.com) · [@kodareef5](https://github.com/kodareef5)
+[![advisories.csv](https://img.shields.io/badge/DATA-advisories.csv-0f766e?style=flat-square&logo=github)](https://github.com/kodareef5/kodareef5/blob/main/advisories.csv)
+[![upstream.csv](https://img.shields.io/badge/DATA-upstream.csv-0f766e?style=flat-square&logo=github)](https://github.com/kodareef5/kodareef5/blob/main/upstream.csv)
+[![readme-data.json](https://img.shields.io/badge/DATA-readme--data.json-0f766e?style=flat-square&logo=github)](https://github.com/kodareef5/kodareef5/blob/main/readme-data.json)
+[![GitHub](https://img.shields.io/badge/GITHUB-%40kodareef5-8338ec?style=flat-square&logo=github)](https://github.com/kodareef5)
+[![Email](https://img.shields.io/badge/EMAIL-kodareef5%40gmail.com-ea4335?style=flat-square&logo=gmail)](mailto:kodareef5@gmail.com)
