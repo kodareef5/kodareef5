@@ -1,0 +1,186 @@
+{
+  "featured": [
+    "GHSA-p5rh-vmhp-gvcw",
+    "GHSA-765j-qfrp-hm3j",
+    "GHSA-gj49-89wh-h4gj",
+    "GHSA-6x2q-h3cr-8j2h",
+    "GHSA-ggg4-v8vp-jxqh",
+    "GHSA-fvwj-92vj-fg8c",
+    "GHSA-29rf-f4vv-pvq6",
+    "GHSA-m8q3-73v4-wvg7"
+  ],
+  "incomplete_fixes": [
+    {
+      "advisory": "GHSA-vv4x-5gvr-chh8",
+      "predecessors": [
+        {
+          "id": "GHSA-pcgw-qcv5-h8ch",
+          "url": "https://github.com/russellhaering/gosaml2/security/advisories/GHSA-pcgw-qcv5-h8ch"
+        }
+      ],
+      "relationship": "The LogoutRequest signature fix was not applied to LogoutResponse validation."
+    },
+    {
+      "advisory": "GHSA-3g5q-cfh2-cq67",
+      "predecessors": [
+        {
+          "id": "CVE-2026-29785",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-29785"
+        },
+        {
+          "id": "CVE-2026-33218",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33218"
+        }
+      ],
+      "relationship": "The pre-auth leafnode crash remained after two earlier fixes."
+    },
+    {
+      "advisory": "GHSA-4g68-3pwx-5vfj",
+      "predecessors": [
+        {
+          "id": "CVE-2026-33217",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33217"
+        }
+      ],
+      "relationship": "The MQTT internal-subject restriction omitted the `$MQTT.deliver.pubrel` family."
+    },
+    {
+      "advisory": "GHSA-p3j5-5hrq-p75h",
+      "predecessors": [
+        {
+          "id": "CVE-2026-33249",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33249"
+        }
+      ],
+      "relationship": "Leafnode traffic still bypassed trace-destination permission checks."
+    },
+    {
+      "advisory": "GHSA-7gvf-3w72-p2pg",
+      "predecessors": [
+        {
+          "id": "CVE-2026-33992",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33992"
+        }
+      ],
+      "relationship": "Redirect targets were not revalidated by the SSRF filter."
+    },
+    {
+      "advisory": "GHSA-4744-96p5-mp2j",
+      "predecessors": [
+        {
+          "id": "CVE-2026-33509",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33509"
+        }
+      ],
+      "relationship": "`storage_folder` remained writable into the Flask session store."
+    },
+    {
+      "advisory": "GHSA-qmwh-9m9c-h36m",
+      "predecessors": [
+        {
+          "id": "commit 043b158",
+          "url": "https://github.com/gotenberg/gotenberg/commit/043b158"
+        }
+      ],
+      "relationship": "The ExifTool blocklist remained case-sensitive and omitted hard-link and symlink tags."
+    },
+    {
+      "advisory": "GHSA-7526-j432-6ppp",
+      "predecessors": [
+        {
+          "id": "GHSA-x8jc-jvqm-pm3f",
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-x8jc-jvqm-pm3f"
+        }
+      ],
+      "relationship": "Signup permissions were restricted, but proxy-auth auto-provisioning kept the old defaults."
+    },
+    {
+      "advisory": "GHSA-m8q3-73v4-wvg7",
+      "predecessors": [
+        {
+          "id": "GHSA-vpfq-8p5f-jcqx",
+          "url": "https://github.com/systemd/systemd/security/advisories/GHSA-vpfq-8p5f-jcqx"
+        }
+      ],
+      "relationship": "Validation covered `ID_SCSI_SERIAL` but not equivalent fields from the same VPD data."
+    }
+  ],
+  "coverage": [
+    {
+      "advisory": "GHSA-p5rh-vmhp-gvcw",
+      "sources": [
+        {
+          "label": "GBHackers",
+          "url": "https://gbhackers.com/critical-dgraph-database-flaw/"
+        },
+        {
+          "label": "Cybersecurity News",
+          "url": "https://cybersecuritynews.com/dgraph-database-vulnerability/"
+        }
+      ]
+    },
+    {
+      "advisory": "GHSA-765j-qfrp-hm3j",
+      "sources": [
+        {
+          "label": "GBHackers",
+          "url": "https://gbhackers.com/critical-vulnerability-in-rancher-fleet/"
+        },
+        {
+          "label": "CyberPress",
+          "url": "https://cyberpress.org/rancher-fleet-flaw/"
+        },
+        {
+          "label": "Lyrie Research",
+          "url": "https://lyrie.ai/research/research/2026-05-07-rancher-fleet-multitenant-secret-leak"
+        }
+      ]
+    },
+    {
+      "advisory": "GHSA-7gvf-3w72-p2pg",
+      "sources": [
+        {
+          "label": "SANS AtRisk XXVI-14",
+          "url": "https://www.sans.org/newsletters/at-risk/xxvi-14"
+        }
+      ]
+    },
+    {
+      "advisory": "GHSA-x4mj-7f9g-29h4",
+      "sources": [
+        {
+          "label": "ZeroPath",
+          "url": "https://zeropath.com/blog/cve-2026-41246-contour-lua-code-injection"
+        }
+      ]
+    },
+    {
+      "advisory": "GHSA-94jr-7pqp-xhcq",
+      "sources": [
+        {
+          "label": "CVEReports",
+          "url": "https://cvereports.com/reports/CVE-2026-40938"
+        }
+      ]
+    }
+  ],
+  "standalone_findings": [
+    {
+      "project": "Prefect",
+      "identifier": "CVE-2026-5366",
+      "severity": "critical",
+      "class": "Git argument injection",
+      "summary": "Deployment pull steps passed an unsanitized `commit_sha` to Git at four call sites.",
+      "credit": "Reported and CVE-assigned through huntr.",
+      "record_url": "https://www.cve.org/CVERecord?id=CVE-2026-5366",
+      "report": {
+        "label": "huntr report",
+        "url": "https://huntr.com/bounties/e2e88a0f-a8f6-49c9-94c5-e98dc385f07a"
+      },
+      "fix": {
+        "label": "upstream fix",
+        "url": "https://github.com/PrefectHQ/prefect/commit/6a9d9918716ce4ee0297b69f3046f7067ef1faae"
+      }
+    }
+  ]
+}

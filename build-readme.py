@@ -1,101 +1,317 @@
 #!/usr/bin/env python3
-"""Render README.md from advisories.csv. Every number on the page is derived.
+"""Render README.md from structured research records.
 
-advisories.csv is the single source of truth. README.tmpl.md holds the prose
-with {{PLACEHOLDER}} markers. Nothing numeric is ever typed by hand — that is
-what produced the 43 -> 50 -> 51 drift across live outreach emails.
+README.tmpl.md owns section order and fixed prose. advisories.csv supplies the
+published advisory record, upstream.csv supplies work outside that ledger, and
+readme-data.json contains small editorial lists that reference those records.
+No project, finding, count, credit, or coverage row is maintained in the
+template.
 
   ./build-readme.py            render README.md
-  ./build-readme.py --check    verify the committed README matches the data
-                               (exit 1 on drift — use this in CI / pre-commit)
+  ./build-readme.py --check    verify the committed README matches the inputs
 
-Refresh the data first with credit-sweep.sh, which finds repo-scoped advisories
-that the global database and every user-level API cannot see.
+WHERE advisories.csv COMES FROM — read this before editing it.
+This file is NOT the source of truth and must not be hand-maintained. It is fed
+from the private record at kodareef5/koda-worklog, whose data/advisories.csv is
+rebuilt from the GitHub advisory API by bin/sync-advisories.sh:
+
+    python3 bin/sync-profile.py ~/dev/kodareef5 --apply   # run in koda-worklog
+    ./build-readme.py                                     # run here
+
+(The old credit-sweep.sh referenced here is gone; sync-advisories.sh absorbed it.)
+
+Treating this CSV as the source of truth is exactly what went wrong before: on
+2026-08-20 the live badges read sole_reporter 51 / high_or_critical 40 while the
+API said 45 / 38, because seven severities and eight sole-reporter flags had been
+hand-set and never rechecked, and two published advisories were missing outright.
+Everything the API is authoritative on — severity, cve, co_credited and the
+sole_reporter derived from it — now comes from sync-profile.py and will be
+overwritten if you edit it here.
+
+These columns are editorial and are NEVER touched by the sync, so they are
+yours to write: class, ecosystem, cwe, tldr, fixed_in, fix_pr, summary,
+published, cvss, advisory_url. A new row arrives with those blank.
 """
-import csv, sys, json, collections, pathlib, re
 
-from orgs import DOMAINS, META, CWE_PLAIN
+import collections
+import csv
+import json
+import pathlib
+import re
+import sys
+
+from orgs import CWE_PLAIN, DOMAINS, META
+
 
 HERE = pathlib.Path(__file__).parent
-CSV = HERE / "advisories.csv"
+ADVISORIES = HERE / "advisories.csv"
+UPSTREAM = HERE / "upstream.csv"
+README_DATA = HERE / "readme-data.json"
 CWE_NAMES = HERE / "cwe_names.json"
 TMPL = HERE / "README.tmpl.md"
 OUT = HERE / "README.md"
 
-SEV_LABEL = {"critical": "Critical", "high": "High", "medium": "Medium", "low": "Low"}
+SEV_LABEL = {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+}
 SEV_ORDER = ["critical", "high", "medium", "low"]
 BADGE_COLOR = "8b0000"
-# Hues chosen for separation, not convention: dark red -> red -> yellow -> grey.
-# The previous palette put High on a red and Medium on an orange, which read as
-# the same colour at a glance.
 SEV_BADGE = {
-    "critical": "7f0000",   # near-black maroon — unmistakable
-    "high":     "e63946",   # clear red, obviously lighter than critical
-    "medium":   "f4d35e",   # true yellow, no orange
-    "low":      "adb5bd",   # light grey
+    "critical": "7f0000",
+    "high": "e63946",
+    "medium": "f4d35e",
+    "low": "adb5bd",
 }
-# Setting labelColor == color makes the badge one solid block instead of the
-# default grey-label/coloured-value split, so severity reads at a glance.
-# Shields picks the text colour by luminance on its own — verified: #fff on
-# 7f0000 and e63946, #333 on f4d35e and adb5bd — so no manual override needed.
-ONES = "zero one two three four five six seven eight nine ten eleven twelve " \
-       "thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
-TENS = {20: "twenty", 30: "thirty", 40: "forty", 50: "fifty",
-        60: "sixty", 70: "seventy", 80: "eighty", 90: "ninety"}
+
+PATCH_KINDS = {"authored_merged", "authored_merged_own_advisory"}
+RECORD_KINDS = {
+    "advisory_text",
+    "changelog",
+    "commit_credit",
+    "errata",
+    "issue_fixed",
+    "release",
+    "release_note",
+    "thanks_file",
+    "vendor_doc",
+}
+CONFIG_KEYS = {
+    "featured",
+    "incomplete_fixes",
+    "coverage",
+    "standalone_findings",
+}
 
 
-def spell(n):
-    """Spell a number the way the surrounding prose does ('forty-five')."""
-    if n < 20:
-        return ONES[n]
-    t, o = divmod(n, 10)
-    base = TENS[t * 10]
-    return base if o == 0 else f"{base}-{ONES[o]}"
+def read_csv(path):
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
 
 
-def bar(n, unit=1):
-    return "`" + "█" * max(1, round(n / unit)) + "`"
+def require_fields(record, fields, where):
+    missing = [name for name in fields if not str(record.get(name) or "").strip()]
+    if missing:
+        raise ValueError(f"{where}: missing required fields: {', '.join(missing)}")
 
 
-def phrase(name):
-    """Lowercase a class name for mid-sentence use, but never an acronym.
-    'Authorization bypass' -> 'authorization bypass';  'SSRF' -> 'SSRF'."""
-    head = name.split()[0]
-    if head.isupper() and len(head) > 1:
-        return name
-    return name[0].lower() + name[1:]
+def validate_url(url, where):
+    if not re.fullmatch(r"https://[^\s]+", str(url or "")):
+        raise ValueError(f"{where}: expected an https URL, got {url!r}")
+
+
+def ensure_unique(values, where):
+    counts = collections.Counter(values)
+    duplicates = sorted(value for value, count in counts.items() if count > 1)
+    if duplicates:
+        raise ValueError(f"{where}: duplicates: {duplicates}")
 
 
 def load():
-    rows = list(csv.DictReader(open(CSV)))
-    rows.sort(key=lambda r: r["published"], reverse=True)
-    return rows
+    rows = read_csv(ADVISORIES)
+    rows.sort(key=lambda row: row["published"], reverse=True)
+    upstream = read_csv(UPSTREAM)
+    config = json.loads(README_DATA.read_text(encoding="utf-8"))
+    validate(rows, upstream, config)
+    return rows, upstream, config
+
+
+def validate(rows, upstream, config):
+    if set(config) != CONFIG_KEYS:
+        missing = sorted(CONFIG_KEYS - set(config))
+        extra = sorted(set(config) - CONFIG_KEYS)
+        raise ValueError(f"readme-data.json keys: missing={missing}, extra={extra}")
+
+    for row_number, row in enumerate(rows, start=2):
+        where = f"advisories.csv:{row_number}"
+        require_fields(
+            row,
+            ["ghsa", "severity", "published", "repo", "org", "advisory_url", "class"],
+            where,
+        )
+        if row["severity"] not in SEV_LABEL:
+            raise ValueError(f"{where}: unknown severity {row['severity']!r}")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", row["published"]):
+            raise ValueError(f"{where}: malformed published date {row['published']!r}")
+        validate_url(row["advisory_url"], f"{where} advisory_url")
+        if row["cve"]:
+            validate_url(row["cve_url"], f"{where} cve_url")
+        if row.get("fix_pr") and not re.fullmatch(r"[^/#]+/[^/#]+#\d+", row["fix_pr"]):
+            raise ValueError(f"{where}: malformed fix_pr {row['fix_pr']!r}")
+
+    ghsa_ids = [row["ghsa"] for row in rows]
+    ensure_unique(ghsa_ids, "advisories.csv ghsa")
+    by_ghsa = {row["ghsa"]: row for row in rows}
+
+    featured = config["featured"]
+    if len(featured) != 8:
+        raise ValueError(f"readme-data.json featured: expected 8 entries, got {len(featured)}")
+    ensure_unique(featured, "readme-data.json featured")
+    unknown = sorted(set(featured) - set(by_ghsa))
+    if unknown:
+        raise ValueError(f"readme-data.json featured: unknown advisories: {unknown}")
+
+    incomplete = config["incomplete_fixes"]
+    incomplete_ids = [entry.get("advisory") for entry in incomplete]
+    ensure_unique(incomplete_ids, "readme-data.json incomplete_fixes")
+    for index, entry in enumerate(incomplete):
+        where = f"readme-data.json incomplete_fixes[{index}]"
+        require_fields(entry, ["advisory", "relationship"], where)
+        if entry["advisory"] not in by_ghsa:
+            raise ValueError(f"{where}: unknown advisory {entry['advisory']!r}")
+        predecessors = entry.get("predecessors")
+        if not isinstance(predecessors, list) or not predecessors:
+            raise ValueError(f"{where}: predecessors must be a non-empty list")
+        predecessor_ids = []
+        for predecessor_index, predecessor in enumerate(predecessors):
+            predecessor_where = f"{where}.predecessors[{predecessor_index}]"
+            require_fields(predecessor, ["id", "url"], predecessor_where)
+            validate_url(predecessor["url"], predecessor_where)
+            predecessor_ids.append(predecessor["id"])
+        ensure_unique(predecessor_ids, f"{where} predecessors")
+
+    coverage = config["coverage"]
+    coverage_ids = [entry.get("advisory") for entry in coverage]
+    ensure_unique(coverage_ids, "readme-data.json coverage")
+    for index, entry in enumerate(coverage):
+        where = f"readme-data.json coverage[{index}]"
+        require_fields(entry, ["advisory"], where)
+        if entry["advisory"] not in by_ghsa:
+            raise ValueError(f"{where}: unknown advisory {entry['advisory']!r}")
+        sources = entry.get("sources")
+        if not isinstance(sources, list) or not sources:
+            raise ValueError(f"{where}: sources must be a non-empty list")
+        source_urls = []
+        for source_index, source in enumerate(sources):
+            source_where = f"{where}.sources[{source_index}]"
+            require_fields(source, ["label", "url"], source_where)
+            validate_url(source["url"], source_where)
+            source_urls.append(source["url"])
+        ensure_unique(source_urls, f"{where} source URLs")
+
+    standalone = config["standalone_findings"]
+    standalone_ids = [entry.get("identifier") for entry in standalone]
+    ensure_unique(standalone_ids, "readme-data.json standalone_findings")
+    advisory_cves = {row["cve"] for row in rows if row["cve"]}
+    overlap = sorted(set(standalone_ids) & advisory_cves)
+    if overlap:
+        raise ValueError(f"standalone findings already present in advisories.csv: {overlap}")
+    for index, entry in enumerate(standalone):
+        where = f"readme-data.json standalone_findings[{index}]"
+        require_fields(
+            entry,
+            [
+                "project",
+                "identifier",
+                "severity",
+                "class",
+                "summary",
+                "credit",
+                "record_url",
+            ],
+            where,
+        )
+        if entry["severity"] not in SEV_LABEL:
+            raise ValueError(f"{where}: unknown severity {entry['severity']!r}")
+        validate_url(entry["record_url"], f"{where} record_url")
+        for source_name in ("report", "fix"):
+            source = entry.get(source_name) or {}
+            require_fields(source, ["label", "url"], f"{where}.{source_name}")
+            validate_url(source["url"], f"{where}.{source_name}")
+
+    recognized_kinds = PATCH_KINDS | RECORD_KINDS
+    for row_number, row in enumerate(upstream, start=2):
+        where = f"upstream.csv:{row_number}"
+        require_fields(
+            row,
+            ["project", "org", "kind", "credit_text", "what", "url", "verified"],
+            where,
+        )
+        if row["kind"] not in recognized_kinds:
+            raise ValueError(f"{where}: unhandled kind {row['kind']!r}")
+        validate_url(row["url"], f"{where} url")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", row["verified"]):
+            raise ValueError(f"{where}: malformed verified date {row['verified']!r}")
+        reference_label = str(row.get("reference_label") or "").strip()
+        reference_url = str(row.get("reference_url") or "").strip()
+        if bool(reference_label) != bool(reference_url):
+            raise ValueError(f"{where}: reference_label and reference_url must appear together")
+        if reference_url:
+            validate_url(reference_url, f"{where} reference_url")
 
 
 def facts(rows):
-    sev = collections.Counter(r["severity"] for r in rows)
-    eco = collections.Counter(r["ecosystem"] for r in rows)
-    f = {
+    severity = collections.Counter(row["severity"] for row in rows)
+    ecosystems = collections.Counter(row["ecosystem"] for row in rows)
+    first_year, first_month, _ = min(row["published"] for row in rows).split("-")
+    month_names = [
+        "",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ]
+    result = {
         "total": len(rows),
-        "orgs": len({r["org"] for r in rows}),
-        "cves": sum(1 for r in rows if r["cve"]),
-        "sole": sum(1 for r in rows if r["sole_reporter"] == "yes"),
-        "hicrit": sev["critical"] + sev["high"],
-        # a global-database advisory lives at /advisories/GHSA-...; a repo-scoped
-        # one lives at /<org>/<repo>/security/advisories/GHSA-... and is invisible
-        # to the global search
-        "global_n": sum(1 for r in rows if "/security/advisories/" not in r["advisory_url"]),
-        "sev": sev, "eco": eco,
+        "orgs": len({row["org"] for row in rows}),
+        "cves": sum(1 for row in rows if row["cve"]),
+        "sole": sum(1 for row in rows if row["sole_reporter"] == "yes"),
+        "hicrit": severity["critical"] + severity["high"],
+        "global_n": sum(
+            1 for row in rows if "/security/advisories/" not in row["advisory_url"]
+        ),
+        "sev": severity,
+        "eco": ecosystems,
+        "start": f"{month_names[int(first_month)]} {first_year}",
     }
-    f["repo_n"] = f["total"] - f["global_n"]
-    return f
+    result["repo_n"] = result["total"] - result["global_n"]
+    return result
 
 
-def render(rows, tmpl):
-    f = facts(rows)
-    sev, eco = f["sev"], f["eco"]
+def md_cell(value):
+    return (
+        str(value or "")
+        .strip()
+        .replace("\r", "")
+        .replace("\n", "<br>")
+        .replace("|", "\\|")
+    )
 
-    badges = "\n".join(
+
+def md_label(value):
+    return md_cell(value).replace("[", "\\[").replace("]", "\\]")
+
+
+def md_link(label, url):
+    return f"[{md_label(label)}]({url})"
+
+
+def identifier_links(row):
+    links = []
+    if row["cve"]:
+        links.append(md_link(row["cve"], row["cve_url"]))
+    links.append(md_link(row["ghsa"], row["advisory_url"]))
+    return " · ".join(links)
+
+
+def severity_text(row):
+    result = SEV_LABEL[row["severity"]]
+    score = str(row.get("cvss") or "").strip()
+    return f"{result} {score}" if score else result
+
+
+def render_stat_badges(f):
+    return "\n".join(
         f"![{label}](https://img.shields.io/badge/{slug}-{f[key]}-{BADGE_COLOR}?style=flat-square)"
         for label, slug, key in [
             ("advisories", "advisories", "total"),
@@ -103,166 +319,305 @@ def render(rows, tmpl):
             ("CVEs", "CVEs", "cves"),
             ("sole reporter", "sole_reporter", "sole"),
             ("high or critical", "high_or_critical", "hicrit"),
-        ])
+        ]
+    )
 
-    sev_tbl = ("| " + " | ".join(SEV_LABEL[s] for s in SEV_ORDER) + " |\n"
-               + "|" + "|".join([":--:"] * 4) + "|\n"
-               + "| " + " | ".join(str(sev[s]) for s in SEV_ORDER) + " |\n"
-               + "| " + " | ".join(bar(sev[s]) for s in SEV_ORDER) + " |")
 
-    ecos = [e for e, _ in eco.most_common()]
-    eco_tbl = ("| " + " | ".join(ecos) + " |\n"
-               + "|" + "|".join([":--:"] * len(ecos)) + "|\n"
-               + "| " + " | ".join(str(eco[e]) for e in ecos) + " |\n"
-               + "| " + " | ".join(bar(eco[e]) for e in ecos) + " |")
+def render_search_scope(f):
+    return (
+        f"Published {f['start']}–present. "
+        f"**{f['global_n']}** advisories are indexed in GitHub's global database "
+        "([all](https://github.com/advisories?query=credit%3Akodareef5) · "
+        "[critical](https://github.com/advisories?query=credit%3Akodareef5+severity%3Acritical) · "
+        "[high](https://github.com/advisories?query=credit%3Akodareef5+severity%3Ahigh)); "
+        f"**{f['repo_n']}** are repository-scoped and linked directly below."
+    )
 
-    # Three columns instead of six. The old layout smushed GHSA, CVE and date
-    # into narrow cells; here the identifiers stack in one column and the
-    # summary gets room to be a sentence.
-    tbl = ["| Severity | Finding | Detail |", "|:--:|---|---|"]
-    for r in rows:
-        sev = SEV_LABEL[r["severity"]]
-        colour = SEV_BADGE[r["severity"]]
-        # two-part badge: severity as the label, CVSS as the value, so the
-        # score lives in the colour column instead of crowding the middle one
-        score = (r.get("cvss") or "").strip()
-        if score:
-            path, alt = f"{sev}-{score}-{colour}", f"{sev} {score}"
-        else:
-            path, alt = f"{sev}-{colour}", sev
-        badge = (f"![{alt}](https://img.shields.io/badge/{path}"
-                 f"?style=flat-square&labelColor={colour})")
-        ids = f"[{r['ghsa']}]({r['advisory_url']})"
-        if r["cve"]:
-            ids += f" · [{r['cve']}]({r['cve_url']})"
-        # reported it AND wrote the merged fix — the pairing that nothing else
-        # on the page makes visible
-        if r.get("fix_pr"):
-            repo_pr, num = r["fix_pr"].rsplit("#", 1)
-            ids += f" · fix [#{num}](https://github.com/{repo_pr}/pull/{num})"
-        # Show the TL;DR only. The advisory's own summary is dropped: the TL;DR
-        # already carries more (mechanism + preconditions), and stacking both
-        # doubled the row height.
-        tldr = (r.get("tldr") or "").strip() or r["summary"].strip().rstrip(".")
-        detail = tldr.replace("|", "\\|")
-        tbl.append(f"| {badge} | **{r['repo']}**<br>{r['class']}<br><sub>{r['published']}</sub> | "
-                   f"{detail}<br><sub>{ids}</sub> |")
 
-    # weakness table: id, plain-English gloss, and who it was found in
-    official = json.loads(CWE_NAMES.read_text()) if CWE_NAMES.exists() else {}
-    cwe = collections.Counter()
-    cwe_orgs = collections.defaultdict(list)
-    for r in rows:
-        for c in (r.get("cwe") or "").split(";"):
-            if c:
-                cwe[c] += 1
-                cwe_orgs[c].append(r)
-    lines = ["| Weakness | | Found in |", "|---|---|---|"]
+def render_featured(config, by_ghsa):
+    lines = ["| Finding | Mechanism and impact |", "|---|---|"]
+    for ghsa in config["featured"]:
+        row = by_ghsa[ghsa]
+        finding = (
+            f"**{md_cell(row['repo'])}**<br>{identifier_links(row)}<br>"
+            f"{severity_text(row)} · {md_cell(row['class'])}"
+        )
+        detail = md_cell(row.get("tldr") or row["summary"])
+        lines.append(f"| {finding} | {detail} |")
+    return "\n".join(lines)
+
+
+def render_count_table(counter, labels=None):
+    labels = labels or {}
+    if labels:
+        keys = [key for key in SEV_ORDER if key in counter]
+    else:
+        keys = [key for key, _ in counter.most_common()]
+    lines = ["| Category | Findings |", "|---|---:|"]
+    for key in keys:
+        lines.append(f"| {md_cell(labels.get(key, key))} | {counter[key]} |")
+    return "\n".join(lines)
+
+
+def render_cwe_table(rows):
+    official = json.loads(CWE_NAMES.read_text(encoding="utf-8")) if CWE_NAMES.exists() else {}
+    counts = collections.Counter()
+    cwe_rows = collections.defaultdict(list)
+    for row in rows:
+        for cwe in (row.get("cwe") or "").split(";"):
+            if cwe:
+                counts[cwe] += 1
+                cwe_rows[cwe].append(row)
+
+    lines = ["| Weakness | Description | Found in |", "|---|---|---|"]
     shown = 0
-    for c, n in cwe.most_common():
-        if n < 2:
-            continue          # singletons are noise in a summary table
-        num = c.split("-")[1]
-        desc = CWE_PLAIN.get(c) or official.get(c, "")
-        seen, links = set(), []
-        for r in sorted(cwe_orgs[c], key=lambda r: SEV_ORDER.index(r["severity"])):
-            if r["org"] in seen:
+    repeated = 0
+    for cwe, count in counts.most_common():
+        if count < 2:
+            continue
+        number = cwe.split("-", 1)[1]
+        description = CWE_PLAIN.get(cwe) or official.get(cwe, "")
+        seen = set()
+        projects = []
+        for row in sorted(
+            cwe_rows[cwe], key=lambda item: SEV_ORDER.index(item["severity"])
+        ):
+            if row["org"] in seen:
                 continue
-            seen.add(r["org"])
-            label = META.get(r["org"], (r["org"],))[0].replace("_", " ").replace("--", "-")
-            links.append(f"[{label}]({r['advisory_url']})")
-        lines.append(f"| [{c}](https://cwe.mitre.org/data/definitions/{num}.html) | "
-                     f"{desc} | {' · '.join(links)} |")
+            seen.add(row["org"])
+            label = META.get(row["org"], (row["org"],))[0]
+            label = label.replace("_", " ").replace("--", "-")
+            projects.append(md_link(label, row["advisory_url"]))
+        lines.append(
+            f"| [{cwe}](https://cwe.mitre.org/data/definitions/{number}.html) | "
+            f"{md_cell(description)} | {' · '.join(projects)} |"
+        )
         shown += 1
-    singles = sum(1 for _, n in cwe.items() if n == 1)
-    cwe_tbl = "\n".join(lines)
-    cwe_tbl += (f"\n\nThe {shown} classes above account for {sum(n for _, n in cwe.most_common() if n >= 2)} "
-                f"of {sum(cwe.values())} classifications; a further {singles} classes appear once each, "
-                f"across {len(cwe)} distinct weaknesses in total.")
+        repeated += count
 
-    # --- org badges, grouped by domain -------------------------------------
-    # Grouping is editorial (orgs.py); membership and links are generated, so
-    # a new org can never be silently dropped from the page.
+    singles = sum(1 for count in counts.values() if count == 1)
+    lines.append("")
+    lines.append(
+        f"{shown} recurring classes cover {repeated} of {sum(counts.values())} "
+        f"classifications. {singles} more appear once; {len(counts)} distinct classes total."
+    )
+    return "\n".join(lines)
+
+
+def render_org_badges(rows):
     by_org = collections.defaultdict(list)
-    for r in rows:
-        by_org[r["org"]].append(r)
-    grouped = {o for _, os_ in DOMAINS for o in os_}
+    for row in rows:
+        by_org[row["org"]].append(row)
+
+    grouped = {org for _, organizations in DOMAINS for org in organizations}
     missing = set(by_org) - grouped
     unknown = grouped - set(by_org)
-    assert not missing, f"orgs in CSV but not grouped in orgs.py: {sorted(missing)}"
+    if missing:
+        raise ValueError(f"orgs in advisories.csv but not grouped in orgs.py: {sorted(missing)}")
     if unknown:
         print(f"  note: grouped orgs with no advisory: {sorted(unknown)}", file=sys.stderr)
 
-    # One table row per domain. A grid keeps this compact; ten separate
-    # headed sections read as confetti.
-    MIN_DOMAIN = 5
-    table_rows, badged_n = [], 0
-    for title, members in DOMAINS:
-        present = [o for o in members if o in by_org]
+    lines = ["| | |", "|---|---|"]
+    for title, organizations in DOMAINS:
+        present = [org for org in organizations if org in by_org]
         if not present:
             continue
-        assert len(present) >= MIN_DOMAIN, (
-            f"domain {title!r} has only {len(present)} orgs — merge it into "
-            f"another (minimum {MIN_DOMAIN})")
-        # strongest finding first within each domain
-        present.sort(key=lambda o: (
-            min(SEV_ORDER.index(r["severity"]) for r in by_org[o]),
-            -max((float(r["cvss"]) for r in by_org[o] if r["cvss"]), default=0)))
-        cells = []
-        for o in present:
-            label, colour, logo, logo_col = META[o]
-            best = min(by_org[o], key=lambda r: (SEV_ORDER.index(r["severity"]),
-                                                 -float(r["cvss"] or 0)))
-            logo_q = f"&logo={logo}&logoColor={logo_col}" if logo else ""
-            cells.append(
-                f"[![{label.replace('_', ' ').replace('--', '-')}]"
-                f"(https://img.shields.io/badge/{label}-{colour}?style=for-the-badge{logo_q})]"
-                f"({best['advisory_url']})")
-            badged_n += 1
-        table_rows.append(f"| **{title}** | {' '.join(cells)} |")
-    org_badges = "| | |\n|---|---|\n" + "\n".join(table_rows)
+        if len(present) < 5:
+            raise ValueError(
+                f"domain {title!r} has only {len(present)} orgs; merge it into another"
+            )
+        present.sort(
+            key=lambda org: (
+                min(SEV_ORDER.index(row["severity"]) for row in by_org[org]),
+                -max(
+                    (float(row["cvss"]) for row in by_org[org] if row["cvss"]),
+                    default=0,
+                ),
+            )
+        )
+        badges = []
+        for org in present:
+            label, colour, logo, logo_colour = META[org]
+            best = min(
+                by_org[org],
+                key=lambda row: (
+                    SEV_ORDER.index(row["severity"]),
+                    -float(row["cvss"] or 0),
+                ),
+            )
+            logo_query = f"&logo={logo}&logoColor={logo_colour}" if logo else ""
+            alt = label.replace("_", " ").replace("--", "-")
+            badges.append(
+                f"[![{alt}](https://img.shields.io/badge/{label}-{colour}"
+                f"?style=for-the-badge{logo_query})]({best['advisory_url']})"
+            )
+        lines.append(f"| **{md_cell(title)}** | {' '.join(badges)} |")
+    return "\n".join(lines)
 
-    badged = badged_n
 
-    out = tmpl
-    for k, v in {
-        "STAT_BADGES": badges,
-        "GLOBAL_N": f"**{f['global_n']}**",
-        "REPO_N": f"**{f['repo_n']}**",
-        "SEVERITY_TABLE": sev_tbl,
-        "ECOSYSTEM_TABLE": eco_tbl,
-        "ADVISORY_TABLE": "\n".join(tbl),
-        "TOTAL": str(f["total"]),
-        "CWE_TABLE": cwe_tbl,
-        "ORG_BADGES": org_badges,
-        "FOOTER_STATS": (f"**{f['total']} advisories · {f['orgs']} organizations · "
-                         f"{f['cves']} CVEs · {f['sole']} as sole reporter · "
-                         f"{f['hicrit']} high or critical**"),
-    }.items():
-        out = out.replace("{{" + k + "}}", v)
+def render_incomplete_fixes(config, by_ghsa):
+    lines = ["| Finding | Earlier issue | What remained |", "|---|---|---|"]
+    for entry in config["incomplete_fixes"]:
+        row = by_ghsa[entry["advisory"]]
+        finding = f"**{md_cell(row['repo'])}**<br>{identifier_links(row)}"
+        predecessors = " · ".join(
+            md_link(item["id"], item["url"]) for item in entry["predecessors"]
+        )
+        lines.append(
+            f"| {finding} | {predecessors} | {md_cell(entry['relationship'])} |"
+        )
+    return "\n".join(lines)
 
-    left = re.findall(r"\{\{[A-Z_]+\}\}", out)
-    assert not left, f"unfilled placeholders: {left}"
-    return out, f
+
+def render_upstream_table(rows):
+    lines = ["| Project | Change | Record |", "|---|---|---|"]
+    for row in rows:
+        change = md_cell(row["what"])
+        if row.get("reference_url"):
+            change += f"<br><sub>{md_link(row['reference_label'], row['reference_url'])}</sub>"
+        lines.append(
+            f"| {md_link(row['project'], row['url'])} | {change} | "
+            f"{md_cell(row['credit_text'])} |"
+        )
+    return "\n".join(lines)
+
+
+def render_upstream(upstream):
+    patches = [row for row in upstream if row["kind"] in PATCH_KINDS]
+    records = [row for row in upstream if row["kind"] in RECORD_KINDS]
+    if len(patches) + len(records) != len(upstream):
+        raise ValueError("not every upstream.csv row was assigned to a table")
+    return render_upstream_table(patches), render_upstream_table(records)
+
+
+def render_coverage(config, by_ghsa):
+    lines = ["| Finding | Sources |", "|---|---|"]
+    for entry in config["coverage"]:
+        row = by_ghsa[entry["advisory"]]
+        finding = f"**{md_cell(row['repo'])}**<br>{identifier_links(row)}"
+        sources = " · ".join(
+            md_link(source["label"], source["url"]) for source in entry["sources"]
+        )
+        lines.append(f"| {finding} | {sources} |")
+    return "\n".join(lines)
+
+
+def render_standalone(config):
+    lines = ["| Finding | Detail |", "|---|---|"]
+    for entry in config["standalone_findings"]:
+        finding = (
+            f"**{md_cell(entry['project'])}**<br>"
+            f"{md_link(entry['identifier'], entry['record_url'])}<br>"
+            f"{SEV_LABEL[entry['severity']]} · {md_cell(entry['class'])}"
+        )
+        sources = " · ".join(
+            [
+                md_link(entry["report"]["label"], entry["report"]["url"]),
+                md_link(entry["fix"]["label"], entry["fix"]["url"]),
+            ]
+        )
+        lines.append(
+            f"| {finding} | {md_cell(entry['summary'])}<br>"
+            f"{md_cell(entry['credit'])}<br><sub>{sources}</sub> |"
+        )
+    return "\n".join(lines)
+
+
+def render_advisory_table(rows):
+    lines = ["| Severity | Finding | Detail |", "|:--:|---|---|"]
+    for row in rows:
+        severity = SEV_LABEL[row["severity"]]
+        colour = SEV_BADGE[row["severity"]]
+        score = str(row.get("cvss") or "").strip()
+        if score:
+            path = f"{severity}-{score}-{colour}"
+            alt = f"{severity} {score}"
+        else:
+            path = f"{severity}-{colour}"
+            alt = severity
+        badge = (
+            f"![{alt}](https://img.shields.io/badge/{path}"
+            f"?style=flat-square&labelColor={colour})"
+        )
+        identifiers = identifier_links(row)
+        if row.get("fix_pr"):
+            repository, number = row["fix_pr"].rsplit("#", 1)
+            identifiers += (
+                f" · fix [#{number}](https://github.com/{repository}/pull/{number})"
+            )
+        detail = md_cell(row.get("tldr") or row["summary"].strip().rstrip("."))
+        finding = (
+            f"**{md_cell(row['repo'])}**<br>{md_cell(row['class'])}"
+            f"<br><sub>{md_cell(row['published'])}</sub>"
+        )
+        lines.append(
+            f"| {badge} | {finding} | {detail}<br><sub>{identifiers}</sub> |"
+        )
+    return "\n".join(lines)
+
+
+def render(rows, upstream, config, template):
+    f = facts(rows)
+    by_ghsa = {row["ghsa"]: row for row in rows}
+    patches, upstream_records = render_upstream(upstream)
+
+    replacements = {
+        "FEATURED_FINDINGS": render_featured(config, by_ghsa),
+        "STAT_BADGES": render_stat_badges(f),
+        "SEARCH_SCOPE": render_search_scope(f),
+        "ORG_BADGES": render_org_badges(rows),
+        "SEVERITY_TABLE": render_count_table(f["sev"], SEV_LABEL),
+        "ECOSYSTEM_TABLE": render_count_table(f["eco"]),
+        "CWE_TABLE": render_cwe_table(rows),
+        "INCOMPLETE_FIXES": render_incomplete_fixes(config, by_ghsa),
+        "MERGED_PATCHES": patches,
+        "UPSTREAM_RECORDS": upstream_records,
+        "COVERAGE": render_coverage(config, by_ghsa),
+        "STANDALONE_FINDINGS": render_standalone(config),
+        "ADVISORY_TABLE": render_advisory_table(rows),
+    }
+
+    found = re.findall(r"\{\{([A-Z_]+)\}\}", template)
+    if collections.Counter(found) != collections.Counter(replacements.keys()):
+        missing = sorted(set(replacements) - set(found))
+        unknown = sorted(set(found) - set(replacements))
+        repeated = sorted(name for name, count in collections.Counter(found).items() if count > 1)
+        raise ValueError(
+            f"README.tmpl.md placeholders: missing={missing}, unknown={unknown}, "
+            f"repeated={repeated}"
+        )
+
+    output = template
+    for name, value in replacements.items():
+        output = output.replace("{{" + name + "}}", value)
+    if re.search(r"\{\{[A-Z_]+\}\}", output):
+        raise ValueError("README output contains unresolved placeholders")
+    return output, f
 
 
 def main():
-    rows = load()
-    out, f = render(rows, TMPL.read_text())
+    rows, upstream, config = load()
+    output, f = render(rows, upstream, config, TMPL.read_text(encoding="utf-8"))
     check = "--check" in sys.argv
     if check:
-        cur = OUT.read_text() if OUT.exists() else ""
-        if cur != out:
-            print("DRIFT: README.md does not match advisories.csv. Run ./build-readme.py",
-                  file=sys.stderr)
+        current = OUT.read_text(encoding="utf-8") if OUT.exists() else ""
+        if current != output:
+            print(
+                "DRIFT: README.md does not match its structured inputs. "
+                "Run ./build-readme.py",
+                file=sys.stderr,
+            )
             sys.exit(1)
-        print("ok: README.md matches advisories.csv")
+        print("ok: README.md matches its structured inputs")
     else:
-        OUT.write_text(out)
+        OUT.write_text(output, encoding="utf-8")
         print(f"wrote {OUT.name}")
-    print(f"  {f['total']} advisories · {f['orgs']} orgs · {f['cves']} CVEs · "
-          f"{f['sole']} sole · {f['hicrit']} high/critical")
+    print(
+        f"  {f['total']} advisories · {f['orgs']} orgs · {f['cves']} CVEs · "
+        f"{f['sole']} sole · {f['hicrit']} high/critical"
+    )
     print(f"  {f['global_n']} in global DB · {f['repo_n']} repo-scoped")
+    print(f"  {len(upstream)} upstream records · {len(config['standalone_findings'])} standalone")
     print("  severity: " + dict(f["sev"]).__repr__())
     print("  ecosystem: " + dict(f["eco"]).__repr__())
 

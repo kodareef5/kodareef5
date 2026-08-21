@@ -20,10 +20,11 @@ DOMAINS = [
      ["in-toto", "composer", "sigstore", "theupdateframework", "go-git",
       "GitoxideLabs", "python-poetry"]),
     ("Identity and access",
-     ["zitadel", "goauthentik", "authorizerdev", "oauth2-proxy", "pocket-id"]),
+     ["zitadel", "goauthentik", "authorizerdev", "oauth2-proxy", "pocket-id",
+      "russellhaering"]),
     ("Data, AI and parsers",
      ["dgraph-io", "nasa", "bentoml", "Giskard-AI", "rustfs", "filebrowser",
-      "py-pdf", "strukturag"]),
+      "py-pdf", "strukturag", "Comfy-Org"]),
     ("Web, proxy and applications",
      ["nats-io", "traefik", "statamic", "coollabsio", "OneUptime", "activepieces",
       "novuhq", "freescout-help-desk", "wekan", "siyuan-note", "henrygd",
@@ -69,6 +70,8 @@ META = {
 
     "bentoml":            ("BentoML",          "000000", None,            "white"),
     "Giskard-AI":         ("Giskard",          "6D28D9", None,            "white"),
+    "Comfy-Org":          ("ComfyUI",          "1A1A1A", None,            "white"),
+    "russellhaering":     ("gosaml2",          "00ADD8", "go",            "white"),
 
     "traefik":            ("Traefik",          "24A1C1", "traefikproxy",  "white"),
     "nats-io":            ("NATS",             "27AAE1", "natsdotio",     "white"),
