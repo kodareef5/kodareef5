@@ -1,32 +1,32 @@
-# README design review — 2026-09-06
+# Catalogue design preview
 
-The README is now the complete project ledger: 73 alphabetical project sections,
-70 structured-credit GitHub advisories, 28 upstream records (including 12
-authored patches), and two standalone vendor/CVE findings.
+This alternative lives on `readme-catalog-preview`. The previous design remains
+unchanged on `readme-cleanup-preview` at `6ab7459`; public `main` is untouched.
 
-- Static name and one-line introduction; no banner, animated header, testimonials,
-  class badges, repeated highlights, or hiring language.
-- Locally stored official marks with readable project names. GitHub-native
-  compact link containers keep each mark attached to its name while wrapping.
-  Text-only fallbacks are deliberate. Theme variants are used where available.
-- Newest dated work first within each project; undated acknowledgements last.
-  Short descriptions stay visible. Credits, versions, ratings, follow-ups and
-  coverage expand under their own project.
-- Independent advisory distributions live in expandable bottom notes.
-  Contributor roles remain visible without a sole-reporter metric.
+## Design
 
-## Checks
+- Centered, static introduction with direct jumps to projects, work, and notes.
+- An open gallery of larger official marks with names underneath. No keycap-style
+  buttons. The generated label tiles embed the existing, unmodified logo bytes;
+  theme-specific labels and existing dark variants are included.
+- Ordinary text links for projects without a suitable mark.
+- A–Z navigation and letter sections, preserving alphabetical project order.
+- Bordered project panels: identity in the header, identifiers/date/severity in
+  a metadata row, and the description in a merged row spanning both columns.
+- All short descriptions remain visible. Longer source details still expand
+  within the project. Advisory-linked patches stay with their finding.
+- Same factual data, contributor roles, source notes, coverage, and records as the
+  previous preview. This is a presentation experiment, not another source refresh.
 
-- 14 automated tests pass, including original-source-link preservation,
-  reference validation, source disagreements, standalone exclusions, multiple
-  package fixes, contributor roles, Markdown escaping and a future-project test.
-- README and advisory-export checks pass; all Python files compile.
-- GitHub's Markdown renderer and GitHub's stylesheets were inspected in Chromium
-  at 1120×1000 and 390×844, in light and dark themes.
-- All 73 project anchors resolve, all displayed images load, and expanding every
-  detail section produces no page-wide horizontal overflow.
-- The index fits above the work section on desktop. The complete index requires
-  a short scroll on phone widths; no projects are hidden to shorten it.
+## Verification
 
-Only the existing private preview branch is published for review. Public-profile
-promotion is a separate step. Source verification limits remain in RECORD-REVIEW.md.
+17 tests cover source and record preservation, reference validation, automatic
+new-project handling, markup escaping, wide description rows, unchanged embedded
+logos, and stale gallery detection.
+
+README and advisory-export checks pass; Python compilation passes.
+The GitHub-rendered layout is checked in light/dark themes at desktop
+(1120×1000) and phone (390×844) widths, including expanded source details.
+
+The larger gallery intentionally takes more room. A Work link appears before it
+so readers can skip directly to the ledger.

@@ -10,6 +10,10 @@ import pathlib
 import re
 import subprocess
 import unittest
+import base64
+import xml.etree.ElementTree as ET
+import tempfile
+from unittest import mock
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SPEC = importlib.util.spec_from_file_location("readme", ROOT / "build-readme.py")
@@ -132,6 +136,45 @@ class ReadmeTests(unittest.TestCase):
         self.assertIn("coordinator", result)
         self.assertIn("no structured CVSS score", result)
         self.assertIn("Lyrie Research", result)
+
+    def test_catalog_descriptions_span_the_panel(self):
+        result = self.render()
+        self.assertNotIn("<kbd>", result)
+        for row in self.data[0]:
+            self.assertIn('<tr><td colspan="2">\n\n' + readme.prose(row["tldr"]), result)
+        self.assertIn('id="letter-a"', result)
+        self.assertIn('[A](#letter-a)', result)
+        for project_id, project in self.data[5].items():
+            if project.get("logo") and not project.get("text_only"):
+                self.assertIn(readme.catalog_assets.paths(project_id)["light"], result)
+
+    def test_gallery_embeds_original_marks_without_recoloring(self):
+        assets = readme.catalog_assets
+        for project in self.data[5].values():
+            if not project.get("logo") or project.get("text_only"):
+                continue
+            for theme in ("light", "dark"):
+                svg = ET.fromstring(assets.tile(project, theme))
+                image = svg.find("{http://www.w3.org/2000/svg}image")
+                embedded = base64.b64decode(image.attrib["href"].split(",", 1)[1])
+                source = project.get("logo_dark", project["logo"]) if theme == "dark" else project["logo"]
+                self.assertEqual(embedded, (ROOT / source["file"]).read_bytes())
+                self.assertEqual(svg.find("{http://www.w3.org/2000/svg}title").text, project["name"])
+                self.assertLessEqual(len(assets.label_lines(project["name"])), 2)
+
+    def test_gallery_staleness_check(self):
+        assets = readme.catalog_assets
+        with tempfile.TemporaryDirectory(prefix="koda-gallery-test-") as directory:
+            with mock.patch.object(assets, "ROOT", pathlib.Path(directory)), mock.patch.object(
+                assets, "generated", return_value={"assets/catalog/test.svg": "<svg/>"}
+            ):
+                with self.assertRaises(ValueError):
+                    assets.sync({}, check=True)
+                assets.sync({})
+                assets.sync({}, check=True)
+                (pathlib.Path(directory) / "assets/catalog/test.svg").write_text("stale")
+                with self.assertRaises(ValueError):
+                    assets.sync({}, check=True)
 
 if __name__ == "__main__":
     unittest.main()

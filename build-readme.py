@@ -13,6 +13,7 @@ import pathlib
 import re
 import sys
 from urllib.parse import quote, urlsplit
+import catalog_assets
 
 HERE = pathlib.Path(__file__).resolve().parent
 SPEC = importlib.util.spec_from_file_location("record_sync", HERE / "sync-records.py")
@@ -284,6 +285,33 @@ def upstream_visible(row):
     return f"**{link(KINDS[row['kind']], row['url'])}**{date} — {prose(row['what'])}"
 
 
+def html_link(label, target):
+    return f'<a href="{html.escape(url(target), quote=True)}">{html.escape(label)}</a>'
+
+
+def panel_row(heading, metadata, description):
+    """Two metadata cells; the description always gets the complete width."""
+    return [
+        "<tr>",
+        f'<td valign="top">{heading}</td>',
+        f'<td align="right" valign="top">{metadata}</td>',
+        "</tr>",
+        '<tr><td colspan="2">',
+        "",
+        description,
+        "",
+        "</td></tr>",
+    ]
+
+
+def upstream_panel(row):
+    meta = f'{row["date"]}<br><sub>{html.escape(row["date_kind"])}</sub>' if row["date"] else ""
+    return panel_row(
+        "<strong>" + html_link(KINDS[row["kind"]], row["url"]) + "</strong>",
+        meta, prose(row["what"]),
+    )
+
+
 def upstream_details(row):
     lines = [f"**{link(KINDS[row['kind']], row['url'])}:** {prose(row['credit_text'])}. Checked {row['verified']}."]
     links = json.loads(row["additional_links"])
@@ -369,20 +397,43 @@ def render(rows, upstream, config, sources, standalone_sources, projects, templa
     used = {r["project_id"] for r in rows + upstream + config["standalone_findings"]}
     projects = {p: projects.get(p, {"name": p.split("/")[-1], "url": "https://github.com/" + p}) for p in used}
     ordered = sorted(projects, key=lambda p: (projects[p]["name"].casefold(), p.casefold()))
-    index = []
+    index, text_index = [], []
     for project_id in ordered:
         project = projects[project_id]
-        name = html.escape(project["name"]).replace(" ", "&nbsp;").replace("-", "&#8209;")
-        mark = logo(project, 22).rstrip()
-        index.append(f'<kbd><a href="#{slug(project_id)}">{mark + "&nbsp;" if mark else ""}{name}</a></kbd>')
-    index_html = "<p>\n" + "\n".join(index) + "\n</p>"
+        if project.get("logo") and not project.get("text_only"):
+            paths = catalog_assets.paths(project_id)
+            image = (
+                f'<picture><source media="(prefers-color-scheme: dark)" srcset="./{paths["dark"]}">'
+                f'<img src="./{paths["light"]}" width="{catalog_assets.WIDTH}" height="{catalog_assets.HEIGHT}" alt="{html.escape(project["name"], quote=True)}"></picture>'
+            )
+            index.append(f'<a href="#{slug(project_id)}">{image}</a>')
+        else:
+            name = html.escape(project["name"]).replace(" ", "&nbsp;")
+            text_index.append(f'<a href="#{slug(project_id)}">{name}</a>')
+    index_html = '<p align="center">\n' + "\n".join(index) + "\n</p>"
+    if text_index:
+        index_html += '\n\n<p align="center">\n' + " · ".join(text_index) + "\n</p>"
+    letters = sorted({projects[p]["name"][0].upper() for p in ordered})
+    letter_nav = " &nbsp; ".join(f"[{letter}](#letter-{letter.lower()})" for letter in letters)
     f = facts(rows, upstream, config["standalone_findings"], projects)
     counts = f"{f['projects']} projects · {f['advisories']} published advisories · {f['patches']} merged patches"
     sections, rendered = [], []
+    last_letter = None
     for project_id in ordered:
         project = projects[project_id]
-        lines = [f'<a id="{slug(project_id)}"></a>', "",
-                 f"### {logo(project, 28)}{link(project['name'], project['url'])}", ""]
+        letter = project["name"][0].upper()
+        if letter != last_letter:
+            sections += [f'<a id="letter-{letter.lower()}"></a>\n\n## {letter}\n']
+            last_letter = letter
+        lines = [
+            f'<a id="{slug(project_id)}"></a>', "",
+            "<table>",
+            "<thead><tr>",
+            f'<th align="left" width="70%"><h3>{logo(project, 32)}{html_link(project["name"], project["url"])}</h3></th>',
+            '<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>',
+            "</tr></thead>",
+            "<tbody>",
+        ]
         events = [(r["published"], "advisory", r) for r in rows if r["project_id"] == project_id]
         events += [(r["date"], "upstream", r) for r in upstream if r["project_id"] == project_id and not r["advisory"]]
         events += [(r["published"], "standalone", r) for r in config["standalone_findings"] if r["project_id"] == project_id]
@@ -393,23 +444,28 @@ def render(rows, upstream, config, sources, standalone_sources, projects, templa
                 rendered.append(row["ghsa"])
                 identifiers = []
                 if row["cve"]:
-                    identifiers.append(f"**{link(row['cve'], row['cve_url'])}**")
-                identifiers.append(link(row["ghsa"], row["advisory_url"]))
-                lines += [" · ".join(identifiers) + f"<br>{SEVERITY[row['severity']]} · {row['published']}",
-                          "", prose(row["tldr"]), ""]
+                    identifiers.append("<strong>" + html_link(row["cve"], row["cve_url"]) + "</strong>")
+                identifiers.append(html_link(row["ghsa"], row["advisory_url"]))
                 attached = [r for r in upstream if r["advisory"] == row["ghsa"]]
                 rendered.extend(r["id"] for r in attached)
+                description = prose(row["tldr"])
                 for item in attached:
-                    lines += [upstream_visible(item), ""]
+                    description += "\n\n" + upstream_visible(item)
+                lines += panel_row("<br>".join(identifiers),
+                                   f'{SEVERITY[row["severity"]].replace(" ", "&nbsp;")}<br><sub>{row["published"].replace("-", "&#8209;")}</sub>',
+                                   description)
                 detailed += advisory_details(row, source_map[row["ghsa"]], config, attached) + [""]
             elif kind == "upstream":
                 rendered.append(row["id"])
-                lines += [upstream_visible(row), ""]
+                lines += upstream_panel(row)
                 detailed += upstream_details(row) + [""]
             else:
                 rendered.append(row["identifier"])
-                lines += [f"**{link(row['identifier'], row['record_url'])}**<br>{SEVERITY[row['severity']]} · {row['published']} · Vendor/CVE record",
-                          "", prose(row["summary"]), ""]
+                lines += panel_row(
+                    "<strong>" + html_link(row["identifier"], row["record_url"]) + "</strong><br><sub>Vendor/CVE record</sub>",
+                    f'{SEVERITY[row["severity"]].replace(" ", "&nbsp;")}<br><sub>{row["published"].replace("-", "&#8209;")}</sub>',
+                    prose(row["summary"]),
+                )
                 detailed += [f"#### {text(row['identifier'])}", "", prose(row["credit"]), "",
                              link("CVE CNA source", row["source_url"]), ""] + cna_details(standalone_map[row["identifier"]]["record"])
                 for key in ("report", "fix"):
@@ -417,7 +473,12 @@ def render(rows, upstream, config, sources, standalone_sources, projects, templa
                         detailed += ["", link(row[key]["label"], row[key]["url"])]
                 detailed += ["", "Standalone finding; excluded from GitHub advisory statistics.", ""]
         detail_label = "Versions, credits, and sources" if any(e[1] != "upstream" for e in events) else "Credit and sources"
-        lines += ["<details>", f"<summary>{detail_label}</summary>", ""] + detailed + ["</details>", ""]
+        lines += [
+            '<tr><td colspan="2">', "",
+            "<details>", f"<summary>{detail_label}</summary>", "",
+        ] + detailed + [
+            "</details>", "", "</td></tr>", "</tbody>", "</table>", "",
+        ]
         sections.append("\n".join(lines))
     expected = [r["ghsa"] for r in rows] + [r["id"] for r in upstream] + [r["identifier"] for r in config["standalone_findings"]]
     if collections.Counter(rendered) != collections.Counter(expected):
@@ -461,7 +522,8 @@ def render(rows, upstream, config, sources, standalone_sources, projects, templa
             if source["status"] == "unavailable":
                 notes += [f"{link(source['label'], source['url'])}: {text(source['note'])}", ""]
     notes += ["See [record review](./RECORD-REVIEW.md) for the factual corrections and source policy.", "", "</details>"]
-    values = {"PROJECT_INDEX": index_html, "COUNT_LINE": counts, "PROJECT_WORK": "\n".join(sections), "RECORD_NOTES": "\n".join(notes)}
+    values = {"PROJECT_INDEX": index_html, "COUNT_LINE": counts, "LETTER_NAV": letter_nav,
+              "PROJECT_WORK": "\n".join(sections), "RECORD_NOTES": "\n".join(notes)}
     placeholders = re.findall(r"\{\{([A-Z_]+)\}\}", template)
     if collections.Counter(placeholders) != collections.Counter(values.keys()):
         raise ValueError("Template placeholders must occur exactly once and match generated sections")
@@ -474,6 +536,7 @@ def render(rows, upstream, config, sources, standalone_sources, projects, templa
 def main():
     try:
         data = load()
+        catalog_assets.sync(data[5], check="--check" in sys.argv)
         result = render(*data, (HERE / "README.tmpl.md").read_text())
         path = HERE / "README.md"
         if "--check" in sys.argv:

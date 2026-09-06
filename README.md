@@ -1,96 +1,102 @@
-# Koda Reef
+<h1 align="center">Koda Reef</h1>
 
-Security research and contributions to open-source software.
+<p align="center">Security research and contributions to open-source software.</p>
 
-<p>
-<kbd><a href="#project-activepieces-activepieces"><img src="./assets/logos/activepieces-activepieces.png" width="22" height="22" alt="">&nbsp;Activepieces</a></kbd>
-<kbd><a href="#project-apache-httpd"><img src="./assets/logos/apache-httpd.png" width="22" height="22" alt="">&nbsp;Apache&nbsp;HTTP&nbsp;Server</a></kbd>
-<kbd><a href="#project-withastro-astro"><img src="./assets/logos/withastro-astro.svg" width="22" height="22" alt="">&nbsp;Astro</a></kbd>
-<kbd><a href="#project-goauthentik-authentik"><img src="./assets/logos/goauthentik-authentik.svg" width="22" height="22" alt="">&nbsp;authentik</a></kbd>
-<kbd><a href="#project-authorizerdev-authorizer"><img src="./assets/logos/authorizerdev-authorizer.png" width="22" height="22" alt="">&nbsp;Authorizer</a></kbd>
-<kbd><a href="#project-wwbn-avideo">AVideo</a></kbd>
-<kbd><a href="#project-bentoml-bentoml"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/bentoml-bentoml-dark.png"><img src="./assets/logos/bentoml-bentoml.png" width="22" height="22" alt=""></picture>&nbsp;BentoML</a></kbd>
-<kbd><a href="#project-henrygd-beszel"><img src="./assets/logos/henrygd-beszel.svg" width="18" height="22" alt="">&nbsp;Beszel</a></kbd>
-<kbd><a href="#project-richlegrand-bitbang-cli">bitbang&#8209;cli</a></kbd>
-<kbd><a href="#project-richlegrand-bitbang-server">bitbang&#8209;server</a></kbd>
-<kbd><a href="#project-c-ares-c-ares"><img src="./assets/logos/c-ares-c-ares.svg" width="44" height="13" alt="">&nbsp;c&#8209;ares</a></kbd>
-<kbd><a href="#project-cilium-cilium"><img src="./assets/logos/cilium-cilium.svg" width="22" height="22" alt="">&nbsp;Cilium</a></kbd>
-<kbd><a href="#project-cloudnative-pg-cloudnative-pg"><img src="./assets/logos/cloudnative-pg-cloudnative-pg.svg" width="21" height="22" alt="">&nbsp;CloudNativePG</a></kbd>
-<kbd><a href="#project-comfy-org-comfyui"><img src="./assets/logos/comfy-org-comfyui.svg" width="20" height="22" alt="">&nbsp;ComfyUI</a></kbd>
-<kbd><a href="#project-composer-composer"><img src="./assets/logos/composer-composer.png" width="18" height="22" alt="">&nbsp;Composer</a></kbd>
-<kbd><a href="#project-projectcontour-contour"><img src="./assets/logos/projectcontour-contour.svg" width="22" height="22" alt="">&nbsp;Contour</a></kbd>
-<kbd><a href="#project-coollabsio-coolify"><img src="./assets/logos/coollabsio-coolify.svg" width="22" height="22" alt="">&nbsp;Coolify</a></kbd>
-<kbd><a href="#project-sigstore-cosign"><img src="./assets/logos/sigstore-cosign.svg" width="23" height="22" alt="">&nbsp;Cosign</a></kbd>
-<kbd><a href="#project-dgraph-io-dgraph"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/dgraph-io-dgraph-dark.png"><img src="./assets/logos/dgraph-io-dgraph.png" width="44" height="16" alt=""></picture>&nbsp;Dgraph</a></kbd>
-<kbd><a href="#project-cure53-dompurify">DOMPurify</a></kbd>
-<kbd><a href="#project-envoyproxy-envoy"><img src="./assets/logos/envoyproxy-envoy.svg" width="29" height="22" alt="">&nbsp;Envoy</a></kbd>
-<kbd><a href="#project-external-secrets-external-secrets"><img src="./assets/logos/external-secrets-external-secrets.svg" width="22" height="22" alt="">&nbsp;External&nbsp;Secrets</a></kbd>
-<kbd><a href="#project-filebrowser-filebrowser"><img src="./assets/logos/filebrowser-filebrowser.svg" width="22" height="22" alt="">&nbsp;File&nbsp;Browser</a></kbd>
-<kbd><a href="#project-rancher-fleet"><img src="./assets/logos/rancher-fleet.svg" width="27" height="22" alt="">&nbsp;Fleet</a></kbd>
-<kbd><a href="#project-flowiseai-flowise"><img src="./assets/logos/flowiseai-flowise.png" width="22" height="22" alt="">&nbsp;Flowise</a></kbd>
-<kbd><a href="#project-freescout-help-desk-freescout"><img src="./assets/logos/freescout-help-desk-freescout.png" width="22" height="22" alt="">&nbsp;FreeScout</a></kbd>
-<kbd><a href="#project-giskard-ai-giskard-oss"><img src="./assets/logos/giskard-ai-giskard-oss.png" width="44" height="10" alt="">&nbsp;Giskard</a></kbd>
-<kbd><a href="#project-gitoxidelabs-gitoxide">gitoxide</a></kbd>
-<kbd><a href="#project-gnome-glib">GNOME&nbsp;GLib</a></kbd>
-<kbd><a href="#project-go-git-go-git">go&#8209;git</a></kbd>
-<kbd><a href="#project-in-toto-go-witness">go&#8209;witness</a></kbd>
-<kbd><a href="#project-russellhaering-gosaml2">gosaml2</a></kbd>
-<kbd><a href="#project-gotenberg-gotenberg"><img src="./assets/logos/gotenberg-gotenberg.png" width="22" height="22" alt="">&nbsp;Gotenberg</a></kbd>
-<kbd><a href="#project-kubernetes-sigs-headlamp"><img src="./assets/logos/kubernetes-sigs-headlamp.svg" width="18" height="23" alt="">&nbsp;Headlamp</a></kbd>
-<kbd><a href="#project-kjur-jsrsasign">jsrsasign</a></kbd>
-<kbd><a href="#project-kata-containers-kata-containers"><img src="./assets/logos/kata-containers-kata-containers.svg" width="18" height="22" alt="">&nbsp;Kata&nbsp;Containers</a></kbd>
-<kbd><a href="#project-1panel-dev-kubepi"><img src="./assets/logos/1panel-dev-kubepi.png" width="22" height="22" alt="">&nbsp;KubePi</a></kbd>
-<kbd><a href="#project-libevent-libevent">libevent</a></kbd>
-<kbd><a href="#project-strukturag-libheif">libheif</a></kbd>
-<kbd><a href="#project-libjpeg-turbo-libjpeg-turbo">libjpeg&#8209;turbo</a></kbd>
-<kbd><a href="#project-nih-at-libzip">libzip</a></kbd>
-<kbd><a href="#project-lighttpd-lighttpd1-4">lighttpd</a></kbd>
-<kbd><a href="#project-nangohq-nango"><img src="./assets/logos/nangohq-nango.png" width="22" height="22" alt="">&nbsp;Nango</a></kbd>
-<kbd><a href="#project-nats-io-nats-server"><img src="./assets/logos/nats-io-nats-server.svg" width="21" height="22" alt="">&nbsp;NATS&nbsp;Server</a></kbd>
-<kbd><a href="#project-nginx-nginx"><img src="./assets/logos/nginx-nginx.png" width="44" height="9" alt="">&nbsp;NGINX</a></kbd>
-<kbd><a href="#project-nginx-kubernetes-ingress"><img src="./assets/logos/nginx-kubernetes-ingress.png" width="19" height="22" alt="">&nbsp;NGINX&nbsp;Ingress&nbsp;Controller</a></kbd>
-<kbd><a href="#project-novuhq-novu"><img src="./assets/logos/novuhq-novu.svg" width="22" height="22" alt="">&nbsp;Novu</a></kbd>
-<kbd><a href="#project-oauth2-proxy-oauth2-proxy"><img src="./assets/logos/oauth2-proxy-oauth2-proxy.svg" width="22" height="22" alt="">&nbsp;OAuth2&nbsp;Proxy</a></kbd>
-<kbd><a href="#project-oneuptime-oneuptime"><img src="./assets/logos/oneuptime-oneuptime.svg" width="22" height="22" alt="">&nbsp;OneUptime</a></kbd>
-<kbd><a href="#project-open-telemetry-opentelemetry-collector-contrib"><img src="./assets/logos/open-telemetry-opentelemetry-collector-contrib.svg" width="22" height="22" alt="">&nbsp;OpenTelemetry&nbsp;Collector</a></kbd>
-<kbd><a href="#project-open-telemetry-opentelemetry-go"><img src="./assets/logos/open-telemetry-opentelemetry-go.svg" width="22" height="22" alt="">&nbsp;OpenTelemetry&nbsp;Go</a></kbd>
-<kbd><a href="#project-phpseclib-phpseclib">phpseclib</a></kbd>
-<kbd><a href="#project-pocket-id-pocket-id"><img src="./assets/logos/pocket-id-pocket-id.svg" width="22" height="22" alt="">&nbsp;Pocket&nbsp;ID</a></kbd>
-<kbd><a href="#project-python-poetry-poetry"><img src="./assets/logos/python-poetry-poetry.svg" width="18" height="22" alt="">&nbsp;Poetry</a></kbd>
-<kbd><a href="#project-prefecthq-prefect"><img src="./assets/logos/prefecthq-prefect.svg" width="14" height="23" alt="">&nbsp;Prefect</a></kbd>
-<kbd><a href="#project-bufbuild-protoc-gen-validate"><img src="./assets/logos/bufbuild-protoc-gen-validate.svg" width="23" height="22" alt="">&nbsp;protoc&#8209;gen&#8209;validate</a></kbd>
-<kbd><a href="#project-pyload-pyload"><img src="./assets/logos/pyload-pyload.svg" width="22" height="22" alt="">&nbsp;pyLoad</a></kbd>
-<kbd><a href="#project-py-pdf-pypdf">pypdf</a></kbd>
-<kbd><a href="#project-rustfs-rustfs">RustFS</a></kbd>
-<kbd><a href="#project-steveukx-git-js">simple&#8209;git</a></kbd>
-<kbd><a href="#project-siyuan-note-siyuan"><img src="./assets/logos/siyuan-note-siyuan.png" width="22" height="22" alt="">&nbsp;SiYuan</a></kbd>
-<kbd><a href="#project-charmbracelet-soft-serve">Soft&nbsp;Serve</a></kbd>
-<kbd><a href="#project-nasa-spacewasm"><img src="./assets/logos/nasa-spacewasm.svg" width="22" height="22" alt="">&nbsp;SpaceWasm&nbsp;(NASA)</a></kbd>
-<kbd><a href="#project-stablelib-stablelib">StableLib</a></kbd>
-<kbd><a href="#project-statamic-cms"><img src="./assets/logos/statamic-cms.png" width="22" height="22" alt="">&nbsp;Statamic</a></kbd>
-<kbd><a href="#project-systemd-systemd"><img src="./assets/logos/systemd-systemd.svg" width="22" height="22" alt="">&nbsp;systemd</a></kbd>
-<kbd><a href="#project-tektoncd-pipeline"><img src="./assets/logos/tektoncd-pipeline.svg" width="21" height="22" alt="">&nbsp;Tekton&nbsp;Pipelines</a></kbd>
-<kbd><a href="#project-traefik-traefik"><img src="./assets/logos/traefik-traefik.png" width="22" height="22" alt="">&nbsp;Traefik</a></kbd>
-<kbd><a href="#project-theupdateframework-python-tuf"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/theupdateframework-python-tuf-dark.svg"><img src="./assets/logos/theupdateframework-python-tuf.svg" width="20" height="23" alt=""></picture>&nbsp;TUF&nbsp;(Python)</a></kbd>
-<kbd><a href="#project-vim-vim"><img src="./assets/logos/vim-vim.svg" width="22" height="22" alt="">&nbsp;Vim</a></kbd>
-<kbd><a href="#project-wekan-wekan"><img src="./assets/logos/wekan-wekan.svg" width="22" height="22" alt="">&nbsp;Wekan</a></kbd>
-<kbd><a href="#project-in-toto-witness"><img src="./assets/logos/in-toto-witness.svg" width="18" height="22" alt="">&nbsp;witness</a></kbd>
-<kbd><a href="#project-zitadel-zitadel"><img src="./assets/logos/zitadel-zitadel.png" width="22" height="22" alt="">&nbsp;ZITADEL</a></kbd>
+<p align="center"><a href="#projects">Projects</a> &nbsp; / &nbsp; <a href="#work">Work</a> &nbsp; / &nbsp; <a href="#notes">Record notes</a></p>
+
+<a id="projects"></a>
+
+<p align="center">
+<a href="#project-activepieces-activepieces"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/activepieces-activepieces-dark.svg"><img src="./assets/catalog/activepieces-activepieces-light.svg" width="112" height="76" alt="Activepieces"></picture></a>
+<a href="#project-apache-httpd"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/apache-httpd-dark.svg"><img src="./assets/catalog/apache-httpd-light.svg" width="112" height="76" alt="Apache HTTP Server"></picture></a>
+<a href="#project-withastro-astro"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/withastro-astro-dark.svg"><img src="./assets/catalog/withastro-astro-light.svg" width="112" height="76" alt="Astro"></picture></a>
+<a href="#project-goauthentik-authentik"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/goauthentik-authentik-dark.svg"><img src="./assets/catalog/goauthentik-authentik-light.svg" width="112" height="76" alt="authentik"></picture></a>
+<a href="#project-authorizerdev-authorizer"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/authorizerdev-authorizer-dark.svg"><img src="./assets/catalog/authorizerdev-authorizer-light.svg" width="112" height="76" alt="Authorizer"></picture></a>
+<a href="#project-bentoml-bentoml"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/bentoml-bentoml-dark.svg"><img src="./assets/catalog/bentoml-bentoml-light.svg" width="112" height="76" alt="BentoML"></picture></a>
+<a href="#project-henrygd-beszel"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/henrygd-beszel-dark.svg"><img src="./assets/catalog/henrygd-beszel-light.svg" width="112" height="76" alt="Beszel"></picture></a>
+<a href="#project-c-ares-c-ares"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/c-ares-c-ares-dark.svg"><img src="./assets/catalog/c-ares-c-ares-light.svg" width="112" height="76" alt="c-ares"></picture></a>
+<a href="#project-cilium-cilium"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/cilium-cilium-dark.svg"><img src="./assets/catalog/cilium-cilium-light.svg" width="112" height="76" alt="Cilium"></picture></a>
+<a href="#project-cloudnative-pg-cloudnative-pg"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/cloudnative-pg-cloudnative-pg-dark.svg"><img src="./assets/catalog/cloudnative-pg-cloudnative-pg-light.svg" width="112" height="76" alt="CloudNativePG"></picture></a>
+<a href="#project-comfy-org-comfyui"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/comfy-org-comfyui-dark.svg"><img src="./assets/catalog/comfy-org-comfyui-light.svg" width="112" height="76" alt="ComfyUI"></picture></a>
+<a href="#project-composer-composer"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/composer-composer-dark.svg"><img src="./assets/catalog/composer-composer-light.svg" width="112" height="76" alt="Composer"></picture></a>
+<a href="#project-projectcontour-contour"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/projectcontour-contour-dark.svg"><img src="./assets/catalog/projectcontour-contour-light.svg" width="112" height="76" alt="Contour"></picture></a>
+<a href="#project-coollabsio-coolify"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/coollabsio-coolify-dark.svg"><img src="./assets/catalog/coollabsio-coolify-light.svg" width="112" height="76" alt="Coolify"></picture></a>
+<a href="#project-sigstore-cosign"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/sigstore-cosign-dark.svg"><img src="./assets/catalog/sigstore-cosign-light.svg" width="112" height="76" alt="Cosign"></picture></a>
+<a href="#project-dgraph-io-dgraph"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/dgraph-io-dgraph-dark.svg"><img src="./assets/catalog/dgraph-io-dgraph-light.svg" width="112" height="76" alt="Dgraph"></picture></a>
+<a href="#project-envoyproxy-envoy"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/envoyproxy-envoy-dark.svg"><img src="./assets/catalog/envoyproxy-envoy-light.svg" width="112" height="76" alt="Envoy"></picture></a>
+<a href="#project-external-secrets-external-secrets"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/external-secrets-external-secrets-dark.svg"><img src="./assets/catalog/external-secrets-external-secrets-light.svg" width="112" height="76" alt="External Secrets"></picture></a>
+<a href="#project-filebrowser-filebrowser"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/filebrowser-filebrowser-dark.svg"><img src="./assets/catalog/filebrowser-filebrowser-light.svg" width="112" height="76" alt="File Browser"></picture></a>
+<a href="#project-rancher-fleet"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/rancher-fleet-dark.svg"><img src="./assets/catalog/rancher-fleet-light.svg" width="112" height="76" alt="Fleet"></picture></a>
+<a href="#project-flowiseai-flowise"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/flowiseai-flowise-dark.svg"><img src="./assets/catalog/flowiseai-flowise-light.svg" width="112" height="76" alt="Flowise"></picture></a>
+<a href="#project-freescout-help-desk-freescout"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/freescout-help-desk-freescout-dark.svg"><img src="./assets/catalog/freescout-help-desk-freescout-light.svg" width="112" height="76" alt="FreeScout"></picture></a>
+<a href="#project-giskard-ai-giskard-oss"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/giskard-ai-giskard-oss-dark.svg"><img src="./assets/catalog/giskard-ai-giskard-oss-light.svg" width="112" height="76" alt="Giskard"></picture></a>
+<a href="#project-gotenberg-gotenberg"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/gotenberg-gotenberg-dark.svg"><img src="./assets/catalog/gotenberg-gotenberg-light.svg" width="112" height="76" alt="Gotenberg"></picture></a>
+<a href="#project-kubernetes-sigs-headlamp"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/kubernetes-sigs-headlamp-dark.svg"><img src="./assets/catalog/kubernetes-sigs-headlamp-light.svg" width="112" height="76" alt="Headlamp"></picture></a>
+<a href="#project-kata-containers-kata-containers"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/kata-containers-kata-containers-dark.svg"><img src="./assets/catalog/kata-containers-kata-containers-light.svg" width="112" height="76" alt="Kata Containers"></picture></a>
+<a href="#project-1panel-dev-kubepi"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/1panel-dev-kubepi-dark.svg"><img src="./assets/catalog/1panel-dev-kubepi-light.svg" width="112" height="76" alt="KubePi"></picture></a>
+<a href="#project-nangohq-nango"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/nangohq-nango-dark.svg"><img src="./assets/catalog/nangohq-nango-light.svg" width="112" height="76" alt="Nango"></picture></a>
+<a href="#project-nats-io-nats-server"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/nats-io-nats-server-dark.svg"><img src="./assets/catalog/nats-io-nats-server-light.svg" width="112" height="76" alt="NATS Server"></picture></a>
+<a href="#project-nginx-nginx"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/nginx-nginx-dark.svg"><img src="./assets/catalog/nginx-nginx-light.svg" width="112" height="76" alt="NGINX"></picture></a>
+<a href="#project-nginx-kubernetes-ingress"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/nginx-kubernetes-ingress-dark.svg"><img src="./assets/catalog/nginx-kubernetes-ingress-light.svg" width="112" height="76" alt="NGINX Ingress Controller"></picture></a>
+<a href="#project-novuhq-novu"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/novuhq-novu-dark.svg"><img src="./assets/catalog/novuhq-novu-light.svg" width="112" height="76" alt="Novu"></picture></a>
+<a href="#project-oauth2-proxy-oauth2-proxy"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/oauth2-proxy-oauth2-proxy-dark.svg"><img src="./assets/catalog/oauth2-proxy-oauth2-proxy-light.svg" width="112" height="76" alt="OAuth2 Proxy"></picture></a>
+<a href="#project-oneuptime-oneuptime"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/oneuptime-oneuptime-dark.svg"><img src="./assets/catalog/oneuptime-oneuptime-light.svg" width="112" height="76" alt="OneUptime"></picture></a>
+<a href="#project-open-telemetry-opentelemetry-collector-contrib"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/open-telemetry-opentelemetry-collector-contrib-dark.svg"><img src="./assets/catalog/open-telemetry-opentelemetry-collector-contrib-light.svg" width="112" height="76" alt="OpenTelemetry Collector"></picture></a>
+<a href="#project-open-telemetry-opentelemetry-go"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/open-telemetry-opentelemetry-go-dark.svg"><img src="./assets/catalog/open-telemetry-opentelemetry-go-light.svg" width="112" height="76" alt="OpenTelemetry Go"></picture></a>
+<a href="#project-pocket-id-pocket-id"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/pocket-id-pocket-id-dark.svg"><img src="./assets/catalog/pocket-id-pocket-id-light.svg" width="112" height="76" alt="Pocket ID"></picture></a>
+<a href="#project-python-poetry-poetry"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/python-poetry-poetry-dark.svg"><img src="./assets/catalog/python-poetry-poetry-light.svg" width="112" height="76" alt="Poetry"></picture></a>
+<a href="#project-prefecthq-prefect"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/prefecthq-prefect-dark.svg"><img src="./assets/catalog/prefecthq-prefect-light.svg" width="112" height="76" alt="Prefect"></picture></a>
+<a href="#project-bufbuild-protoc-gen-validate"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/bufbuild-protoc-gen-validate-dark.svg"><img src="./assets/catalog/bufbuild-protoc-gen-validate-light.svg" width="112" height="76" alt="protoc-gen-validate"></picture></a>
+<a href="#project-pyload-pyload"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/pyload-pyload-dark.svg"><img src="./assets/catalog/pyload-pyload-light.svg" width="112" height="76" alt="pyLoad"></picture></a>
+<a href="#project-siyuan-note-siyuan"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/siyuan-note-siyuan-dark.svg"><img src="./assets/catalog/siyuan-note-siyuan-light.svg" width="112" height="76" alt="SiYuan"></picture></a>
+<a href="#project-nasa-spacewasm"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/nasa-spacewasm-dark.svg"><img src="./assets/catalog/nasa-spacewasm-light.svg" width="112" height="76" alt="SpaceWasm (NASA)"></picture></a>
+<a href="#project-statamic-cms"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/statamic-cms-dark.svg"><img src="./assets/catalog/statamic-cms-light.svg" width="112" height="76" alt="Statamic"></picture></a>
+<a href="#project-systemd-systemd"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/systemd-systemd-dark.svg"><img src="./assets/catalog/systemd-systemd-light.svg" width="112" height="76" alt="systemd"></picture></a>
+<a href="#project-tektoncd-pipeline"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/tektoncd-pipeline-dark.svg"><img src="./assets/catalog/tektoncd-pipeline-light.svg" width="112" height="76" alt="Tekton Pipelines"></picture></a>
+<a href="#project-traefik-traefik"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/traefik-traefik-dark.svg"><img src="./assets/catalog/traefik-traefik-light.svg" width="112" height="76" alt="Traefik"></picture></a>
+<a href="#project-theupdateframework-python-tuf"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/theupdateframework-python-tuf-dark.svg"><img src="./assets/catalog/theupdateframework-python-tuf-light.svg" width="112" height="76" alt="TUF (Python)"></picture></a>
+<a href="#project-vim-vim"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/vim-vim-dark.svg"><img src="./assets/catalog/vim-vim-light.svg" width="112" height="76" alt="Vim"></picture></a>
+<a href="#project-wekan-wekan"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/wekan-wekan-dark.svg"><img src="./assets/catalog/wekan-wekan-light.svg" width="112" height="76" alt="Wekan"></picture></a>
+<a href="#project-in-toto-witness"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/in-toto-witness-dark.svg"><img src="./assets/catalog/in-toto-witness-light.svg" width="112" height="76" alt="witness"></picture></a>
+<a href="#project-zitadel-zitadel"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/zitadel-zitadel-dark.svg"><img src="./assets/catalog/zitadel-zitadel-light.svg" width="112" height="76" alt="ZITADEL"></picture></a>
 </p>
 
-73 projects · 70 published advisories · 12 merged patches
+<p align="center">
+<a href="#project-wwbn-avideo">AVideo</a> · <a href="#project-richlegrand-bitbang-cli">bitbang-cli</a> · <a href="#project-richlegrand-bitbang-server">bitbang-server</a> · <a href="#project-cure53-dompurify">DOMPurify</a> · <a href="#project-gitoxidelabs-gitoxide">gitoxide</a> · <a href="#project-gnome-glib">GNOME&nbsp;GLib</a> · <a href="#project-go-git-go-git">go-git</a> · <a href="#project-in-toto-go-witness">go-witness</a> · <a href="#project-russellhaering-gosaml2">gosaml2</a> · <a href="#project-kjur-jsrsasign">jsrsasign</a> · <a href="#project-libevent-libevent">libevent</a> · <a href="#project-strukturag-libheif">libheif</a> · <a href="#project-libjpeg-turbo-libjpeg-turbo">libjpeg-turbo</a> · <a href="#project-nih-at-libzip">libzip</a> · <a href="#project-lighttpd-lighttpd1-4">lighttpd</a> · <a href="#project-phpseclib-phpseclib">phpseclib</a> · <a href="#project-py-pdf-pypdf">pypdf</a> · <a href="#project-rustfs-rustfs">RustFS</a> · <a href="#project-steveukx-git-js">simple-git</a> · <a href="#project-charmbracelet-soft-serve">Soft&nbsp;Serve</a> · <a href="#project-stablelib-stablelib">StableLib</a>
+</p>
+
+<p align="center">73 projects · 70 published advisories · 12 merged patches</p>
+
+<a id="work"></a>
 
 ## Work by project
 
 Alphabetical by project; newest work first within each.
 
+[A](#letter-a) &nbsp; [B](#letter-b) &nbsp; [C](#letter-c) &nbsp; [D](#letter-d) &nbsp; [E](#letter-e) &nbsp; [F](#letter-f) &nbsp; [G](#letter-g) &nbsp; [H](#letter-h) &nbsp; [J](#letter-j) &nbsp; [K](#letter-k) &nbsp; [L](#letter-l) &nbsp; [N](#letter-n) &nbsp; [O](#letter-o) &nbsp; [P](#letter-p) &nbsp; [R](#letter-r) &nbsp; [S](#letter-s) &nbsp; [T](#letter-t) &nbsp; [V](#letter-v) &nbsp; [W](#letter-w) &nbsp; [Z](#letter-z)
+
+<a id="letter-a"></a>
+
+## A
+
 <a id="project-activepieces-activepieces"></a>
 
-### <img src="./assets/logos/activepieces-activepieces.png" width="28" height="28" alt=""> [Activepieces](https://github.com/activepieces/activepieces)
-
-**[CVE-2026-73081](https://www.cve.org/CVERecord?id=CVE-2026-73081)** · [GHSA-3pfv-m69p-5fv5](https://github.com/activepieces/activepieces/security/advisories/GHSA-3pfv-m69p-5fv5)<br>🟠 High · 2026-07-17
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/activepieces-activepieces.png" width="32" height="32" alt=""> <a href="https://github.com/activepieces/activepieces">Activepieces</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-73081">CVE-2026-73081</a></strong><br><a href="https://github.com/activepieces/activepieces/security/advisories/GHSA-3pfv-m69p-5fv5">GHSA-3pfv-m69p-5fv5</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;17</sub></td>
+</tr>
+<tr><td colspan="2">
 
 A flow Code step’s name reached a shell-invoked bun build command without sufficient validation. An authenticated user able to create a flow could execute commands as the worker user before sandboxing began.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -122,11 +128,28 @@ CNA version record — activepieces: affected: &lt; 0.80.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-apache-httpd"></a>
 
-### <img src="./assets/logos/apache-httpd.png" width="28" height="28" alt=""> [Apache HTTP Server](https://github.com/apache/httpd)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/apache-httpd.png" width="32" height="32" alt=""> <a href="https://github.com/apache/httpd">Apache HTTP Server</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/apache/httpd/commit/d11e440">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-04-16<br><sub>committed</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Merged patch](https://github.com/apache/httpd/commit/d11e440)** · 2026-04-16 (committed) — Integer overflow guards in four core escaping functions
+Integer overflow guards in four core escaping functions
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -135,13 +158,28 @@ CNA version record — activepieces: affected: &lt; 0.80.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-withastro-astro"></a>
 
-### <img src="./assets/logos/withastro-astro.svg" width="28" height="28" alt=""> [Astro](https://github.com/withastro/astro)
-
-**[CVE-2026-41321](https://www.cve.org/CVERecord?id=CVE-2026-41321)** · [GHSA-88gm-j2wx-58h6](https://github.com/withastro/astro/security/advisories/GHSA-88gm-j2wx-58h6)<br>🔵 Low · 2026-04-20
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/withastro-astro.svg" width="32" height="32" alt=""> <a href="https://github.com/withastro/astro">Astro</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41321">CVE-2026-41321</a></strong><br><a href="https://github.com/withastro/astro/security/advisories/GHSA-88gm-j2wx-58h6">GHSA-88gm-j2wx-58h6</a></td>
+<td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;20</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The Cloudflare image-binding transform checked only the initial remote-image URL and followed redirects. An open redirect on an allowed domain could bypass image-domain restrictions and trigger blind requests to destinations outside that allowlist.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -185,15 +223,37 @@ CNA version record — @astrojs/cloudflare: affected: &lt; 13.1.10.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-goauthentik-authentik"></a>
 
-### <img src="./assets/logos/goauthentik-authentik.svg" width="28" height="28" alt=""> [authentik](https://github.com/goauthentik/authentik)
-
-**[CVE-2026-41577](https://www.cve.org/CVERecord?id=CVE-2026-41577)** · [GHSA-4v4x-x5pr-8gp2](https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2)<br>🟡 Moderate · 2026-05-12
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/goauthentik-authentik.svg" width="32" height="32" alt=""> <a href="https://github.com/goauthentik/authentik">authentik</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41577">CVE-2026-41577</a></strong><br><a href="https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2">GHSA-4v4x-x5pr-8gp2</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;05&#8209;12</sub></td>
+</tr>
+<tr><td colspan="2">
 
 SAML assertion processing omitted time and audience conditions. An attacker holding a valid signed assertion could replay it after its signed expiry or use an assertion issued for a different service provider.
 
-**[Vendor acknowledgement](https://docs.goauthentik.io/security/cves/CVE-2026-40165)** — SAML NameID truncation in CVE-2026-40165
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://docs.goauthentik.io/security/cves/CVE-2026-40165">Vendor acknowledgement</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
+
+SAML NameID truncation in CVE-2026-40165
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -227,17 +287,37 @@ CNA version record — authentik: affected: &lt; 2025.12.5; affected: &lt; 2026.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-authorizerdev-authorizer"></a>
 
-### <img src="./assets/logos/authorizerdev-authorizer.png" width="28" height="28" alt=""> [Authorizer](https://github.com/authorizerdev/authorizer)
-
-**[CVE-2026-35511](https://www.cve.org/CVERecord?id=CVE-2026-35511)** · [GHSA-29rf-f4vv-pvq6](https://github.com/authorizerdev/authorizer/security/advisories/GHSA-29rf-f4vv-pvq6)<br>🔴 Critical · 2026-08-13
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/authorizerdev-authorizer.png" width="32" height="32" alt=""> <a href="https://github.com/authorizerdev/authorizer">Authorizer</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35511">CVE-2026-35511</a></strong><br><a href="https://github.com/authorizerdev/authorizer/security/advisories/GHSA-29rf-f4vv-pvq6">GHSA-29rf-f4vv-pvq6</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;08&#8209;13</sub></td>
+</tr>
+<tr><td colspan="2">
 
 OAuth login linked accounts by email without requiring the existing account to verify that address. An attacker who registered a victim’s email retained password access when the victim later signed in through an OAuth provider.
 
-[GHSA-x3f4-v83f-7wp2](https://github.com/authorizerdev/authorizer/security/advisories/GHSA-x3f4-v83f-7wp2)<br>🟠 High · 2026-04-03
+</td></tr>
+<tr>
+<td valign="top"><a href="https://github.com/authorizerdev/authorizer/security/advisories/GHSA-x3f4-v83f-7wp2">GHSA-x3f4-v83f-7wp2</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;03</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Several authentication endpoints attached tokens to caller-supplied redirect URLs without checking AllowedOrigins. An attacker could capture reset, magic-link, or authentication tokens after the victim followed an emailed link leading through the affected flow.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -302,13 +382,28 @@ Maintainer weaknesses: [CWE-601](https://cwe.mitre.org/data/definitions/601.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-wwbn-avideo"></a>
 
-### [AVideo](https://github.com/WWBN/AVideo)
-
-**[CVE-2026-33766](https://www.cve.org/CVERecord?id=CVE-2026-33766)** · [GHSA-f359-r3pv-2phf](https://github.com/WWBN/AVideo/security/advisories/GHSA-f359-r3pv-2phf)<br>🟡 Moderate · 2026-03-24
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/WWBN/AVideo">AVideo</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-33766">CVE-2026-33766</a></strong><br><a href="https://github.com/WWBN/AVideo/security/advisories/GHSA-f359-r3pv-2phf">GHSA-f359-r3pv-2phf</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;03&#8209;24</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Image-download endpoints validated the starting URL but followed HTTP redirects without checking their destinations. A user with upload and edit permissions could redirect the server to internal services or reachable cloud metadata endpoints.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -350,13 +445,32 @@ CNA version record — AVideo: affected: &lt;= 26.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-b"></a>
+
+## B
+
 <a id="project-bentoml-bentoml"></a>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/bentoml-bentoml-dark.png"><img src="./assets/logos/bentoml-bentoml.png" width="28" height="28" alt=""></picture> [BentoML](https://github.com/bentoml/BentoML)
-
-**[CVE-2026-35043](https://www.cve.org/CVERecord?id=CVE-2026-35043)** · [GHSA-fgv4-6jr3-jgfw](https://github.com/bentoml/BentoML/security/advisories/GHSA-fgv4-6jr3-jgfw)<br>🔴 Critical · 2026-04-02
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/bentoml-bentoml-dark.png"><img src="./assets/logos/bentoml-bentoml.png" width="32" height="32" alt=""></picture> <a href="https://github.com/bentoml/BentoML">BentoML</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35043">CVE-2026-35043</a></strong><br><a href="https://github.com/bentoml/BentoML/security/advisories/GHSA-fgv4-6jr3-jgfw">GHSA-fgv4-6jr3-jgfw</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;02</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Cloud deployment script generation inserted system\_packages from bentofile.yaml into a shell command without quoting. An attacker-controlled package entry could execute commands during the BentoCloud build; an earlier local-path quoting fix missed this cloud-specific path.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -402,13 +516,28 @@ CNA version record — BentoML: affected: &lt; 1.4.38.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-henrygd-beszel"></a>
 
-### <img src="./assets/logos/henrygd-beszel.svg" width="22" height="28" alt=""> [Beszel](https://github.com/henrygd/beszel)
-
-**[CVE-2026-40077](https://www.cve.org/CVERecord?id=CVE-2026-40077)** · [GHSA-5f5r-95pg-xrpm](https://github.com/henrygd/beszel/security/advisories/GHSA-5f5r-95pg-xrpm)<br>🔵 Low · 2026-04-09
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/henrygd-beszel.svg" width="26" height="32" alt=""> <a href="https://github.com/henrygd/beszel">Beszel</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40077">CVE-2026-40077</a></strong><br><a href="https://github.com/henrygd/beszel/security/advisories/GHSA-5f5r-95pg-xrpm">GHSA-5f5r-95pg-xrpm</a></td>
+<td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;09</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Several hub endpoints checked authentication but not membership of the requested system. Cross-system container access required both a valid 15-character system ID and 12-character container ID; other affected endpoints could disclose system information or trigger SMART refreshes.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -450,13 +579,37 @@ CNA version record — beszel: affected: &lt; 0.18.7.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-richlegrand-bitbang-cli"></a>
 
-### [bitbang-cli](https://github.com/richlegrand/bitbang-cli)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/richlegrand/bitbang-cli">bitbang-cli</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/richlegrand/bitbang-cli/pull/12">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-08-16<br><sub>merged</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Merged patch](https://github.com/richlegrand/bitbang-cli/pull/12)** · 2026-08-16 (merged) — Publish a running tmux session as a shareable URL
+Publish a running tmux session as a shareable URL
 
-**[Merged patch](https://github.com/richlegrand/bitbang-cli/pull/10)** · 2026-08-01 (merged) — Reachable dnsmessage panic in mDNS response parsing (GO-2026-5942); golang.org/x/net bumped to v0.57.0
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://github.com/richlegrand/bitbang-cli/pull/10">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-08-01<br><sub>merged</sub></td>
+</tr>
+<tr><td colspan="2">
+
+Reachable dnsmessage panic in mDNS response parsing (GO-2026-5942); golang.org/x/net bumped to v0.57.0
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -469,11 +622,28 @@ Ordinary open-source contribution.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-richlegrand-bitbang-server"></a>
 
-### [bitbang-server](https://github.com/richlegrand/bitbang-server)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/richlegrand/bitbang-server">bitbang-server</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/richlegrand/bitbang-server/pull/2">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-08-15<br><sub>merged</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Merged patch](https://github.com/richlegrand/bitbang-server/pull/2)** · 2026-08-15 (merged) — Add bitbang-metrics-dump and a build/test CI workflow
+Add bitbang-metrics-dump and a build/test CI workflow
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -484,11 +654,32 @@ Ordinary open-source contribution.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-c"></a>
+
+## C
+
 <a id="project-c-ares-c-ares"></a>
 
-### <img src="./assets/logos/c-ares-c-ares.svg" width="56" height="17" alt=""> [c-ares](https://github.com/c-ares/c-ares)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/c-ares-c-ares.svg" width="64" height="19" alt=""> <a href="https://github.com/c-ares/c-ares">c-ares</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/c-ares/c-ares/pull/1094">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-03-22<br><sub>merged</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Merged patch](https://github.com/c-ares/c-ares/pull/1094)** · 2026-03-22 (merged) — Overflow checks in <code>ares_buf_ensure_space()</code>
+Overflow checks in <code>ares_buf_ensure_space()</code>
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -499,13 +690,28 @@ Sources: [Node.js release notes](https://github.com/nodejs/node/blob/main/deps/c
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-cilium-cilium"></a>
 
-### <img src="./assets/logos/cilium-cilium.svg" width="28" height="28" alt=""> [Cilium](https://github.com/cilium/cilium)
-
-**[CVE-2026-41520](https://www.cve.org/CVERecord?id=CVE-2026-41520)** · [GHSA-gj49-89wh-h4gj](https://github.com/cilium/cilium/security/advisories/GHSA-gj49-89wh-h4gj)<br>🟠 High · 2026-04-22
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/cilium-cilium.svg" width="32" height="32" alt=""> <a href="https://github.com/cilium/cilium">Cilium</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41520">CVE-2026-41520</a></strong><br><a href="https://github.com/cilium/cilium/security/advisories/GHSA-gj49-89wh-h4gj">GHSA-gj49-89wh-h4gj</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;22</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Debug archives from WireGuard-enabled Cilium nodes included the node’s WireGuard private key. Anyone receiving an affected bugtool archive or sysdump obtained that key; remediation required rotating keys already shared in diagnostic bundles.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -551,13 +757,37 @@ CNA version record — cilium: affected: &lt; 1.17.15; affected: &gt;= 1.18.0, &
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-cloudnative-pg-cloudnative-pg"></a>
 
-### <img src="./assets/logos/cloudnative-pg-cloudnative-pg.svg" width="27" height="28" alt=""> [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/cloudnative-pg-cloudnative-pg.svg" width="31" height="32" alt=""> <a href="https://github.com/cloudnative-pg/cloudnative-pg">CloudNativePG</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077">Upstream acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-05-07<br><sub>committed</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Upstream acknowledgement](https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077)** · 2026-05-07 (committed) — Recovery target validation
+Recovery target validation
 
-**[Upstream acknowledgement](https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47)** · 2026-04-29 (committed) — Escaping in PostgreSQL configuration values
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47">Upstream acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-04-29<br><sub>committed</sub></td>
+</tr>
+<tr><td colspan="2">
+
+Escaping in PostgreSQL configuration values
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -568,13 +798,28 @@ CNA version record — cilium: affected: &lt; 1.17.15; affected: &gt;= 1.18.0, &
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-comfy-org-comfyui"></a>
 
-### <img src="./assets/logos/comfy-org-comfyui.svg" width="26" height="28" alt=""> [ComfyUI](https://github.com/Comfy-Org/ComfyUI)
-
-**[CVE-2026-56671](https://www.cve.org/CVERecord?id=CVE-2026-56671)** · [GHSA-pj59-g5vv-74q4](https://github.com/Comfy-Org/ComfyUI/security/advisories/GHSA-pj59-g5vv-74q4)<br>🟠 High · 2026-07-15
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/comfy-org-comfyui.svg" width="30" height="32" alt=""> <a href="https://github.com/Comfy-Org/ComfyUI">ComfyUI</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-56671">CVE-2026-56671</a></strong><br><a href="https://github.com/Comfy-Org/ComfyUI/security/advisories/GHSA-pj59-g5vv-74q4">GHSA-pj59-g5vv-74q4</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;15</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The unauthenticated model-preview route accepted paths outside its model directory. Because responses were decoded and re-encoded as images, disclosure was limited to image-decodable files, with a separate oracle revealing whether other files existed.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -606,13 +851,28 @@ CNA version record — ComfyUI: affected: &lt; 0.28.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-composer-composer"></a>
 
-### <img src="./assets/logos/composer-composer.png" width="23" height="28" alt=""> [Composer](https://github.com/composer/composer)
-
-**[CVE-2026-40261](https://www.cve.org/CVERecord?id=CVE-2026-40261)** · [GHSA-gqw4-4w2p-838q](https://github.com/composer/composer/security/advisories/GHSA-gqw4-4w2p-838q)<br>🟠 High · 2026-04-14
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/composer-composer.png" width="26" height="32" alt=""> <a href="https://github.com/composer/composer">Composer</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40261">CVE-2026-40261</a></strong><br><a href="https://github.com/composer/composer/security/advisories/GHSA-gqw4-4w2p-838q">GHSA-gqw4-4w2p-838q</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;14</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Perforce package references and connection parameters entered shell commands without escaping. A repository supplying malicious Perforce source metadata could execute commands during source-preferred Composer installs, even when the Perforce client was not installed.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -656,13 +916,28 @@ CNA version record — composer: affected: &gt;= 2.3.0, &lt; 2.9.6; affected: &g
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-projectcontour-contour"></a>
 
-### <img src="./assets/logos/projectcontour-contour.svg" width="28" height="28" alt=""> [Contour](https://github.com/projectcontour/contour)
-
-**[CVE-2026-41246](https://www.cve.org/CVERecord?id=CVE-2026-41246)** · [GHSA-x4mj-7f9g-29h4](https://github.com/projectcontour/contour/security/advisories/GHSA-x4mj-7f9g-29h4)<br>🟠 High · 2026-04-20
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/projectcontour-contour.svg" width="32" height="32" alt=""> <a href="https://github.com/projectcontour/contour">Contour</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41246">CVE-2026-41246</a></strong><br><a href="https://github.com/projectcontour/contour/security/advisories/GHSA-x4mj-7f9g-29h4">GHSA-x4mj-7f9g-29h4</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;20</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Cookie rewrite values entered generated Envoy Lua code without escaping. A user permitted to create or modify HTTPProxy resources could execute Lua in shared Envoy, read its xDS credentials, and potentially access other tenants’ TLS keys.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -708,13 +983,28 @@ CNA version record — contour: affected: &gt;= 1.33.0, &lt; 1.33.4; affected: &
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-coollabsio-coolify"></a>
 
-### <img src="./assets/logos/coollabsio-coolify.svg" width="28" height="28" alt=""> [Coolify](https://github.com/coollabsio/coolify)
-
-**[CVE-2026-34168](https://www.cve.org/CVERecord?id=CVE-2026-34168)** · [GHSA-mh8x-fppq-cp77](https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77)<br>🟠 High · 2026-07-02
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/coollabsio-coolify.svg" width="32" height="32" alt=""> <a href="https://github.com/coollabsio/coolify">Coolify</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34168">CVE-2026-34168</a></strong><br><a href="https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77">GHSA-mh8x-fppq-cp77</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;02</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Persistent-volume names entered shell commands without escaping during resource deletion. An authenticated API token holder able to configure storage could arrange command execution as root on managed servers when the affected resource was deleted.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -748,13 +1038,28 @@ CNA version record — coolify: affected: &lt; 4.0.0-beta.471.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-sigstore-cosign"></a>
 
-### <img src="./assets/logos/sigstore-cosign.svg" width="29" height="28" alt=""> [Cosign](https://github.com/sigstore/cosign)
-
-**[CVE-2026-39395](https://www.cve.org/CVERecord?id=CVE-2026-39395)** · [GHSA-w6c6-c85g-mmv6](https://github.com/sigstore/cosign/security/advisories/GHSA-w6c6-c85g-mmv6)<br>🟡 Moderate · 2026-04-06
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/sigstore-cosign.svg" width="33" height="32" alt=""> <a href="https://github.com/sigstore/cosign">Cosign</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-39395">CVE-2026-39395</a></strong><br><a href="https://github.com/sigstore/cosign/security/advisories/GHSA-w6c6-c85g-mmv6">GHSA-w6c6-c85g-mmv6</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;06</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Attestation verification mishandled predicate-type and payload-parsing failures across bundle formats. Without check-claims enabled, a valid signature over an unparsable payload or mismatched predicate type could still produce a successful verification result.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -797,13 +1102,32 @@ CNA version record — cosign: affected: &gt;= 3.0.0, &lt; 3.0.6; affected: &lt;
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-d"></a>
+
+## D
+
 <a id="project-dgraph-io-dgraph"></a>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/dgraph-io-dgraph-dark.png"><img src="./assets/logos/dgraph-io-dgraph.png" width="56" height="21" alt=""></picture> [Dgraph](https://github.com/dgraph-io/dgraph)
-
-**[CVE-2026-34976](https://www.cve.org/CVERecord?id=CVE-2026-34976)** · [GHSA-p5rh-vmhp-gvcw](https://github.com/dgraph-io/dgraph/security/advisories/GHSA-p5rh-vmhp-gvcw)<br>🔴 Critical · 2026-04-02
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/dgraph-io-dgraph-dark.png"><img src="./assets/logos/dgraph-io-dgraph.png" width="64" height="24" alt=""></picture> <a href="https://github.com/dgraph-io/dgraph">Dgraph</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34976">CVE-2026-34976</a></strong><br><a href="https://github.com/dgraph-io/dgraph/security/advisories/GHSA-p5rh-vmhp-gvcw">GHSA-p5rh-vmhp-gvcw</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;02</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The restoreTenant mutation lacked its authorization middleware entry. Unauthenticated callers reaching the admin GraphQL endpoint could overwrite a namespace from a supplied backup, probe local filesystem paths, or trigger requests through a controlled vault address.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -849,15 +1173,30 @@ CNA version record — dgraph: affected: &lt; 25.3.1.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-cure53-dompurify"></a>
 
-### [DOMPurify](https://github.com/cure53/DOMPurify)
-
-**[CVE-2026-41240](https://www.cve.org/CVERecord?id=CVE-2026-41240)** · [GHSA-h7mw-gpvr-xq4m](https://github.com/cure53/DOMPurify/security/advisories/GHSA-h7mw-gpvr-xq4m)<br>🟡 Moderate · 2026-04-20
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/cure53/DOMPurify">DOMPurify</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41240">CVE-2026-41240</a></strong><br><a href="https://github.com/cure53/DOMPurify/security/advisories/GHSA-h7mw-gpvr-xq4m">GHSA-h7mw-gpvr-xq4m</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;20</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Function-based ADD\_TAGS handling skipped FORBID\_TAGS when the predicate returned true. Configurations combining those options could retain explicitly forbidden elements and their permitted attributes; the corresponding attribute-denylist path already had an earlier fix.
 
 **[Merged patch](https://github.com/cure53/DOMPurify/pull/1230)** · 2026-04-11 (merged) — Fix for CVE-2026-41240
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -907,13 +1246,32 @@ Sources: [CVE-2026-41240](https://github.com/advisories/GHSA-h7mw-gpvr-xq4m).
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-e"></a>
+
+## E
+
 <a id="project-envoyproxy-envoy"></a>
 
-### <img src="./assets/logos/envoyproxy-envoy.svg" width="37" height="28" alt=""> [Envoy](https://github.com/envoyproxy/envoy)
-
-**[CVE-2026-73549](https://www.cve.org/CVERecord?id=CVE-2026-73549)** · [GHSA-jp5f-qr64-c9vw](https://github.com/envoyproxy/envoy/security/advisories/GHSA-jp5f-qr64-c9vw)<br>🟡 Moderate · 2026-08-26
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/envoyproxy-envoy.svg" width="42" height="32" alt=""> <a href="https://github.com/envoyproxy/envoy">Envoy</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-73549">CVE-2026-73549</a></strong><br><a href="https://github.com/envoyproxy/envoy/security/advisories/GHSA-jp5f-qr64-c9vw">GHSA-jp5f-qr64-c9vw</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;26</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Scoped IPv6 addresses could crash copyInternetAddressAndPort in ORIGINAL\_DST or transparent-proxy paths. Exploitation depends on original-destination socket handling; the advisory reports source analysis, not a live reproduced exploit, and extends an earlier IPv6 fix.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -944,13 +1302,28 @@ Verification note: the advisory supplies this CVE identifier, but its public CVE
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-external-secrets-external-secrets"></a>
 
-### <img src="./assets/logos/external-secrets-external-secrets.svg" width="28" height="28" alt=""> [External Secrets](https://github.com/external-secrets/external-secrets)
-
-**[CVE-2026-34984](https://www.cve.org/CVERecord?id=CVE-2026-34984)** · [GHSA-r2pg-r6h7-crf3](https://github.com/external-secrets/external-secrets/security/advisories/GHSA-r2pg-r6h7-crf3)<br>🟠 High · 2026-04-11
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/external-secrets-external-secrets.svg" width="32" height="32" alt=""> <a href="https://github.com/external-secrets/external-secrets">External Secrets</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34984">CVE-2026-34984</a></strong><br><a href="https://github.com/external-secrets/external-secrets/security/advisories/GHSA-r2pg-r6h7-crf3">GHSA-r2pg-r6h7-crf3</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;11</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The template engine exposed getHostByName inside the controller process. A user able to author templated ExternalSecret resources could encode accessible secrets into DNS lookups; exploitation required outbound DNS from the controller, not direct egress from the attacker’s workload.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -993,33 +1366,67 @@ CNA version record — external-secrets: affected: &lt; 2.3.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-f"></a>
+
+## F
+
 <a id="project-filebrowser-filebrowser"></a>
 
-### <img src="./assets/logos/filebrowser-filebrowser.svg" width="28" height="28" alt=""> [File Browser](https://github.com/filebrowser/filebrowser)
-
-**[CVE-2026-35604](https://www.cve.org/CVERecord?id=CVE-2026-35604)** · [GHSA-v9w4-gm2x-6rvf](https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf)<br>🟠 High · 2026-04-04
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/filebrowser-filebrowser.svg" width="32" height="32" alt=""> <a href="https://github.com/filebrowser/filebrowser">File Browser</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35604">CVE-2026-35604</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf">GHSA-v9w4-gm2x-6rvf</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;04</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Public share access did not recheck the owner’s Share and Download permissions. Existing links remained downloadable after an administrator revoked those permissions, even though the same account could no longer create new shares.
 
 **[Merged patch](https://github.com/filebrowser/filebrowser/pull/5888)** · 2026-04-04 (merged) — Share owner permissions checked on public share access
 
-**[CVE-2026-35607](https://www.cve.org/CVERecord?id=CVE-2026-35607)** · [GHSA-7526-j432-6ppp](https://github.com/filebrowser/filebrowser/security/advisories/GHSA-7526-j432-6ppp)<br>🟡 Moderate · 2026-04-04
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35607">CVE-2026-35607</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-7526-j432-6ppp">GHSA-7526-j432-6ppp</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;04</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Proxy-authenticated accounts inherited default Execute permissions and configured commands, unlike ordinary signup accounts. Exposure required proxy authentication with command execution enabled and permissive administrator-configured defaults; the earlier signup fix did not cover auto-provisioning.
 
 **[Merged patch](https://github.com/filebrowser/filebrowser/pull/5890)** · 2026-04-04 (merged) — Default permissions restricted for proxy-auth auto-provisioned users
 
-**[CVE-2026-35606](https://www.cve.org/CVERecord?id=CVE-2026-35606)** · [GHSA-67cg-cpj7-qgc9](https://github.com/filebrowser/filebrowser/security/advisories/GHSA-67cg-cpj7-qgc9)<br>🟡 Moderate · 2026-04-04
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35606">CVE-2026-35606</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-67cg-cpj7-qgc9">GHSA-67cg-cpj7-qgc9</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;04</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The resource endpoint returned text content and raw encoded bytes without checking Download permission. An authenticated user with downloads disabled could still read files within their authorized scope; directory and path authorization remained in effect.
 
 **[Merged patch](https://github.com/filebrowser/filebrowser/pull/5891)** · 2026-04-04 (merged) — Download permission checked in the resource handler
 
-**[CVE-2026-35605](https://www.cve.org/CVERecord?id=CVE-2026-35605)** · [GHSA-5q48-q4fm-g3m6](https://github.com/filebrowser/filebrowser/security/advisories/GHSA-5q48-q4fm-g3m6)<br>🟡 Moderate · 2026-04-04
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35605">CVE-2026-35605</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-5q48-q4fm-g3m6">GHSA-5q48-q4fm-g3m6</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;04</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Access-rule matching used a string prefix without enforcing a directory boundary. An allow rule for one directory could also admit a sibling whose name shared that prefix; deny rules could over-match for the same reason.
 
 **[Merged patch](https://github.com/filebrowser/filebrowser/pull/5889)** · 2026-04-04 (merged) — Directory boundaries enforced in access-rule path matching
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1178,13 +1585,28 @@ CNA version record — filebrowser: affected: &lt; 2.63.1.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-rancher-fleet"></a>
 
-### <img src="./assets/logos/rancher-fleet.svg" width="34" height="28" alt=""> [Fleet](https://github.com/rancher/fleet)
-
-**[CVE-2026-41050](https://www.cve.org/CVERecord?id=CVE-2026-41050)** · [GHSA-765j-qfrp-hm3j](https://github.com/rancher/fleet/security/advisories/GHSA-765j-qfrp-hm3j)<br>🔴 Critical · 2026-04-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/rancher-fleet.svg" width="39" height="32" alt=""> <a href="https://github.com/rancher/fleet">Fleet</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41050">CVE-2026-41050</a></strong><br><a href="https://github.com/rancher/fleet/security/advisories/GHSA-765j-qfrp-hm3j">GHSA-765j-qfrp-hm3j</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Helm lookup and valuesFrom reads bypassed ServiceAccount impersonation and retained fleet-agent privileges. A tenant able to push to a monitored Git repository could read other namespaces’ secrets on targeted downstream clusters; single-tenant deployments were unaffected.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1238,13 +1660,28 @@ Lyrie Research: Page could not be retrieved during the September 6 review; retai
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-flowiseai-flowise"></a>
 
-### <img src="./assets/logos/flowiseai-flowise.png" width="28" height="28" alt=""> [Flowise](https://github.com/FlowiseAI/Flowise)
-
-[GHSA-9cvr-5wv9-2gxr](https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-9cvr-5wv9-2gxr)<br>🟠 High · 2026-08-31
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/flowiseai-flowise.png" width="32" height="32" alt=""> <a href="https://github.com/FlowiseAI/Flowise">Flowise</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-9cvr-5wv9-2gxr">GHSA-9cvr-5wv9-2gxr</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;08&#8209;31</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Cheerio, Playwright, and Puppeteer document loaders fetched URLs outside Flowise’s shared HTTP-security checks. A user able to configure these loaders could bypass the denylist and request internal destinations; the earlier HTTP-node fix did not cover them.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1272,13 +1709,28 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-freescout-help-desk-freescout"></a>
 
-### <img src="./assets/logos/freescout-help-desk-freescout.png" width="28" height="28" alt=""> [FreeScout](https://github.com/freescout-help-desk/freescout)
-
-**[CVE-2026-34443](https://www.cve.org/CVERecord?id=CVE-2026-34443)** · [GHSA-c9v3-4c59-x5q2](https://github.com/freescout-help-desk/freescout/security/advisories/GHSA-c9v3-4c59-x5q2)<br>🟠 High · 2026-03-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/freescout-help-desk-freescout.png" width="32" height="32" alt=""> <a href="https://github.com/freescout-help-desk/freescout">FreeScout</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34443">CVE-2026-34443</a></strong><br><a href="https://github.com/freescout-help-desk/freescout/security/advisories/GHSA-c9v3-4c59-x5q2">GHSA-c9v3-4c59-x5q2</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;03&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The SSRF address check returned early for ordinary IP addresses, leaving configured CIDR blocks unenforced. An inbound email containing controlled attachment URLs could cause the server to request private-network destinations that the policy intended to block.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1310,13 +1762,32 @@ CNA version record — freescout: affected: &lt; 1.8.211.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-g"></a>
+
+## G
+
 <a id="project-giskard-ai-giskard-oss"></a>
 
-### <img src="./assets/logos/giskard-ai-giskard-oss.png" width="56" height="13" alt=""> [Giskard](https://github.com/Giskard-AI/giskard-oss)
-
-**[CVE-2026-34172](https://www.cve.org/CVERecord?id=CVE-2026-34172)** · [GHSA-frv4-x25r-588m](https://github.com/Giskard-AI/giskard-oss/security/advisories/GHSA-frv4-x25r-588m)<br>🟠 High · 2026-03-26
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/giskard-ai-giskard-oss.png" width="64" height="15" alt=""> <a href="https://github.com/Giskard-AI/giskard-oss">Giskard</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34172">CVE-2026-34172</a></strong><br><a href="https://github.com/Giskard-AI/giskard-oss/security/advisories/GHSA-frv4-x25r-588m">GHSA-frv4-x25r-588m</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;03&#8209;26</sub></td>
+</tr>
+<tr><td colspan="2">
 
 ChatWorkflow.chat treated plain-string input as a Jinja2 template in an unsandboxed environment. Applications passing untrusted input directly to that method could expose command execution; values supplied through with\_inputs did not take the vulnerable template-compilation path.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1360,17 +1831,37 @@ CNA version record — giskard-oss: affected: &lt; 0.3.4; affected: &gt;= 1.0.1a
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-gitoxidelabs-gitoxide"></a>
 
-### [gitoxide](https://github.com/GitoxideLabs/gitoxide)
-
-**[CVE-2026-82254](https://www.cve.org/CVERecord?id=CVE-2026-82254)** · [GHSA-x494-mj8g-cj27](https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-x494-mj8g-cj27)<br>🟠 High · 2026-04-25
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/GitoxideLabs/gitoxide">gitoxide</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-82254">CVE-2026-82254</a></strong><br><a href="https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-x494-mj8g-cj27">GHSA-x494-mj8g-cj27</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;25</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Unchecked delta indexing and uncapped allocations allowed crafted Git pack data to crash consuming processes. A malicious remote could trigger a truncated-delta panic or excessive allocation during clone and fetch operations.
 
-**[CVE-2026-82253](https://www.cve.org/CVERecord?id=CVE-2026-82253)** · [GHSA-p3hw-mv63-rf9w](https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-p3hw-mv63-rf9w)<br>🟠 High · 2026-04-25
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-82253">CVE-2026-82253</a></strong><br><a href="https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-p3hw-mv63-rf9w">GHSA-p3hw-mv63-rf9w</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;25</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Incomplete submodule-name validation allowed paths to escape .git/modules, while inherited trust skipped ownership checks. Processing attacker-controlled submodule metadata could access unintended Git configuration and disclose credentials; package fix versions differ between published sources.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1446,11 +1937,28 @@ CNA version record — gitoxide: affected: 0 &lt; 0.11.1; unaffected: 0.11.1.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-gnome-glib"></a>
 
-### [GNOME GLib](https://github.com/GNOME/glib)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/GNOME/glib">GNOME GLib</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/GNOME/glib/commit/578a488">Upstream acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-04-29<br><sub>committed</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Upstream acknowledgement](https://github.com/GNOME/glib/commit/578a488)** · 2026-04-29 (committed) — D-Bus message length integer arithmetic
+D-Bus message length integer arithmetic
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1459,19 +1967,46 @@ CNA version record — gitoxide: affected: 0 &lt; 0.11.1; unaffected: 0.11.1.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-go-git-go-git"></a>
 
-### [go-git](https://github.com/go-git/go-git)
-
-**[CVE-2026-71556](https://www.cve.org/CVERecord?id=CVE-2026-71556)** · [GHSA-hc8v-wwc9-vgxm](https://github.com/go-git/go-git/security/advisories/GHSA-hc8v-wwc9-vgxm)<br>🟠 High · 2026-07-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/go-git/go-git">go-git</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-71556">CVE-2026-71556</a></strong><br><a href="https://github.com/go-git/go-git/security/advisories/GHSA-hc8v-wwc9-vgxm">GHSA-hc8v-wwc9-vgxm</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Worktree writes checked path strings but followed existing symlinks. An attacker able to plant a symlink and trigger a write could escape the worktree or modify Git metadata, including configuration beneath .git.
 
-[GHSA-w5pp-99ch-qj29](https://github.com/go-git/go-git/security/advisories/GHSA-w5pp-99ch-qj29)<br>🟡 Moderate · 2026-05-18
+</td></tr>
+<tr>
+<td valign="top"><a href="https://github.com/go-git/go-git/security/advisories/GHSA-w5pp-99ch-qj29">GHSA-w5pp-99ch-qj29</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;05&#8209;18</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Crafted pack, index, or loose-object data could cause panics or excessive resource use. Applications cloning, fetching, or opening untrusted repositories were exposed through a malicious remote or attacker-controlled files under .git/objects.
 
-**[Report acknowledgement](https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96)** — CVE-2026-45571 report
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96">Report acknowledgement</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
+
+CVE-2026-45571 report
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1545,13 +2080,28 @@ Named in the advisory body, not its structured credit list.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-in-toto-go-witness"></a>
 
-### [go-witness](https://github.com/in-toto/go-witness)
-
-[GHSA-6xq9-h39h-jc22](https://github.com/in-toto/go-witness/security/advisories/GHSA-6xq9-h39h-jc22)<br>🔵 Low · 2026-07-10
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/in-toto/go-witness">go-witness</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/in-toto/go-witness/security/advisories/GHSA-6xq9-h39h-jc22">GHSA-6xq9-h39h-jc22</a></td>
+<td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;07&#8209;10</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Policy verification appended the intermediate pool to itself instead of loading certificates from the trust bundle. Attestations requiring an intermediate CA failed verification; the failure was closed and did not accept unverified attestations.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1578,13 +2128,28 @@ Maintainer weaknesses: [CWE-296](https://cwe.mitre.org/data/definitions/296.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-russellhaering-gosaml2"></a>
 
-### [gosaml2](https://github.com/russellhaering/gosaml2)
-
-[GHSA-vv4x-5gvr-chh8](https://github.com/russellhaering/gosaml2/security/advisories/GHSA-vv4x-5gvr-chh8)<br>🟡 Moderate · 2026-08-19
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/russellhaering/gosaml2">gosaml2</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/russellhaering/gosaml2/security/advisories/GHSA-vv4x-5gvr-chh8">GHSA-vv4x-5gvr-chh8</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;19</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The earlier LogoutRequest signature fix did not cover LogoutResponse validation. Applications using the affected POST-response validator could accept an unsigned SAML logout response; independent reports were combined in the published advisory.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1611,13 +2176,28 @@ Maintainer weaknesses: [CWE-347](https://cwe.mitre.org/data/definitions/347.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-gotenberg-gotenberg"></a>
 
-### <img src="./assets/logos/gotenberg-gotenberg.png" width="28" height="28" alt=""> [Gotenberg](https://github.com/gotenberg/gotenberg)
-
-[GHSA-qmwh-9m9c-h36m](https://github.com/gotenberg/gotenberg/security/advisories/GHSA-qmwh-9m9c-h36m)<br>🟠 High · 2026-04-06
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/gotenberg-gotenberg.png" width="32" height="32" alt=""> <a href="https://github.com/gotenberg/gotenberg">Gotenberg</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/gotenberg/gotenberg/security/advisories/GHSA-qmwh-9m9c-h36m">GHSA-qmwh-9m9c-h36m</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;06</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The ExifTool metadata filter was case-sensitive and omitted hard-link and symbolic-link tags. Callers of the metadata-write endpoint, unauthenticated by default, could write files or links outside intended paths, within the service’s filesystem permissions.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1652,11 +2232,32 @@ Maintainer weaknesses: [CWE-73](https://cwe.mitre.org/data/definitions/73.html),
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-h"></a>
+
+## H
+
 <a id="project-kubernetes-sigs-headlamp"></a>
 
-### <img src="./assets/logos/kubernetes-sigs-headlamp.svg" width="22" height="28" alt=""> [Headlamp](https://github.com/kubernetes-sigs/headlamp)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/kubernetes-sigs-headlamp.svg" width="26" height="33" alt=""> <a href="https://github.com/kubernetes-sigs/headlamp">Headlamp</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0">Release acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-05-07<br><sub>released</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Release acknowledgement](https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0)** · 2026-05-07 (released) — Host-header validation in v0.42.0
+Host-header validation in v0.42.0
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1665,13 +2266,41 @@ Maintainer weaknesses: [CWE-73](https://cwe.mitre.org/data/definitions/73.html),
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-j"></a>
+
+## J
+
 <a id="project-kjur-jsrsasign"></a>
 
-### [jsrsasign](https://github.com/kjur/jsrsasign)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/kjur/jsrsasign">jsrsasign</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/kjur/jsrsasign/releases/tag/11.1.2">Release acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-04-13<br><sub>released</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Release acknowledgement](https://github.com/kjur/jsrsasign/releases/tag/11.1.2)** · 2026-04-13 (released) — DSA universal signature forgery from a missing FIPS 186-4 §4.7 boundary check, fixed in 11.1.2
+DSA universal signature forgery from a missing FIPS 186-4 §4.7 boundary check, fixed in 11.1.2
 
-**[Release acknowledgement](https://github.com/kjur/jsrsasign/releases/tag/11.1.2)** · 2026-04-13 (released) — ASN.1 parser infinite loop in <code>getChildIdx</code>, fixed in 11.1.2
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://github.com/kjur/jsrsasign/releases/tag/11.1.2">Release acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-04-13<br><sub>released</sub></td>
+</tr>
+<tr><td colspan="2">
+
+ASN.1 parser infinite loop in <code>getChildIdx</code>, fixed in 11.1.2
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1686,13 +2315,32 @@ Sources: [Release archive](https://github.com/kjur/jsrsasign/releases).
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-k"></a>
+
+## K
+
 <a id="project-kata-containers-kata-containers"></a>
 
-### <img src="./assets/logos/kata-containers-kata-containers.svg" width="23" height="28" alt=""> [Kata Containers](https://github.com/kata-containers/kata-containers)
-
-**[CVE-2026-41326](https://www.cve.org/CVERecord?id=CVE-2026-41326)** · [GHSA-q49m-57vm-c8cc](https://github.com/kata-containers/kata-containers/security/advisories/GHSA-q49m-57vm-c8cc)<br>🔴 Critical · 2026-04-22
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/kata-containers-kata-containers.svg" width="26" height="32" alt=""> <a href="https://github.com/kata-containers/kata-containers">Kata Containers</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41326">CVE-2026-41326</a></strong><br><a href="https://github.com/kata-containers/kata-containers/security/advisories/GHSA-q49m-57vm-c8cc">GHSA-q49m-57vm-c8cc</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;22</sub></td>
+</tr>
+<tr><td colspan="2">
 
 CopyFile policy checked the destination path but not the symlink target supplied in request data. An untrusted host could redirect writes outside the shared directory and overwrite files inside the guest, including in confidential-container deployments.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1737,13 +2385,28 @@ CNA version record — kata-containers: affected: &gt;= 3.4.0, &lt; 3.29.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-1panel-dev-kubepi"></a>
 
-### <img src="./assets/logos/1panel-dev-kubepi.png" width="28" height="28" alt=""> [KubePi](https://github.com/1Panel-dev/KubePi)
-
-**[CVE-2026-65956](https://www.cve.org/CVERecord?id=CVE-2026-65956)** · [GHSA-wjrh-4j52-c664](https://github.com/1Panel-dev/KubePi/security/advisories/GHSA-wjrh-4j52-c664)<br>🟡 Moderate · 2026-08-04
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/1panel-dev-kubepi.png" width="32" height="32" alt=""> <a href="https://github.com/1Panel-dev/KubePi">KubePi</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-65956">CVE-2026-65956</a></strong><br><a href="https://github.com/1Panel-dev/KubePi/security/advisories/GHSA-wjrh-4j52-c664">GHSA-wjrh-4j52-c664</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;04</sub></td>
+</tr>
+<tr><td colspan="2">
 
 SSO configuration and connectivity-test endpoints were exposed outside the intended management boundary. Depending on authentication settings and deployment configuration, unauthenticated or low-privilege callers could alter SSO settings, potentially take over accounts, or trigger server-side requests.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1775,11 +2438,32 @@ CNA version record — KubePi: affected: &lt; 2.0.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-l"></a>
+
+## L
+
 <a id="project-libevent-libevent"></a>
 
-### [libevent](https://github.com/libevent/libevent)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/libevent/libevent">libevent</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/libevent/libevent/blob/master/ChangeLog">Release acknowledgement</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
 
-**[Release acknowledgement](https://github.com/libevent/libevent/blob/master/ChangeLog)** — HTTP header parsing restricted against request smuggling
+HTTP header parsing restricted against request smuggling
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1792,13 +2476,28 @@ Named in the changelog; not counted as a structured advisory credit.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-strukturag-libheif"></a>
 
-### [libheif](https://github.com/strukturag/libheif)
-
-[GHSA-9h96-c44j-jpq9](https://github.com/strukturag/libheif/security/advisories/GHSA-9h96-c44j-jpq9)<br>🟠 High · 2026-05-19
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/strukturag/libheif">libheif</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/strukturag/libheif/security/advisories/GHSA-9h96-c44j-jpq9">GHSA-9h96-c44j-jpq9</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;05&#8209;19</sub></td>
+</tr>
+<tr><td colspan="2">
 
 A 32-bit stride calculation could wrap for large image widths, allocating an undersized plane. Processing a crafted HEIF or AVIF image could then overflow the heap, crashing or potentially compromising the consuming application.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1825,11 +2524,28 @@ Maintainer weaknesses: [CWE-122](https://cwe.mitre.org/data/definitions/122.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-libjpeg-turbo-libjpeg-turbo"></a>
 
-### [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/libjpeg-turbo/libjpeg-turbo">libjpeg-turbo</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877">Report and fixes</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
 
-**[Report and fixes](https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877)** — Signed-overflow bounds checks across six JNI paths
+Signed-overflow bounds checks across six JNI paths
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1838,11 +2554,28 @@ Maintainer weaknesses: [CWE-122](https://cwe.mitre.org/data/definitions/122.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-nih-at-libzip"></a>
 
-### [libzip](https://github.com/nih-at/libzip)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/nih-at/libzip">libzip</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/nih-at/libzip/blob/main/THANKS">Acknowledgement</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
 
-**[Acknowledgement](https://github.com/nih-at/libzip/blob/main/THANKS)** — Listed in THANKS
+Listed in THANKS
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1851,11 +2584,28 @@ Maintainer weaknesses: [CWE-122](https://cwe.mitre.org/data/definitions/122.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-lighttpd-lighttpd1-4"></a>
 
-### [lighttpd](https://github.com/lighttpd/lighttpd1.4)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/lighttpd/lighttpd1.4">lighttpd</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/lighttpd/lighttpd1.4/commit/904a267">Upstream acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-05-04<br><sub>committed</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Upstream acknowledgement](https://github.com/lighttpd/lighttpd1.4/commit/904a267)** · 2026-05-04 (committed) — <code>mod_maxminddb</code> snprintf return-value bound
+<code>mod_maxminddb</code> snprintf return-value bound
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -1864,13 +2614,32 @@ Maintainer weaknesses: [CWE-122](https://cwe.mitre.org/data/definitions/122.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-n"></a>
+
+## N
+
 <a id="project-nangohq-nango"></a>
 
-### <img src="./assets/logos/nangohq-nango.png" width="28" height="28" alt=""> [Nango](https://github.com/NangoHQ/nango)
-
-**[CVE-2026-9316](https://www.cve.org/CVERecord?id=CVE-2026-9316)** · [GHSA-2j37-g5f6-h55p](https://github.com/NangoHQ/nango/security/advisories/GHSA-2j37-g5f6-h55p)<br>🟠 High · 2026-08-26
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/nangohq-nango.png" width="32" height="32" alt=""> <a href="https://github.com/NangoHQ/nango">Nango</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-9316">CVE-2026-9316</a></strong><br><a href="https://github.com/NangoHQ/nango/security/advisories/GHSA-2j37-g5f6-h55p">GHSA-2j37-g5f6-h55p</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;08&#8209;26</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The proxy accepted a base-url-override header while its default network denylist was empty. Callers with a valid secret key or environment:proxy scope could direct authenticated proxy requests to private-network and metadata addresses.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -1901,23 +2670,55 @@ Verification note: the advisory supplies this CVE identifier, but its public CVE
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-nats-io-nats-server"></a>
 
-### <img src="./assets/logos/nats-io-nats-server.svg" width="27" height="28" alt=""> [NATS Server](https://github.com/nats-io/nats-server)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/nats-io-nats-server.svg" width="31" height="32" alt=""> <a href="https://github.com/nats-io/nats-server">NATS Server</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/nats-io/nats-server/releases/tag/v2.14.3">Release acknowledgement</a></strong></td>
+<td align="right" valign="top">2026-06-29<br><sub>released</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Release acknowledgement](https://github.com/nats-io/nats-server/releases/tag/v2.14.3)** · 2026-06-29 (released) — Non-CVE fixes acknowledged in v2.14.3 and v2.12.12
+Non-CVE fixes acknowledged in v2.14.3 and v2.12.12
 
-**[CVE-2026-58254](https://www.cve.org/CVERecord?id=CVE-2026-58254)** · [GHSA-p3j5-5hrq-p75h](https://github.com/nats-io/nats-server/security/advisories/GHSA-p3j5-5hrq-p75h)<br>🟡 Moderate · 2026-06-29
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-58254">CVE-2026-58254</a></strong><br><a href="https://github.com/nats-io/nats-server/security/advisories/GHSA-p3j5-5hrq-p75h">GHSA-p3j5-5hrq-p75h</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;06&#8209;29</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Trace-destination permissions were not consistently checked for traffic arriving over leafnode connections. A leafnode operator could direct trace events to disallowed subjects, exposing routing and account metadata, and suppress normal message delivery.
 
-**[CVE-2026-58214](https://www.cve.org/CVERecord?id=CVE-2026-58214)** · [GHSA-4g68-3pwx-5vfj](https://github.com/nats-io/nats-server/security/advisories/GHSA-4g68-3pwx-5vfj)<br>🟡 Moderate · 2026-06-29
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-58214">CVE-2026-58214</a></strong><br><a href="https://github.com/nats-io/nats-server/security/advisories/GHSA-4g68-3pwx-5vfj">GHSA-4g68-3pwx-5vfj</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;06&#8209;29</sub></td>
+</tr>
+<tr><td colspan="2">
 
 An internal-subject restriction omitted the MQTT delivery PUBREL family. Authenticated MQTT clients could bypass subscribe permissions and receive account-local QoS2 protocol metadata; the published impact did not include message payload disclosure.
 
-**[CVE-2026-58250](https://www.cve.org/CVERecord?id=CVE-2026-58250)** · [GHSA-3g5q-cfh2-cq67](https://github.com/nats-io/nats-server/security/advisories/GHSA-3g5q-cfh2-cq67)<br>🟠 High · 2026-06-29
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-58250">CVE-2026-58250</a></strong><br><a href="https://github.com/nats-io/nats-server/security/advisories/GHSA-3g5q-cfh2-cq67">GHSA-3g5q-cfh2-cq67</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;06&#8209;29</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Repeated pre-authentication leafnode INFO messages could leave handshake state unset and crash the server. Exploitation required access to a leafnode listener with compression enabled; disabling that compression mitigated the affected path.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2009,11 +2810,28 @@ CNA version record — nats-server: affected: &lt; 2.11.17; affected: &gt;= 2.12
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-nginx-nginx"></a>
 
-### <img src="./assets/logos/nginx-nginx.png" width="56" height="11" alt=""> [NGINX](https://github.com/nginx/nginx)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/nginx-nginx.png" width="64" height="13" alt=""> <a href="https://github.com/nginx/nginx">NGINX</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://nginx.org/en/CHANGES">Changelog acknowledgement</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
 
-**[Changelog acknowledgement](https://nginx.org/en/CHANGES)** — Constant-time <code>secure_link</code> hash comparison in 1.31.2
+Constant-time <code>secure_link</code> hash comparison in 1.31.2
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -2022,13 +2840,28 @@ CNA version record — nats-server: affected: &lt; 2.11.17; affected: &gt;= 2.12
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-nginx-kubernetes-ingress"></a>
 
-### <img src="./assets/logos/nginx-kubernetes-ingress.png" width="25" height="28" alt=""> [NGINX Ingress Controller](https://github.com/nginx/kubernetes-ingress)
-
-**[CVE-2026-77180](https://www.cve.org/CVERecord?id=CVE-2026-77180)**<br>🟠 High · 2026-09-02 · Vendor/CVE record
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/nginx-kubernetes-ingress.png" width="28" height="32" alt=""> <a href="https://github.com/nginx/kubernetes-ingress">NGINX Ingress Controller</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-77180">CVE-2026-77180</a></strong><br><sub>Vendor/CVE record</sub></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;09&#8209;02</sub></td>
+</tr>
+<tr><td colspan="2">
 
 An authenticated user able to modify Kubernetes Ingress annotations could inject NGINX configuration. The vendor describes a control-plane issue requiring configuration access, not direct exploitation through data-plane traffic.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2048,13 +2881,28 @@ Standalone finding; excluded from GitHub advisory statistics.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-novuhq-novu"></a>
 
-### <img src="./assets/logos/novuhq-novu.svg" width="28" height="28" alt=""> [Novu](https://github.com/novuhq/novu)
-
-[GHSA-4x48-cgf9-q33f](https://github.com/novuhq/novu/security/advisories/GHSA-4x48-cgf9-q33f)<br>🟠 High · 2026-04-13
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/novuhq-novu.svg" width="32" height="32" alt=""> <a href="https://github.com/novuhq/novu">Novu</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/novuhq/novu/security/advisories/GHSA-4x48-cgf9-q33f">GHSA-4x48-cgf9-q33f</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;13</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Conditions-filter webhooks bypassed the URL checks used by the HTTP Request step. A user with workflow-configuration access could issue server-side POST requests to internal endpoints and read responses through execution details.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2088,13 +2936,32 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-o"></a>
+
+## O
+
 <a id="project-oauth2-proxy-oauth2-proxy"></a>
 
-### <img src="./assets/logos/oauth2-proxy-oauth2-proxy.svg" width="28" height="28" alt=""> [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy)
-
-**[CVE-2026-40574](https://www.cve.org/CVERecord?id=CVE-2026-40574)** · [GHSA-c5c4-8r6x-56w3](https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-c5c4-8r6x-56w3)<br>🟡 Moderate · 2026-04-14
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/oauth2-proxy-oauth2-proxy.svg" width="32" height="32" alt=""> <a href="https://github.com/oauth2-proxy/oauth2-proxy">OAuth2 Proxy</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40574">CVE-2026-40574</a></strong><br><a href="https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-c5c4-8r6x-56w3">GHSA-c5c4-8r6x-56w3</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;14</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Email-domain validation accepted malformed claims containing multiple at signs, allowing an unintended domain suffix to match the allowlist. Exploitation required an identity provider capable of emitting such malformed claims; providers enforcing email syntax were unaffected.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2138,13 +3005,28 @@ CNA version record — oauth2-proxy: affected: &lt; 7.15.2.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-oneuptime-oneuptime"></a>
 
-### <img src="./assets/logos/oneuptime-oneuptime.svg" width="28" height="28" alt=""> [OneUptime](https://github.com/OneUptime/oneuptime)
-
-**[CVE-2026-34759](https://www.cve.org/CVERecord?id=CVE-2026-34759)** · [GHSA-6wc5-rhvj-cx7f](https://github.com/OneUptime/oneuptime/security/advisories/GHSA-6wc5-rhvj-cx7f)<br>🔴 Critical · 2026-03-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/oneuptime-oneuptime.svg" width="32" height="32" alt=""> <a href="https://github.com/OneUptime/oneuptime">OneUptime</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34759">CVE-2026-34759</a></strong><br><a href="https://github.com/OneUptime/oneuptime/security/advisories/GHSA-6wc5-rhvj-cx7f">GHSA-6wc5-rhvj-cx7f</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;03&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Notification phone-number routes omitted service authorization and performed privileged operations. Using a project ID exposed by the status-page API, an unauthenticated caller could purchase Twilio numbers on the deployment’s account or release numbers used for alerts.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2176,13 +3058,28 @@ CNA version record — oneuptime: affected: &lt; 10.0.42.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-open-telemetry-opentelemetry-collector-contrib"></a>
 
-### <img src="./assets/logos/open-telemetry-opentelemetry-collector-contrib.svg" width="28" height="28" alt=""> [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector-contrib)
-
-**[CVE-2026-55701](https://www.cve.org/CVERecord?id=CVE-2026-55701)** · [GHSA-w5cv-pw74-4rxc](https://github.com/open-telemetry/opentelemetry-collector-contrib/security/advisories/GHSA-w5cv-pw74-4rxc)<br>🟡 Moderate · 2026-06-15
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/open-telemetry-opentelemetry-collector-contrib.svg" width="32" height="32" alt=""> <a href="https://github.com/open-telemetry/opentelemetry-collector-contrib">OpenTelemetry Collector</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-55701">CVE-2026-55701</a></strong><br><a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/security/advisories/GHSA-w5cv-pw74-4rxc">GHSA-w5cv-pw74-4rxc</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;06&#8209;15</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The GitHub receiver validated RequiredHeaders configuration but never enforced it on incoming requests. With the shared secret left at its empty default, callers could submit arbitrary webhook payloads and inject false CI/CD trace data.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2221,13 +3118,28 @@ Verification note: the advisory supplies this CVE identifier, but its public CVE
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-open-telemetry-opentelemetry-go"></a>
 
-### <img src="./assets/logos/open-telemetry-opentelemetry-go.svg" width="28" height="28" alt=""> [OpenTelemetry Go](https://github.com/open-telemetry/opentelemetry-go)
-
-**[CVE-2026-39883](https://www.cve.org/CVERecord?id=CVE-2026-39883)** · [GHSA-hfvc-g4fc-pqhx](https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hfvc-g4fc-pqhx)<br>🟠 High · 2026-04-08
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/open-telemetry-opentelemetry-go.svg" width="32" height="32" alt=""> <a href="https://github.com/open-telemetry/opentelemetry-go">OpenTelemetry Go</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-39883">CVE-2026-39883</a></strong><br><a href="https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hfvc-g4fc-pqhx">GHSA-hfvc-g4fc-pqhx</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;08</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Host-ID lookup invoked kenv by name instead of an absolute path. On affected BSD and Solaris paths, a local attacker controlling an earlier PATH directory could run a replacement executable inside the OpenTelemetry-using process.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2271,13 +3183,32 @@ CNA version record — opentelemetry-go: affected: &gt;= 1.15.0, &lt; 1.43.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-p"></a>
+
+## P
+
 <a id="project-phpseclib-phpseclib"></a>
 
-### [phpseclib](https://github.com/phpseclib/phpseclib)
-
-**[CVE-2026-40194](https://www.cve.org/CVERecord?id=CVE-2026-40194)** · [GHSA-r854-jrxh-36qx](https://github.com/phpseclib/phpseclib/security/advisories/GHSA-r854-jrxh-36qx)<br>🔵 Low · 2026-04-10
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/phpseclib/phpseclib">phpseclib</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40194">CVE-2026-40194</a></strong><br><a href="https://github.com/phpseclib/phpseclib/security/advisories/GHSA-r854-jrxh-36qx">GHSA-r854-jrxh-36qx</a></td>
+<td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;10</sub></td>
+</tr>
+<tr><td colspan="2">
 
 SSH packet authentication compared HMACs with a variable-time operator instead of hash\_equals. The timing difference is a defense-in-depth concern: authentication failure disconnects and rekeys the session, and the advisory does not establish a practical remote exploit.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2323,17 +3254,37 @@ CNA version record — phpseclib: affected: &gt;= 0.1.1, &lt; 1.0.28; affected: 
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-pocket-id-pocket-id"></a>
 
-### <img src="./assets/logos/pocket-id-pocket-id.svg" width="28" height="28" alt=""> [Pocket ID](https://github.com/pocket-id/pocket-id)
-
-**[CVE-2026-43983](https://www.cve.org/CVERecord?id=CVE-2026-43983)** · [GHSA-w6p7-2fxx-4f44](https://github.com/pocket-id/pocket-id/security/advisories/GHSA-w6p7-2fxx-4f44)<br>🟠 High · 2026-04-26
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/pocket-id-pocket-id.svg" width="32" height="32" alt=""> <a href="https://github.com/pocket-id/pocket-id">Pocket ID</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-43983">CVE-2026-43983</a></strong><br><a href="https://github.com/pocket-id/pocket-id/security/advisories/GHSA-w6p7-2fxx-4f44">GHSA-w6p7-2fxx-4f44</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;26</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Refreshing an OIDC token did not recheck account disabling, authorization revocation, or group restrictions. Holders of an existing refresh token and the required client credentials could continue obtaining tokens after administrators removed access.
 
-[GHSA-hp74-gm6m-2qm5](https://github.com/pocket-id/pocket-id/security/advisories/GHSA-hp74-gm6m-2qm5)<br>🟡 Moderate · 2026-04-26
+</td></tr>
+<tr>
+<td valign="top"><a href="https://github.com/pocket-id/pocket-id/security/advisories/GHSA-hp74-gm6m-2qm5">GHSA-hp74-gm6m-2qm5</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;26</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The reauthentication fallback checked access-token freshness and a session cookie, but not how login occurred. A stolen one-time access token could therefore satisfy step-up requirements and obtain tokens for protected OIDC clients.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2401,13 +3352,28 @@ Maintainer weaknesses: [CWE-287](https://cwe.mitre.org/data/definitions/287.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-python-poetry-poetry"></a>
 
-### <img src="./assets/logos/python-poetry-poetry.svg" width="22" height="28" alt=""> [Poetry](https://github.com/python-poetry/poetry)
-
-**[CVE-2026-41140](https://www.cve.org/CVERecord?id=CVE-2026-41140)** · [GHSA-73h3-mf4w-8647](https://github.com/python-poetry/poetry/security/advisories/GHSA-73h3-mf4w-8647)<br>🔵 Low · 2026-04-18
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/python-poetry-poetry.svg" width="26" height="32" alt=""> <a href="https://github.com/python-poetry/poetry">Poetry</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41140">CVE-2026-41140</a></strong><br><a href="https://github.com/python-poetry/poetry/security/advisories/GHSA-73h3-mf4w-8647">GHSA-73h3-mf4w-8647</a></td>
+<td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;18</sub></td>
+</tr>
+<tr><td colspan="2">
 
 On Python versions lacking tarfile’s data filter, Poetry extracted source distributions without traversal protection. Crafted archive members could escape the extraction directory during dependency resolution; the advisory rates this low because package build backends already execute code.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2449,13 +3415,28 @@ CNA version record — poetry: affected: &lt; 2.3.4.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-prefecthq-prefect"></a>
 
-### <img src="./assets/logos/prefecthq-prefect.svg" width="17" height="27" alt=""> [Prefect](https://github.com/PrefectHQ/prefect)
-
-**[CVE-2026-5366](https://www.cve.org/CVERecord?id=CVE-2026-5366)**<br>🔴 Critical · 2026-06-20 · Vendor/CVE record
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/prefecthq-prefect.svg" width="20" height="32" alt=""> <a href="https://github.com/PrefectHQ/prefect">Prefect</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-5366">CVE-2026-5366</a></strong><br><sub>Vendor/CVE record</sub></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;06&#8209;20</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Deployment pull steps accepted unsafe Git commit and sparse-checkout directory arguments. A user permitted to create deployments could execute commands on the worker host, with additional exposure where work pools were shared.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2477,11 +3458,28 @@ Standalone finding; excluded from GitHub advisory statistics.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-bufbuild-protoc-gen-validate"></a>
 
-### <img src="./assets/logos/bufbuild-protoc-gen-validate.svg" width="30" height="28" alt=""> [protoc-gen-validate](https://github.com/bufbuild/protoc-gen-validate)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/bufbuild-protoc-gen-validate.svg" width="34" height="32" alt=""> <a href="https://github.com/bufbuild/protoc-gen-validate">protoc-gen-validate</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/bufbuild/protoc-gen-validate/pull/1379">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-05-27<br><sub>merged</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Merged patch](https://github.com/bufbuild/protoc-gen-validate/pull/1379)** · 2026-05-27 (merged) — Malformed UTF-8 length validation bypass
+Malformed UTF-8 length validation bypass
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -2490,17 +3488,37 @@ Standalone finding; excluded from GitHub advisory statistics.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-pyload-pyload"></a>
 
-### <img src="./assets/logos/pyload-pyload.svg" width="28" height="28" alt=""> [pyLoad](https://github.com/pyload/pyload)
-
-**[CVE-2026-35459](https://www.cve.org/CVERecord?id=CVE-2026-35459)** · [GHSA-7gvf-3w72-p2pg](https://github.com/pyload/pyload/security/advisories/GHSA-7gvf-3w72-p2pg)<br>🟠 High · 2026-04-02
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/pyload-pyload.svg" width="32" height="32" alt=""> <a href="https://github.com/pyload/pyload">pyLoad</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35459">CVE-2026-35459</a></strong><br><a href="https://github.com/pyload/pyload/security/advisories/GHSA-7gvf-3w72-p2pg">GHSA-7gvf-3w72-p2pg</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;02</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The downloader validated its initial destination but followed redirects without rechecking targets. An authenticated user with ADD permission could fetch internal services or reachable metadata endpoints; returned data was written into the download storage folder.
 
-**[CVE-2026-35464](https://www.cve.org/CVERecord?id=CVE-2026-35464)** · [GHSA-4744-96p5-mp2j](https://github.com/pyload/pyload/security/advisories/GHSA-4744-96p5-mp2j)<br>🔴 Critical · 2026-04-02
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35464">CVE-2026-35464</a></strong><br><a href="https://github.com/pyload/pyload/security/advisories/GHSA-4744-96p5-mp2j">GHSA-4744-96p5-mp2j</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;02</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Non-admin users with SETTINGS and ADD permissions could point storage\_folder at Flask’s session store and download a crafted serialized session. A subsequent request using that session cookie could execute code in the web process.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2587,13 +3605,28 @@ CNA version record — pyload: affected: &lt;= 0.5.0b3.dev96.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-py-pdf-pypdf"></a>
 
-### [pypdf](https://github.com/py-pdf/pypdf)
-
-**[CVE-2026-40260](https://www.cve.org/CVERecord?id=CVE-2026-40260)** · [GHSA-3crg-w4f6-42mx](https://github.com/py-pdf/pypdf/security/advisories/GHSA-3crg-w4f6-42mx)<br>🟡 Moderate · 2026-04-10
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/py-pdf/pypdf">pypdf</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40260">CVE-2026-40260</a></strong><br><a href="https://github.com/py-pdf/pypdf/security/advisories/GHSA-3crg-w4f6-42mx">GHSA-3crg-w4f6-42mx</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;10</sub></td>
+</tr>
+<tr><td colspan="2">
 
 PDF XMP parsing processed entity declarations without effective expansion limits. A crafted document could exhaust application memory, but merely opening a PDF was insufficient unless the consuming application also parsed its XMP metadata.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2635,17 +3668,41 @@ CNA version record — pypdf: affected: &lt; 6.10.0.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-r"></a>
+
+## R
+
 <a id="project-rustfs-rustfs"></a>
 
-### [RustFS](https://github.com/rustfs/rustfs)
-
-[GHSA-mm2q-qcmx-gw4w](https://github.com/rustfs/rustfs/security/advisories/GHSA-mm2q-qcmx-gw4w)<br>🟠 High · 2026-04-25
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/rustfs/rustfs">RustFS</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/rustfs/rustfs/security/advisories/GHSA-mm2q-qcmx-gw4w">GHSA-mm2q-qcmx-gw4w</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;25</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Service-account listing checked the wrong administrative action, and updates omitted an ownership check. A user granted admin:UpdateServiceAccount could enumerate other users’ service-account keys, including root-owned keys, and rotate their secrets.
 
-**[CVE-2026-40937](https://www.cve.org/CVERecord?id=CVE-2026-40937)** · [GHSA-pfcq-4gjr-6gjm](https://github.com/rustfs/rustfs/security/advisories/GHSA-pfcq-4gjr-6gjm)<br>🟡 Moderate · 2026-04-22
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40937">CVE-2026-40937</a></strong><br><a href="https://github.com/rustfs/rustfs/security/advisories/GHSA-pfcq-4gjr-6gjm">GHSA-pfcq-4gjr-6gjm</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;22</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Notification-target handlers authenticated callers but omitted administrator authorization. A read-only user could overwrite known targets, redirect bucket events to a controlled webhook, and make the server probe internal endpoints through target health checks.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2715,11 +3772,32 @@ CNA version record — rustfs: affected: &lt; 1.0.0-alpha.94.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-s"></a>
+
+## S
+
 <a id="project-steveukx-git-js"></a>
 
-### [simple-git](https://github.com/steveukx/git-js)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/steveukx/git-js">simple-git</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md">Changelog acknowledgement</a></strong></td>
+<td align="right" valign="top"></td>
+</tr>
+<tr><td colspan="2">
 
-**[Changelog acknowledgement](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md)** — Blocked <code>GIT_CONFIG_COUNT</code> environment variables and <code>--template</code> / <code>merge</code> configuration keys in 3.36.0
+Blocked <code>GIT_CONFIG_COUNT</code> environment variables and <code>--template</code> / <code>merge</code> configuration keys in 3.36.0
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -2728,13 +3806,28 @@ CNA version record — rustfs: affected: &lt; 1.0.0-alpha.94.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-siyuan-note-siyuan"></a>
 
-### <img src="./assets/logos/siyuan-note-siyuan.png" width="28" height="28" alt=""> [SiYuan](https://github.com/siyuan-note/siyuan)
-
-**[CVE-2026-40107](https://www.cve.org/CVERecord?id=CVE-2026-40107)** · [GHSA-w95v-4h65-j455](https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w95v-4h65-j455)<br>🟠 High · 2026-04-09
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/siyuan-note-siyuan.png" width="32" height="32" alt=""> <a href="https://github.com/siyuan-note/siyuan">SiYuan</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40107">CVE-2026-40107</a></strong><br><a href="https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w95v-4h65-j455">GHSA-w95v-4h65-j455</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;09</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Mermaid rendering allowed embedded image URLs to survive sanitization. Opening a crafted note triggered requests; on Windows, a network-share URL could additionally expose the user’s NTLMv2 challenge-response hash through automatic authentication.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2776,13 +3869,28 @@ CNA version record — siyuan: affected: &lt; 3.6.4.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-charmbracelet-soft-serve"></a>
 
-### [Soft Serve](https://github.com/charmbracelet/soft-serve)
-
-[GHSA-vpj5-m56f-8h3f](https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f)<br>🟡 Moderate · 2026-07-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/charmbracelet/soft-serve">Soft Serve</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f">GHSA-vpj5-m56f-8h3f</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;07&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Repository imports and recurring mirror syncs accepted remote URLs without the existing SSRF validation. A user with a registered SSH key could make the server request loopback, private-network, or metadata endpoints.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2807,17 +3915,37 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-nasa-spacewasm"></a>
 
-### <img src="./assets/logos/nasa-spacewasm.svg" width="28" height="28" alt=""> [SpaceWasm (NASA)](https://github.com/nasa/spacewasm)
-
-[GHSA-fvwj-92vj-fg8c](https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c)<br>🔴 Critical · 2026-08-05
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/nasa-spacewasm.svg" width="32" height="32" alt=""> <a href="https://github.com/nasa/spacewasm">SpaceWasm (NASA)</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c">GHSA-fvwj-92vj-fg8c</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;08&#8209;05</sub></td>
+</tr>
+<tr><td colspan="2">
 
 A result-typed WebAssembly if without an else could pass validation despite producing no value. Repeated constructs desynchronized the operand stack, exposing host-memory values and allowing writes into another module’s linear memory.
 
-[GHSA-r5f5-cv78-6qv8](https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8)<br>🟠 High · 2026-07-27
+</td></tr>
+<tr>
+<td valign="top"><a href="https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8">GHSA-r5f5-cv78-6qv8</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;27</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The C host-call trampoline pushed a result even for functions declared void. Guest modules invoking these functions could corrupt operand-stack state; repeated calls advanced the stack beyond its allocation and crashed the process.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2860,13 +3988,28 @@ Maintainer weaknesses: [CWE-670](https://cwe.mitre.org/data/definitions/670.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-stablelib-stablelib"></a>
 
-### [StableLib](https://github.com/StableLib/stablelib)
-
-[GHSA-x3ff-w252-2g7j](https://github.com/StableLib/stablelib/security/advisories/GHSA-x3ff-w252-2g7j)<br>🟡 Moderate · 2026-03-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><a href="https://github.com/StableLib/stablelib">StableLib</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/StableLib/stablelib/security/advisories/GHSA-x3ff-w252-2g7j">GHSA-x3ff-w252-2g7j</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;03&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Ed25519 verification did not enforce the scalar range required for a canonical signature. Anyone holding a valid signature could derive a second valid encoding without the signing key, affecting applications that rely on signature uniqueness.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2899,13 +4042,28 @@ Maintainer weaknesses: [CWE-347](https://cwe.mitre.org/data/definitions/347.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-statamic-cms"></a>
 
-### <img src="./assets/logos/statamic-cms.png" width="28" height="28" alt=""> [Statamic](https://github.com/statamic/cms)
-
-**[CVE-2026-41175](https://www.cve.org/CVERecord?id=CVE-2026-41175)** · [GHSA-4jjr-vmv7-wh4w](https://github.com/statamic/cms/security/advisories/GHSA-4jjr-vmv7-wh4w)<br>🟠 High · 2026-04-15
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/statamic-cms.png" width="32" height="32" alt=""> <a href="https://github.com/statamic/cms">Statamic</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41175">CVE-2026-41175</a></strong><br><a href="https://github.com/statamic/cms/security/advisories/GHSA-4jjr-vmv7-wh4w">GHSA-4jjr-vmv7-wh4w</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;15</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Query values could resolve into destructive method calls. Minimal Control Panel permissions could enable data deletion; unauthenticated exposure required REST or GraphQL to be explicitly enabled without authentication and with the affected resources exposed.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2948,13 +4106,28 @@ CNA version record — cms: affected: &lt; 5.73.20; affected: &gt;= 6.0.0-alpha.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-systemd-systemd"></a>
 
-### <img src="./assets/logos/systemd-systemd.svg" width="28" height="28" alt=""> [systemd](https://github.com/systemd/systemd)
-
-[GHSA-m8q3-73v4-wvg7](https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7)<br>🟡 Moderate · 2026-08-10
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/systemd-systemd.svg" width="32" height="32" alt=""> <a href="https://github.com/systemd/systemd">systemd</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7">GHSA-m8q3-73v4-wvg7</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;10</sub></td>
+</tr>
+<tr><td colspan="2">
 
 A malicious iSCSI or USB device could inject udev properties through unsanitized SCSI identifiers. The earlier serial-number fix missed equivalent fields, allowing device data to request a systemd unit running as root.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -2981,23 +4154,52 @@ Maintainer weaknesses: [CWE-74](https://cwe.mitre.org/data/definitions/74.html).
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-t"></a>
+
+## T
+
 <a id="project-tektoncd-pipeline"></a>
 
-### <img src="./assets/logos/tektoncd-pipeline.svg" width="26" height="28" alt=""> [Tekton Pipelines](https://github.com/tektoncd/pipeline)
-
-**[CVE-2026-40161](https://www.cve.org/CVERecord?id=CVE-2026-40161)** · [GHSA-wjxp-xrpv-xpff](https://github.com/tektoncd/pipeline/security/advisories/GHSA-wjxp-xrpv-xpff)<br>🟠 High · 2026-04-21
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/tektoncd-pipeline.svg" width="30" height="32" alt=""> <a href="https://github.com/tektoncd/pipeline">Tekton Pipelines</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40161">CVE-2026-40161</a></strong><br><a href="https://github.com/tektoncd/pipeline/security/advisories/GHSA-wjxp-xrpv-xpff">GHSA-wjxp-xrpv-xpff</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;21</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Git resolver API mode combined a user-supplied server URL with the system-configured Git token when no token parameter was supplied. A tenant able to create TaskRuns could redirect that authenticated request to a controlled server.
 
-**[CVE-2026-40923](https://www.cve.org/CVERecord?id=CVE-2026-40923)** · [GHSA-rx35-6rhx-7858](https://github.com/tektoncd/pipeline/security/advisories/GHSA-rx35-6rhx-7858)<br>🟡 Moderate · 2026-04-21
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40923">CVE-2026-40923</a></strong><br><a href="https://github.com/tektoncd/pipeline/security/advisories/GHSA-rx35-6rhx-7858">GHSA-rx35-6rhx-7858</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;21</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Volume-mount restrictions compared raw paths without normalization. A Task or TaskRun author could use parent-directory components to mount over protected Tekton locations, allowing replacement of internal results or step scripts.
 
-**[CVE-2026-40938](https://www.cve.org/CVERecord?id=CVE-2026-40938)** · [GHSA-94jr-7pqp-xhcq](https://github.com/tektoncd/pipeline/security/advisories/GHSA-94jr-7pqp-xhcq)<br>🟠 High · 2026-04-21
+</td></tr>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40938">CVE-2026-40938</a></strong><br><a href="https://github.com/tektoncd/pipeline/security/advisories/GHSA-94jr-7pqp-xhcq">GHSA-94jr-7pqp-xhcq</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;21</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The Git resolver passed revision values to git fetch as arguments without separating options. A tenant able to submit ResolutionRequests and predict a pod-local repository path could execute commands and access the resolver’s cluster-wide Secret permissions.
 
 **[Downstream fixes](https://access.redhat.com/security/cve/CVE-2026-40938)** — Downstream propagation of CVE-2026-40938 across OpenShift product lines
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -3129,13 +4331,28 @@ Downstream fixes; the vendor CVE acknowledgement field does not name a reporter.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-traefik-traefik"></a>
 
-### <img src="./assets/logos/traefik-traefik.png" width="28" height="28" alt=""> [Traefik](https://github.com/traefik/traefik)
-
-**[CVE-2026-41263](https://www.cve.org/CVERecord?id=CVE-2026-41263)** · [GHSA-6x2q-h3cr-8j2h](https://github.com/traefik/traefik/security/advisories/GHSA-6x2q-h3cr-8j2h)<br>🟡 Moderate · 2026-04-24
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/traefik-traefik.png" width="32" height="32" alt=""> <a href="https://github.com/traefik/traefik">Traefik</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41263">CVE-2026-41263</a></strong><br><a href="https://github.com/traefik/traefik/security/advisories/GHSA-6x2q-h3cr-8j2h">GHSA-6x2q-h3cr-8j2h</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;24</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The earlier BasicAuth timing fix resolved its fallback secret to an empty string, avoiding the intended bcrypt work. Repeated authentication timing measurements could distinguish registered usernames from nonexistent ones on a reachable protected route.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -3182,13 +4399,28 @@ CNA version record — traefik: affected: &lt; 2.11.43; affected: &gt;= 3.0.0-be
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-theupdateframework-python-tuf"></a>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/theupdateframework-python-tuf-dark.svg"><img src="./assets/logos/theupdateframework-python-tuf.svg" width="25" height="28" alt=""></picture> [TUF (Python)](https://github.com/theupdateframework/python-tuf)
-
-[GHSA-qp9x-wp8f-qgjj](https://github.com/theupdateframework/python-tuf/security/advisories/GHSA-qp9x-wp8f-qgjj)<br>🟡 Moderate · 2026-05-18
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/theupdateframework-python-tuf-dark.svg"><img src="./assets/logos/theupdateframework-python-tuf.svg" width="28" height="32" alt=""></picture> <a href="https://github.com/theupdateframework/python-tuf">TUF (Python)</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><a href="https://github.com/theupdateframework/python-tuf/security/advisories/GHSA-qp9x-wp8f-qgjj">GHSA-qp9x-wp8f-qgjj</a></td>
+<td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;05&#8209;18</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Delegation glob matching used platform-dependent case normalization. On Windows, an attacker controlling a delegated role could exploit a case-colliding pattern visited first to serve targets intended for another delegation; POSIX matching was unaffected.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -3221,11 +4453,32 @@ Maintainer weaknesses: [CWE-178](https://cwe.mitre.org/data/definitions/178.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-v"></a>
+
+## V
+
 <a id="project-vim-vim"></a>
 
-### <img src="./assets/logos/vim-vim.svg" width="28" height="28" alt=""> [Vim](https://github.com/vim/vim)
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/vim-vim.svg" width="32" height="32" alt=""> <a href="https://github.com/vim/vim">Vim</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://github.com/vim/vim/commit/3c0f800">Merged patch</a></strong></td>
+<td align="right" valign="top">2026-03-29<br><sub>committed</sub></td>
+</tr>
+<tr><td colspan="2">
 
-**[Merged patch](https://github.com/vim/vim/commit/3c0f800)** · 2026-03-29 (committed) — Correct the vim\_fgets() size bound in patch 9.2.0271; follow-up in 9.2.0272
+Correct the vim\_fgets() size bound in patch 9.2.0271; follow-up in 9.2.0272
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Credit and sources</summary>
@@ -3234,13 +4487,32 @@ Maintainer weaknesses: [CWE-178](https://cwe.mitre.org/data/definitions/178.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-w"></a>
+
+## W
+
 <a id="project-wekan-wekan"></a>
 
-### <img src="./assets/logos/wekan-wekan.svg" width="28" height="28" alt=""> [Wekan](https://github.com/wekan/wekan)
-
-**[CVE-2026-53445](https://www.cve.org/CVERecord?id=CVE-2026-53445)** · [GHSA-7w2h-g83c-jqrp](https://github.com/wekan/wekan/security/advisories/GHSA-7w2h-g83c-jqrp)<br>🟠 High · 2026-05-30
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/wekan-wekan.svg" width="32" height="32" alt=""> <a href="https://github.com/wekan/wekan">Wekan</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-53445">CVE-2026-53445</a></strong><br><a href="https://github.com/wekan/wekan/security/advisories/GHSA-7w2h-g83c-jqrp">GHSA-7w2h-g83c-jqrp</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;05&#8209;30</sub></td>
+</tr>
+<tr><td colspan="2">
 
 The copyBoard method did not verify board membership or administrator rights. A logged-in user could copy a private board and its cards and checklists, then make the resulting copy public through supplied properties.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -3274,17 +4546,37 @@ CNA version record — wekan: affected: &lt; 9.32.
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
 <a id="project-in-toto-witness"></a>
 
-### <img src="./assets/logos/in-toto-witness.svg" width="23" height="28" alt=""> [witness](https://github.com/in-toto/witness)
-
-**[CVE-2026-77308](https://www.cve.org/CVERecord?id=CVE-2026-77308)** · [GHSA-ggg4-v8vp-jxqh](https://github.com/in-toto/witness/security/advisories/GHSA-ggg4-v8vp-jxqh)<br>🔴 Critical · 2026-07-10
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/in-toto-witness.svg" width="26" height="32" alt=""> <a href="https://github.com/in-toto/witness">witness</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-77308">CVE-2026-77308</a></strong><br><a href="https://github.com/in-toto/witness/security/advisories/GHSA-ggg4-v8vp-jxqh">GHSA-ggg4-v8vp-jxqh</a></td>
+<td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;07&#8209;10</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Witness automatically loaded repository-local configuration before commands. An untrusted pull request could redirect attestation uploads and disable sensitive-variable filtering, exposing environment secrets available to a CI job that ran witness on that checkout.
 
-[GHSA-88v8-jcjq-95w5](https://github.com/in-toto/witness/security/advisories/GHSA-88v8-jcjq-95w5)<br>🟠 High · 2026-07-10
+</td></tr>
+<tr>
+<td valign="top"><a href="https://github.com/in-toto/witness/security/advisories/GHSA-88v8-jcjq-95w5">GHSA-88v8-jcjq-95w5</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;10</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Certificate-loading code assigned intermediate certificates to the root pool instead of the intermediate pool. Verification failed for affected intermediate-CA hierarchies; deployments using certificates signed directly by a configured root were unaffected.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -3335,13 +4627,32 @@ Maintainer weaknesses: [CWE-296](https://cwe.mitre.org/data/definitions/296.html
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+<a id="letter-z"></a>
+
+## Z
+
 <a id="project-zitadel-zitadel"></a>
 
-### <img src="./assets/logos/zitadel-zitadel.png" width="28" height="28" alt=""> [ZITADEL](https://github.com/zitadel/zitadel)
-
-**[CVE-2026-55672](https://www.cve.org/CVERecord?id=CVE-2026-55672)** · [GHSA-xqxv-4jc2-x56x](https://github.com/zitadel/zitadel/security/advisories/GHSA-xqxv-4jc2-x56x)<br>🟠 High · 2026-06-17
+<table>
+<thead><tr>
+<th align="left" width="70%"><h3><img src="./assets/logos/zitadel-zitadel.png" width="32" height="32" alt=""> <a href="https://github.com/zitadel/zitadel">ZITADEL</a></h3></th>
+<th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-55672">CVE-2026-55672</a></strong><br><a href="https://github.com/zitadel/zitadel/security/advisories/GHSA-xqxv-4jc2-x56x">GHSA-xqxv-4jc2-x56x</a></td>
+<td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;06&#8209;17</sub></td>
+</tr>
+<tr><td colspan="2">
 
 Authorization-code exchange and token refresh did not bind the grant to its original client. An attacker who obtained a code or refresh token through a separate flaw could redeem it under another client, including across tenants.
+
+</td></tr>
+<tr><td colspan="2">
 
 <details>
 <summary>Versions, credits, and sources</summary>
@@ -3384,6 +4695,12 @@ CNA version record — zitadel: affected: &gt;= 4.0.0-rc.1, &lt; 4.15.2; affecte
 
 </details>
 
+</td></tr>
+</tbody>
+</table>
+
+
+<a id="notes"></a>
 
 ## Record notes
 
