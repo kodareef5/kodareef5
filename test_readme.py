@@ -167,6 +167,7 @@ class ReadmeTests(unittest.TestCase):
 
     def test_gallery_embeds_original_marks_without_recoloring(self):
         assets = readme.catalog_assets
+        self.assertEqual(assets.label_lines("SpaceWasm (NASA)"), ["SpaceWasm", "(NASA)"])
         for project in self.data[5].values():
             if not project.get("logo") or project.get("text_only"):
                 continue

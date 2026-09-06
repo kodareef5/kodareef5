@@ -18,7 +18,8 @@ def stem(project_id):
 
 
 def label_lines(name):
-    return textwrap.wrap(name, width=17, break_long_words=False, break_on_hyphens=True)
+    # Leave breathing room inside the 112px tile at the label's 13px font size.
+    return textwrap.wrap(name, width=15, break_long_words=False, break_on_hyphens=True)
 
 
 def tile(project, theme):
