@@ -3923,7 +3923,7 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 
 <table>
 <thead><tr>
-<th align="left" width="70%"><h3><img src="./assets/logos/nasa-spacewasm.svg" width="32" height="32" alt=""> <a href="https://github.com/nasa/spacewasm">SpaceWasm (NASA)</a></h3></th>
+<th align="left" width="70%"><h3><img src="./assets/logos/nasa.svg" width="38" height="32" alt=""> <a href="https://github.com/nasa/spacewasm">SpaceWasm (NASA)</a></h3></th>
 <th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
 </tr></thead>
 <tbody>

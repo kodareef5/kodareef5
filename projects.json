@@ -341,14 +341,15 @@
   "nasa/spacewasm": {
     "name": "SpaceWasm (NASA)",
     "url": "https://github.com/nasa/spacewasm",
+    "logo_note": "NASA's organizational insignia; the SpaceWasm name and repository links remain explicit.",
     "logo": {
-      "source": "https://raw.githubusercontent.com/nasa/spacewasm/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg",
-      "provenance": "https://github.com/nasa/spacewasm/blob/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg",
-      "file": "assets/logos/nasa-spacewasm.svg",
-      "sha256": "e3923f17a9c75020ac7131a89037302a5650d957e7eb1be35c7b45c0018ad2de",
+      "source": "https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg",
+      "provenance": "https://www.nasa.gov/nasa-brand-center/",
+      "file": "assets/logos/nasa.svg",
+      "sha256": "e03e455100c083590c507df7870c3887a9f2298388cf6f421b6d72bc7eae9008",
       "verified": "2026-09-06",
-      "width": 1000,
-      "height": 1000
+      "width": 110,
+      "height": 92
     }
   },
   "nats-io/nats-server": {

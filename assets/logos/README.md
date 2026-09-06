@@ -69,7 +69,7 @@ Exact URLs, retrieval dates, dimensions, and SHA-256 hashes are in [projects.jso
 | simple-git | Text only | [project](https://github.com/steveukx/git-js) |
 | SiYuan | [asset](siyuan-note-siyuan.png) | [official source](https://github.com/siyuan-note/siyuan/blob/44a6c212a994c7ba8129fc38b001a9ab58957c6f/app/appx/assets/Square44x44Logo.png) |
 | Soft Serve | Text only | [project](https://github.com/charmbracelet/soft-serve) |
-| SpaceWasm (NASA) | [asset](nasa-spacewasm.svg) | [official source](https://github.com/nasa/spacewasm/blob/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg) |
+| SpaceWasm (NASA) | [NASA insignia](nasa.svg) | [official source](https://www.nasa.gov/nasa-brand-center/) |
 | StableLib | Text only | [project](https://github.com/StableLib/stablelib) |
 | Statamic | [asset](statamic-cms.png) | [official source](https://github.com/statamic/cms/blob/5746b2c83014a2a7110bfa6ed715780b9576a059/resources/img/apple-touch-icon.png) |
 | systemd | [asset](systemd-systemd.svg) | [official source](https://github.com/systemd/systemd/blob/9457f81485bfe8e09d45c0376fe02ebce7c15872/docs/favicon.svg) |
@@ -80,3 +80,7 @@ Exact URLs, retrieval dates, dimensions, and SHA-256 hashes are in [projects.jso
 | Wekan | [asset](wekan-wekan.svg) | [official source](https://github.com/wekan/wekan/blob/67334837025535c285684c134e2d84afecff44a3/public/svg-etc/wekan-logo-150.svg) |
 | witness | [asset](in-toto-witness.svg) | [official source](https://github.com/in-toto/witness/blob/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg) |
 | ZITADEL | [asset](zitadel-zitadel.png) | [official source](https://github.com/zitadel/zitadel/blob/13948f2bcd6f257794dbd6d342c2ac30bc88fe54/apps/docs/public/zitadel-logo-solo-light.png) |
+
+SpaceWasm uses NASA's organizational insignia while retaining its project name
+and repository links. The previous [SpaceWasm mark](nasa-spacewasm.svg) remains
+available from its [original source](https://github.com/nasa/spacewasm/blob/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg).
