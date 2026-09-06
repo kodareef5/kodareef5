@@ -194,5 +194,21 @@ class ReadmeTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     assets.sync({}, check=True)
 
+    def test_parent_marks_keep_project_identity(self):
+        projects = self.data[5]
+        result = self.render()
+        for project_id, name, mark in (
+            ("GNOME/glib", "GNOME GLib", "assets/logos/gnome.svg"),
+            ("charmbracelet/soft-serve", "Soft Serve", "assets/logos/charm.png"),
+            ("in-toto/go-witness", "go-witness", "assets/logos/in-toto-witness.svg"),
+        ):
+            project = projects[project_id]
+            self.assertEqual(project["name"], name)
+            self.assertEqual(project["logo"]["file"], mark)
+            self.assertIn(readme.html_link(name, project["url"]), result)
+            self.assertIn(readme.catalog_assets.paths(project_id)["light"], result)
+        self.assertEqual(projects["in-toto/go-witness"]["logo"], projects["in-toto/witness"]["logo"])
+        self.assertIn(projects["GNOME/glib"]["logo_dark"]["file"], result)
+
 if __name__ == "__main__":
     unittest.main()

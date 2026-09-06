@@ -35,9 +35,9 @@ Exact URLs, retrieval dates, dimensions, and SHA-256 hashes are in [projects.jso
 | FreeScout | [asset](freescout-help-desk-freescout.png) | [official source](https://github.com/freescout-help-desk/freescout/blob/3b471b17cfc9aa3f7047241cb34ab91eb1a790c9/public/img/logo-icon-150.png) |
 | Giskard | [asset](giskard-ai-giskard-oss.png) | [official source](https://github.com/Giskard-AI/giskard-oss/blob/580754b4ae77057d154791b8f1d0c2bedeffee84/readme/logo_light.png) |
 | gitoxide | Text only | [project](https://github.com/GitoxideLabs/gitoxide) |
-| GNOME GLib | Text only | [project](https://github.com/GNOME/glib) |
+| GNOME GLib | [light](gnome.svg) / [dark](gnome-dark.svg) | [official source](https://brand.gnome.org/) |
 | go-git | Text only | [project](https://github.com/go-git/go-git) |
-| go-witness | Text only | [project](https://github.com/in-toto/go-witness) |
+| go-witness | [Witness mark](in-toto-witness.svg) | [official source](https://github.com/in-toto/witness/blob/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg) |
 | gosaml2 | Text only | [project](https://github.com/russellhaering/gosaml2) |
 | Gotenberg | [asset](gotenberg-gotenberg.png) | [official source](https://github.com/gotenberg/gotenberg#readme) |
 | Headlamp | [asset](kubernetes-sigs-headlamp.svg) | [official source](https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/headlamp/icon/color/headlamp-icon-color.svg) |
@@ -68,7 +68,7 @@ Exact URLs, retrieval dates, dimensions, and SHA-256 hashes are in [projects.jso
 | RustFS | Text only | [project](https://github.com/rustfs/rustfs) |
 | simple-git | Text only | [project](https://github.com/steveukx/git-js) |
 | SiYuan | [asset](siyuan-note-siyuan.png) | [official source](https://github.com/siyuan-note/siyuan/blob/44a6c212a994c7ba8129fc38b001a9ab58957c6f/app/appx/assets/Square44x44Logo.png) |
-| Soft Serve | Text only | [project](https://github.com/charmbracelet/soft-serve) |
+| Soft Serve | [Charm mark](charm.png) | [official source](https://charm.land/) |
 | SpaceWasm (NASA) | [NASA insignia](nasa.svg) | [official source](https://www.nasa.gov/nasa-brand-center/) |
 | StableLib | Text only | [project](https://github.com/StableLib/stablelib) |
 | Statamic | [asset](statamic-cms.png) | [official source](https://github.com/statamic/cms/blob/5746b2c83014a2a7110bfa6ed715780b9576a059/resources/img/apple-touch-icon.png) |
@@ -84,3 +84,9 @@ Exact URLs, retrieval dates, dimensions, and SHA-256 hashes are in [projects.jso
 SpaceWasm uses NASA's organizational insignia while retaining its project name
 and repository links. The previous [SpaceWasm mark](nasa-spacewasm.svg) remains
 available from its [original source](https://github.com/nasa/spacewasm/blob/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg).
+
+GNOME GLib, Soft Serve, and go-witness use their parent-project marks without
+changing their project names or record links. GNOME's original black and white
+variants are selected for the light and dark themes. Its name and logo are
+trademarks of the GNOME Foundation; review its [published usage terms](https://foundation.gnome.org/trademark-and-logo/)
+before public promotion. This private preview does not assert permission or endorsement.

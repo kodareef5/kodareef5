@@ -143,7 +143,16 @@
   "charmbracelet/soft-serve": {
     "name": "Soft Serve",
     "url": "https://github.com/charmbracelet/soft-serve",
-    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+    "logo_note": "Charm's official site icon identifies the parent project; the Soft Serve name and repository links remain explicit.",
+    "logo": {
+      "source": "https://charm.land/touchicon_180w.6171b4d7a2751a37.png",
+      "provenance": "https://charm.land/",
+      "file": "assets/logos/charm.png",
+      "sha256": "9ff2ab436eeccdf3e4ea512dd30ec829369238aa580a6b9879b855d4d0760f88",
+      "verified": "2026-09-06",
+      "width": 180,
+      "height": 180
+    }
   },
   "cilium/cilium": {
     "name": "Cilium",
@@ -310,7 +319,16 @@
   "in-toto/go-witness": {
     "name": "go-witness",
     "url": "https://github.com/in-toto/go-witness",
-    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+    "logo_note": "The Witness mark is shared with its Go client library; the go-witness name and repository links remain explicit.",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/in-toto/witness/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg",
+      "provenance": "https://github.com/in-toto/witness/blob/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg",
+      "file": "assets/logos/in-toto-witness.svg",
+      "sha256": "f69e1c82c72ea260c185c8679965f45a6b624aea075df2a0406ede8858cb9252",
+      "verified": "2026-09-06",
+      "width": 539,
+      "height": 667
+    }
   },
   "in-toto/witness": {
     "name": "witness",
@@ -708,7 +726,25 @@
   "GNOME/glib": {
     "name": "GNOME GLib",
     "url": "https://github.com/GNOME/glib",
-    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+    "logo_note": "GNOME's original black/white brandmarks identify GLib. The GNOME logo and name are trademarks of the GNOME Foundation; see https://foundation.gnome.org/trademark-and-logo/ for its published usage terms.",
+    "logo": {
+      "source": "https://brand.gnome.org/logos/gnome_brandmark.svg",
+      "provenance": "https://brand.gnome.org/",
+      "file": "assets/logos/gnome.svg",
+      "sha256": "cfcc840d30cdd86f07e441bbaf921943623f38cdbfcf5f9287d1a1b81f2b4505",
+      "verified": "2026-09-06",
+      "width": 300,
+      "height": 300
+    },
+    "logo_dark": {
+      "source": "https://brand.gnome.org/logos/gnome_brandmark_dark.svg",
+      "provenance": "https://brand.gnome.org/",
+      "file": "assets/logos/gnome-dark.svg",
+      "sha256": "ff92c10bb5d87e4153c7669d644cf341fb545cf2de1b225073898b7c6ffeb67d",
+      "verified": "2026-09-06",
+      "width": 300,
+      "height": 300
+    }
   },
   "cloudnative-pg/cloudnative-pg": {
     "name": "CloudNativePG",

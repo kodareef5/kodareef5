@@ -22,9 +22,9 @@ unchanged on `readme-cleanup-preview` at `6ab7459`; public `main` is untouched.
 
 ## Verification
 
-18 tests cover source and record preservation, reference validation, automatic
+19 tests cover source and record preservation, reference validation, automatic
 new-project handling, markup escaping, wide description rows, unchanged embedded
-logos, and stale gallery detection.
+logos, parent-mark/project identity, and stale gallery detection.
 
 README and advisory-export checks pass; Python compilation passes.
 The GitHub-rendered layout is checked in light/dark themes at desktop

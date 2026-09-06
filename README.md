@@ -30,6 +30,8 @@
 <a href="#project-flowiseai-flowise"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/flowiseai-flowise-dark.svg"><img src="./assets/catalog/flowiseai-flowise-light.svg" width="112" height="76" alt="Flowise"></picture></a>
 <a href="#project-freescout-help-desk-freescout"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/freescout-help-desk-freescout-dark.svg"><img src="./assets/catalog/freescout-help-desk-freescout-light.svg" width="112" height="76" alt="FreeScout"></picture></a>
 <a href="#project-giskard-ai-giskard-oss"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/giskard-ai-giskard-oss-dark.svg"><img src="./assets/catalog/giskard-ai-giskard-oss-light.svg" width="112" height="76" alt="Giskard"></picture></a>
+<a href="#project-gnome-glib"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/gnome-glib-dark.svg"><img src="./assets/catalog/gnome-glib-light.svg" width="112" height="76" alt="GNOME GLib"></picture></a>
+<a href="#project-in-toto-go-witness"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/in-toto-go-witness-dark.svg"><img src="./assets/catalog/in-toto-go-witness-light.svg" width="112" height="76" alt="go-witness"></picture></a>
 <a href="#project-gotenberg-gotenberg"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/gotenberg-gotenberg-dark.svg"><img src="./assets/catalog/gotenberg-gotenberg-light.svg" width="112" height="76" alt="Gotenberg"></picture></a>
 <a href="#project-kubernetes-sigs-headlamp"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/kubernetes-sigs-headlamp-dark.svg"><img src="./assets/catalog/kubernetes-sigs-headlamp-light.svg" width="112" height="76" alt="Headlamp"></picture></a>
 <a href="#project-kata-containers-kata-containers"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/kata-containers-kata-containers-dark.svg"><img src="./assets/catalog/kata-containers-kata-containers-light.svg" width="112" height="76" alt="Kata Containers"></picture></a>
@@ -49,6 +51,7 @@
 <a href="#project-bufbuild-protoc-gen-validate"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/bufbuild-protoc-gen-validate-dark.svg"><img src="./assets/catalog/bufbuild-protoc-gen-validate-light.svg" width="112" height="76" alt="protoc-gen-validate"></picture></a>
 <a href="#project-pyload-pyload"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/pyload-pyload-dark.svg"><img src="./assets/catalog/pyload-pyload-light.svg" width="112" height="76" alt="pyLoad"></picture></a>
 <a href="#project-siyuan-note-siyuan"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/siyuan-note-siyuan-dark.svg"><img src="./assets/catalog/siyuan-note-siyuan-light.svg" width="112" height="76" alt="SiYuan"></picture></a>
+<a href="#project-charmbracelet-soft-serve"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/charmbracelet-soft-serve-dark.svg"><img src="./assets/catalog/charmbracelet-soft-serve-light.svg" width="112" height="76" alt="Soft Serve"></picture></a>
 <a href="#project-nasa-spacewasm"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/nasa-spacewasm-dark.svg"><img src="./assets/catalog/nasa-spacewasm-light.svg" width="112" height="76" alt="SpaceWasm (NASA)"></picture></a>
 <a href="#project-statamic-cms"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/statamic-cms-dark.svg"><img src="./assets/catalog/statamic-cms-light.svg" width="112" height="76" alt="Statamic"></picture></a>
 <a href="#project-systemd-systemd"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/catalog/systemd-systemd-dark.svg"><img src="./assets/catalog/systemd-systemd-light.svg" width="112" height="76" alt="systemd"></picture></a>
@@ -62,7 +65,7 @@
 </p>
 
 <p align="center">
-<a href="#project-wwbn-avideo">AVideo</a> · <a href="#project-richlegrand-bitbang-cli">bitbang-cli</a> · <a href="#project-richlegrand-bitbang-server">bitbang-server</a> · <a href="#project-cure53-dompurify">DOMPurify</a> · <a href="#project-gitoxidelabs-gitoxide">gitoxide</a> · <a href="#project-gnome-glib">GNOME&nbsp;GLib</a> · <a href="#project-go-git-go-git">go-git</a> · <a href="#project-in-toto-go-witness">go-witness</a> · <a href="#project-russellhaering-gosaml2">gosaml2</a> · <a href="#project-kjur-jsrsasign">jsrsasign</a> · <a href="#project-libevent-libevent">libevent</a> · <a href="#project-strukturag-libheif">libheif</a> · <a href="#project-libjpeg-turbo-libjpeg-turbo">libjpeg-turbo</a> · <a href="#project-nih-at-libzip">libzip</a> · <a href="#project-lighttpd-lighttpd1-4">lighttpd</a> · <a href="#project-phpseclib-phpseclib">phpseclib</a> · <a href="#project-py-pdf-pypdf">pypdf</a> · <a href="#project-rustfs-rustfs">RustFS</a> · <a href="#project-steveukx-git-js">simple-git</a> · <a href="#project-charmbracelet-soft-serve">Soft&nbsp;Serve</a> · <a href="#project-stablelib-stablelib">StableLib</a>
+<a href="#project-wwbn-avideo">AVideo</a> · <a href="#project-richlegrand-bitbang-cli">bitbang-cli</a> · <a href="#project-richlegrand-bitbang-server">bitbang-server</a> · <a href="#project-cure53-dompurify">DOMPurify</a> · <a href="#project-gitoxidelabs-gitoxide">gitoxide</a> · <a href="#project-go-git-go-git">go-git</a> · <a href="#project-russellhaering-gosaml2">gosaml2</a> · <a href="#project-kjur-jsrsasign">jsrsasign</a> · <a href="#project-libevent-libevent">libevent</a> · <a href="#project-strukturag-libheif">libheif</a> · <a href="#project-libjpeg-turbo-libjpeg-turbo">libjpeg-turbo</a> · <a href="#project-nih-at-libzip">libzip</a> · <a href="#project-lighttpd-lighttpd1-4">lighttpd</a> · <a href="#project-phpseclib-phpseclib">phpseclib</a> · <a href="#project-py-pdf-pypdf">pypdf</a> · <a href="#project-rustfs-rustfs">RustFS</a> · <a href="#project-steveukx-git-js">simple-git</a> · <a href="#project-stablelib-stablelib">StableLib</a>
 </p>
 
 <p align="center">73 projects · 70 published advisories · 12 merged patches</p>
@@ -1945,7 +1948,7 @@ CNA version record — gitoxide: affected: 0 &lt; 0.11.1; unaffected: 0.11.1.
 
 <table>
 <thead><tr>
-<th align="left" width="70%"><h3><a href="https://github.com/GNOME/glib">GNOME GLib</a></h3></th>
+<th align="left" width="70%"><h3><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/logos/gnome-dark.svg"><img src="./assets/logos/gnome.svg" width="32" height="32" alt=""></picture> <a href="https://github.com/GNOME/glib">GNOME GLib</a></h3></th>
 <th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
 </tr></thead>
 <tbody>
@@ -2088,7 +2091,7 @@ Named in the advisory body, not its structured credit list.
 
 <table>
 <thead><tr>
-<th align="left" width="70%"><h3><a href="https://github.com/in-toto/go-witness">go-witness</a></h3></th>
+<th align="left" width="70%"><h3><img src="./assets/logos/in-toto-witness.svg" width="26" height="32" alt=""> <a href="https://github.com/in-toto/go-witness">go-witness</a></h3></th>
 <th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
 </tr></thead>
 <tbody>
@@ -3877,7 +3880,7 @@ CNA version record — siyuan: affected: &lt; 3.6.4.
 
 <table>
 <thead><tr>
-<th align="left" width="70%"><h3><a href="https://github.com/charmbracelet/soft-serve">Soft Serve</a></h3></th>
+<th align="left" width="70%"><h3><img src="./assets/logos/charm.png" width="32" height="32" alt=""> <a href="https://github.com/charmbracelet/soft-serve">Soft Serve</a></h3></th>
 <th align="right" width="30%"><a href="#projects" aria-label="Back to project gallery">↑</a></th>
 </tr></thead>
 <tbody>
