@@ -91,7 +91,7 @@ Alphabetical by project; newest work first within each.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-73081">CVE-2026-73081</a></strong><br><a href="https://github.com/activepieces/activepieces/security/advisories/GHSA-3pfv-m69p-5fv5">GHSA-3pfv-m69p-5fv5</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;17</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 A flow Code step’s name reached a shell-invoked bun build command without sufficient validation. An authenticated user able to create a flow could execute commands as the worker user before sandboxing began.
 
@@ -144,7 +144,7 @@ CNA version record — activepieces: affected: &lt; 0.80.0.
 <td valign="top"><strong><a href="https://github.com/apache/httpd/commit/d11e440">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-04-16<br><sub>committed</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Integer overflow guards in four core escaping functions
 
@@ -174,7 +174,7 @@ Integer overflow guards in four core escaping functions
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41321">CVE-2026-41321</a></strong><br><a href="https://github.com/withastro/astro/security/advisories/GHSA-88gm-j2wx-58h6">GHSA-88gm-j2wx-58h6</a></td>
 <td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;20</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The Cloudflare image-binding transform checked only the initial remote-image URL and followed redirects. An open redirect on an allowed domain could bypass image-domain restrictions and trigger blind requests to destinations outside that allowlist.
 
@@ -239,7 +239,7 @@ CNA version record — @astrojs/cloudflare: affected: &lt; 13.1.10.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41577">CVE-2026-41577</a></strong><br><a href="https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2">GHSA-4v4x-x5pr-8gp2</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;05&#8209;12</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 SAML assertion processing omitted time and audience conditions. An attacker holding a valid signed assertion could replay it after its signed expiry or use an assertion issued for a different service provider.
 
@@ -248,7 +248,7 @@ SAML assertion processing omitted time and audience conditions. An attacker hold
 <td valign="top"><strong><a href="https://docs.goauthentik.io/security/cves/CVE-2026-40165">Vendor acknowledgement</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 SAML NameID truncation in CVE-2026-40165
 
@@ -303,7 +303,7 @@ CNA version record — authentik: affected: &lt; 2025.12.5; affected: &lt; 2026.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35511">CVE-2026-35511</a></strong><br><a href="https://github.com/authorizerdev/authorizer/security/advisories/GHSA-29rf-f4vv-pvq6">GHSA-29rf-f4vv-pvq6</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;08&#8209;13</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 OAuth login linked accounts by email without requiring the existing account to verify that address. An attacker who registered a victim’s email retained password access when the victim later signed in through an OAuth provider.
 
@@ -312,7 +312,7 @@ OAuth login linked accounts by email without requiring the existing account to v
 <td valign="top"><a href="https://github.com/authorizerdev/authorizer/security/advisories/GHSA-x3f4-v83f-7wp2">GHSA-x3f4-v83f-7wp2</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;03</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Several authentication endpoints attached tokens to caller-supplied redirect URLs without checking AllowedOrigins. An attacker could capture reset, magic-link, or authentication tokens after the victim followed an emailed link leading through the affected flow.
 
@@ -398,7 +398,7 @@ Maintainer weaknesses: [CWE-601](https://cwe.mitre.org/data/definitions/601.html
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-33766">CVE-2026-33766</a></strong><br><a href="https://github.com/WWBN/AVideo/security/advisories/GHSA-f359-r3pv-2phf">GHSA-f359-r3pv-2phf</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;03&#8209;24</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Image-download endpoints validated the starting URL but followed HTTP redirects without checking their destinations. A user with upload and edit permissions could redirect the server to internal services or reachable cloud metadata endpoints.
 
@@ -465,7 +465,7 @@ CNA version record — AVideo: affected: &lt;= 26.0.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35043">CVE-2026-35043</a></strong><br><a href="https://github.com/bentoml/BentoML/security/advisories/GHSA-fgv4-6jr3-jgfw">GHSA-fgv4-6jr3-jgfw</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;02</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Cloud deployment script generation inserted system\_packages from bentofile.yaml into a shell command without quoting. An attacker-controlled package entry could execute commands during the BentoCloud build; an earlier local-path quoting fix missed this cloud-specific path.
 
@@ -532,7 +532,7 @@ CNA version record — BentoML: affected: &lt; 1.4.38.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40077">CVE-2026-40077</a></strong><br><a href="https://github.com/henrygd/beszel/security/advisories/GHSA-5f5r-95pg-xrpm">GHSA-5f5r-95pg-xrpm</a></td>
 <td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;09</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Several hub endpoints checked authentication but not membership of the requested system. Cross-system container access required both a valid 15-character system ID and 12-character container ID; other affected endpoints could disclose system information or trigger SMART refreshes.
 
@@ -595,7 +595,7 @@ CNA version record — beszel: affected: &lt; 0.18.7.
 <td valign="top"><strong><a href="https://github.com/richlegrand/bitbang-cli/pull/12">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-08-16<br><sub>merged</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Publish a running tmux session as a shareable URL
 
@@ -604,7 +604,7 @@ Publish a running tmux session as a shareable URL
 <td valign="top"><strong><a href="https://github.com/richlegrand/bitbang-cli/pull/10">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-08-01<br><sub>merged</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Reachable dnsmessage panic in mDNS response parsing (GO-2026-5942); golang.org/x/net bumped to v0.57.0
 
@@ -638,7 +638,7 @@ Ordinary open-source contribution.
 <td valign="top"><strong><a href="https://github.com/richlegrand/bitbang-server/pull/2">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-08-15<br><sub>merged</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Add bitbang-metrics-dump and a build/test CI workflow
 
@@ -674,7 +674,7 @@ Ordinary open-source contribution.
 <td valign="top"><strong><a href="https://github.com/c-ares/c-ares/pull/1094">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-03-22<br><sub>merged</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Overflow checks in <code>ares_buf_ensure_space()</code>
 
@@ -706,7 +706,7 @@ Sources: [Node.js release notes](https://github.com/nodejs/node/blob/main/deps/c
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41520">CVE-2026-41520</a></strong><br><a href="https://github.com/cilium/cilium/security/advisories/GHSA-gj49-89wh-h4gj">GHSA-gj49-89wh-h4gj</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;22</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Debug archives from WireGuard-enabled Cilium nodes included the node’s WireGuard private key. Anyone receiving an affected bugtool archive or sysdump obtained that key; remediation required rotating keys already shared in diagnostic bundles.
 
@@ -773,7 +773,7 @@ CNA version record — cilium: affected: &lt; 1.17.15; affected: &gt;= 1.18.0, &
 <td valign="top"><strong><a href="https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077">Upstream acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-05-07<br><sub>committed</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Recovery target validation
 
@@ -782,7 +782,7 @@ Recovery target validation
 <td valign="top"><strong><a href="https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47">Upstream acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-04-29<br><sub>committed</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Escaping in PostgreSQL configuration values
 
@@ -814,7 +814,7 @@ Escaping in PostgreSQL configuration values
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-56671">CVE-2026-56671</a></strong><br><a href="https://github.com/Comfy-Org/ComfyUI/security/advisories/GHSA-pj59-g5vv-74q4">GHSA-pj59-g5vv-74q4</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;15</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The unauthenticated model-preview route accepted paths outside its model directory. Because responses were decoded and re-encoded as images, disclosure was limited to image-decodable files, with a separate oracle revealing whether other files existed.
 
@@ -867,7 +867,7 @@ CNA version record — ComfyUI: affected: &lt; 0.28.0.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40261">CVE-2026-40261</a></strong><br><a href="https://github.com/composer/composer/security/advisories/GHSA-gqw4-4w2p-838q">GHSA-gqw4-4w2p-838q</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;14</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Perforce package references and connection parameters entered shell commands without escaping. A repository supplying malicious Perforce source metadata could execute commands during source-preferred Composer installs, even when the Perforce client was not installed.
 
@@ -932,7 +932,7 @@ CNA version record — composer: affected: &gt;= 2.3.0, &lt; 2.9.6; affected: &g
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41246">CVE-2026-41246</a></strong><br><a href="https://github.com/projectcontour/contour/security/advisories/GHSA-x4mj-7f9g-29h4">GHSA-x4mj-7f9g-29h4</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;20</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Cookie rewrite values entered generated Envoy Lua code without escaping. A user permitted to create or modify HTTPProxy resources could execute Lua in shared Envoy, read its xDS credentials, and potentially access other tenants’ TLS keys.
 
@@ -999,7 +999,7 @@ CNA version record — contour: affected: &gt;= 1.33.0, &lt; 1.33.4; affected: &
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34168">CVE-2026-34168</a></strong><br><a href="https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77">GHSA-mh8x-fppq-cp77</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;02</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Persistent-volume names entered shell commands without escaping during resource deletion. An authenticated API token holder able to configure storage could arrange command execution as root on managed servers when the affected resource was deleted.
 
@@ -1054,7 +1054,7 @@ CNA version record — coolify: affected: &lt; 4.0.0-beta.471.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-39395">CVE-2026-39395</a></strong><br><a href="https://github.com/sigstore/cosign/security/advisories/GHSA-w6c6-c85g-mmv6">GHSA-w6c6-c85g-mmv6</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;06</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Attestation verification mishandled predicate-type and payload-parsing failures across bundle formats. Without check-claims enabled, a valid signature over an unparsable payload or mismatched predicate type could still produce a successful verification result.
 
@@ -1122,7 +1122,7 @@ CNA version record — cosign: affected: &gt;= 3.0.0, &lt; 3.0.6; affected: &lt;
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34976">CVE-2026-34976</a></strong><br><a href="https://github.com/dgraph-io/dgraph/security/advisories/GHSA-p5rh-vmhp-gvcw">GHSA-p5rh-vmhp-gvcw</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;02</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The restoreTenant mutation lacked its authorization middleware entry. Unauthenticated callers reaching the admin GraphQL endpoint could overwrite a namespace from a supplied backup, probe local filesystem paths, or trigger requests through a controlled vault address.
 
@@ -1189,7 +1189,7 @@ CNA version record — dgraph: affected: &lt; 25.3.1.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41240">CVE-2026-41240</a></strong><br><a href="https://github.com/cure53/DOMPurify/security/advisories/GHSA-h7mw-gpvr-xq4m">GHSA-h7mw-gpvr-xq4m</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;20</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Function-based ADD\_TAGS handling skipped FORBID\_TAGS when the predicate returned true. Configurations combining those options could retain explicitly forbidden elements and their permitted attributes; the corresponding attribute-denylist path already had an earlier fix.
 
@@ -1266,7 +1266,7 @@ Sources: [CVE-2026-41240](https://github.com/advisories/GHSA-h7mw-gpvr-xq4m).
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-73549">CVE-2026-73549</a></strong><br><a href="https://github.com/envoyproxy/envoy/security/advisories/GHSA-jp5f-qr64-c9vw">GHSA-jp5f-qr64-c9vw</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;26</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Scoped IPv6 addresses could crash copyInternetAddressAndPort in ORIGINAL\_DST or transparent-proxy paths. Exploitation depends on original-destination socket handling; the advisory reports source analysis, not a live reproduced exploit, and extends an earlier IPv6 fix.
 
@@ -1318,7 +1318,7 @@ Verification note: the advisory supplies this CVE identifier, but its public CVE
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34984">CVE-2026-34984</a></strong><br><a href="https://github.com/external-secrets/external-secrets/security/advisories/GHSA-r2pg-r6h7-crf3">GHSA-r2pg-r6h7-crf3</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;11</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The template engine exposed getHostByName inside the controller process. A user able to author templated ExternalSecret resources could encode accessible secrets into DNS lookups; exploitation required outbound DNS from the controller, not direct egress from the attacker’s workload.
 
@@ -1386,7 +1386,7 @@ CNA version record — external-secrets: affected: &lt; 2.3.0.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35604">CVE-2026-35604</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf">GHSA-v9w4-gm2x-6rvf</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;04</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Public share access did not recheck the owner’s Share and Download permissions. Existing links remained downloadable after an administrator revoked those permissions, even though the same account could no longer create new shares.
 
@@ -1397,7 +1397,7 @@ Public share access did not recheck the owner’s Share and Download permissions
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35607">CVE-2026-35607</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-7526-j432-6ppp">GHSA-7526-j432-6ppp</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;04</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Proxy-authenticated accounts inherited default Execute permissions and configured commands, unlike ordinary signup accounts. Exposure required proxy authentication with command execution enabled and permissive administrator-configured defaults; the earlier signup fix did not cover auto-provisioning.
 
@@ -1408,7 +1408,7 @@ Proxy-authenticated accounts inherited default Execute permissions and configure
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35606">CVE-2026-35606</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-67cg-cpj7-qgc9">GHSA-67cg-cpj7-qgc9</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;04</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The resource endpoint returned text content and raw encoded bytes without checking Download permission. An authenticated user with downloads disabled could still read files within their authorized scope; directory and path authorization remained in effect.
 
@@ -1419,7 +1419,7 @@ The resource endpoint returned text content and raw encoded bytes without checki
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35605">CVE-2026-35605</a></strong><br><a href="https://github.com/filebrowser/filebrowser/security/advisories/GHSA-5q48-q4fm-g3m6">GHSA-5q48-q4fm-g3m6</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;04</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Access-rule matching used a string prefix without enforcing a directory boundary. An allow rule for one directory could also admit a sibling whose name shared that prefix; deny rules could over-match for the same reason.
 
@@ -1601,7 +1601,7 @@ CNA version record — filebrowser: affected: &lt; 2.63.1.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41050">CVE-2026-41050</a></strong><br><a href="https://github.com/rancher/fleet/security/advisories/GHSA-765j-qfrp-hm3j">GHSA-765j-qfrp-hm3j</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Helm lookup and valuesFrom reads bypassed ServiceAccount impersonation and retained fleet-agent privileges. A tenant able to push to a monitored Git repository could read other namespaces’ secrets on targeted downstream clusters; single-tenant deployments were unaffected.
 
@@ -1676,7 +1676,7 @@ Lyrie Research: Page could not be retrieved during the September 6 review; retai
 <td valign="top"><a href="https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-9cvr-5wv9-2gxr">GHSA-9cvr-5wv9-2gxr</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;08&#8209;31</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Cheerio, Playwright, and Puppeteer document loaders fetched URLs outside Flowise’s shared HTTP-security checks. A user able to configure these loaders could bypass the denylist and request internal destinations; the earlier HTTP-node fix did not cover them.
 
@@ -1725,7 +1725,7 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34443">CVE-2026-34443</a></strong><br><a href="https://github.com/freescout-help-desk/freescout/security/advisories/GHSA-c9v3-4c59-x5q2">GHSA-c9v3-4c59-x5q2</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;03&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The SSRF address check returned early for ordinary IP addresses, leaving configured CIDR blocks unenforced. An inbound email containing controlled attachment URLs could cause the server to request private-network destinations that the policy intended to block.
 
@@ -1782,7 +1782,7 @@ CNA version record — freescout: affected: &lt; 1.8.211.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34172">CVE-2026-34172</a></strong><br><a href="https://github.com/Giskard-AI/giskard-oss/security/advisories/GHSA-frv4-x25r-588m">GHSA-frv4-x25r-588m</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;03&#8209;26</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 ChatWorkflow.chat treated plain-string input as a Jinja2 template in an unsandboxed environment. Applications passing untrusted input directly to that method could expose command execution; values supplied through with\_inputs did not take the vulnerable template-compilation path.
 
@@ -1847,7 +1847,7 @@ CNA version record — giskard-oss: affected: &lt; 0.3.4; affected: &gt;= 1.0.1a
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-82254">CVE-2026-82254</a></strong><br><a href="https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-x494-mj8g-cj27">GHSA-x494-mj8g-cj27</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;25</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Unchecked delta indexing and uncapped allocations allowed crafted Git pack data to crash consuming processes. A malicious remote could trigger a truncated-delta panic or excessive allocation during clone and fetch operations.
 
@@ -1856,7 +1856,7 @@ Unchecked delta indexing and uncapped allocations allowed crafted Git pack data 
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-82253">CVE-2026-82253</a></strong><br><a href="https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-p3hw-mv63-rf9w">GHSA-p3hw-mv63-rf9w</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;25</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Incomplete submodule-name validation allowed paths to escape .git/modules, while inherited trust skipped ownership checks. Processing attacker-controlled submodule metadata could access unintended Git configuration and disclose credentials; package fix versions differ between published sources.
 
@@ -1953,7 +1953,7 @@ CNA version record — gitoxide: affected: 0 &lt; 0.11.1; unaffected: 0.11.1.
 <td valign="top"><strong><a href="https://github.com/GNOME/glib/commit/578a488">Upstream acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-04-29<br><sub>committed</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 D-Bus message length integer arithmetic
 
@@ -1983,7 +1983,7 @@ D-Bus message length integer arithmetic
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-71556">CVE-2026-71556</a></strong><br><a href="https://github.com/go-git/go-git/security/advisories/GHSA-hc8v-wwc9-vgxm">GHSA-hc8v-wwc9-vgxm</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Worktree writes checked path strings but followed existing symlinks. An attacker able to plant a symlink and trigger a write could escape the worktree or modify Git metadata, including configuration beneath .git.
 
@@ -1992,7 +1992,7 @@ Worktree writes checked path strings but followed existing symlinks. An attacker
 <td valign="top"><a href="https://github.com/go-git/go-git/security/advisories/GHSA-w5pp-99ch-qj29">GHSA-w5pp-99ch-qj29</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;05&#8209;18</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Crafted pack, index, or loose-object data could cause panics or excessive resource use. Applications cloning, fetching, or opening untrusted repositories were exposed through a malicious remote or attacker-controlled files under .git/objects.
 
@@ -2001,7 +2001,7 @@ Crafted pack, index, or loose-object data could cause panics or excessive resour
 <td valign="top"><strong><a href="https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96">Report acknowledgement</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 CVE-2026-45571 report
 
@@ -2096,7 +2096,7 @@ Named in the advisory body, not its structured credit list.
 <td valign="top"><a href="https://github.com/in-toto/go-witness/security/advisories/GHSA-6xq9-h39h-jc22">GHSA-6xq9-h39h-jc22</a></td>
 <td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;07&#8209;10</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Policy verification appended the intermediate pool to itself instead of loading certificates from the trust bundle. Attestations requiring an intermediate CA failed verification; the failure was closed and did not accept unverified attestations.
 
@@ -2144,7 +2144,7 @@ Maintainer weaknesses: [CWE-296](https://cwe.mitre.org/data/definitions/296.html
 <td valign="top"><a href="https://github.com/russellhaering/gosaml2/security/advisories/GHSA-vv4x-5gvr-chh8">GHSA-vv4x-5gvr-chh8</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;19</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The earlier LogoutRequest signature fix did not cover LogoutResponse validation. Applications using the affected POST-response validator could accept an unsigned SAML logout response; independent reports were combined in the published advisory.
 
@@ -2192,7 +2192,7 @@ Maintainer weaknesses: [CWE-347](https://cwe.mitre.org/data/definitions/347.html
 <td valign="top"><a href="https://github.com/gotenberg/gotenberg/security/advisories/GHSA-qmwh-9m9c-h36m">GHSA-qmwh-9m9c-h36m</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;06</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The ExifTool metadata filter was case-sensitive and omitted hard-link and symbolic-link tags. Callers of the metadata-write endpoint, unauthenticated by default, could write files or links outside intended paths, within the service’s filesystem permissions.
 
@@ -2252,7 +2252,7 @@ Maintainer weaknesses: [CWE-73](https://cwe.mitre.org/data/definitions/73.html),
 <td valign="top"><strong><a href="https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0">Release acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-05-07<br><sub>released</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Host-header validation in v0.42.0
 
@@ -2286,7 +2286,7 @@ Host-header validation in v0.42.0
 <td valign="top"><strong><a href="https://github.com/kjur/jsrsasign/releases/tag/11.1.2">Release acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-04-13<br><sub>released</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 DSA universal signature forgery from a missing FIPS 186-4 §4.7 boundary check, fixed in 11.1.2
 
@@ -2295,7 +2295,7 @@ DSA universal signature forgery from a missing FIPS 186-4 §4.7 boundary check, 
 <td valign="top"><strong><a href="https://github.com/kjur/jsrsasign/releases/tag/11.1.2">Release acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-04-13<br><sub>released</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 ASN.1 parser infinite loop in <code>getChildIdx</code>, fixed in 11.1.2
 
@@ -2335,7 +2335,7 @@ Sources: [Release archive](https://github.com/kjur/jsrsasign/releases).
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41326">CVE-2026-41326</a></strong><br><a href="https://github.com/kata-containers/kata-containers/security/advisories/GHSA-q49m-57vm-c8cc">GHSA-q49m-57vm-c8cc</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;22</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 CopyFile policy checked the destination path but not the symlink target supplied in request data. An untrusted host could redirect writes outside the shared directory and overwrite files inside the guest, including in confidential-container deployments.
 
@@ -2401,7 +2401,7 @@ CNA version record — kata-containers: affected: &gt;= 3.4.0, &lt; 3.29.0.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-65956">CVE-2026-65956</a></strong><br><a href="https://github.com/1Panel-dev/KubePi/security/advisories/GHSA-wjrh-4j52-c664">GHSA-wjrh-4j52-c664</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;04</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 SSO configuration and connectivity-test endpoints were exposed outside the intended management boundary. Depending on authentication settings and deployment configuration, unauthenticated or low-privilege callers could alter SSO settings, potentially take over accounts, or trigger server-side requests.
 
@@ -2458,7 +2458,7 @@ CNA version record — KubePi: affected: &lt; 2.0.0.
 <td valign="top"><strong><a href="https://github.com/libevent/libevent/blob/master/ChangeLog">Release acknowledgement</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 HTTP header parsing restricted against request smuggling
 
@@ -2492,7 +2492,7 @@ Named in the changelog; not counted as a structured advisory credit.
 <td valign="top"><a href="https://github.com/strukturag/libheif/security/advisories/GHSA-9h96-c44j-jpq9">GHSA-9h96-c44j-jpq9</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;05&#8209;19</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 A 32-bit stride calculation could wrap for large image widths, allocating an undersized plane. Processing a crafted HEIF or AVIF image could then overflow the heap, crashing or potentially compromising the consuming application.
 
@@ -2540,7 +2540,7 @@ Maintainer weaknesses: [CWE-122](https://cwe.mitre.org/data/definitions/122.html
 <td valign="top"><strong><a href="https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877">Report and fixes</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Signed-overflow bounds checks across six JNI paths
 
@@ -2570,7 +2570,7 @@ Signed-overflow bounds checks across six JNI paths
 <td valign="top"><strong><a href="https://github.com/nih-at/libzip/blob/main/THANKS">Acknowledgement</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Listed in THANKS
 
@@ -2600,7 +2600,7 @@ Listed in THANKS
 <td valign="top"><strong><a href="https://github.com/lighttpd/lighttpd1.4/commit/904a267">Upstream acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-05-04<br><sub>committed</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 <code>mod_maxminddb</code> snprintf return-value bound
 
@@ -2634,7 +2634,7 @@ Listed in THANKS
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-9316">CVE-2026-9316</a></strong><br><a href="https://github.com/NangoHQ/nango/security/advisories/GHSA-2j37-g5f6-h55p">GHSA-2j37-g5f6-h55p</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;08&#8209;26</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The proxy accepted a base-url-override header while its default network denylist was empty. Callers with a valid secret key or environment:proxy scope could direct authenticated proxy requests to private-network and metadata addresses.
 
@@ -2686,7 +2686,7 @@ Verification note: the advisory supplies this CVE identifier, but its public CVE
 <td valign="top"><strong><a href="https://github.com/nats-io/nats-server/releases/tag/v2.14.3">Release acknowledgement</a></strong></td>
 <td align="right" valign="top">2026-06-29<br><sub>released</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Non-CVE fixes acknowledged in v2.14.3 and v2.12.12
 
@@ -2695,7 +2695,7 @@ Non-CVE fixes acknowledged in v2.14.3 and v2.12.12
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-58254">CVE-2026-58254</a></strong><br><a href="https://github.com/nats-io/nats-server/security/advisories/GHSA-p3j5-5hrq-p75h">GHSA-p3j5-5hrq-p75h</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;06&#8209;29</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Trace-destination permissions were not consistently checked for traffic arriving over leafnode connections. A leafnode operator could direct trace events to disallowed subjects, exposing routing and account metadata, and suppress normal message delivery.
 
@@ -2704,7 +2704,7 @@ Trace-destination permissions were not consistently checked for traffic arriving
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-58214">CVE-2026-58214</a></strong><br><a href="https://github.com/nats-io/nats-server/security/advisories/GHSA-4g68-3pwx-5vfj">GHSA-4g68-3pwx-5vfj</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;06&#8209;29</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 An internal-subject restriction omitted the MQTT delivery PUBREL family. Authenticated MQTT clients could bypass subscribe permissions and receive account-local QoS2 protocol metadata; the published impact did not include message payload disclosure.
 
@@ -2713,7 +2713,7 @@ An internal-subject restriction omitted the MQTT delivery PUBREL family. Authent
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-58250">CVE-2026-58250</a></strong><br><a href="https://github.com/nats-io/nats-server/security/advisories/GHSA-3g5q-cfh2-cq67">GHSA-3g5q-cfh2-cq67</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;06&#8209;29</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Repeated pre-authentication leafnode INFO messages could leave handshake state unset and crash the server. Exploitation required access to a leafnode listener with compression enabled; disabling that compression mitigated the affected path.
 
@@ -2826,7 +2826,7 @@ CNA version record — nats-server: affected: &lt; 2.11.17; affected: &gt;= 2.12
 <td valign="top"><strong><a href="https://nginx.org/en/CHANGES">Changelog acknowledgement</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Constant-time <code>secure_link</code> hash comparison in 1.31.2
 
@@ -2856,7 +2856,7 @@ Constant-time <code>secure_link</code> hash comparison in 1.31.2
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-77180">CVE-2026-77180</a></strong><br><sub>Vendor/CVE record</sub></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;09&#8209;02</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 An authenticated user able to modify Kubernetes Ingress annotations could inject NGINX configuration. The vendor describes a control-plane issue requiring configuration access, not direct exploitation through data-plane traffic.
 
@@ -2897,7 +2897,7 @@ Standalone finding; excluded from GitHub advisory statistics.
 <td valign="top"><a href="https://github.com/novuhq/novu/security/advisories/GHSA-4x48-cgf9-q33f">GHSA-4x48-cgf9-q33f</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;13</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Conditions-filter webhooks bypassed the URL checks used by the HTTP Request step. A user with workflow-configuration access could issue server-side POST requests to internal endpoints and read responses through execution details.
 
@@ -2956,7 +2956,7 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40574">CVE-2026-40574</a></strong><br><a href="https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-c5c4-8r6x-56w3">GHSA-c5c4-8r6x-56w3</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;14</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Email-domain validation accepted malformed claims containing multiple at signs, allowing an unintended domain suffix to match the allowlist. Exploitation required an identity provider capable of emitting such malformed claims; providers enforcing email syntax were unaffected.
 
@@ -3021,7 +3021,7 @@ CNA version record — oauth2-proxy: affected: &lt; 7.15.2.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-34759">CVE-2026-34759</a></strong><br><a href="https://github.com/OneUptime/oneuptime/security/advisories/GHSA-6wc5-rhvj-cx7f">GHSA-6wc5-rhvj-cx7f</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;03&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Notification phone-number routes omitted service authorization and performed privileged operations. Using a project ID exposed by the status-page API, an unauthenticated caller could purchase Twilio numbers on the deployment’s account or release numbers used for alerts.
 
@@ -3074,7 +3074,7 @@ CNA version record — oneuptime: affected: &lt; 10.0.42.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-55701">CVE-2026-55701</a></strong><br><a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/security/advisories/GHSA-w5cv-pw74-4rxc">GHSA-w5cv-pw74-4rxc</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;06&#8209;15</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The GitHub receiver validated RequiredHeaders configuration but never enforced it on incoming requests. With the shared secret left at its empty default, callers could submit arbitrary webhook payloads and inject false CI/CD trace data.
 
@@ -3134,7 +3134,7 @@ Verification note: the advisory supplies this CVE identifier, but its public CVE
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-39883">CVE-2026-39883</a></strong><br><a href="https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hfvc-g4fc-pqhx">GHSA-hfvc-g4fc-pqhx</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;08</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Host-ID lookup invoked kenv by name instead of an absolute path. On affected BSD and Solaris paths, a local attacker controlling an earlier PATH directory could run a replacement executable inside the OpenTelemetry-using process.
 
@@ -3203,7 +3203,7 @@ CNA version record — opentelemetry-go: affected: &gt;= 1.15.0, &lt; 1.43.0.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40194">CVE-2026-40194</a></strong><br><a href="https://github.com/phpseclib/phpseclib/security/advisories/GHSA-r854-jrxh-36qx">GHSA-r854-jrxh-36qx</a></td>
 <td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;10</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 SSH packet authentication compared HMACs with a variable-time operator instead of hash\_equals. The timing difference is a defense-in-depth concern: authentication failure disconnects and rekeys the session, and the advisory does not establish a practical remote exploit.
 
@@ -3270,7 +3270,7 @@ CNA version record — phpseclib: affected: &gt;= 0.1.1, &lt; 1.0.28; affected: 
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-43983">CVE-2026-43983</a></strong><br><a href="https://github.com/pocket-id/pocket-id/security/advisories/GHSA-w6p7-2fxx-4f44">GHSA-w6p7-2fxx-4f44</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;26</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Refreshing an OIDC token did not recheck account disabling, authorization revocation, or group restrictions. Holders of an existing refresh token and the required client credentials could continue obtaining tokens after administrators removed access.
 
@@ -3279,7 +3279,7 @@ Refreshing an OIDC token did not recheck account disabling, authorization revoca
 <td valign="top"><a href="https://github.com/pocket-id/pocket-id/security/advisories/GHSA-hp74-gm6m-2qm5">GHSA-hp74-gm6m-2qm5</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;26</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The reauthentication fallback checked access-token freshness and a session cookie, but not how login occurred. A stolen one-time access token could therefore satisfy step-up requirements and obtain tokens for protected OIDC clients.
 
@@ -3368,7 +3368,7 @@ Maintainer weaknesses: [CWE-287](https://cwe.mitre.org/data/definitions/287.html
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41140">CVE-2026-41140</a></strong><br><a href="https://github.com/python-poetry/poetry/security/advisories/GHSA-73h3-mf4w-8647">GHSA-73h3-mf4w-8647</a></td>
 <td align="right" valign="top">🔵&nbsp;Low<br><sub>2026&#8209;04&#8209;18</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 On Python versions lacking tarfile’s data filter, Poetry extracted source distributions without traversal protection. Crafted archive members could escape the extraction directory during dependency resolution; the advisory rates this low because package build backends already execute code.
 
@@ -3431,7 +3431,7 @@ CNA version record — poetry: affected: &lt; 2.3.4.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-5366">CVE-2026-5366</a></strong><br><sub>Vendor/CVE record</sub></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;06&#8209;20</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Deployment pull steps accepted unsafe Git commit and sparse-checkout directory arguments. A user permitted to create deployments could execute commands on the worker host, with additional exposure where work pools were shared.
 
@@ -3474,7 +3474,7 @@ Standalone finding; excluded from GitHub advisory statistics.
 <td valign="top"><strong><a href="https://github.com/bufbuild/protoc-gen-validate/pull/1379">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-05-27<br><sub>merged</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Malformed UTF-8 length validation bypass
 
@@ -3504,7 +3504,7 @@ Malformed UTF-8 length validation bypass
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35459">CVE-2026-35459</a></strong><br><a href="https://github.com/pyload/pyload/security/advisories/GHSA-7gvf-3w72-p2pg">GHSA-7gvf-3w72-p2pg</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;02</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The downloader validated its initial destination but followed redirects without rechecking targets. An authenticated user with ADD permission could fetch internal services or reachable metadata endpoints; returned data was written into the download storage folder.
 
@@ -3513,7 +3513,7 @@ The downloader validated its initial destination but followed redirects without 
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-35464">CVE-2026-35464</a></strong><br><a href="https://github.com/pyload/pyload/security/advisories/GHSA-4744-96p5-mp2j">GHSA-4744-96p5-mp2j</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;04&#8209;02</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Non-admin users with SETTINGS and ADD permissions could point storage\_folder at Flask’s session store and download a crafted serialized session. A subsequent request using that session cookie could execute code in the web process.
 
@@ -3621,7 +3621,7 @@ CNA version record — pyload: affected: &lt;= 0.5.0b3.dev96.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40260">CVE-2026-40260</a></strong><br><a href="https://github.com/py-pdf/pypdf/security/advisories/GHSA-3crg-w4f6-42mx">GHSA-3crg-w4f6-42mx</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;10</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 PDF XMP parsing processed entity declarations without effective expansion limits. A crafted document could exhaust application memory, but merely opening a PDF was insufficient unless the consuming application also parsed its XMP metadata.
 
@@ -3688,7 +3688,7 @@ CNA version record — pypdf: affected: &lt; 6.10.0.
 <td valign="top"><a href="https://github.com/rustfs/rustfs/security/advisories/GHSA-mm2q-qcmx-gw4w">GHSA-mm2q-qcmx-gw4w</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;25</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Service-account listing checked the wrong administrative action, and updates omitted an ownership check. A user granted admin:UpdateServiceAccount could enumerate other users’ service-account keys, including root-owned keys, and rotate their secrets.
 
@@ -3697,7 +3697,7 @@ Service-account listing checked the wrong administrative action, and updates omi
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40937">CVE-2026-40937</a></strong><br><a href="https://github.com/rustfs/rustfs/security/advisories/GHSA-pfcq-4gjr-6gjm">GHSA-pfcq-4gjr-6gjm</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;22</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Notification-target handlers authenticated callers but omitted administrator authorization. A read-only user could overwrite known targets, redirect bucket events to a controlled webhook, and make the server probe internal endpoints through target health checks.
 
@@ -3792,7 +3792,7 @@ CNA version record — rustfs: affected: &lt; 1.0.0-alpha.94.
 <td valign="top"><strong><a href="https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md">Changelog acknowledgement</a></strong></td>
 <td align="right" valign="top"></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Blocked <code>GIT_CONFIG_COUNT</code> environment variables and <code>--template</code> / <code>merge</code> configuration keys in 3.36.0
 
@@ -3822,7 +3822,7 @@ Blocked <code>GIT_CONFIG_COUNT</code> environment variables and <code>--template
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40107">CVE-2026-40107</a></strong><br><a href="https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w95v-4h65-j455">GHSA-w95v-4h65-j455</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;09</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Mermaid rendering allowed embedded image URLs to survive sanitization. Opening a crafted note triggered requests; on Windows, a network-share URL could additionally expose the user’s NTLMv2 challenge-response hash through automatic authentication.
 
@@ -3885,7 +3885,7 @@ CNA version record — siyuan: affected: &lt; 3.6.4.
 <td valign="top"><a href="https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f">GHSA-vpj5-m56f-8h3f</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;07&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Repository imports and recurring mirror syncs accepted remote URLs without the existing SSRF validation. A user with a registered SSH key could make the server request loopback, private-network, or metadata endpoints.
 
@@ -3931,7 +3931,7 @@ Maintainer weaknesses: [CWE-918](https://cwe.mitre.org/data/definitions/918.html
 <td valign="top"><a href="https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c">GHSA-fvwj-92vj-fg8c</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;08&#8209;05</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 A result-typed WebAssembly if without an else could pass validation despite producing no value. Repeated constructs desynchronized the operand stack, exposing host-memory values and allowing writes into another module’s linear memory.
 
@@ -3940,7 +3940,7 @@ A result-typed WebAssembly if without an else could pass validation despite prod
 <td valign="top"><a href="https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8">GHSA-r5f5-cv78-6qv8</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;27</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The C host-call trampoline pushed a result even for functions declared void. Guest modules invoking these functions could corrupt operand-stack state; repeated calls advanced the stack beyond its allocation and crashed the process.
 
@@ -4004,7 +4004,7 @@ Maintainer weaknesses: [CWE-670](https://cwe.mitre.org/data/definitions/670.html
 <td valign="top"><a href="https://github.com/StableLib/stablelib/security/advisories/GHSA-x3ff-w252-2g7j">GHSA-x3ff-w252-2g7j</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;03&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Ed25519 verification did not enforce the scalar range required for a canonical signature. Anyone holding a valid signature could derive a second valid encoding without the signing key, affecting applications that rely on signature uniqueness.
 
@@ -4058,7 +4058,7 @@ Maintainer weaknesses: [CWE-347](https://cwe.mitre.org/data/definitions/347.html
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41175">CVE-2026-41175</a></strong><br><a href="https://github.com/statamic/cms/security/advisories/GHSA-4jjr-vmv7-wh4w">GHSA-4jjr-vmv7-wh4w</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;15</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Query values could resolve into destructive method calls. Minimal Control Panel permissions could enable data deletion; unauthenticated exposure required REST or GraphQL to be explicitly enabled without authentication and with the affected resources exposed.
 
@@ -4122,7 +4122,7 @@ CNA version record — cms: affected: &lt; 5.73.20; affected: &gt;= 6.0.0-alpha.
 <td valign="top"><a href="https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7">GHSA-m8q3-73v4-wvg7</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;08&#8209;10</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 A malicious iSCSI or USB device could inject udev properties through unsanitized SCSI identifiers. The earlier serial-number fix missed equivalent fields, allowing device data to request a systemd unit running as root.
 
@@ -4174,7 +4174,7 @@ Maintainer weaknesses: [CWE-74](https://cwe.mitre.org/data/definitions/74.html).
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40161">CVE-2026-40161</a></strong><br><a href="https://github.com/tektoncd/pipeline/security/advisories/GHSA-wjxp-xrpv-xpff">GHSA-wjxp-xrpv-xpff</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;21</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Git resolver API mode combined a user-supplied server URL with the system-configured Git token when no token parameter was supplied. A tenant able to create TaskRuns could redirect that authenticated request to a controlled server.
 
@@ -4183,7 +4183,7 @@ Git resolver API mode combined a user-supplied server URL with the system-config
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40923">CVE-2026-40923</a></strong><br><a href="https://github.com/tektoncd/pipeline/security/advisories/GHSA-rx35-6rhx-7858">GHSA-rx35-6rhx-7858</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;21</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Volume-mount restrictions compared raw paths without normalization. A Task or TaskRun author could use parent-directory components to mount over protected Tekton locations, allowing replacement of internal results or step scripts.
 
@@ -4192,7 +4192,7 @@ Volume-mount restrictions compared raw paths without normalization. A Task or Ta
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-40938">CVE-2026-40938</a></strong><br><a href="https://github.com/tektoncd/pipeline/security/advisories/GHSA-94jr-7pqp-xhcq">GHSA-94jr-7pqp-xhcq</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;04&#8209;21</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The Git resolver passed revision values to git fetch as arguments without separating options. A tenant able to submit ResolutionRequests and predict a pod-local repository path could execute commands and access the resolver’s cluster-wide Secret permissions.
 
@@ -4347,7 +4347,7 @@ Downstream fixes; the vendor CVE acknowledgement field does not name a reporter.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-41263">CVE-2026-41263</a></strong><br><a href="https://github.com/traefik/traefik/security/advisories/GHSA-6x2q-h3cr-8j2h">GHSA-6x2q-h3cr-8j2h</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;04&#8209;24</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The earlier BasicAuth timing fix resolved its fallback secret to an empty string, avoiding the intended bcrypt work. Repeated authentication timing measurements could distinguish registered usernames from nonexistent ones on a reachable protected route.
 
@@ -4415,7 +4415,7 @@ CNA version record — traefik: affected: &lt; 2.11.43; affected: &gt;= 3.0.0-be
 <td valign="top"><a href="https://github.com/theupdateframework/python-tuf/security/advisories/GHSA-qp9x-wp8f-qgjj">GHSA-qp9x-wp8f-qgjj</a></td>
 <td align="right" valign="top">🟡&nbsp;Moderate<br><sub>2026&#8209;05&#8209;18</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Delegation glob matching used platform-dependent case normalization. On Windows, an attacker controlling a delegated role could exploit a case-colliding pattern visited first to serve targets intended for another delegation; POSIX matching was unaffected.
 
@@ -4473,7 +4473,7 @@ Maintainer weaknesses: [CWE-178](https://cwe.mitre.org/data/definitions/178.html
 <td valign="top"><strong><a href="https://github.com/vim/vim/commit/3c0f800">Merged patch</a></strong></td>
 <td align="right" valign="top">2026-03-29<br><sub>committed</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Correct the vim\_fgets() size bound in patch 9.2.0271; follow-up in 9.2.0272
 
@@ -4507,7 +4507,7 @@ Correct the vim\_fgets() size bound in patch 9.2.0271; follow-up in 9.2.0272
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-53445">CVE-2026-53445</a></strong><br><a href="https://github.com/wekan/wekan/security/advisories/GHSA-7w2h-g83c-jqrp">GHSA-7w2h-g83c-jqrp</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;05&#8209;30</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 The copyBoard method did not verify board membership or administrator rights. A logged-in user could copy a private board and its cards and checklists, then make the resulting copy public through supplied properties.
 
@@ -4562,7 +4562,7 @@ CNA version record — wekan: affected: &lt; 9.32.
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-77308">CVE-2026-77308</a></strong><br><a href="https://github.com/in-toto/witness/security/advisories/GHSA-ggg4-v8vp-jxqh">GHSA-ggg4-v8vp-jxqh</a></td>
 <td align="right" valign="top">🔴&nbsp;Critical<br><sub>2026&#8209;07&#8209;10</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Witness automatically loaded repository-local configuration before commands. An untrusted pull request could redirect attestation uploads and disable sensitive-variable filtering, exposing environment secrets available to a CI job that ran witness on that checkout.
 
@@ -4571,7 +4571,7 @@ Witness automatically loaded repository-local configuration before commands. An 
 <td valign="top"><a href="https://github.com/in-toto/witness/security/advisories/GHSA-88v8-jcjq-95w5">GHSA-88v8-jcjq-95w5</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;07&#8209;10</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Certificate-loading code assigned intermediate certificates to the root pool instead of the intermediate pool. Verification failed for affected intermediate-CA hierarchies; deployments using certificates signed directly by a configured root were unaffected.
 
@@ -4647,7 +4647,7 @@ Maintainer weaknesses: [CWE-296](https://cwe.mitre.org/data/definitions/296.html
 <td valign="top"><strong><a href="https://www.cve.org/CVERecord?id=CVE-2026-55672">CVE-2026-55672</a></strong><br><a href="https://github.com/zitadel/zitadel/security/advisories/GHSA-xqxv-4jc2-x56x">GHSA-xqxv-4jc2-x56x</a></td>
 <td align="right" valign="top">🟠&nbsp;High<br><sub>2026&#8209;06&#8209;17</sub></td>
 </tr>
-<tr><td colspan="2">
+<tr><td colspan="2" width="10000">
 
 Authorization-code exchange and token refresh did not bind the grant to its original client. An attacker who obtained a code or refresh token through a separate flaw could redeem it under another client, including across tenants.
 

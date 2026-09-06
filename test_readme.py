@@ -141,12 +141,29 @@ class ReadmeTests(unittest.TestCase):
         result = self.render()
         self.assertNotIn("<kbd>", result)
         for row in self.data[0]:
-            self.assertIn('<tr><td colspan="2">\n\n' + readme.prose(row["tldr"]), result)
+            self.assertIn('<tr><td colspan="2" width="10000">\n\n' + readme.prose(row["tldr"]), result)
         self.assertIn('id="letter-a"', result)
         self.assertIn('[A](#letter-a)', result)
         for project_id, project in self.data[5].items():
             if project.get("logo") and not project.get("text_only"):
                 self.assertIn(readme.catalog_assets.paths(project_id)["light"], result)
+
+    def test_every_project_panel_requests_full_width(self):
+        # Apply the GitHub-compatible width hint even to short upstream-only
+        # projects. Percentages on the table itself are overridden by GitHub.
+        result = self.render()
+        panels = re.findall(r'<a id="project-[^"]+"></a>(.*?)(?=<a id="(?:project-|letter-)|<a id="notes")',
+                            result, re.DOTALL)
+        self.assertEqual(len(panels), len(self.data[5]))
+        for panel in panels:
+            self.assertIn('<tr><td colspan="2" width="10000">', panel)
+            self.assertIn('<th align="left" width="70%">', panel)
+            self.assertIn('<th align="right" width="30%">', panel)
+        for row in self.data[1]:
+            if not row["advisory"]:
+                self.assertIn('<tr><td colspan="2" width="10000">\n\n' + readme.prose(row["what"]), result)
+        for row in self.data[2]["standalone_findings"]:
+            self.assertIn('<tr><td colspan="2" width="10000">\n\n' + readme.prose(row["summary"]), result)
 
     def test_gallery_embeds_original_marks_without_recoloring(self):
         assets = readme.catalog_assets

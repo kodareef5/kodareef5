@@ -291,12 +291,15 @@ def html_link(label, target):
 
 def panel_row(heading, metadata, description):
     """Two metadata cells; the description always gets the complete width."""
+    # GitHub strips inline CSS and gives tables width:max-content/max-width:100%.
+    # A spanning cell's large preferred width fills that cap without imposing a
+    # minimum width on phones or changing the header's 70/30 column proportions.
     return [
         "<tr>",
         f'<td valign="top">{heading}</td>',
         f'<td align="right" valign="top">{metadata}</td>',
         "</tr>",
-        '<tr><td colspan="2">',
+        '<tr><td colspan="2" width="10000">',
         "",
         description,
         "",
