@@ -1,7 +1,9 @@
-# Catalogue design preview
+# Catalogue design
 
-This alternative lives on `readme-catalog-preview`. The previous design remains
-unchanged on `readme-cleanup-preview` at `6ab7459`; public `main` is untouched.
+This design is promoted to public `main`, with GNOME GLib kept text-only pending
+logo permission. The private logo preview remains on `readme-catalog-preview`
+at `5d380bd`; the earlier layout remains on `readme-cleanup-preview` at `6ab7459`.
+The former public profile is preserved in history at `d1e7730`.
 
 ## Design
 
@@ -22,9 +24,10 @@ unchanged on `readme-cleanup-preview` at `6ab7459`; public `main` is untouched.
 
 ## Verification
 
-19 tests cover source and record preservation, reference validation, automatic
+20 tests cover source and record preservation, reference validation, automatic
 new-project handling, markup escaping, wide description rows, unchanged embedded
-logos, parent-mark/project identity, and stale gallery detection.
+logos, parent-mark/project identity, the public GLib text-only presentation,
+and stale gallery detection.
 
 README and advisory-export checks pass; Python compilation passes.
 The GitHub-rendered layout is checked in light/dark themes at desktop

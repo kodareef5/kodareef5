@@ -35,7 +35,7 @@ Exact URLs, retrieval dates, dimensions, and SHA-256 hashes are in [projects.jso
 | FreeScout | [asset](freescout-help-desk-freescout.png) | [official source](https://github.com/freescout-help-desk/freescout/blob/3b471b17cfc9aa3f7047241cb34ab91eb1a790c9/public/img/logo-icon-150.png) |
 | Giskard | [asset](giskard-ai-giskard-oss.png) | [official source](https://github.com/Giskard-AI/giskard-oss/blob/580754b4ae77057d154791b8f1d0c2bedeffee84/readme/logo_light.png) |
 | gitoxide | Text only | [project](https://github.com/GitoxideLabs/gitoxide) |
-| GNOME GLib | [light](gnome.svg) / [dark](gnome-dark.svg) | [official source](https://brand.gnome.org/) |
+| GNOME GLib | Text only; logo permission pending | [project](https://github.com/GNOME/glib) |
 | go-git | Text only | [project](https://github.com/go-git/go-git) |
 | go-witness | [Witness mark](in-toto-witness.svg) | [official source](https://github.com/in-toto/witness/blob/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg) |
 | gosaml2 | Text only | [project](https://github.com/russellhaering/gosaml2) |
@@ -85,8 +85,8 @@ SpaceWasm uses NASA's organizational insignia while retaining its project name
 and repository links. The previous [SpaceWasm mark](nasa-spacewasm.svg) remains
 available from its [original source](https://github.com/nasa/spacewasm/blob/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg).
 
-GNOME GLib, Soft Serve, and go-witness use their parent-project marks without
-changing their project names or record links. GNOME's original black and white
-variants are selected for the light and dark themes. Its name and logo are
-trademarks of the GNOME Foundation; review its [published usage terms](https://foundation.gnome.org/trademark-and-logo/)
-before public promotion. This private preview does not assert permission or endorsement.
+Soft Serve and go-witness use their parent-project marks without changing their
+project names or record links. GNOME GLib is text-only on the public profile
+pending permission under GNOME's [published usage terms](https://foundation.gnome.org/trademark-and-logo/).
+Its name is a trademark of the GNOME Foundation. The private preview retains
+the logo variant; no permission or endorsement is asserted.

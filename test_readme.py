@@ -198,7 +198,6 @@ class ReadmeTests(unittest.TestCase):
         projects = self.data[5]
         result = self.render()
         for project_id, name, mark in (
-            ("GNOME/glib", "GNOME GLib", "assets/logos/gnome.svg"),
             ("charmbracelet/soft-serve", "Soft Serve", "assets/logos/charm.png"),
             ("in-toto/go-witness", "go-witness", "assets/logos/in-toto-witness.svg"),
         ):
@@ -208,7 +207,22 @@ class ReadmeTests(unittest.TestCase):
             self.assertIn(readme.html_link(name, project["url"]), result)
             self.assertIn(readme.catalog_assets.paths(project_id)["light"], result)
         self.assertEqual(projects["in-toto/go-witness"]["logo"], projects["in-toto/witness"]["logo"])
-        self.assertIn(projects["GNOME/glib"]["logo_dark"]["file"], result)
+
+    def test_public_glib_is_text_only(self):
+        project = self.data[5]["GNOME/glib"]
+        result = self.render()
+        self.assertTrue(project["text_only"])
+        self.assertEqual(project["name"], "GNOME GLib")
+        self.assertEqual(readme.logo(project), "")
+        self.assertIn(readme.html_link(project["name"], project["url"]), result)
+        generated = readme.catalog_assets.generated(self.data[5])
+        for path in readme.catalog_assets.paths("GNOME/glib").values():
+            self.assertNotIn(path, result)
+            self.assertNotIn(path, generated)
+            self.assertFalse((ROOT / path).exists())
+        for name in ("gnome.svg", "gnome-dark.svg"):
+            self.assertNotIn(name, result)
+            self.assertFalse((ROOT / "assets/logos" / name).exists())
 
 if __name__ == "__main__":
     unittest.main()
