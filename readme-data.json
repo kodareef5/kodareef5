@@ -1,14 +1,4 @@
 {
-  "featured": [
-    "GHSA-p5rh-vmhp-gvcw",
-    "GHSA-765j-qfrp-hm3j",
-    "GHSA-gj49-89wh-h4gj",
-    "GHSA-6x2q-h3cr-8j2h",
-    "GHSA-ggg4-v8vp-jxqh",
-    "GHSA-fvwj-92vj-fg8c",
-    "GHSA-29rf-f4vv-pvq6",
-    "GHSA-m8q3-73v4-wvg7"
-  ],
   "incomplete_fixes": [
     {
       "advisory": "GHSA-vv4x-5gvr-chh8",
@@ -18,7 +8,8 @@
           "url": "https://github.com/russellhaering/gosaml2/security/advisories/GHSA-pcgw-qcv5-h8ch"
         }
       ],
-      "relationship": "The LogoutRequest signature fix was not applied to LogoutResponse validation."
+      "relationship": "The LogoutRequest signature fix was not applied to LogoutResponse validation.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-3g5q-cfh2-cq67",
@@ -32,7 +23,8 @@
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-33218"
         }
       ],
-      "relationship": "The pre-auth leafnode crash remained after two earlier fixes."
+      "relationship": "The pre-auth leafnode crash remained after two earlier fixes.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-4g68-3pwx-5vfj",
@@ -42,7 +34,8 @@
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-33217"
         }
       ],
-      "relationship": "The MQTT internal-subject restriction omitted the `$MQTT.deliver.pubrel` family."
+      "relationship": "The MQTT internal-subject restriction omitted the `$MQTT.deliver.pubrel` family.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-p3j5-5hrq-p75h",
@@ -52,7 +45,8 @@
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-33249"
         }
       ],
-      "relationship": "Leafnode traffic still bypassed trace-destination permission checks."
+      "relationship": "Leafnode traffic still bypassed trace-destination permission checks.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-7gvf-3w72-p2pg",
@@ -62,7 +56,8 @@
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-33992"
         }
       ],
-      "relationship": "Redirect targets were not revalidated by the SSRF filter."
+      "relationship": "Redirect targets were not revalidated by the SSRF filter.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-4744-96p5-mp2j",
@@ -72,7 +67,8 @@
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-33509"
         }
       ],
-      "relationship": "`storage_folder` remained writable into the Flask session store."
+      "relationship": "`storage_folder` remained writable into the Flask session store.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-qmwh-9m9c-h36m",
@@ -82,7 +78,8 @@
           "url": "https://github.com/gotenberg/gotenberg/commit/043b158"
         }
       ],
-      "relationship": "The ExifTool blocklist remained case-sensitive and omitted hard-link and symlink tags."
+      "relationship": "The ExifTool blocklist remained case-sensitive and omitted hard-link and symlink tags.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-7526-j432-6ppp",
@@ -92,7 +89,8 @@
           "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-x8jc-jvqm-pm3f"
         }
       ],
-      "relationship": "Signup permissions were restricted, but proxy-auth auto-provisioning kept the old defaults."
+      "relationship": "Signup permissions were restricted, but proxy-auth auto-provisioning kept the old defaults.",
+      "type": "incomplete_fix"
     },
     {
       "advisory": "GHSA-m8q3-73v4-wvg7",
@@ -102,7 +100,96 @@
           "url": "https://github.com/systemd/systemd/security/advisories/GHSA-vpfq-8p5f-jcqx"
         }
       ],
-      "relationship": "Validation covered `ID_SCSI_SERIAL` but not equivalent fields from the same VPD data."
+      "relationship": "Validation covered `ID_SCSI_SERIAL` but not equivalent fields from the same VPD data.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-9cvr-5wv9-2gxr",
+      "predecessors": [
+        {
+          "id": "FlowiseAI/Flowise#5886",
+          "url": "https://github.com/FlowiseAI/Flowise/pull/5886"
+        }
+      ],
+      "relationship": "The HTTP-node SSRF fix did not cover document loaders.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-jp5f-qr64-c9vw",
+      "predecessors": [
+        {
+          "id": "CVE-2026-26310",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-26310"
+        }
+      ],
+      "relationship": "The scoped-IPv6 fix in getAddressWithPort missed copyInternetAddressAndPort.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-6x2q-h3cr-8j2h",
+      "predecessors": [
+        {
+          "id": "CVE-2026-32595",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-32595"
+        }
+      ],
+      "relationship": "The fallback secret remained empty, so the intended bcrypt timing mitigation was ineffective.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-88gm-j2wx-58h6",
+      "predecessors": [
+        {
+          "id": "GHSA-qpr4-c339-7vq8",
+          "url": "https://github.com/withastro/astro/security/advisories/GHSA-qpr4-c339-7vq8"
+        }
+      ],
+      "relationship": "Redirect controls added to other image paths were absent from the Cloudflare image-binding transform.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-hfvc-g4fc-pqhx",
+      "predecessors": [
+        {
+          "id": "GHSA-9h8m-3fm2-qjrq",
+          "url": "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-9h8m-3fm2-qjrq"
+        }
+      ],
+      "relationship": "The earlier absolute-path fix covered ioreg but not kenv.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-fgv4-6jr3-jgfw",
+      "predecessors": [
+        {
+          "id": "commit ce53491",
+          "url": "https://github.com/bentoml/BentoML/commit/ce53491"
+        }
+      ],
+      "relationship": "The earlier quoting fix did not cover the cloud deployment setup script.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-h7mw-gpvr-xq4m",
+      "predecessors": [
+        {
+          "id": "commit c361baa",
+          "url": "https://github.com/cure53/DOMPurify/commit/c361baa"
+        }
+      ],
+      "relationship": "The earlier FORBID_ATTR precedence fix did not cover the equivalent FORBID_TAGS case.",
+      "type": "incomplete_fix"
+    },
+    {
+      "advisory": "GHSA-mh8x-fppq-cp77",
+      "predecessors": [
+        {
+          "id": "CVE-2025-66213",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-66213"
+        }
+      ],
+      "relationship": "The same shell-injection pattern occurred in other resource models; this is related work, not a demonstrated bypass of the identical patched path.",
+      "type": "related"
     }
   ],
   "coverage": [
@@ -111,11 +198,15 @@
       "sources": [
         {
           "label": "GBHackers",
-          "url": "https://gbhackers.com/critical-dgraph-database-flaw/"
+          "url": "https://gbhackers.com/critical-dgraph-database-flaw/",
+          "status": "verified",
+          "verified": "2026-09-06"
         },
         {
           "label": "Cybersecurity News",
-          "url": "https://cybersecuritynews.com/dgraph-database-vulnerability/"
+          "url": "https://cybersecuritynews.com/dgraph-database-vulnerability/",
+          "status": "verified",
+          "verified": "2026-09-06"
         }
       ]
     },
@@ -124,15 +215,22 @@
       "sources": [
         {
           "label": "GBHackers",
-          "url": "https://gbhackers.com/critical-vulnerability-in-rancher-fleet/"
+          "url": "https://gbhackers.com/critical-vulnerability-in-rancher-fleet/",
+          "status": "verified",
+          "verified": "2026-09-06"
         },
         {
           "label": "CyberPress",
-          "url": "https://cyberpress.org/rancher-fleet-flaw/"
+          "url": "https://cyberpress.org/rancher-fleet-flaw/",
+          "status": "verified",
+          "verified": "2026-09-06"
         },
         {
           "label": "Lyrie Research",
-          "url": "https://lyrie.ai/research/research/2026-05-07-rancher-fleet-multitenant-secret-leak"
+          "url": "https://lyrie.ai/research/research/2026-05-07-rancher-fleet-multitenant-secret-leak",
+          "status": "unavailable",
+          "last_attempted": "2026-09-06",
+          "note": "Page could not be retrieved during the September 6 review; retained from the earlier record."
         }
       ]
     },
@@ -141,7 +239,9 @@
       "sources": [
         {
           "label": "SANS AtRisk XXVI-14",
-          "url": "https://www.sans.org/newsletters/at-risk/xxvi-14"
+          "url": "https://www.sans.org/newsletters/at-risk/xxvi-14",
+          "status": "verified",
+          "verified": "2026-09-06"
         }
       ]
     },
@@ -150,7 +250,9 @@
       "sources": [
         {
           "label": "ZeroPath",
-          "url": "https://zeropath.com/blog/cve-2026-41246-contour-lua-code-injection"
+          "url": "https://zeropath.com/blog/cve-2026-41246-contour-lua-code-injection",
+          "status": "verified",
+          "verified": "2026-09-06"
         }
       ]
     },
@@ -159,7 +261,21 @@
       "sources": [
         {
           "label": "CVEReports",
-          "url": "https://cvereports.com/reports/CVE-2026-40938"
+          "url": "https://cvereports.com/reports/CVE-2026-40938",
+          "status": "verified",
+          "verified": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "advisory": "GHSA-3pfv-m69p-5fv5",
+      "sources": [
+        {
+          "label": "HackerNoon · Aviral Srivastava",
+          "url": "https://hackernoon.com/breaking-down-three-activepieces-vulnerabilities-in-code-execution-pipelines",
+          "published": "2026-08-31",
+          "status": "verified",
+          "verified": "2026-09-06"
         }
       ]
     }
@@ -170,7 +286,7 @@
       "identifier": "CVE-2026-5366",
       "severity": "critical",
       "class": "Git argument injection",
-      "summary": "Deployment pull steps passed an unsanitized `commit_sha` to Git at four call sites.",
+      "summary": "Deployment pull steps accepted unsafe Git commit and sparse-checkout directory arguments. A user permitted to create deployments could execute commands on the worker host, with additional exposure where work pools were shared.",
       "credit": "Reported and CVE-assigned through huntr.",
       "record_url": "https://www.cve.org/CVERecord?id=CVE-2026-5366",
       "report": {
@@ -180,7 +296,811 @@
       "fix": {
         "label": "upstream fix",
         "url": "https://github.com/PrefectHQ/prefect/commit/6a9d9918716ce4ee0297b69f3046f7067ef1faae"
-      }
+      },
+      "project_id": "PrefectHQ/prefect",
+      "published": "2026-06-20",
+      "verified": "2026-09-06",
+      "cvss": [
+        {
+          "score": 9.9,
+          "version": "3.0",
+          "source": "huntr CNA"
+        }
+      ],
+      "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/5xxx/CVE-2026-5366.json"
+    },
+    {
+      "project": "NGINX Ingress Controller",
+      "project_id": "nginx/kubernetes-ingress",
+      "identifier": "CVE-2026-77180",
+      "severity": "high",
+      "class": "Configuration injection",
+      "published": "2026-09-02",
+      "summary": "An authenticated user able to modify Kubernetes Ingress annotations could inject NGINX configuration. The vendor describes a control-plane issue requiring configuration access, not direct exploitation through data-plane traffic.",
+      "credit": "F5 CNA credits kodareef5 as reporter.",
+      "record_url": "https://www.cve.org/CVERecord?id=CVE-2026-77180",
+      "report": {
+        "label": "F5 advisory",
+        "url": "https://my.f5.com/manage/s/article/K000162601"
+      },
+      "source_url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/77xxx/CVE-2026-77180.json",
+      "cvss": [
+        {
+          "score": 8.7,
+          "version": "4.0",
+          "source": "F5 CNA"
+        },
+        {
+          "score": 8.3,
+          "version": "3.1",
+          "source": "F5 CNA"
+        }
+      ],
+      "verified": "2026-09-06"
     }
-  ]
+  ],
+  "cve_mappings": {
+    "GHSA-x494-mj8g-cj27": "CVE-2026-82254",
+    "GHSA-p3hw-mv63-rf9w": "CVE-2026-82253"
+  },
+  "advisory_details": {
+    "GHSA-vv4x-5gvr-chh8": {
+      "summary": "The earlier LogoutRequest signature fix did not cover LogoutResponse validation. Applications using the affected POST-response validator could accept an unsigned SAML logout response; independent reports were combined in the published advisory.",
+      "details": "The earlier LogoutRequest signature fix did not cover LogoutResponse validation. Applications using the affected POST-response validator could accept an unsigned SAML logout response; independent reports were combined in the published advisory.",
+      "class": "Verification bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/russellhaering/gosaml2/security/advisories/GHSA-vv4x-5gvr-chh8",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-29rf-f4vv-pvq6": {
+      "summary": "OAuth login linked accounts by email without requiring the existing account to verify that address. An attacker who registered a victim’s email retained password access when the victim later signed in through an OAuth provider.",
+      "details": "OAuth login linked accounts by email without requiring the existing account to verify that address. An attacker who registered a victim’s email retained password access when the victim later signed in through an OAuth provider.",
+      "class": "Trust boundary violation",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.0.0-20260807033110-66fe488fd2a4",
+      "legacy_url": "https://github.com/advisories/GHSA-29rf-f4vv-pvq6",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-35511"
+    },
+    "GHSA-m8q3-73v4-wvg7": {
+      "summary": "A malicious iSCSI or USB device could inject udev properties through unsanitized SCSI identifiers. The earlier serial-number fix missed equivalent fields, allowing device data to request a systemd unit running as root.",
+      "details": "A malicious iSCSI or USB device could inject udev properties through unsanitized SCSI identifiers. The earlier serial-number fix missed equivalent fields, allowing device data to request a systemd unit running as root.",
+      "class": "Property injection",
+      "ecosystem": "C",
+      "fix_pr": "",
+      "legacy_fixed_in": "261, 260.2, 259.6, 258.8",
+      "legacy_url": "https://github.com/systemd/systemd/security/advisories/GHSA-m8q3-73v4-wvg7",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-fvwj-92vj-fg8c": {
+      "summary": "A result-typed WebAssembly if without an else could pass validation despite producing no value. Repeated constructs desynchronized the operand stack, exposing host-memory values and allowing writes into another module’s linear memory.",
+      "details": "A result-typed WebAssembly if without an else could pass validation despite producing no value. Repeated constructs desynchronized the operand stack, exposing host-memory values and allowing writes into another module’s linear memory.",
+      "class": "Validation bypass",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.5.2",
+      "legacy_url": "https://github.com/nasa/spacewasm/security/advisories/GHSA-fvwj-92vj-fg8c",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-wjrh-4j52-c664": {
+      "summary": "SSO configuration and connectivity-test endpoints were exposed outside the intended management boundary. Depending on authentication settings and deployment configuration, unauthenticated or low-privilege callers could alter SSO settings, potentially take over accounts, or trigger server-side requests.",
+      "details": "SSO configuration and connectivity-test endpoints were exposed outside the intended management boundary. Depending on authentication settings and deployment configuration, unauthenticated or low-privilege callers could alter SSO settings, potentially take over accounts, or trigger server-side requests.",
+      "class": "Missing authentication",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "2.0.0",
+      "legacy_url": "https://github.com/1Panel-dev/KubePi/security/advisories/GHSA-wjrh-4j52-c664",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-65956"
+    },
+    "GHSA-hc8v-wwc9-vgxm": {
+      "summary": "Worktree writes checked path strings but followed existing symlinks. An attacker able to plant a symlink and trigger a write could escape the worktree or modify Git metadata, including configuration beneath .git.",
+      "details": "Worktree writes checked path strings but followed existing symlinks. An attacker able to plant a symlink and trigger a write could escape the worktree or modify Git metadata, including configuration beneath .git.",
+      "class": "Symlink following",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/go-git/go-git/security/advisories/GHSA-hc8v-wwc9-vgxm",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-71556"
+    },
+    "GHSA-vpj5-m56f-8h3f": {
+      "summary": "Repository imports and recurring mirror syncs accepted remote URLs without the existing SSRF validation. A user with a registered SSH key could make the server request loopback, private-network, or metadata endpoints.",
+      "details": "Repository imports and recurring mirror syncs accepted remote URLs without the existing SSRF validation. A user with a registered SSH key could make the server request loopback, private-network, or metadata endpoints.",
+      "class": "SSRF",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-vpj5-m56f-8h3f",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-w6p7-2fxx-4f44": {
+      "summary": "Refreshing an OIDC token did not recheck account disabling, authorization revocation, or group restrictions. Holders of an existing refresh token and the required client credentials could continue obtaining tokens after administrators removed access.",
+      "details": "Refreshing an OIDC token did not recheck account disabling, authorization revocation, or group restrictions. Holders of an existing refresh token and the required client credentials could continue obtaining tokens after administrators removed access.",
+      "class": "Authorization bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.0.0-20260419162744-978ac87deffe",
+      "legacy_url": "https://github.com/advisories/GHSA-w6p7-2fxx-4f44",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43983"
+    },
+    "GHSA-hp74-gm6m-2qm5": {
+      "summary": "The reauthentication fallback checked access-token freshness and a session cookie, but not how login occurred. A stolen one-time access token could therefore satisfy step-up requirements and obtain tokens for protected OIDC clients.",
+      "details": "The reauthentication fallback checked access-token freshness and a session cookie, but not how login occurred. A stolen one-time access token could therefore satisfy step-up requirements and obtain tokens for protected OIDC clients.",
+      "class": "Authentication bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.0.0-20260419162744-978ac87deffe",
+      "legacy_url": "https://github.com/advisories/GHSA-hp74-gm6m-2qm5",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-r5f5-cv78-6qv8": {
+      "summary": "The C host-call trampoline pushed a result even for functions declared void. Guest modules invoking these functions could corrupt operand-stack state; repeated calls advanced the stack beyond its allocation and crashed the process.",
+      "details": "The C host-call trampoline pushed a result even for functions declared void. Guest modules invoking these functions could corrupt operand-stack state; repeated calls advanced the stack beyond its allocation and crashed the process.",
+      "class": "Type confusion",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/nasa/spacewasm/security/advisories/GHSA-r5f5-cv78-6qv8",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-3pfv-m69p-5fv5": {
+      "summary": "A flow Code step’s name reached a shell-invoked bun build command without sufficient validation. An authenticated user able to create a flow could execute commands as the worker user before sandboxing began.",
+      "details": "A flow Code step’s name reached a shell-invoked bun build command without sufficient validation. An authenticated user able to create a flow could execute commands as the worker user before sandboxing began.",
+      "class": "Command injection",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/activepieces/activepieces/security/advisories/GHSA-3pfv-m69p-5fv5",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-73081"
+    },
+    "GHSA-pj59-g5vv-74q4": {
+      "summary": "The unauthenticated model-preview route accepted paths outside its model directory. Because responses were decoded and re-encoded as images, disclosure was limited to image-decodable files, with a separate oracle revealing whether other files existed.",
+      "details": "The unauthenticated model-preview route accepted paths outside its model directory. Because responses were decoded and re-encoded as images, disclosure was limited to image-decodable files, with a separate oracle revealing whether other files existed.",
+      "class": "Path traversal",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.28.0",
+      "legacy_url": "https://github.com/Comfy-Org/ComfyUI/security/advisories/GHSA-pj59-g5vv-74q4",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-56671"
+    },
+    "GHSA-ggg4-v8vp-jxqh": {
+      "summary": "Witness automatically loaded repository-local configuration before commands. An untrusted pull request could redirect attestation uploads and disable sensitive-variable filtering, exposing environment secrets available to a CI job that ran witness on that checkout.",
+      "details": "Witness automatically loaded repository-local configuration before commands. An untrusted pull request could redirect attestation uploads and disable sensitive-variable filtering, exposing environment secrets available to a CI job that ran witness on that checkout.",
+      "class": "Secret exfiltration",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/in-toto/witness/security/advisories/GHSA-ggg4-v8vp-jxqh",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-77308"
+    },
+    "GHSA-88v8-jcjq-95w5": {
+      "summary": "Certificate-loading code assigned intermediate certificates to the root pool instead of the intermediate pool. Verification failed for affected intermediate-CA hierarchies; deployments using certificates signed directly by a configured root were unaffected.",
+      "details": "Certificate-loading code assigned intermediate certificates to the root pool instead of the intermediate pool. Verification failed for affected intermediate-CA hierarchies; deployments using certificates signed directly by a configured root were unaffected.",
+      "class": "Certificate validation",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/in-toto/witness/security/advisories/GHSA-88v8-jcjq-95w5",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-6xq9-h39h-jc22": {
+      "summary": "Policy verification appended the intermediate pool to itself instead of loading certificates from the trust bundle. Attestations requiring an intermediate CA failed verification; the failure was closed and did not accept unverified attestations.",
+      "details": "Policy verification appended the intermediate pool to itself instead of loading certificates from the trust bundle. Attestations requiring an intermediate CA failed verification; the failure was closed and did not accept unverified attestations.",
+      "class": "Certificate validation",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/in-toto/go-witness/security/advisories/GHSA-6xq9-h39h-jc22",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-3g5q-cfh2-cq67": {
+      "summary": "Repeated pre-authentication leafnode INFO messages could leave handshake state unset and crash the server. Exploitation required access to a leafnode listener with compression enabled; disabling that compression mitigated the affected path.",
+      "details": "Repeated pre-authentication leafnode INFO messages could leave handshake state unset and crash the server. Exploitation required access to a leafnode listener with compression enabled; disabling that compression mitigated the affected path.",
+      "class": "Denial of service",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/nats-io/nats-server/security/advisories/GHSA-3g5q-cfh2-cq67",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-58250"
+    },
+    "GHSA-4g68-3pwx-5vfj": {
+      "summary": "An internal-subject restriction omitted the MQTT delivery PUBREL family. Authenticated MQTT clients could bypass subscribe permissions and receive account-local QoS2 protocol metadata; the published impact did not include message payload disclosure.",
+      "details": "An internal-subject restriction omitted the MQTT delivery PUBREL family. Authenticated MQTT clients could bypass subscribe permissions and receive account-local QoS2 protocol metadata; the published impact did not include message payload disclosure.",
+      "class": "Authorization bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/nats-io/nats-server/security/advisories/GHSA-4g68-3pwx-5vfj",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-58214"
+    },
+    "GHSA-p3j5-5hrq-p75h": {
+      "summary": "Trace-destination permissions were not consistently checked for traffic arriving over leafnode connections. A leafnode operator could direct trace events to disallowed subjects, exposing routing and account metadata, and suppress normal message delivery.",
+      "details": "Trace-destination permissions were not consistently checked for traffic arriving over leafnode connections. A leafnode operator could direct trace events to disallowed subjects, exposing routing and account metadata, and suppress normal message delivery.",
+      "class": "Authorization bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/nats-io/nats-server/security/advisories/GHSA-p3j5-5hrq-p75h",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-58254"
+    },
+    "GHSA-mh8x-fppq-cp77": {
+      "summary": "Persistent-volume names entered shell commands without escaping during resource deletion. An authenticated API token holder able to configure storage could arrange command execution as root on managed servers when the affected resource was deleted.",
+      "details": "Persistent-volume names entered shell commands without escaping during resource deletion. An authenticated API token holder able to configure storage could arrange command execution as root on managed servers when the affected resource was deleted.",
+      "class": "Command injection",
+      "ecosystem": "PHP",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/coollabsio/coolify/security/advisories/GHSA-mh8x-fppq-cp77",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-34168"
+    },
+    "GHSA-xqxv-4jc2-x56x": {
+      "summary": "Authorization-code exchange and token refresh did not bind the grant to its original client. An attacker who obtained a code or refresh token through a separate flaw could redeem it under another client, including across tenants.",
+      "details": "Authorization-code exchange and token refresh did not bind the grant to its original client. An attacker who obtained a code or refresh token through a separate flaw could redeem it under another client, including across tenants.",
+      "class": "Missing identity binding",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.80.0-v2.20.0.20260616131956-0973b074b488",
+      "legacy_url": "https://github.com/advisories/GHSA-xqxv-4jc2-x56x",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55672"
+    },
+    "GHSA-w5cv-pw74-4rxc": {
+      "summary": "The GitHub receiver validated RequiredHeaders configuration but never enforced it on incoming requests. With the shared secret left at its empty default, callers could submit arbitrary webhook payloads and inject false CI/CD trace data.",
+      "details": "The GitHub receiver validated RequiredHeaders configuration but never enforced it on incoming requests. With the shared secret left at its empty default, callers could submit arbitrary webhook payloads and inject false CI/CD trace data.",
+      "class": "Logic flaw",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.151.0",
+      "legacy_url": "https://github.com/advisories/GHSA-w5cv-pw74-4rxc",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55701"
+    },
+    "GHSA-4v4x-x5pr-8gp2": {
+      "summary": "SAML assertion processing omitted time and audience conditions. An attacker holding a valid signed assertion could replay it after its signed expiry or use an assertion issued for a different service provider.",
+      "details": "SAML assertion processing omitted time and audience conditions. An attacker holding a valid signed assertion could replay it after its signed expiry or use an assertion issued for a different service provider.",
+      "class": "Validation bypass",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-41577"
+    },
+    "GHSA-7w2h-g83c-jqrp": {
+      "summary": "The copyBoard method did not verify board membership or administrator rights. A logged-in user could copy a private board and its cards and checklists, then make the resulting copy public through supplied properties.",
+      "details": "The copyBoard method did not verify board membership or administrator rights. A logged-in user could copy a private board and its cards and checklists, then make the resulting copy public through supplied properties.",
+      "class": "Authorization bypass",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/wekan/wekan/security/advisories/GHSA-7w2h-g83c-jqrp",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53445"
+    },
+    "GHSA-w5pp-99ch-qj29": {
+      "summary": "Crafted pack, index, or loose-object data could cause panics or excessive resource use. Applications cloning, fetching, or opening untrusted repositories were exposed through a malicious remote or attacker-controlled files under .git/objects.",
+      "details": "Crafted pack, index, or loose-object data could cause panics or excessive resource use. Applications cloning, fetching, or opening untrusted repositories were exposed through a malicious remote or attacker-controlled files under .git/objects.",
+      "class": "Denial of service",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "5.19.1, 6.0.0-alpha.4",
+      "legacy_url": "https://github.com/advisories/GHSA-w5pp-99ch-qj29",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-qp9x-wp8f-qgjj": {
+      "summary": "Delegation glob matching used platform-dependent case normalization. On Windows, an attacker controlling a delegated role could exploit a case-colliding pattern visited first to serve targets intended for another delegation; POSIX matching was unaffected.",
+      "details": "Delegation glob matching used platform-dependent case normalization. On Windows, an attacker controlling a delegated role could exploit a case-colliding pattern visited first to serve targets intended for another delegation; POSIX matching was unaffected.",
+      "class": "Delegation confusion",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "7.0.0",
+      "legacy_url": "https://github.com/advisories/GHSA-qp9x-wp8f-qgjj",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-9h96-c44j-jpq9": {
+      "summary": "A 32-bit stride calculation could wrap for large image widths, allocating an undersized plane. Processing a crafted HEIF or AVIF image could then overflow the heap, crashing or potentially compromising the consuming application.",
+      "details": "A 32-bit stride calculation could wrap for large image widths, allocating an undersized plane. Processing a crafted HEIF or AVIF image could then overflow the heap, crashing or potentially compromising the consuming application.",
+      "class": "Heap buffer overflow",
+      "ecosystem": "C++",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/strukturag/libheif/security/advisories/GHSA-9h96-c44j-jpq9",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-765j-qfrp-hm3j": {
+      "summary": "Helm lookup and valuesFrom reads bypassed ServiceAccount impersonation and retained fleet-agent privileges. A tenant able to push to a monitored Git repository could read other namespaces’ secrets on targeted downstream clusters; single-tenant deployments were unaffected.",
+      "details": "Helm lookup and valuesFrom reads bypassed ServiceAccount impersonation and retained fleet-agent privileges. A tenant able to push to a monitored Git repository could read other namespaces’ secrets on targeted downstream clusters; single-tenant deployments were unaffected.",
+      "class": "Impersonation bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.11.13, 0.12.14, 0.13.10",
+      "legacy_url": "https://github.com/advisories/GHSA-765j-qfrp-hm3j",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41050"
+    },
+    "GHSA-x494-mj8g-cj27": {
+      "summary": "Unchecked delta indexing and uncapped allocations allowed crafted Git pack data to crash consuming processes. A malicious remote could trigger a truncated-delta panic or excessive allocation during clone and fetch operations.",
+      "details": "Unchecked delta indexing and uncapped allocations allowed crafted Git pack data to crash consuming processes. A malicious remote could trigger a truncated-delta panic or excessive allocation during clone and fetch operations.",
+      "class": "Denial of service",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.69.0",
+      "legacy_url": "https://github.com/advisories/GHSA-x494-mj8g-cj27",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-p3hw-mv63-rf9w": {
+      "summary": "Incomplete submodule-name validation allowed paths to escape .git/modules, while inherited trust skipped ownership checks. Processing attacker-controlled submodule metadata could access unintended Git configuration and disclose credentials; package fix versions differ between published sources.",
+      "details": "Incomplete submodule-name validation allowed paths to escape .git/modules, while inherited trust skipped ownership checks. Processing attacker-controlled submodule metadata could access unintended Git configuration and disclose credentials; package fix versions differ between published sources.",
+      "class": "Path traversal",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.11.1, 0.83.0",
+      "legacy_url": "https://github.com/advisories/GHSA-p3hw-mv63-rf9w",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-mm2q-qcmx-gw4w": {
+      "summary": "Service-account listing checked the wrong administrative action, and updates omitted an ownership check. A user granted admin:UpdateServiceAccount could enumerate other users’ service-account keys, including root-owned keys, and rotate their secrets.",
+      "details": "Service-account listing checked the wrong administrative action, and updates omitted an ownership check. A user granted admin:UpdateServiceAccount could enumerate other users’ service-account keys, including root-owned keys, and rotate their secrets.",
+      "class": "Missing authorization",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.0.0-alpha.98",
+      "legacy_url": "https://github.com/advisories/GHSA-mm2q-qcmx-gw4w",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-q49m-57vm-c8cc": {
+      "summary": "CopyFile policy checked the destination path but not the symlink target supplied in request data. An untrusted host could redirect writes outside the shared directory and overwrite files inside the guest, including in confidential-container deployments.",
+      "details": "CopyFile policy checked the destination path but not the symlink target supplied in request data. An untrusted host could redirect writes outside the shared directory and overwrite files inside the guest, including in confidential-container deployments.",
+      "class": "Policy subversion",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.0.0-20260422180503-1b9e49eb2763",
+      "legacy_url": "https://github.com/advisories/GHSA-q49m-57vm-c8cc",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41326"
+    },
+    "GHSA-gj49-89wh-h4gj": {
+      "summary": "Debug archives from WireGuard-enabled Cilium nodes included the node’s WireGuard private key. Anyone receiving an affected bugtool archive or sysdump obtained that key; remediation required rotating keys already shared in diagnostic bundles.",
+      "details": "Debug archives from WireGuard-enabled Cilium nodes included the node’s WireGuard private key. Anyone receiving an affected bugtool archive or sysdump obtained that key; remediation required rotating keys already shared in diagnostic bundles.",
+      "class": "Information disclosure",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.17.15, 1.18.9, 1.19.3",
+      "legacy_url": "https://github.com/advisories/GHSA-gj49-89wh-h4gj",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41520"
+    },
+    "GHSA-x4mj-7f9g-29h4": {
+      "summary": "Cookie rewrite values entered generated Envoy Lua code without escaping. A user permitted to create or modify HTTPProxy resources could execute Lua in shared Envoy, read its xDS credentials, and potentially access other tenants’ TLS keys.",
+      "details": "Cookie rewrite values entered generated Envoy Lua code without escaping. A user permitted to create or modify HTTPProxy resources could execute Lua in shared Envoy, read its xDS credentials, and potentially access other tenants’ TLS keys.",
+      "class": "Code injection",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.31.6, 1.32.5, 1.33.4",
+      "legacy_url": "https://github.com/advisories/GHSA-x4mj-7f9g-29h4",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41246"
+    },
+    "GHSA-6x2q-h3cr-8j2h": {
+      "summary": "The earlier BasicAuth timing fix resolved its fallback secret to an empty string, avoiding the intended bcrypt work. Repeated authentication timing measurements could distinguish registered usernames from nonexistent ones on a reachable protected route.",
+      "details": "The earlier BasicAuth timing fix resolved its fallback secret to an empty string, avoiding the intended bcrypt work. Repeated authentication timing measurements could distinguish registered usernames from nonexistent ones on a reachable protected route.",
+      "class": "Timing side-channel",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "2.11.43, 3.6.14, 3.7.0-rc.2",
+      "legacy_url": "https://github.com/advisories/GHSA-6x2q-h3cr-8j2h",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41263"
+    },
+    "GHSA-88gm-j2wx-58h6": {
+      "summary": "The Cloudflare image-binding transform checked only the initial remote-image URL and followed redirects. An open redirect on an allowed domain could bypass image-domain restrictions and trigger blind requests to destinations outside that allowlist.",
+      "details": "The Cloudflare image-binding transform checked only the initial remote-image URL and followed redirects. An open redirect on an allowed domain could bypass image-domain restrictions and trigger blind requests to destinations outside that allowlist.",
+      "class": "SSRF",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "13.1.10",
+      "legacy_url": "https://github.com/advisories/GHSA-88gm-j2wx-58h6",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41321"
+    },
+    "GHSA-pfcq-4gjr-6gjm": {
+      "summary": "Notification-target handlers authenticated callers but omitted administrator authorization. A read-only user could overwrite known targets, redirect bucket events to a controlled webhook, and make the server probe internal endpoints through target health checks.",
+      "details": "Notification-target handlers authenticated callers but omitted administrator authorization. A read-only user could overwrite known targets, redirect bucket events to a controlled webhook, and make the server probe internal endpoints through target health checks.",
+      "class": "Missing authorization",
+      "ecosystem": "Rust",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/advisories/GHSA-pfcq-4gjr-6gjm",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40937"
+    },
+    "GHSA-h7mw-gpvr-xq4m": {
+      "summary": "Function-based ADD_TAGS handling skipped FORBID_TAGS when the predicate returned true. Configurations combining those options could retain explicitly forbidden elements and their permitted attributes; the corresponding attribute-denylist path already had an earlier fix.",
+      "details": "Function-based ADD_TAGS handling skipped FORBID_TAGS when the predicate returned true. Configurations combining those options could retain explicitly forbidden elements and their permitted attributes; the corresponding attribute-denylist path already had an earlier fix.",
+      "class": "Validation bypass",
+      "ecosystem": "JavaScript",
+      "fix_pr": "cure53/DOMPurify#1230",
+      "legacy_fixed_in": "3.4.0",
+      "legacy_url": "https://github.com/advisories/GHSA-h7mw-gpvr-xq4m",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41240"
+    },
+    "GHSA-73h3-mf4w-8647": {
+      "summary": "On Python versions lacking tarfile’s data filter, Poetry extracted source distributions without traversal protection. Crafted archive members could escape the extraction directory during dependency resolution; the advisory rates this low because package build backends already execute code.",
+      "details": "On Python versions lacking tarfile’s data filter, Poetry extracted source distributions without traversal protection. Crafted archive members could escape the extraction directory during dependency resolution; the advisory rates this low because package build backends already execute code.",
+      "class": "Path traversal",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "2.3.4",
+      "legacy_url": "https://github.com/advisories/GHSA-73h3-mf4w-8647",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41140"
+    },
+    "GHSA-wjxp-xrpv-xpff": {
+      "summary": "Git resolver API mode combined a user-supplied server URL with the system-configured Git token when no token parameter was supplied. A tenant able to create TaskRuns could redirect that authenticated request to a controlled server.",
+      "details": "Git resolver API mode combined a user-supplied server URL with the system-configured Git token when no token parameter was supplied. A tenant able to create TaskRuns could redirect that authenticated request to a controlled server.",
+      "class": "Information disclosure",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.0.2, 1.11.1, 1.3.4",
+      "legacy_url": "https://github.com/advisories/GHSA-wjxp-xrpv-xpff",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40161"
+    },
+    "GHSA-rx35-6rhx-7858": {
+      "summary": "Volume-mount restrictions compared raw paths without normalization. A Task or TaskRun author could use parent-directory components to mount over protected Tekton locations, allowing replacement of internal results or step scripts.",
+      "details": "Volume-mount restrictions compared raw paths without normalization. A Task or TaskRun author could use parent-directory components to mount over protected Tekton locations, allowing replacement of internal results or step scripts.",
+      "class": "Validation bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.0.2, 1.11.1, 1.3.4",
+      "legacy_url": "https://github.com/advisories/GHSA-rx35-6rhx-7858",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40923"
+    },
+    "GHSA-94jr-7pqp-xhcq": {
+      "summary": "The Git resolver passed revision values to git fetch as arguments without separating options. A tenant able to submit ResolutionRequests and predict a pod-local repository path could execute commands and access the resolver’s cluster-wide Secret permissions.",
+      "details": "The Git resolver passed revision values to git fetch as arguments without separating options. A tenant able to submit ResolutionRequests and predict a pod-local repository path could execute commands and access the resolver’s cluster-wide Secret permissions.",
+      "class": "Logic flaw",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.0.2, 1.11.1, 1.3.4",
+      "legacy_url": "https://github.com/advisories/GHSA-94jr-7pqp-xhcq",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40938"
+    },
+    "GHSA-4jjr-vmv7-wh4w": {
+      "summary": "Query values could resolve into destructive method calls. Minimal Control Panel permissions could enable data deletion; unauthenticated exposure required REST or GraphQL to be explicitly enabled without authentication and with the affected resources exposed.",
+      "details": "Query values could resolve into destructive method calls. Minimal Control Panel permissions could enable data deletion; unauthenticated exposure required REST or GraphQL to be explicitly enabled without authentication and with the affected resources exposed.",
+      "class": "Unsafe method invocation",
+      "ecosystem": "PHP",
+      "fix_pr": "",
+      "legacy_fixed_in": "5.73.20, 6.13.0",
+      "legacy_url": "https://github.com/advisories/GHSA-4jjr-vmv7-wh4w",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41175"
+    },
+    "GHSA-c5c4-8r6x-56w3": {
+      "summary": "Email-domain validation accepted malformed claims containing multiple at signs, allowing an unintended domain suffix to match the allowlist. Exploitation required an identity provider capable of emitting such malformed claims; providers enforcing email syntax were unaffected.",
+      "details": "Email-domain validation accepted malformed claims containing multiple at signs, allowing an unintended domain suffix to match the allowlist. Exploitation required an identity provider capable of emitting such malformed claims; providers enforcing email syntax were unaffected.",
+      "class": "Authorization bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "7.15.2",
+      "legacy_url": "https://github.com/advisories/GHSA-c5c4-8r6x-56w3",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40574"
+    },
+    "GHSA-gqw4-4w2p-838q": {
+      "summary": "Perforce package references and connection parameters entered shell commands without escaping. A repository supplying malicious Perforce source metadata could execute commands during source-preferred Composer installs, even when the Perforce client was not installed.",
+      "details": "Perforce package references and connection parameters entered shell commands without escaping. A repository supplying malicious Perforce source metadata could execute commands during source-preferred Composer installs, even when the Perforce client was not installed.",
+      "class": "Command injection",
+      "ecosystem": "PHP",
+      "fix_pr": "",
+      "legacy_fixed_in": "2.2.27, 2.9.6",
+      "legacy_url": "https://github.com/advisories/GHSA-gqw4-4w2p-838q",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40261"
+    },
+    "GHSA-4x48-cgf9-q33f": {
+      "summary": "Conditions-filter webhooks bypassed the URL checks used by the HTTP Request step. A user with workflow-configuration access could issue server-side POST requests to internal endpoints and read responses through execution details.",
+      "details": "Conditions-filter webhooks bypassed the URL checks used by the HTTP Request step. A user with workflow-configuration access could issue server-side POST requests to internal endpoints and read responses through execution details.",
+      "class": "SSRF",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "3.15.0",
+      "legacy_url": "https://github.com/advisories/GHSA-4x48-cgf9-q33f",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-r2pg-r6h7-crf3": {
+      "summary": "The template engine exposed getHostByName inside the controller process. A user able to author templated ExternalSecret resources could encode accessible secrets into DNS lookups; exploitation required outbound DNS from the controller, not direct egress from the attacker’s workload.",
+      "details": "The template engine exposed getHostByName inside the controller process. A user able to author templated ExternalSecret resources could encode accessible secrets into DNS lookups; exploitation required outbound DNS from the controller, not direct egress from the attacker’s workload.",
+      "class": "Data exfiltration",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.3.3-0.20260331202714-6800989bdc12",
+      "legacy_url": "https://github.com/advisories/GHSA-r2pg-r6h7-crf3",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34984"
+    },
+    "GHSA-w95v-4h65-j455": {
+      "summary": "Mermaid rendering allowed embedded image URLs to survive sanitization. Opening a crafted note triggered requests; on Windows, a network-share URL could additionally expose the user’s NTLMv2 challenge-response hash through automatic authentication.",
+      "details": "Mermaid rendering allowed embedded image URLs to survive sanitization. Opening a crafted note triggered requests; on Windows, a network-share URL could additionally expose the user’s NTLMv2 challenge-response hash through automatic authentication.",
+      "class": "SSRF",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.0.0-20260407035653-2f416e5253f1",
+      "legacy_url": "https://github.com/advisories/GHSA-w95v-4h65-j455",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40107"
+    },
+    "GHSA-r854-jrxh-36qx": {
+      "summary": "SSH packet authentication compared HMACs with a variable-time operator instead of hash_equals. The timing difference is a defense-in-depth concern: authentication failure disconnects and rekeys the session, and the advisory does not establish a practical remote exploit.",
+      "details": "SSH packet authentication compared HMACs with a variable-time operator instead of hash_equals. The timing difference is a defense-in-depth concern: authentication failure disconnects and rekeys the session, and the advisory does not establish a practical remote exploit.",
+      "class": "Timing side-channel",
+      "ecosystem": "PHP",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.0.28, 2.0.53, 3.0.51",
+      "legacy_url": "https://github.com/advisories/GHSA-r854-jrxh-36qx",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40194"
+    },
+    "GHSA-5f5r-95pg-xrpm": {
+      "summary": "Several hub endpoints checked authentication but not membership of the requested system. Cross-system container access required both a valid 15-character system ID and 12-character container ID; other affected endpoints could disclose system information or trigger SMART refreshes.",
+      "details": "Several hub endpoints checked authentication but not membership of the requested system. Cross-system container access required both a valid 15-character system ID and 12-character container ID; other affected endpoints could disclose system information or trigger SMART refreshes.",
+      "class": "IDOR",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.18.7",
+      "legacy_url": "https://github.com/advisories/GHSA-5f5r-95pg-xrpm",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40077"
+    },
+    "GHSA-3crg-w4f6-42mx": {
+      "summary": "PDF XMP parsing processed entity declarations without effective expansion limits. A crafted document could exhaust application memory, but merely opening a PDF was insufficient unless the consuming application also parsed its XMP metadata.",
+      "details": "PDF XMP parsing processed entity declarations without effective expansion limits. A crafted document could exhaust application memory, but merely opening a PDF was insufficient unless the consuming application also parsed its XMP metadata.",
+      "class": "Resource exhaustion",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "6.10.0",
+      "legacy_url": "https://github.com/advisories/GHSA-3crg-w4f6-42mx",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40260"
+    },
+    "GHSA-w6c6-c85g-mmv6": {
+      "summary": "Attestation verification mishandled predicate-type and payload-parsing failures across bundle formats. Without check-claims enabled, a valid signature over an unparsable payload or mismatched predicate type could still produce a successful verification result.",
+      "details": "Attestation verification mishandled predicate-type and payload-parsing failures across bundle formats. Without check-claims enabled, a valid signature over an unparsable payload or mismatched predicate type could still produce a successful verification result.",
+      "class": "Verification bypass",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "2.6.3, 3.0.6",
+      "legacy_url": "https://github.com/advisories/GHSA-w6c6-c85g-mmv6",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39395"
+    },
+    "GHSA-v9w4-gm2x-6rvf": {
+      "summary": "Public share access did not recheck the owner’s Share and Download permissions. Existing links remained downloadable after an administrator revoked those permissions, even though the same account could no longer create new shares.",
+      "details": "Public share access did not recheck the owner’s Share and Download permissions. Existing links remained downloadable after an administrator revoked those permissions, even though the same account could no longer create new shares.",
+      "class": "Permission inheritance",
+      "ecosystem": "Go",
+      "fix_pr": "filebrowser/filebrowser#5888",
+      "legacy_fixed_in": "2.63.1",
+      "legacy_url": "https://github.com/advisories/GHSA-v9w4-gm2x-6rvf",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35604"
+    },
+    "GHSA-hfvc-g4fc-pqhx": {
+      "summary": "Host-ID lookup invoked kenv by name instead of an absolute path. On affected BSD and Solaris paths, a local attacker controlling an earlier PATH directory could run a replacement executable inside the OpenTelemetry-using process.",
+      "details": "Host-ID lookup invoked kenv by name instead of an absolute path. On affected BSD and Solaris paths, a local attacker controlling an earlier PATH directory could run a replacement executable inside the OpenTelemetry-using process.",
+      "class": "Logic flaw",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.43.0",
+      "legacy_url": "https://github.com/advisories/GHSA-hfvc-g4fc-pqhx",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39883"
+    },
+    "GHSA-7526-j432-6ppp": {
+      "summary": "Proxy-authenticated accounts inherited default Execute permissions and configured commands, unlike ordinary signup accounts. Exposure required proxy authentication with command execution enabled and permissive administrator-configured defaults; the earlier signup fix did not cover auto-provisioning.",
+      "details": "Proxy-authenticated accounts inherited default Execute permissions and configured commands, unlike ordinary signup accounts. Exposure required proxy authentication with command execution enabled and permissive administrator-configured defaults; the earlier signup fix did not cover auto-provisioning.",
+      "class": "Permission inheritance",
+      "ecosystem": "Go",
+      "fix_pr": "filebrowser/filebrowser#5890",
+      "legacy_fixed_in": "2.63.1",
+      "legacy_url": "https://github.com/advisories/GHSA-7526-j432-6ppp",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35607"
+    },
+    "GHSA-67cg-cpj7-qgc9": {
+      "summary": "The resource endpoint returned text content and raw encoded bytes without checking Download permission. An authenticated user with downloads disabled could still read files within their authorized scope; directory and path authorization remained in effect.",
+      "details": "The resource endpoint returned text content and raw encoded bytes without checking Download permission. An authenticated user with downloads disabled could still read files within their authorized scope; directory and path authorization remained in effect.",
+      "class": "Information disclosure",
+      "ecosystem": "Go",
+      "fix_pr": "filebrowser/filebrowser#5891",
+      "legacy_fixed_in": "2.63.1",
+      "legacy_url": "https://github.com/advisories/GHSA-67cg-cpj7-qgc9",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35606"
+    },
+    "GHSA-5q48-q4fm-g3m6": {
+      "summary": "Access-rule matching used a string prefix without enforcing a directory boundary. An allow rule for one directory could also admit a sibling whose name shared that prefix; deny rules could over-match for the same reason.",
+      "details": "Access-rule matching used a string prefix without enforcing a directory boundary. An allow rule for one directory could also admit a sibling whose name shared that prefix; deny rules could over-match for the same reason.",
+      "class": "Access control bypass",
+      "ecosystem": "Go",
+      "fix_pr": "filebrowser/filebrowser#5889",
+      "legacy_fixed_in": "2.63.1",
+      "legacy_url": "https://github.com/advisories/GHSA-5q48-q4fm-g3m6",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35605"
+    },
+    "GHSA-qmwh-9m9c-h36m": {
+      "summary": "The ExifTool metadata filter was case-sensitive and omitted hard-link and symbolic-link tags. Callers of the metadata-write endpoint, unauthenticated by default, could write files or links outside intended paths, within the service’s filesystem permissions.",
+      "details": "The ExifTool metadata filter was case-sensitive and omitted hard-link and symbolic-link tags. Callers of the metadata-write endpoint, unauthenticated by default, could write files or links outside intended paths, within the service’s filesystem permissions.",
+      "class": "Policy subversion",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "8.30.0",
+      "legacy_url": "https://github.com/advisories/GHSA-qmwh-9m9c-h36m",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-x3f4-v83f-7wp2": {
+      "summary": "Several authentication endpoints attached tokens to caller-supplied redirect URLs without checking AllowedOrigins. An attacker could capture reset, magic-link, or authentication tokens after the victim followed an emailed link leading through the affected flow.",
+      "details": "Several authentication endpoints attached tokens to caller-supplied redirect URLs without checking AllowedOrigins. An attacker could capture reset, magic-link, or authentication tokens after the victim followed an emailed link leading through the affected flow.",
+      "class": "Missing authorization",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.0.0-20260329085140-6d9bef1aaba3",
+      "legacy_url": "https://github.com/advisories/GHSA-x3f4-v83f-7wp2",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-7gvf-3w72-p2pg": {
+      "summary": "The downloader validated its initial destination but followed redirects without rechecking targets. An authenticated user with ADD permission could fetch internal services or reachable metadata endpoints; returned data was written into the download storage folder.",
+      "details": "The downloader validated its initial destination but followed redirects without rechecking targets. An authenticated user with ADD permission could fetch internal services or reachable metadata endpoints; returned data was written into the download storage folder.",
+      "class": "SSRF",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/advisories/GHSA-7gvf-3w72-p2pg",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35459"
+    },
+    "GHSA-4744-96p5-mp2j": {
+      "summary": "Non-admin users with SETTINGS and ADD permissions could point storage_folder at Flask’s session store and download a crafted serialized session. A subsequent request using that session cookie could execute code in the web process.",
+      "details": "Non-admin users with SETTINGS and ADD permissions could point storage_folder at Flask’s session store and download a crafted serialized session. A subsequent request using that session cookie could execute code in the web process.",
+      "class": "Arbitrary file write",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/advisories/GHSA-4744-96p5-mp2j",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35464"
+    },
+    "GHSA-fgv4-6jr3-jgfw": {
+      "summary": "Cloud deployment script generation inserted system_packages from bentofile.yaml into a shell command without quoting. An attacker-controlled package entry could execute commands during the BentoCloud build; an earlier local-path quoting fix missed this cloud-specific path.",
+      "details": "Cloud deployment script generation inserted system_packages from bentofile.yaml into a shell command without quoting. An attacker-controlled package entry could execute commands during the BentoCloud build; an earlier local-path quoting fix missed this cloud-specific path.",
+      "class": "Command injection",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "1.4.38",
+      "legacy_url": "https://github.com/advisories/GHSA-fgv4-6jr3-jgfw",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35043"
+    },
+    "GHSA-p5rh-vmhp-gvcw": {
+      "summary": "The restoreTenant mutation lacked its authorization middleware entry. Unauthenticated callers reaching the admin GraphQL endpoint could overwrite a namespace from a supplied backup, probe local filesystem paths, or trigger requests through a controlled vault address.",
+      "details": "The restoreTenant mutation lacked its authorization middleware entry. Unauthenticated callers reaching the admin GraphQL endpoint could overwrite a namespace from a supplied backup, probe local filesystem paths, or trigger requests through a controlled vault address.",
+      "class": "SSRF",
+      "ecosystem": "Go",
+      "fix_pr": "",
+      "legacy_fixed_in": "25.3.1",
+      "legacy_url": "https://github.com/advisories/GHSA-p5rh-vmhp-gvcw",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34976"
+    },
+    "GHSA-6wc5-rhvj-cx7f": {
+      "summary": "Notification phone-number routes omitted service authorization and performed privileged operations. Using a project ID exposed by the status-page API, an unauthenticated caller could purchase Twilio numbers on the deployment’s account or release numbers used for alerts.",
+      "details": "Notification phone-number routes omitted service authorization and performed privileged operations. Using a project ID exposed by the status-page API, an unauthenticated caller could purchase Twilio numbers on the deployment’s account or release numbers used for alerts.",
+      "class": "Missing authentication",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/OneUptime/oneuptime/security/advisories/GHSA-6wc5-rhvj-cx7f",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-34759"
+    },
+    "GHSA-x3ff-w252-2g7j": {
+      "summary": "Ed25519 verification did not enforce the scalar range required for a canonical signature. Anyone holding a valid signature could derive a second valid encoding without the signing key, affecting applications that rely on signature uniqueness.",
+      "details": "Ed25519 verification did not enforce the scalar range required for a canonical signature. Anyone holding a valid signature could derive a second valid encoding without the signing key, affecting applications that rely on signature uniqueness.",
+      "class": "Signature malleability",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/advisories/GHSA-x3ff-w252-2g7j",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": ""
+    },
+    "GHSA-c9v3-4c59-x5q2": {
+      "summary": "The SSRF address check returned early for ordinary IP addresses, leaving configured CIDR blocks unenforced. An inbound email containing controlled attachment URLs could cause the server to request private-network destinations that the policy intended to block.",
+      "details": "The SSRF address check returned early for ordinary IP addresses, leaving configured CIDR blocks unenforced. An inbound email containing controlled attachment URLs could cause the server to request private-network destinations that the policy intended to block.",
+      "class": "SSRF",
+      "ecosystem": "PHP",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/freescout-help-desk/freescout/security/advisories/GHSA-c9v3-4c59-x5q2",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://www.cve.org/CVERecord?id=CVE-2026-34443"
+    },
+    "GHSA-frv4-x25r-588m": {
+      "summary": "ChatWorkflow.chat treated plain-string input as a Jinja2 template in an unsandboxed environment. Applications passing untrusted input directly to that method could expose command execution; values supplied through with_inputs did not take the vulnerable template-compilation path.",
+      "details": "ChatWorkflow.chat treated plain-string input as a Jinja2 template in an unsandboxed environment. Applications passing untrusted input directly to that method could expose command execution; values supplied through with_inputs did not take the vulnerable template-compilation path.",
+      "class": "Template injection",
+      "ecosystem": "Python",
+      "fix_pr": "",
+      "legacy_fixed_in": "0.3.4, 1.0.2b1",
+      "legacy_url": "https://github.com/advisories/GHSA-frv4-x25r-588m",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34172"
+    },
+    "GHSA-f359-r3pv-2phf": {
+      "summary": "Image-download endpoints validated the starting URL but followed HTTP redirects without checking their destinations. A user with upload and edit permissions could redirect the server to internal services or reachable cloud metadata endpoints.",
+      "details": "Image-download endpoints validated the starting URL but followed HTTP redirects without checking their destinations. A user with upload and edit permissions could redirect the server to internal services or reachable cloud metadata endpoints.",
+      "class": "SSRF",
+      "ecosystem": "JavaScript",
+      "fix_pr": "",
+      "legacy_fixed_in": "",
+      "legacy_url": "https://github.com/advisories/GHSA-f359-r3pv-2phf",
+      "reviewed": "2026-09-06",
+      "legacy_cve_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33766"
+    },
+    "GHSA-9cvr-5wv9-2gxr": {
+      "summary": "Cheerio, Playwright, and Puppeteer document loaders fetched URLs outside Flowise’s shared HTTP-security checks. A user able to configure these loaders could bypass the denylist and request internal destinations; the earlier HTTP-node fix did not cover them.",
+      "reviewed": "2026-09-06",
+      "details": "Cheerio, Playwright, and Puppeteer document loaders fetched URLs outside Flowise’s shared HTTP-security checks. A user able to configure these loaders could bypass the denylist and request internal destinations; the earlier HTTP-node fix did not cover them.",
+      "ecosystem": "JavaScript",
+      "class": "SSRF"
+    },
+    "GHSA-2j37-g5f6-h55p": {
+      "summary": "The proxy accepted a base-url-override header while its default network denylist was empty. Callers with a valid secret key or environment:proxy scope could direct authenticated proxy requests to private-network and metadata addresses.",
+      "reviewed": "2026-09-06",
+      "details": "The proxy accepted a base-url-override header while its default network denylist was empty. Callers with a valid secret key or environment:proxy scope could direct authenticated proxy requests to private-network and metadata addresses.",
+      "ecosystem": "JavaScript",
+      "class": "SSRF"
+    },
+    "GHSA-jp5f-qr64-c9vw": {
+      "summary": "Scoped IPv6 addresses could crash copyInternetAddressAndPort in ORIGINAL_DST or transparent-proxy paths. Exploitation depends on original-destination socket handling; the advisory reports source analysis, not a live reproduced exploit, and extends an earlier IPv6 fix.",
+      "reviewed": "2026-09-06",
+      "details": "Scoped IPv6 addresses could crash copyInternetAddressAndPort in ORIGINAL_DST or transparent-proxy paths. Exploitation depends on original-destination socket handling; the advisory reports source analysis, not a live reproduced exploit, and extends an earlier IPv6 fix.",
+      "ecosystem": "C++",
+      "class": "Denial of service"
+    }
+  }
 }

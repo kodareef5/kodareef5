@@ -1,0 +1,285 @@
+{
+  "checked": "2026-09-06",
+  "records": [
+    {
+      "id": "upstream-01",
+      "url": "https://github.com/apache/httpd/commit/d11e440",
+      "checked": "2026-09-06",
+      "date": "2026-04-16",
+      "date_kind": "committed",
+      "credit": "Submitted by: Koda Reef",
+      "notes": "",
+      "verification_source": "https://github.com/apache/httpd/commit/d11e440"
+    },
+    {
+      "id": "upstream-02",
+      "url": "https://github.com/c-ares/c-ares/pull/1094",
+      "checked": "2026-09-06",
+      "date": "2026-03-22",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/c-ares/c-ares/pull/1094"
+    },
+    {
+      "id": "upstream-03",
+      "url": "https://github.com/bufbuild/protoc-gen-validate/pull/1379",
+      "checked": "2026-09-06",
+      "date": "2026-05-27",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/bufbuild/protoc-gen-validate/pull/1379"
+    },
+    {
+      "id": "upstream-04",
+      "url": "https://github.com/cure53/DOMPurify/pull/1230",
+      "checked": "2026-09-06",
+      "date": "2026-04-11",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/cure53/DOMPurify/pull/1230"
+    },
+    {
+      "id": "upstream-05",
+      "url": "https://github.com/filebrowser/filebrowser/pull/5888",
+      "checked": "2026-09-06",
+      "date": "2026-04-04",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/filebrowser/filebrowser/pull/5888"
+    },
+    {
+      "id": "upstream-06",
+      "url": "https://github.com/filebrowser/filebrowser/pull/5889",
+      "checked": "2026-09-06",
+      "date": "2026-04-04",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/filebrowser/filebrowser/pull/5889"
+    },
+    {
+      "id": "upstream-07",
+      "url": "https://github.com/filebrowser/filebrowser/pull/5890",
+      "checked": "2026-09-06",
+      "date": "2026-04-04",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/filebrowser/filebrowser/pull/5890"
+    },
+    {
+      "id": "upstream-08",
+      "url": "https://github.com/filebrowser/filebrowser/pull/5891",
+      "checked": "2026-09-06",
+      "date": "2026-04-04",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/filebrowser/filebrowser/pull/5891"
+    },
+    {
+      "id": "upstream-09",
+      "url": "https://github.com/richlegrand/bitbang-cli/pull/10",
+      "checked": "2026-09-06",
+      "date": "2026-08-01",
+      "date_kind": "merged",
+      "credit": "PR merged",
+      "notes": "",
+      "verification_source": "https://github.com/richlegrand/bitbang-cli/pull/10"
+    },
+    {
+      "id": "upstream-10",
+      "url": "https://github.com/kjur/jsrsasign/releases/tag/11.1.2",
+      "checked": "2026-09-06",
+      "date": "2026-04-13",
+      "date_kind": "released",
+      "credit": "reported by Koda Reef",
+      "notes": "",
+      "verification_source": "https://github.com/kjur/jsrsasign/releases/tag/11.1.2"
+    },
+    {
+      "id": "upstream-11",
+      "url": "https://github.com/kjur/jsrsasign/releases/tag/11.1.2",
+      "checked": "2026-09-06",
+      "date": "2026-04-13",
+      "date_kind": "released",
+      "credit": "reported by Koda Reef, Nicholas Carlini and @Kr0emer",
+      "notes": "",
+      "verification_source": "https://github.com/kjur/jsrsasign/releases/tag/11.1.2"
+    },
+    {
+      "id": "upstream-12",
+      "url": "https://github.com/GNOME/glib/commit/578a488",
+      "checked": "2026-09-06",
+      "date": "2026-04-29",
+      "date_kind": "committed",
+      "credit": "Based on a report by Koda Reef",
+      "notes": "",
+      "verification_source": "https://github.com/GNOME/glib/commit/578a488"
+    },
+    {
+      "id": "upstream-13",
+      "url": "https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47",
+      "checked": "2026-09-06",
+      "date": "2026-04-29",
+      "date_kind": "committed",
+      "credit": "Reported-by: Koda Reef",
+      "notes": "",
+      "verification_source": "https://github.com/cloudnative-pg/cloudnative-pg/commit/d65da47"
+    },
+    {
+      "id": "upstream-14",
+      "url": "https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077",
+      "checked": "2026-09-06",
+      "date": "2026-05-07",
+      "date_kind": "committed",
+      "credit": "Suggested-by: Koda Reef",
+      "notes": "",
+      "verification_source": "https://github.com/cloudnative-pg/cloudnative-pg/commit/caf2077"
+    },
+    {
+      "id": "upstream-15",
+      "url": "https://github.com/lighttpd/lighttpd1.4/commit/904a267",
+      "checked": "2026-09-06",
+      "date": "2026-05-04",
+      "date_kind": "committed",
+      "credit": "(thx kodareef5)",
+      "notes": "",
+      "verification_source": "https://github.com/lighttpd/lighttpd1.4/commit/904a267"
+    },
+    {
+      "id": "upstream-16",
+      "url": "https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Thanks to @kodareef5 for identifying the need to block GIT_CONFIG_COUNT environment variables and --template / merge related config",
+      "notes": "",
+      "verification_source": "https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md"
+    },
+    {
+      "id": "upstream-17",
+      "url": "https://nginx.org/en/CHANGES",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Thanks to kodareef5",
+      "notes": "",
+      "verification_source": "https://nginx.org/en/CHANGES"
+    },
+    {
+      "id": "upstream-18",
+      "url": "https://github.com/nats-io/nats-server/releases/tag/v2.14.3",
+      "checked": "2026-09-06",
+      "date": "2026-06-29",
+      "date_kind": "released",
+      "credit": "Koda Reef in contributors",
+      "notes": "",
+      "verification_source": "https://github.com/nats-io/nats-server/releases/tag/v2.14.3"
+    },
+    {
+      "id": "upstream-19",
+      "url": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0",
+      "checked": "2026-09-06",
+      "date": "2026-05-07",
+      "date_kind": "released",
+      "credit": "thanks to Koda Reef for reporting the issue",
+      "notes": "",
+      "verification_source": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.42.0"
+    },
+    {
+      "id": "upstream-20",
+      "url": "https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Thanks to @kodareef5, @AyushParkara and @N0zoM1z0 for reporting this to the go-git project in three separate reports",
+      "notes": "Named in the advisory body, not its structured credit list.",
+      "verification_source": "https://github.com/go-git/go-git/security/advisories/GHSA-crhj-59gh-8x96"
+    },
+    {
+      "id": "upstream-21",
+      "url": "https://github.com/vim/vim/commit/3c0f800",
+      "checked": "2026-09-06",
+      "date": "2026-03-29",
+      "date_kind": "committed",
+      "credit": "Authored by kodareef5",
+      "notes": "",
+      "verification_source": "https://github.com/vim/vim/commit/3c0f800"
+    },
+    {
+      "id": "upstream-22",
+      "url": "https://github.com/libevent/libevent/blob/master/ChangeLog",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Named in release notes",
+      "notes": "Named in the changelog; not counted as a structured advisory credit.",
+      "verification_source": "https://github.com/libevent/libevent/blob/master/ChangeLog"
+    },
+    {
+      "id": "upstream-23",
+      "url": "https://github.com/nih-at/libzip/blob/main/THANKS",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "kodareef5",
+      "notes": "",
+      "verification_source": "https://github.com/nih-at/libzip/blob/main/THANKS"
+    },
+    {
+      "id": "upstream-24",
+      "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Issue fixed across three commits linked with Fixes #877",
+      "notes": "",
+      "verification_source": "https://github.com/libjpeg-turbo/libjpeg-turbo/issues/877"
+    },
+    {
+      "id": "upstream-25",
+      "url": "https://docs.goauthentik.io/security/cves/CVE-2026-40165",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Named on the vendor CVE page",
+      "notes": "",
+      "verification_source": "https://docs.goauthentik.io/security/cves/CVE-2026-40165"
+    },
+    {
+      "id": "upstream-26",
+      "url": "https://access.redhat.com/security/cve/CVE-2026-40938",
+      "checked": "2026-09-06",
+      "date": "",
+      "date_kind": "",
+      "credit": "Five errata shipped",
+      "notes": "Downstream fixes; the vendor CVE acknowledgement field does not name a reporter.",
+      "verification_source": "https://access.redhat.com/security/cve/CVE-2026-40938"
+    },
+    {
+      "id": "upstream-27",
+      "url": "https://github.com/richlegrand/bitbang-cli/pull/12",
+      "checked": "2026-09-06",
+      "date": "2026-08-16",
+      "date_kind": "merged",
+      "credit": "PR authored by kodareef5 and merged",
+      "notes": "Ordinary open-source contribution.",
+      "verification_source": "https://github.com/richlegrand/bitbang-cli/pull/12"
+    },
+    {
+      "id": "upstream-28",
+      "url": "https://github.com/richlegrand/bitbang-server/pull/2",
+      "checked": "2026-09-06",
+      "date": "2026-08-15",
+      "date_kind": "merged",
+      "credit": "PR authored by kodareef5 and merged",
+      "notes": "Ordinary open-source contribution.",
+      "verification_source": "https://github.com/richlegrand/bitbang-server/pull/2"
+    }
+  ]
+}
