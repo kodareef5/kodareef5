@@ -1,0 +1,840 @@
+{
+  "1Panel-dev/KubePi": {
+    "name": "KubePi",
+    "url": "https://github.com/1Panel-dev/KubePi",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/1Panel-dev/KubePi/e183085da6e5b74dd17a44a3a6812cbe6dacc652/web/kubepi/src/assets/logo.png",
+      "provenance": "https://github.com/1Panel-dev/KubePi/blob/e183085da6e5b74dd17a44a3a6812cbe6dacc652/web/kubepi/src/assets/logo.png",
+      "file": "assets/logos/1panel-dev-kubepi.png",
+      "sha256": "03d6d6da2545d3b3402855b8e721b779abaa87d113e69d9329ea6ea6325a83ce",
+      "verified": "2026-09-06",
+      "width": 200,
+      "height": 200
+    }
+  },
+  "Comfy-Org/ComfyUI": {
+    "name": "ComfyUI",
+    "url": "https://github.com/Comfy-Org/ComfyUI",
+    "logo": {
+      "file": "assets/logos/comfy-org-comfyui.svg",
+      "source": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI_frontend/4043b9e7383957d19a75861e9f7c953addae8c84/apps/website/public/affiliates/brand/comfy-amplified-logo-mark.svg",
+      "provenance": "https://github.com/Comfy-Org/ComfyUI_frontend/blob/4043b9e7383957d19a75861e9f7c953addae8c84/apps/website/public/affiliates/brand/comfy-amplified-logo-mark.svg",
+      "sha256": "b39e3ebafd3c26c6c863e0a7e73733b6656b30f49a90bfd4f6d21aa7d9c2d1e9",
+      "verified": "2026-09-06",
+      "width": 147,
+      "height": 159
+    }
+  },
+  "FlowiseAI/Flowise": {
+    "name": "Flowise",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/FlowiseAI/Flowise/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/packages/ui/public/logo192.png",
+      "provenance": "https://github.com/FlowiseAI/Flowise/blob/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/packages/ui/public/logo192.png",
+      "file": "assets/logos/flowiseai-flowise.png",
+      "sha256": "f4704051152fdef6bc7f07d1bb493dbbfd1cd1010446b3ecda357e0017d86663",
+      "verified": "2026-09-06",
+      "width": 192,
+      "height": 192
+    }
+  },
+  "Giskard-AI/giskard-oss": {
+    "name": "Giskard",
+    "url": "https://github.com/Giskard-AI/giskard-oss",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/Giskard-AI/giskard-oss/580754b4ae77057d154791b8f1d0c2bedeffee84/readme/logo_light.png",
+      "provenance": "https://github.com/Giskard-AI/giskard-oss/blob/580754b4ae77057d154791b8f1d0c2bedeffee84/readme/logo_light.png",
+      "file": "assets/logos/giskard-ai-giskard-oss.png",
+      "sha256": "c1f328b3f3cefd9e527b0ff1f2991be7d3336ce13cd265993c62b57ce676cab5",
+      "verified": "2026-09-06",
+      "width": 1356,
+      "height": 316
+    }
+  },
+  "GitoxideLabs/gitoxide": {
+    "name": "gitoxide",
+    "url": "https://github.com/GitoxideLabs/gitoxide",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "NangoHQ/nango": {
+    "name": "Nango",
+    "url": "https://github.com/NangoHQ/nango",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/NangoHQ/nango/4be7a16deb878aa4424baee332505d0b7ae79168/packages/webapp/public/logo192.png",
+      "provenance": "https://github.com/NangoHQ/nango/blob/4be7a16deb878aa4424baee332505d0b7ae79168/packages/webapp/public/logo192.png",
+      "file": "assets/logos/nangohq-nango.png",
+      "sha256": "43830e94e00de32a819d87794de6fd6f1f39a4677f985c0123fc1a7b707eb7a9",
+      "verified": "2026-09-06",
+      "width": 192,
+      "height": 192
+    }
+  },
+  "OneUptime/oneuptime": {
+    "name": "OneUptime",
+    "url": "https://github.com/OneUptime/oneuptime",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/OneUptime/oneuptime/430f2610b25d268384662584a5ee5b927950ea43/Common/UI/Images/logo-sm.svg",
+      "provenance": "https://github.com/OneUptime/oneuptime/blob/430f2610b25d268384662584a5ee5b927950ea43/Common/UI/Images/logo-sm.svg",
+      "file": "assets/logos/oneuptime-oneuptime.svg",
+      "sha256": "f047c03443a977e7ec78205eb466a27514ce3b40eb87ddcda553ba7c4e510967",
+      "verified": "2026-09-06",
+      "width": 24,
+      "height": 24
+    }
+  },
+  "StableLib/stablelib": {
+    "name": "StableLib",
+    "url": "https://github.com/StableLib/stablelib",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "WWBN/AVideo": {
+    "name": "AVideo",
+    "url": "https://github.com/WWBN/AVideo",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "activepieces/activepieces": {
+    "name": "Activepieces",
+    "url": "https://github.com/activepieces/activepieces",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/activepieces/activepieces/c525a6e9f8f512a0ba2ab7f070c3850419fd9c6a/packages/web/public/logo-192.png",
+      "provenance": "https://github.com/activepieces/activepieces/blob/c525a6e9f8f512a0ba2ab7f070c3850419fd9c6a/packages/web/public/logo-192.png",
+      "file": "assets/logos/activepieces-activepieces.png",
+      "sha256": "f197674446b2590fa3253f26f8f5f52059b98f571e17d50805891294e1e77e3f",
+      "verified": "2026-09-06",
+      "width": 192,
+      "height": 192
+    }
+  },
+  "authorizerdev/authorizer": {
+    "name": "Authorizer",
+    "url": "https://github.com/authorizerdev/authorizer",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/authorizerdev/authorizer/891f58fdd82b235aafe69bfed2ce085b0a3df25b/web/app/favicon_io/android-chrome-192x192.png",
+      "provenance": "https://github.com/authorizerdev/authorizer/blob/891f58fdd82b235aafe69bfed2ce085b0a3df25b/web/app/favicon_io/android-chrome-192x192.png",
+      "file": "assets/logos/authorizerdev-authorizer.png",
+      "sha256": "654bbd0f7d5851590718c487b647653ced4418a2c9814f37740fe7f1ffe8cafb",
+      "verified": "2026-09-06",
+      "width": 192,
+      "height": 192
+    }
+  },
+  "bentoml/BentoML": {
+    "name": "BentoML",
+    "url": "https://github.com/bentoml/BentoML",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/bentoml/BentoML/add7dd5897a4680cd8fdf985da9a27a8239d980f/docs/source/_static/img/bentoml-icon.png",
+      "provenance": "https://github.com/bentoml/BentoML/blob/add7dd5897a4680cd8fdf985da9a27a8239d980f/docs/source/_static/img/bentoml-icon.png",
+      "file": "assets/logos/bentoml-bentoml.png",
+      "sha256": "7fa2df19647d8de0c2f3cecaaea923aecb6f2df2bff0b0377910ae4b86252b7d",
+      "verified": "2026-09-06",
+      "width": 891,
+      "height": 894
+    },
+    "logo_dark": {
+      "file": "assets/logos/bentoml-bentoml-dark.png",
+      "source": "https://raw.githubusercontent.com/bentoml/BentoML/add7dd5897a4680cd8fdf985da9a27a8239d980f/src/bentoml/_internal/server/static_content/favicon-dark-32x32.png",
+      "provenance": "https://github.com/bentoml/BentoML/blob/add7dd5897a4680cd8fdf985da9a27a8239d980f/src/bentoml/_internal/server/static_content/favicon-dark-32x32.png",
+      "sha256": "5198c0af1aefac4caa3c56ae09835681a3aae987d7d45c1062586b4fc773bbff",
+      "verified": "2026-09-06",
+      "width": 32,
+      "height": 32
+    }
+  },
+  "charmbracelet/soft-serve": {
+    "name": "Soft Serve",
+    "url": "https://github.com/charmbracelet/soft-serve",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "cilium/cilium": {
+    "name": "Cilium",
+    "url": "https://github.com/cilium/cilium",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/cilium/icon/color/cilium_icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/cilium/icon/color/cilium_icon-color.svg",
+      "file": "assets/logos/cilium-cilium.svg",
+      "sha256": "b36a549db4a7b2a00a916b080cee8cee2f6ab59f76b91d8146ac9870e623cc67",
+      "verified": "2026-09-06",
+      "width": 300,
+      "height": 304
+    }
+  },
+  "composer/composer": {
+    "name": "Composer",
+    "url": "https://github.com/composer/composer",
+    "logo": {
+      "source": "https://getcomposer.org/img/logo-composer-transparent.png",
+      "provenance": "https://github.com/composer/composer#readme",
+      "file": "assets/logos/composer-composer.png",
+      "sha256": "f4453619b2284cee960a502bdc08ca0863baa2770b6d010f3995a8a8c3987697",
+      "verified": "2026-09-06",
+      "width": 290,
+      "height": 356
+    }
+  },
+  "coollabsio/coolify": {
+    "name": "Coolify",
+    "url": "https://github.com/coollabsio/coolify",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/coollabsio/coolify/6293cd418c483e389e22b43d824740f3607c9f66/public/coolify-logo.svg",
+      "provenance": "https://github.com/coollabsio/coolify/blob/6293cd418c483e389e22b43d824740f3607c9f66/public/coolify-logo.svg",
+      "file": "assets/logos/coollabsio-coolify.svg",
+      "sha256": "0b6df9fbb7dd046ce8c15ac7052e152ccc6bacb030e46c61c3139e929d746090",
+      "verified": "2026-09-06",
+      "width": 352,
+      "height": 352
+    }
+  },
+  "cure53/DOMPurify": {
+    "name": "DOMPurify",
+    "url": "https://github.com/cure53/DOMPurify",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "dgraph-io/dgraph": {
+    "name": "Dgraph",
+    "url": "https://github.com/dgraph-io/dgraph",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/dgraph-io/dgraph/166d22d54c75749a38ddb41da592e84be77e3434/logo.png",
+      "provenance": "https://github.com/dgraph-io/dgraph/blob/166d22d54c75749a38ddb41da592e84be77e3434/logo.png",
+      "file": "assets/logos/dgraph-io-dgraph.png",
+      "sha256": "f3dc89631e87e9724a6f9dd8da032f11b14ea154ee6c959975baf73ded906f1b",
+      "verified": "2026-09-06",
+      "width": 387,
+      "height": 145
+    },
+    "logo_dark": {
+      "file": "assets/logos/dgraph-io-dgraph-dark.png",
+      "source": "https://raw.githubusercontent.com/dgraph-io/dgraph/166d22d54c75749a38ddb41da592e84be77e3434/logo-dark.png",
+      "provenance": "https://github.com/dgraph-io/dgraph/blob/166d22d54c75749a38ddb41da592e84be77e3434/logo-dark.png",
+      "sha256": "198a6be87abb6dc23e36c974940c0383ac1e49016eeda6174e67469b55f6bcc3",
+      "verified": "2026-09-06",
+      "width": 350,
+      "height": 102
+    }
+  },
+  "envoyproxy/envoy": {
+    "name": "Envoy",
+    "url": "https://github.com/envoyproxy/envoy",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/envoy/icon/color/envoy-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/envoy/icon/color/envoy-icon-color.svg",
+      "file": "assets/logos/envoyproxy-envoy.svg",
+      "sha256": "df8b8caf4cf8763be5932dc58d7272c03e50fc4dcfdf7eaee4a28a34d6ac5b7d",
+      "verified": "2026-09-06",
+      "width": 440,
+      "height": 333
+    }
+  },
+  "external-secrets/external-secrets": {
+    "name": "External Secrets",
+    "url": "https://github.com/external-secrets/external-secrets",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/external-secrets-operator/icon/color/eso-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/external-secrets-operator/icon/color/eso-icon-color.svg",
+      "file": "assets/logos/external-secrets-external-secrets.svg",
+      "sha256": "515be6601856c792fa8599f289472fec0c5092c79aa75c7f212e2586ac0cd1ad",
+      "verified": "2026-09-06",
+      "width": 165,
+      "height": 165
+    }
+  },
+  "filebrowser/filebrowser": {
+    "name": "File Browser",
+    "url": "https://github.com/filebrowser/filebrowser",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/filebrowser/filebrowser/833d908884d5c801f30f5c098d7977177eb3a36b/branding/icon.svg",
+      "provenance": "https://github.com/filebrowser/filebrowser/blob/833d908884d5c801f30f5c098d7977177eb3a36b/branding/icon.svg",
+      "file": "assets/logos/filebrowser-filebrowser.svg",
+      "sha256": "5dfacfcd7ef6d08f4392594f8f3b697afc29977d14a39c472390604e76cf6a6c",
+      "verified": "2026-09-06",
+      "width": 700,
+      "height": 700
+    }
+  },
+  "freescout-help-desk/freescout": {
+    "name": "FreeScout",
+    "url": "https://github.com/freescout-help-desk/freescout",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/freescout-help-desk/freescout/3b471b17cfc9aa3f7047241cb34ab91eb1a790c9/public/img/logo-icon-150.png",
+      "provenance": "https://github.com/freescout-help-desk/freescout/blob/3b471b17cfc9aa3f7047241cb34ab91eb1a790c9/public/img/logo-icon-150.png",
+      "file": "assets/logos/freescout-help-desk-freescout.png",
+      "sha256": "93b2f1b8520cba9b9071d717c57717a2454bf0d16e210bc67491b41c25dc6e98",
+      "verified": "2026-09-06",
+      "width": 150,
+      "height": 150
+    }
+  },
+  "go-git/go-git": {
+    "name": "go-git",
+    "url": "https://github.com/go-git/go-git",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "goauthentik/authentik": {
+    "name": "authentik",
+    "url": "https://github.com/goauthentik/authentik",
+    "logo": {
+      "source": "https://goauthentik.io/img/icon_top_brand_colour.svg",
+      "provenance": "https://github.com/goauthentik/authentik#readme",
+      "file": "assets/logos/goauthentik-authentik.svg",
+      "sha256": "04c92b9b17399ac6e9dd8b103de01b817539c06d76493267316dec75571926fc",
+      "verified": "2026-09-06",
+      "width": 1000,
+      "height": 1000
+    }
+  },
+  "gotenberg/gotenberg": {
+    "name": "Gotenberg",
+    "url": "https://github.com/gotenberg/gotenberg",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/gotenberg/art/master/logo.png",
+      "provenance": "https://github.com/gotenberg/gotenberg#readme",
+      "file": "assets/logos/gotenberg-gotenberg.png",
+      "sha256": "b5afb39c081273802837e12e092b1e79d2d694da7c2427c92550f94e8dab851a",
+      "verified": "2026-09-06",
+      "width": 495,
+      "height": 495
+    }
+  },
+  "henrygd/beszel": {
+    "name": "Beszel",
+    "url": "https://github.com/henrygd/beszel",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/henrygd/beszel/ad24484caabf5dfd4bd02cdfa4561dbd70aac3b5/internal/site/public/static/icon.svg",
+      "provenance": "https://github.com/henrygd/beszel/blob/ad24484caabf5dfd4bd02cdfa4561dbd70aac3b5/internal/site/public/static/icon.svg",
+      "file": "assets/logos/henrygd-beszel.svg",
+      "sha256": "a090f702f29ac4dd84567af1c119cc6833f8ad960594493f7565f6458906b4d3",
+      "verified": "2026-09-06",
+      "width": 56,
+      "height": 70
+    }
+  },
+  "in-toto/go-witness": {
+    "name": "go-witness",
+    "url": "https://github.com/in-toto/go-witness",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "in-toto/witness": {
+    "name": "witness",
+    "url": "https://github.com/in-toto/witness",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/in-toto/witness/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg",
+      "provenance": "https://github.com/in-toto/witness/blob/4ac773f31ef31b6c6b4175b8d07a74d3d412dc7f/docs-website/static/img/logo.svg",
+      "file": "assets/logos/in-toto-witness.svg",
+      "sha256": "f69e1c82c72ea260c185c8679965f45a6b624aea075df2a0406ede8858cb9252",
+      "verified": "2026-09-06",
+      "width": 539,
+      "height": 667
+    }
+  },
+  "kata-containers/kata-containers": {
+    "name": "Kata Containers",
+    "url": "https://github.com/kata-containers/kata-containers",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/kata-containers/kata-containers/3e30c0afef54713528b3b275fe5f1561618a4292/docs/assets/images/favicon.svg",
+      "provenance": "https://github.com/kata-containers/kata-containers/blob/3e30c0afef54713528b3b275fe5f1561618a4292/docs/assets/images/favicon.svg",
+      "file": "assets/logos/kata-containers-kata-containers.svg",
+      "sha256": "8758ad10666235107eb30b80699d70f10609798b3fbcdd53056d76b9c9b6b032",
+      "verified": "2026-09-06",
+      "width": 98,
+      "height": 120
+    }
+  },
+  "nasa/spacewasm": {
+    "name": "SpaceWasm (NASA)",
+    "url": "https://github.com/nasa/spacewasm",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/nasa/spacewasm/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg",
+      "provenance": "https://github.com/nasa/spacewasm/blob/3351f27b35c1082e99ce34cf1ddec6c0d460b62a/docs/logo.svg",
+      "file": "assets/logos/nasa-spacewasm.svg",
+      "sha256": "e3923f17a9c75020ac7131a89037302a5650d957e7eb1be35c7b45c0018ad2de",
+      "verified": "2026-09-06",
+      "width": 1000,
+      "height": 1000
+    }
+  },
+  "nats-io/nats-server": {
+    "name": "NATS Server",
+    "url": "https://github.com/nats-io/nats-server",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/nats/icon/color/nats-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/nats/icon/color/nats-icon-color.svg",
+      "file": "assets/logos/nats-io-nats-server.svg",
+      "sha256": "aeac64fac2ef4226a921508afc8097bd6300cdc9361779acdd19ec650a961992",
+      "verified": "2026-09-06",
+      "width": 280,
+      "height": 290
+    }
+  },
+  "novuhq/novu": {
+    "name": "Novu",
+    "url": "https://github.com/novuhq/novu",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/novuhq/novu/eb9e2dfe2c8fd9a8b900a00f470d7a655bbb2097/docs/logo/standalone-gradient.svg",
+      "provenance": "https://github.com/novuhq/novu/blob/eb9e2dfe2c8fd9a8b900a00f470d7a655bbb2097/docs/logo/standalone-gradient.svg",
+      "file": "assets/logos/novuhq-novu.svg",
+      "sha256": "5e129a958cdf9fc0299cf2110035738a4199530a9f910fb93c47ab4335aaa676",
+      "verified": "2026-09-06",
+      "width": 34,
+      "height": 34
+    }
+  },
+  "oauth2-proxy/oauth2-proxy": {
+    "name": "OAuth2 Proxy",
+    "url": "https://github.com/oauth2-proxy/oauth2-proxy",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/oauth2-proxy/oauth2-proxy/33c2eb92dea78204f7a18bc2dfdbccc220f39257/docs/static/img/logos/OAuth2_Proxy_icon.svg",
+      "provenance": "https://github.com/oauth2-proxy/oauth2-proxy/blob/33c2eb92dea78204f7a18bc2dfdbccc220f39257/docs/static/img/logos/OAuth2_Proxy_icon.svg",
+      "file": "assets/logos/oauth2-proxy-oauth2-proxy.svg",
+      "sha256": "eddd78ff63a0144719c42d0328976fc2099fca7bf90538fcc0e061630a5c0165",
+      "verified": "2026-09-06",
+      "width": 360,
+      "height": 360
+    }
+  },
+  "open-telemetry/opentelemetry-collector-contrib": {
+    "name": "OpenTelemetry Collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/opentelemetry/icon/color/opentelemetry-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/opentelemetry/icon/color/opentelemetry-icon-color.svg",
+      "file": "assets/logos/open-telemetry-opentelemetry-collector-contrib.svg",
+      "sha256": "f19d3aa81895ba0d2102df6bbd76371e55664f8f6714c6ed355f971b7b013906",
+      "verified": "2026-09-06",
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "open-telemetry/opentelemetry-go": {
+    "name": "OpenTelemetry Go",
+    "url": "https://github.com/open-telemetry/opentelemetry-go",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/opentelemetry/icon/color/opentelemetry-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/opentelemetry/icon/color/opentelemetry-icon-color.svg",
+      "file": "assets/logos/open-telemetry-opentelemetry-go.svg",
+      "sha256": "f19d3aa81895ba0d2102df6bbd76371e55664f8f6714c6ed355f971b7b013906",
+      "verified": "2026-09-06",
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "phpseclib/phpseclib": {
+    "name": "phpseclib",
+    "url": "https://github.com/phpseclib/phpseclib",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "pocket-id/pocket-id": {
+    "name": "Pocket ID",
+    "url": "https://github.com/pocket-id/pocket-id",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/pocket-id/pocket-id/8c76ba0714ca86b96287da50f367a699b0fe93d8/frontend/static/img/static-logo.svg",
+      "provenance": "https://github.com/pocket-id/pocket-id/blob/8c76ba0714ca86b96287da50f367a699b0fe93d8/frontend/static/img/static-logo.svg",
+      "file": "assets/logos/pocket-id-pocket-id.svg",
+      "sha256": "17be22d9a778168a819106b465bb2173547a93e72a5fc54a5b0e1f4919421d64",
+      "verified": "2026-09-06",
+      "width": 1015,
+      "height": 1015
+    }
+  },
+  "projectcontour/contour": {
+    "name": "Contour",
+    "url": "https://github.com/projectcontour/contour",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/contour/icon/color/contour-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/contour/icon/color/contour-icon-color.svg",
+      "file": "assets/logos/projectcontour-contour.svg",
+      "sha256": "1ef7860e239a32a60acfe62eedbf104ee35ce794f69f0f01c86e7a3205bf2bef",
+      "verified": "2026-09-06",
+      "width": 360,
+      "height": 360
+    }
+  },
+  "py-pdf/pypdf": {
+    "name": "pypdf",
+    "url": "https://github.com/py-pdf/pypdf",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/py-pdf/pypdf/d3f790cc9f201fe7e83ec2ec971aef361a746b75/docs/_static/logo.png",
+      "provenance": "https://github.com/py-pdf/pypdf/blob/d3f790cc9f201fe7e83ec2ec971aef361a746b75/docs/_static/logo.png",
+      "file": "assets/logos/py-pdf-pypdf.png",
+      "sha256": "857cd5c3fb44ecd36d46e261fc4b2957f1dc6a55e3dfd65ae4ce2b0063584629",
+      "verified": "2026-09-06",
+      "width": 728,
+      "height": 197
+    },
+    "logo_note": "Text-only display: the available mark loses legibility at index size or in dark mode. Original asset retained with provenance.",
+    "text_only": true
+  },
+  "pyload/pyload": {
+    "name": "pyLoad",
+    "url": "https://github.com/pyload/pyload",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/pyload/pyload/79c9d331226fd9af740700d5d73e64cb3876ff16/media/logo.svg",
+      "provenance": "https://github.com/pyload/pyload/blob/79c9d331226fd9af740700d5d73e64cb3876ff16/media/logo.svg",
+      "file": "assets/logos/pyload-pyload.svg",
+      "sha256": "1e3734a00e5eb2207fa26341ba38dbe58859912fa0ae9c0649196f96bd619a92",
+      "verified": "2026-09-06",
+      "width": 1000,
+      "height": 998
+    }
+  },
+  "python-poetry/poetry": {
+    "name": "Poetry",
+    "url": "https://github.com/python-poetry/poetry",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/python-poetry/website/main/static/images/logo-origami.svg",
+      "provenance": "https://github.com/python-poetry/website/blob/main/static/images/logo-origami.svg",
+      "file": "assets/logos/python-poetry-poetry.svg",
+      "sha256": "2026941fe675c44d5678fb0bff68c4b448bcc4909fba8a924dea71781e2b6408",
+      "verified": "2026-09-06",
+      "width": 448,
+      "height": 560
+    }
+  },
+  "rancher/fleet": {
+    "name": "Fleet",
+    "url": "https://github.com/rancher/fleet",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/rancher/fleet-docs/main/static/img/logo.svg",
+      "provenance": "https://github.com/rancher/fleet-docs/blob/main/static/img/logo.svg",
+      "file": "assets/logos/rancher-fleet.svg",
+      "sha256": "de172bd33f927e9dad4b4dc1ae555f79ee0c4b7af5351c3fbd85c9223305d4a6",
+      "verified": "2026-09-06",
+      "width": 136,
+      "height": 111
+    }
+  },
+  "russellhaering/gosaml2": {
+    "name": "gosaml2",
+    "url": "https://github.com/russellhaering/gosaml2",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "rustfs/rustfs": {
+    "name": "RustFS",
+    "url": "https://github.com/rustfs/rustfs",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "sigstore/cosign": {
+    "name": "Cosign",
+    "url": "https://github.com/sigstore/cosign",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/sigstore/community/main/artwork/cosign/icons/color/sigstore_cosign-icon-color.svg",
+      "provenance": "https://github.com/sigstore/community/blob/main/artwork/cosign/icons/color/sigstore_cosign-icon-color.svg",
+      "file": "assets/logos/sigstore-cosign.svg",
+      "sha256": "ec1ac41c1fe300e8e740af48b331a26f409db404b6202f72929f86aff4d62ab1",
+      "verified": "2026-09-06",
+      "width": 125,
+      "height": 120
+    }
+  },
+  "siyuan-note/siyuan": {
+    "name": "SiYuan",
+    "url": "https://github.com/siyuan-note/siyuan",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/siyuan-note/siyuan/44a6c212a994c7ba8129fc38b001a9ab58957c6f/app/appx/assets/Square44x44Logo.png",
+      "provenance": "https://github.com/siyuan-note/siyuan/blob/44a6c212a994c7ba8129fc38b001a9ab58957c6f/app/appx/assets/Square44x44Logo.png",
+      "file": "assets/logos/siyuan-note-siyuan.png",
+      "sha256": "f6f839ff8ab50dc477e083043d7fcc66fc1470ef45d6538d7808184e94583c02",
+      "verified": "2026-09-06",
+      "width": 44,
+      "height": 44
+    }
+  },
+  "statamic/cms": {
+    "name": "Statamic",
+    "url": "https://github.com/statamic/cms",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/statamic/cms/5746b2c83014a2a7110bfa6ed715780b9576a059/resources/img/apple-touch-icon.png",
+      "provenance": "https://github.com/statamic/cms/blob/5746b2c83014a2a7110bfa6ed715780b9576a059/resources/img/apple-touch-icon.png",
+      "file": "assets/logos/statamic-cms.png",
+      "sha256": "87e7e8322c044314d5e092a70344388c72d51da8c83c59674fb5ba62d2539d2d",
+      "verified": "2026-09-06",
+      "width": 180,
+      "height": 180
+    }
+  },
+  "strukturag/libheif": {
+    "name": "libheif",
+    "url": "https://github.com/strukturag/libheif",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "systemd/systemd": {
+    "name": "systemd",
+    "url": "https://github.com/systemd/systemd",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/systemd/systemd/9457f81485bfe8e09d45c0376fe02ebce7c15872/docs/favicon.svg",
+      "provenance": "https://github.com/systemd/systemd/blob/9457f81485bfe8e09d45c0376fe02ebce7c15872/docs/favicon.svg",
+      "file": "assets/logos/systemd-systemd.svg",
+      "sha256": "95d3007ddc170fdba16e8db3b819206a775e12ed09ad243ad48f2247b169412c",
+      "verified": "2026-09-06",
+      "width": 16,
+      "height": 16
+    }
+  },
+  "tektoncd/pipeline": {
+    "name": "Tekton Pipelines",
+    "url": "https://github.com/tektoncd/pipeline",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/tekton/icon/color/tekton-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/tekton/icon/color/tekton-icon-color.svg",
+      "file": "assets/logos/tektoncd-pipeline.svg",
+      "sha256": "63f85c3eb8a529eb1e5b773915e181acb395ff13476c83399ddeae157bd5eafd",
+      "verified": "2026-09-06",
+      "width": 689,
+      "height": 733
+    }
+  },
+  "theupdateframework/python-tuf": {
+    "name": "TUF (Python)",
+    "url": "https://github.com/theupdateframework/python-tuf",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/tuf/icon/color/tuf-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/tuf/icon/color/tuf-icon-color.svg",
+      "file": "assets/logos/theupdateframework-python-tuf.svg",
+      "sha256": "63382a484a56a0e769a933cdce2db709cfdc6d8424df22fae858cf4d63670fd6",
+      "verified": "2026-09-06",
+      "width": 393,
+      "height": 443
+    },
+    "logo_dark": {
+      "file": "assets/logos/theupdateframework-python-tuf-dark.svg",
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/tuf/icon/white/tuf-icon-white.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/tuf/icon/white/tuf-icon-white.svg",
+      "sha256": "b964bc40a0d3eb4af9a3313051d3d477cd6d1abd7510aca1ef0ffa7626a4e594",
+      "verified": "2026-09-06",
+      "width": 390,
+      "height": 440
+    }
+  },
+  "traefik/traefik": {
+    "name": "Traefik",
+    "url": "https://github.com/traefik/traefik",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/traefik/traefik/d48621ce0b6fd221b20bdb6c22e652e7498e5db6/docs/content/assets/img/traefikproxy-icon-color.png",
+      "provenance": "https://github.com/traefik/traefik/blob/d48621ce0b6fd221b20bdb6c22e652e7498e5db6/docs/content/assets/img/traefikproxy-icon-color.png",
+      "file": "assets/logos/traefik-traefik.png",
+      "sha256": "1845ad7e4c4a488fd0648c348cfa33c00c1292a667f6f9d935cafd3875a5a010",
+      "verified": "2026-09-06",
+      "width": 128,
+      "height": 128
+    }
+  },
+  "wekan/wekan": {
+    "name": "Wekan",
+    "url": "https://github.com/wekan/wekan",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/wekan/wekan/67334837025535c285684c134e2d84afecff44a3/public/svg-etc/wekan-logo-150.svg",
+      "provenance": "https://github.com/wekan/wekan/blob/67334837025535c285684c134e2d84afecff44a3/public/svg-etc/wekan-logo-150.svg",
+      "file": "assets/logos/wekan-wekan.svg",
+      "sha256": "e94e9356d07d841dbdfc499911bd4f3eff80aaa648d9f948b676449013e9de8b",
+      "verified": "2026-09-06",
+      "width": 150,
+      "height": 150
+    }
+  },
+  "withastro/astro": {
+    "name": "Astro",
+    "url": "https://github.com/withastro/astro",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/withastro/astro/9870f95601690d9d98799b6fa78a0bc76165ee06/examples/basics/public/favicon.svg",
+      "provenance": "https://github.com/withastro/astro/blob/9870f95601690d9d98799b6fa78a0bc76165ee06/examples/basics/public/favicon.svg",
+      "file": "assets/logos/withastro-astro.svg",
+      "sha256": "2d7a310283d6f9cc753210d83224cd6db6348cb82a5536348884e5831d46203f",
+      "verified": "2026-09-06",
+      "width": 128,
+      "height": 128
+    }
+  },
+  "zitadel/zitadel": {
+    "name": "ZITADEL",
+    "url": "https://github.com/zitadel/zitadel",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/zitadel/zitadel/13948f2bcd6f257794dbd6d342c2ac30bc88fe54/apps/docs/public/zitadel-logo-solo-light.png",
+      "provenance": "https://github.com/zitadel/zitadel/blob/13948f2bcd6f257794dbd6d342c2ac30bc88fe54/apps/docs/public/zitadel-logo-solo-light.png",
+      "file": "assets/logos/zitadel-zitadel.png",
+      "sha256": "4e365322183fa389af464d11e1192194d27ee3010533f105f80e2f872a0ab7f4",
+      "verified": "2026-09-06",
+      "width": 934,
+      "height": 936
+    }
+  },
+  "apache/httpd": {
+    "name": "Apache HTTP Server",
+    "url": "https://github.com/apache/httpd",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/apache/httpd/ee092801d443cbf9e5a2273b505e7b62da174e88/docs/manual/images/favicon.png",
+      "provenance": "https://github.com/apache/httpd/blob/ee092801d443cbf9e5a2273b505e7b62da174e88/docs/manual/images/favicon.png",
+      "file": "assets/logos/apache-httpd.png",
+      "sha256": "c85a14fa1b37102dc4be31420a68fa06ab86019b3fd0482ea817dcb55bb9ad8e",
+      "verified": "2026-09-06",
+      "width": 128,
+      "height": 128
+    }
+  },
+  "c-ares/c-ares": {
+    "name": "c-ares",
+    "url": "https://github.com/c-ares/c-ares",
+    "logo": {
+      "source": "https://c-ares.org/art/c-ares-logo.svg",
+      "provenance": "https://github.com/c-ares/c-ares#readme",
+      "file": "assets/logos/c-ares-c-ares.svg",
+      "sha256": "6dae19520c6933f6cc0745a53d5b068ef5a341b1ef36781e9d7ebaf48a650b7d",
+      "verified": "2026-09-06",
+      "width": 1184,
+      "height": 349
+    }
+  },
+  "bufbuild/protoc-gen-validate": {
+    "name": "protoc-gen-validate",
+    "url": "https://github.com/bufbuild/protoc-gen-validate",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/bufbuild/protoc-gen-validate/414042a5ff2e98dc47f8161937316a25b1da5bba/.github/buf-logo.svg",
+      "provenance": "https://github.com/bufbuild/protoc-gen-validate/blob/414042a5ff2e98dc47f8161937316a25b1da5bba/.github/buf-logo.svg",
+      "file": "assets/logos/bufbuild-protoc-gen-validate.svg",
+      "sha256": "1909027305f974fe55cf8ba75768f9a0bbb274ec6a7b0f7d0161ffed6b89f578",
+      "verified": "2026-09-06",
+      "width": 85,
+      "height": 80
+    }
+  },
+  "richlegrand/bitbang-cli": {
+    "name": "bitbang-cli",
+    "url": "https://github.com/richlegrand/bitbang-cli",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "kjur/jsrsasign": {
+    "name": "jsrsasign",
+    "url": "https://github.com/kjur/jsrsasign",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "GNOME/glib": {
+    "name": "GNOME GLib",
+    "url": "https://github.com/GNOME/glib",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "cloudnative-pg/cloudnative-pg": {
+    "name": "CloudNativePG",
+    "url": "https://github.com/cloudnative-pg/cloudnative-pg",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/cloudnativepg/icon/color/cloudnativepg-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/cloudnativepg/icon/color/cloudnativepg-icon-color.svg",
+      "file": "assets/logos/cloudnative-pg-cloudnative-pg.svg",
+      "sha256": "dfff713c4ca1cb7cdcb3328e2b93b05d6bfd8ef8f7c26efcf0d83fbbdebb0c07",
+      "verified": "2026-09-06",
+      "width": 729,
+      "height": 763
+    }
+  },
+  "lighttpd/lighttpd1.4": {
+    "name": "lighttpd",
+    "url": "https://github.com/lighttpd/lighttpd1.4",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "steveukx/git-js": {
+    "name": "simple-git",
+    "url": "https://github.com/steveukx/git-js",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "nginx/nginx": {
+    "name": "NGINX",
+    "url": "https://github.com/nginx/nginx",
+    "logo": {
+      "source": "https://nginx.org/nginx.png",
+      "provenance": "https://github.com/nginx/nginx#readme",
+      "file": "assets/logos/nginx-nginx.png",
+      "sha256": "7c1687b6c45af263723e5cd6a695bebaa1a0d06bf19fc80e5ba49fdff296eb09",
+      "verified": "2026-09-06",
+      "width": 352,
+      "height": 72
+    }
+  },
+  "kubernetes-sigs/headlamp": {
+    "name": "Headlamp",
+    "url": "https://github.com/kubernetes-sigs/headlamp",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/cncf/artwork/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/headlamp/icon/color/headlamp-icon-color.svg",
+      "provenance": "https://github.com/cncf/artwork/blob/04ac5bd4fe2186a14526e241b1229d633b6e7872/projects/headlamp/icon/color/headlamp-icon-color.svg",
+      "file": "assets/logos/kubernetes-sigs-headlamp.svg",
+      "sha256": "b2183b825ec50729bf50df93ec24701c7e071d5067398287fdd361c3fa931dcb",
+      "verified": "2026-09-06",
+      "width": 408,
+      "height": 512
+    }
+  },
+  "vim/vim": {
+    "name": "Vim",
+    "url": "https://github.com/vim/vim",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/vim/vim/f1b454912996d6417acd0d738de0eb7b60902c56/runtime/vimlogo.svg",
+      "provenance": "https://github.com/vim/vim/blob/f1b454912996d6417acd0d738de0eb7b60902c56/runtime/vimlogo.svg",
+      "file": "assets/logos/vim-vim.svg",
+      "sha256": "6ee3cf4c85acb467efbeda032dd8f2166af4d762d3efd6c3caee53059c121702",
+      "verified": "2026-09-06",
+      "width": 296,
+      "height": 296
+    }
+  },
+  "libevent/libevent": {
+    "name": "libevent",
+    "url": "https://github.com/libevent/libevent",
+    "logo": {
+      "source": "https://libevent.org/images/libevent3.png",
+      "provenance": "https://github.com/libevent/libevent#readme",
+      "file": "assets/logos/libevent-libevent.png",
+      "sha256": "7ec18b3192e37e436a5bdcbca8a73c89accfdb8bda72af5a4a8394c21c07fd98",
+      "verified": "2026-09-06",
+      "width": 400,
+      "height": 174
+    },
+    "logo_note": "Text-only display: the available mark loses legibility at index size or in dark mode. Original asset retained with provenance.",
+    "text_only": true
+  },
+  "nih-at/libzip": {
+    "name": "libzip",
+    "url": "https://github.com/nih-at/libzip",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "libjpeg-turbo/libjpeg-turbo": {
+    "name": "libjpeg-turbo",
+    "url": "https://github.com/libjpeg-turbo/libjpeg-turbo",
+    "logo_note": "Text-only: no suitable standalone project mark selected from official sources."
+  },
+  "richlegrand/bitbang-server": {
+    "name": "bitbang-server",
+    "url": "https://github.com/richlegrand/bitbang-server",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/richlegrand/bitbang-server/062caacd926d8c68df0f0bc31efcc431dcff9aac/bitbang-server/web/favicon.png",
+      "provenance": "https://github.com/richlegrand/bitbang-server/blob/062caacd926d8c68df0f0bc31efcc431dcff9aac/bitbang-server/web/favicon.png",
+      "file": "assets/logos/richlegrand-bitbang-server.png",
+      "sha256": "9c4000ac2c0368cc610bb246b0fcef73a602d314de2c0fee071a24a0fc99e0b4",
+      "verified": "2026-09-06",
+      "width": 256,
+      "height": 256
+    },
+    "logo_note": "Text-only display: the available mark loses legibility at index size or in dark mode. Original asset retained with provenance.",
+    "text_only": true
+  },
+  "PrefectHQ/prefect": {
+    "name": "Prefect",
+    "url": "https://github.com/PrefectHQ/prefect",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/PrefectHQ/prefect/6a6fe4e24cc456be30dd570aeeb1dbb6b6bef286/ui/src/assets/logos/prefect-logo-mark-gradient.svg",
+      "provenance": "https://github.com/PrefectHQ/prefect/blob/6a6fe4e24cc456be30dd570aeeb1dbb6b6bef286/ui/src/assets/logos/prefect-logo-mark-gradient.svg",
+      "file": "assets/logos/prefecthq-prefect.svg",
+      "sha256": "4f87a8b82f7563f7681d144aa527bf658486a5cada733153220c0d50ccbc58cb",
+      "verified": "2026-09-06",
+      "width": 106,
+      "height": 171
+    }
+  },
+  "nginx/kubernetes-ingress": {
+    "name": "NGINX Ingress Controller",
+    "url": "https://github.com/nginx/kubernetes-ingress",
+    "logo": {
+      "source": "https://raw.githubusercontent.com/nginx/kubernetes-ingress/226899d1ac0662ff6745884c70bc76487eb41951/charts/nginx-ingress/chart-icon.png",
+      "provenance": "https://github.com/nginx/kubernetes-ingress/blob/226899d1ac0662ff6745884c70bc76487eb41951/charts/nginx-ingress/chart-icon.png",
+      "file": "assets/logos/nginx-kubernetes-ingress.png",
+      "sha256": "6e149177eea5d93e471e308d0ed755f302995bf8f6bafe89d3e8265968695144",
+      "verified": "2026-09-06",
+      "width": 225,
+      "height": 256
+    }
+  }
+}
